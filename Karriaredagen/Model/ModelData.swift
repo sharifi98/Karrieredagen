@@ -8,6 +8,7 @@
 import Foundation
 
 var companies: [Company] = load("companyData.json")
+var events: [Event] = load("scheduleData.json")
 
 func load<T: Decodable>(_ filename: String) -> T {
     

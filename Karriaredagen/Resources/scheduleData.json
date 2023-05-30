@@ -1,0 +1,74 @@
+[
+    {
+        "id" : 1,
+        "name": "Opening Ceremony",
+        "start_time": "09:00",
+        "end_time": "09:30",
+        "location": "Main Stage",
+        "imageName": ""
+    },
+    {
+        "id" : 2,
+        "name": "Corporate Presentations",
+        "start_time": "09:30",
+        "end_time": "10:30",
+        "companies": [
+            "Aker Solutions AS",
+            "Eika Forsikring",
+            "Forsvaret",
+            "Håndelshøyskolen BI",
+            "Lerøy Seafood Group ASA",
+            "NCC",
+            "Totalenergies"
+        ],
+        "location": "Main Stage",
+        "imageName": ""
+    },
+    {
+        "id" : 3,
+        "name": "Networking Break",
+        "start_time": "10:30",
+        "end_time": "11:00",
+        "location": "Main Stage",
+        "imageName": ""
+    },
+    {
+        "id" : 4,
+        "name": "Lunch",
+        "start_time": "11:00",
+        "end_time": "12:00",
+        "location": "Main Stage",
+        "imageName": ""
+    },
+    {
+        "id" : 5,
+        "name": "Speakers",
+        "start_time": "12:00",
+        "end_time": "13:00",
+        "speakers": [
+            "Accenture",
+            "Bouvet",
+            "Nordea"
+        ],
+        "location": "Main Stage",
+        "imageName": ""
+        
+    },
+    {
+        "id" : 6,
+        "name": "Competitions",
+        "start_time": "13:00",
+        "end_time": "14:30",
+        "location": "Main Stage",
+        "imageName": ""
+    },
+    {
+        "id" : 7,
+        "name": "Closing Ceremony",
+        "start_time": "14:30",
+        "end_time": "15:00",
+        "location": "Main Stage",
+        "imageName": ""
+    }
+]
+ 

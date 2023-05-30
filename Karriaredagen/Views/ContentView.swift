@@ -10,13 +10,13 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView {
+            ScheduleList()
+                .tabItem {
+                    Label("Timeplan", systemImage: "calendar")
+                }
             CompanyList()
                 .tabItem {
                     Label("Bedrifter", systemImage: "briefcase")
-                }
-            Text("Hello")
-                .tabItem {
-                    Label("Timeplan", systemImage: "calendar")
                 }
             GriegView()
                 .tabItem {

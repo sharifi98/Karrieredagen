@@ -26,7 +26,6 @@ struct CompanyRow_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             CompanyRow(company: companies[0])
-            CompanyRow(company: companies[1])
 
         }
 
