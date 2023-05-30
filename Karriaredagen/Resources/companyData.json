@@ -1,0 +1,471 @@
+[
+  {
+    "id": 1,
+    "name": "Wood Group Norge",
+    "standNumber": 1,
+    "industry": "Ingeniør",
+    "description": "At Wood, we recognise that achieving a sustainable future is one of the biggest challenges facing our generation. It underpins all that we do. It is what unites us and what makes us unique. We are led by our purpose to unlock solutions to the world’s most critical challenges, in energy and the built environment.",
+    "imageName": "wood",
+    "coordinates": {
+      "longitude": 5.235047960397285,
+      "latitude": 60.28623464467215
+    }
+  },
+  {
+    "id": 2,
+    "name": "ABB AS",
+    "standNumber": 2,
+    "industry": "Ingeniør",
+    "description": "",
+    "imageName": "abb",
+    "coordinates": {
+      "longitude": 5.235047960397285,
+      "latitude": 60.28623464467215
+    }
+  },
+  {
+    "id": 3,
+    "name": "Stacc AS",
+    "standNumber": 3,
+    "industry": "Fintech",
+    "description": "",
+    "imageName": "stacc",
+    "coordinates": {
+      "longitude": 5.235047960397285,
+      "latitude": 60.28623464467215
+    }
+  },
+  {
+    "id": 4,
+    "name": "Equinor",
+    "standNumber": 4,
+    "industry": "Ingeniør",
+    "description": "A leading name in the energy sector, committed to accommodating the world's energy needs in a responsible manner, applying technology and creating innovative business solutions.",
+    "imageName": "equinor",
+    "coordinates": {
+      "longitude": 5.235047960397285,
+      "latitude": 60.28623464467215
+    }
+  },
+  {
+    "id": 5,
+    "name": "DNB",
+    "standNumber": 5,
+    "industry": "Finans/Økonom",
+    "description": "DNB is Norway's largest financial services group and one of the largest in the Nordic region in terms of market capitalisation.",
+    "imageName": "dnb",
+    "coordinates": {
+      "longitude": 5.235047960397285,
+      "latitude": 60.28623464467215
+    }
+  },
+  {
+    "id": 6,
+    "name": "TV 2",
+    "standNumber": 6,
+    "industry": "Media",
+    "description": "TV 2 is one of the largest commercial television broadcasters in Norway.",
+    "imageName": "tv2",
+    "coordinates": {
+      "longitude": 5.235047960397285,
+      "latitude": 60.28623464467215
+    }
+  },
+  {
+    "id": 7,
+    "name": "Statens vegvesen",
+    "standNumber": 7,
+    "industry": "Byggingeniør, rettsvitenskap, økonomi",
+    "description": "The Norwegian Public Roads Administration (Statens vegvesen) is responsible for the planning, construction and operation of the national and county road networks in Norway.",
+    "imageName": "statensvegvesen",
+    "coordinates": {
+      "longitude": 5.235047960397285,
+      "latitude": 60.28623464467215
+    }
+  },
+  {
+    "id": 8,
+    "name": "Capgemini",
+    "standNumber": 8,
+    "industry": "IT, Konsulenttjenester",
+    "description": "Capgemini is a global leader in consulting, digital transformation, technology, and engineering services.",
+    "imageName": "capgemini",
+    "coordinates": {
+      "longitude": 5.235047960397285,
+      "latitude": 60.28623464467215
+    }
+  },
+  {
+    "id": 9,
+    "name": "Bergen kommune",
+    "standNumber": 9,
+    "industry": "Offentlig forvaltning",
+    "description": "Bergen kommune, or Bergen municipality, is the local government administration of the city of Bergen, Norway.",
+    "imageName": "bergenkommune",
+    "coordinates": {
+      "longitude": 5.235047960397285,
+      "latitude": 60.28623464467215
+    }
+  },
+  {
+    "id": 10,
+    "name": "Mowi ASA",
+    "standNumber": 10,
+    "industry": "Sjømatnæringen",
+    "description": "Mowi ASA, formerly known as Marine Harvest, is one of the largest seafood companies in the world and the world’s largest producer of Atlantic salmon.",
+    "imageName": "mowi",
+    "coordinates": {
+      "longitude": 5.235047960397285,
+      "latitude": 60.28623464467215
+    }
+    
+  },
+  {
+    "id": 11,
+    "name": "Aibel AS",
+    "standNumber": 11,
+    "industry": "Olje/Gass, Energi bransje",
+    "description": "Aibel AS is a leading service name within the oil, gas and offshore wind industries, providing customers with engineering, construction, modifications and maintenance solutions.",
+    "imageName": "aibel",
+    "coordinates": {
+      "longitude": 5.235047960397285,
+      "latitude": 60.28623464467215
+    }
+  },
+  {
+    "id": 12,
+    "name": "Aker Solutions",
+    "standNumber": 12,
+    "industry": "Ingeniør",
+    "description": "Aker Solutions provides products, systems, and services to the global energy industry. They are specialized in the design and delivery of offshore and onshore facilities.",
+    "imageName": "akersolutions",
+    "coordinates": {
+      "longitude": 5.235047960397285,
+      "latitude": 60.28623464467215
+    }
+  },
+  {
+    "id": 13,
+    "name": "Nav Region Bergen",
+    "standNumber": 13,
+    "industry": "Offentlig",
+    "description": "NAV is the Norwegian Labour and Welfare Administration. They deliver financial benefits and provide employment services.",
+    "imageName": "nav",
+    "coordinates": {
+      "longitude": 5.235047960397285,
+      "latitude": 60.28623464467215
+    }
+  },
+  {
+    "id": 14,
+    "name": "Gjensidige forsikring",
+    "standNumber": 14,
+    "industry": "IT, HR, Finans/Økonomi, Forsikring, Markedsføring, Kommunikasjon",
+    "description": "Gjensidige is a leading Nordic insurance group built by customers, for customers.",
+    "imageName": "gjensidige",
+    "coordinates": {
+      "longitude": 5.235047960397285,
+      "latitude": 60.28623464467215
+    }
+  },
+  {
+    "id": 15,
+    "name": "Politiet",
+    "standNumber": 15,
+    "industry": "Offentlig forvaltning",
+    "description": "The Norwegian Police Service is the Norwegian civilian police agency responsible for enforcing the law, maintaining social order, and providing general security.",
+    "imageName": "politiet",
+    "coordinates": {
+      "longitude": 5.235047960397285,
+      "latitude": 60.28623464467215
+    }
+  },
+  {
+    "id": 16,
+    "name": "Multiconsult",
+    "standNumber": 16,
+    "industry": "Ingeniør, Konsulenttjenester",
+    "description": "Multiconsult is a leading Norwegian multidisciplinary engineering consulting name, with more than 2,800 employees distributed among 45 offices in Norway and abroad.",
+    "imageName": "multiconsult",
+    "coordinates": {
+      "longitude": 5.235047960397285,
+      "latitude": 60.28623464467215
+    }
+  },
+  {
+    "id": 17,
+    "name": "Olavstoppen",
+    "standNumber": 17,
+    "industry": "IT og Design",
+    "description": "Olavstoppen AS provides information technology and design services, including software development and technical consultancy services.",
+    "imageName": "olavstoppen",
+    "coordinates": {
+      "longitude": 5.235047960397285,
+      "latitude": 60.28623464467215
+    }
+  },
+  {
+    "id": 18,
+    "name": "Forsvaret",
+    "standNumber": 18,
+    "industry": "HR/Rekruttering",
+    "description": "The Norwegian Armed Forces (Forsvaret) is the military organization responsible for the defense of Norway. It offers a wide range of positions within various fields.",
+    "imageName": "forsvaret",
+    "coordinates": {
+      "longitude": 5.235047960397285,
+      "latitude": 60.28623464467215
+    }
+  },
+  {
+    "id": 19,
+    "name": "REdu (Avfall Norge)",
+    "standNumber": 19,
+    "industry": "Gjenvinning",
+    "description": "Avfall Norge is a national interest organization for waste management and recycling in Norway. They work for waste minimization, efficient resource use, and safe, effective waste management.",
+    "imageName": "avfallnorge",
+    "coordinates": {
+      "longitude": 5.235047960397285,
+      "latitude": 60.28623464467215
+    }
+  },
+  {
+    "id": 20,
+    "name": "Wintershall Dea Norge",
+    "standNumber": 20,
+    "industry": "Oil, Gas and Carbon Management",
+    "description": "Wintershall Dea Norge is a German oil and gas name active in exploration, production, and transportation of hydrocarbons. The name is also active in carbon management solutions.",
+    "imageName": "wintershalldeanorge",
+    "coordinates": {
+      "longitude": 5.235047960397285,
+      "latitude": 60.28623464467215
+    }
+  },
+  {
+    "id": 21,
+    "name": "View Ledger",
+    "standNumber": 21,
+    "industry": "Regnskap, økonomi, lønn/HR",
+    "description": "View Ledger is a technology name that offers innovative, user-friendly software solutions for accounting and financial management.",
+    "imageName": "viewledger",
+    "coordinates": {
+      "longitude": 5.235047960397285,
+      "latitude": 60.28623464467215
+    }
+  },
+  {
+    "id": 22,
+    "name": "Accenture",
+    "standNumber": 22,
+    "industry": "Konsulenttjenester",
+    "description": "Accenture is a global professional services name, providing a broad range of services in strategy and consulting, interactive, technology and operations.",
+    "imageName": "accenture",
+    "coordinates": {
+      "longitude": 5.235047960397285,
+      "latitude": 60.28623464467215
+    }
+  },
+  {
+    "id": 23,
+    "name": "THREE60 Energy Norway",
+    "standNumber": 23,
+    "industry": "Energi, konsulenttjenester, IT",
+    "description": "THREE60 Energy is a fast-growing energy services provider, delivering an integrated service in engineering, procurement, construction, and operations & maintenance.",
+    "imageName": "three60energynorway",
+    "coordinates": {
+      "longitude": 5.235047960397285,
+      "latitude": 60.28623464467215
+    }
+  },
+  {
+    "id": 24,
+    "name": "Aker Solutions",
+    "standNumber": 24,
+    "industry": "Ingeniør",
+    "description": "Aker Solutions helps the world meet its energy needs by providing products, systems, and services for the oil and gas industry, including subsea production equipment and offshore field design.",
+    "imageName": "akersolutions",
+    "coordinates": {
+      "longitude": 5.235047960397285,
+      "latitude": 60.28623464467215
+    }
+  },
+  {
+    "id": 25,
+    "name": "Tolletaten",
+    "standNumber": 25,
+    "industry": "IT, HR, Finans og jus.",
+    "description": "Tolletaten (The Norwegian Customs) is a Norwegian government agency responsible for controlling the import and export of goods and services to and from Norway.",
+    "imageName": "tolletaten",
+    "coordinates": {
+      "longitude": 5.235047960397285,
+      "latitude": 60.28623464467215
+    }
+  },
+  {
+    "id": 26,
+    "name": "Tryg Forsikring",
+    "standNumber": 26,
+    "industry": "Finans",
+    "description": "Tryg Forsikring is one of the largest insurance companies in the Nordic region, providing a variety of insurance services for private individuals and businesses.",
+    "imageName": "trygforsikring",
+    "coordinates": {
+      "longitude": 5.235047960397285,
+      "latitude": 60.28623464467215
+    }
+  },
+  {
+    "id": 27,
+    "name": "Riksrevisjonen",
+    "standNumber": 27,
+    "industry": "Revisjon",
+    "description": "Riksrevisjonen is the supreme audit institution of Norway, responsible for auditing the financial transactions of the Norwegian government.",
+    "imageName": "riksrevisjonen",
+    "coordinates": {
+      "longitude": 5.235047960397285,
+      "latitude": 60.28623464467215
+    }
+  },
+  {
+    "id": 28,
+    "name": "Nordea",
+    "standNumber": 28,
+    "industry": "Bank/Finans, IT",
+    "description": "Nordea is a large financial services group in the Nordic and Baltic region, providing a wide range of banking services to personal, corporate, and institutional customers.",
+    "imageName": "nordea",
+    "coordinates": {
+      "longitude": 5.235047960397285,
+      "latitude": 60.28623464467215
+    }
+  },
+  {
+    "id": 29,
+    "name": "Safetec Nordic",
+    "standNumber": 29,
+    "industry": "Ingeniørfag, samfunnsvitenskap, psykologi, sikring og beredskap,",
+    "description": "Safetec Nordic is a consulting name that provides risk management and safety services to businesses in a range of sectors, including energy, transportation, and public sector.",
+    "imageName": "safetecnordic",
+    "coordinates": {
+      "longitude": 5.235047960397285,
+      "latitude": 60.28623464467215
+    }
+  },
+  {
+    "id": 30,
+    "name": "NCC",
+    "standNumber": 30,
+    "industry": "Bygg og anlegg, entreprenør",
+    "description": "NCC is a leading construction and property development name in the Nordic region, with operations in housing, commercial property development, and roads.",
+    "imageName": "ncc",
+    "coordinates": {
+      "longitude": 5.235047960397285,
+      "latitude": 60.28623464467215
+    }
+  },
+  {
+    "id": 31,
+    "name": "Eika Gruppen",
+    "standNumber": 31,
+    "industry": "Finans/Økonomi (Bank og Forsikring)",
+    "description": "Eika Gruppen is one of the largest financial groups in Norway, offering a wide range of financial products and services including banking, insurance, and real estate brokerage.",
+    "imageName": "eikagruppen",
+    "coordinates": {
+      "longitude": 5.235047960397285,
+      "latitude": 60.28623464467215
+    }
+  },
+  {
+    "id": 32,
+    "name": "KCA Deutag",
+    "standNumber": 32,
+    "industry": "Ingeniør Energi, olje og gass",
+    "description": "KCA Deutag is a leading global drilling and engineering contractor with operations in over 20 countries. The name is involved in both onshore and offshore oil and gas sectors.",
+    "imageName": "kcadeutag",
+    "coordinates": {
+      "longitude": 5.235047960397285,
+      "latitude": 60.28623464467215
+    }
+  },
+  {
+    "id": 33,
+    "name": "Lerøy Seafood Group ASA",
+    "standNumber": 33,
+    "industry": "Vi har jobbe innen flere sektorer, IT,HR, Salg, Logistikk, Økonomi.....",
+    "description": "Lerøy Seafood Group is a world-leading seafood corporation, offering sustainable and high-quality seafood to customers across the globe.",
+    "imageName": "leroyseafood",
+    "coordinates": {
+      "longitude": 5.235047960397285,
+      "latitude": 60.28623464467215
+    }
+  },
+  {
+    "id": 34,
+    "name": "Bergen Engines",
+    "standNumber": 34,
+    "industry": "IT, Ingeniør, HR, Finans/Økonomi, Markedsføring og kommunikasjon, Salg, Logistikk, maskinering, montering (produksjonsarbeid)",
+    "description": "Bergen Engines, part of UK-based Rolls-Royce Power Systems, develops and produces medium-speed engines for marine and power generation applications.",
+    "imageName": "bergenengines",
+    "coordinates": {
+      "longitude": 5.235047960397285,
+      "latitude": 60.28623464467215
+    }
+  },
+  {
+    "id": 35,
+    "name": "Bouvet Norge AS",
+    "standNumber": 35,
+    "industry": "IT",
+    "description": "Bouvet Norge AS is a Norwegian consulting name that assists businesses in change implementation, utilizing technology and communication channels effectively.",
+    "imageName": "bouvetnorge",
+    "coordinates": {
+      "longitude": 5.235047960397285,
+      "latitude": 60.28623464467215
+    }
+  },
+  {
+    "id": 36,
+    "name": "TotalEnergies EP Norge As",
+    "standNumber": 36,
+    "industry": "Energi, Finans/økonomi, HR, Ingeniør",
+    "description": "TotalEnergies EP Norge As is a subsidiary of the multinational TotalEnergies, which is involved in every sector of the oil industry, including upstream (exploration, development, and production of crude oil and natural gas) and downstream operations (refining, petrochemicals, specialty chemicals, trading and shipping of crude oil and petroleum products).",
+    "imageName": "totalenergies",
+    "coordinates": {
+      "longitude": 5.235047960397285,
+      "latitude": 60.28623464467215
+    }
+  },
+  {
+    "id": 37,
+    "name": "Adecco Group Norway",
+    "standNumber": 37,
+    "industry": "HR / Rekruttering",
+    "description": "Adecco Group Norway is part of the Adecco Group, the world’s leading HR solutions name. They offer a wide variety of services, from temporary and permanent staffing to career transition and talent development.",
+    "imageName": "adeccogroup",
+    "coordinates": {
+      "longitude": 5.235047960397285,
+      "latitude": 60.28623464467215
+    }
+  },
+  {
+    "id": 38,
+    "name": "Omega 365",
+    "standNumber": 38,
+    "industry": "IT, Ingeniør, HR/Rekruttering, Konsulenttjenester",
+    "description": "Omega 365 provides specialist consultant services to the energy sector, IT industries and infrastructure projects worldwide. The name delivers software solutions and project information management services to support project execution.",
+    "imageName": "omega365",
+    "coordinates": {
+      "longitude": 5.235047960397285,
+      "latitude": 60.28623464467215
+    }
+  },
+  {
+    "id": 39,
+    "name": "Posten Norge AS",
+    "standNumber": 39,
+    "industry": "Logistikk",
+    "description": "Posten Norge AS, doing business as Posten, is the name of the Norwegian postal service. The name has a monopoly on distribution of letters weighing less than 50g throughout the country and also provides logistics, package, express, bank, retail and other services.",
+    "imageName": "postennorge",
+    "coordinates": {
+      "longitude": 5.235047960397285,
+      "latitude": 60.28623464467215
+    }
+  }
+]
