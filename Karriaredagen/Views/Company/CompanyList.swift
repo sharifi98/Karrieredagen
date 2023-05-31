@@ -8,10 +8,17 @@
 import SwiftUI
 
 struct CompanyList: View {
+    @State private var searchText = ""
+    var filteredCompanies: [Company] {
+        companies.filter { company in
+            searchText.isEmpty || company.name.localizedStandardContains(searchText)
+        }
+        
+    }
     var body: some View {
         
         NavigationView {
-            List(companies) { company in
+            List(filteredCompanies) { company in
                 NavigationLink {
                     CompanyDetail(company: company)
                 } label: {
@@ -20,6 +27,8 @@ struct CompanyList: View {
             }
             .listStyle(.inset)
             .navigationTitle("Bedrifter")
+            .searchable(text: $searchText, prompt: "Søk etter bedrift")
+            .background(Color.blue) // Add this line to change the background color
         }
     }
 }

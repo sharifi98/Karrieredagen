@@ -22,15 +22,17 @@ struct ScheduleRow: View {
                 Text("\(event.location)")
                     .font(.subheadline)
                 
+
             }
             Spacer()
         }
         .padding(20)
         .foregroundColor(.white)
-        .frame(maxWidth: 300, maxHeight: 80)
+        .frame(maxWidth: 300, maxHeight: 125)
         .clipShape(Rectangle())
         .background(colors.randomElement() ?? .orange) // Use a random color, defaults to orange if randomElement() returns nil
         .cornerRadius(20)
+        .shadow(radius: 4)
         
     }
 }
