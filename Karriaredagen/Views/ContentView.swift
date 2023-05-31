@@ -22,10 +22,6 @@ struct ContentView: View {
                 .tabItem {
                     Label("Kart", systemImage: "map")
                 }
-            Text("Bilder")
-                .tabItem {
-                    Label("Bilder", systemImage: "photo.artframe")
-                }
             Image("karriaredagen2023")
                 .resizable()
                 .ignoresSafeArea()

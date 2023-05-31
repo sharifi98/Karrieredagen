@@ -19,6 +19,9 @@ struct CompanyRow: View {
             Text(company.name)
             Spacer()
         }
+        
+        
+
     }
 }
 

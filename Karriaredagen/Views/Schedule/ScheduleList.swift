@@ -12,6 +12,8 @@ struct ScheduleList: View {
         NavigationView {
             ScrollView {
                 VStack(alignment: .leading, spacing: 10) {
+                    Text("Timeplan")
+                    Divider()
                     
                     ForEach(events) { event in
                         NavigationLink {
