@@ -33,6 +33,7 @@
 		0313999B2A2625670003427A /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		0313999D2A262E130003427A /* ScheduleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleRow.swift; sourceTree = "<group>"; };
 		0313999F2A2635380003427A /* ScheduleList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleList.swift; sourceTree = "<group>"; };
+		0345B2732A29D15B00110EC4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0396B06B2A250193008E6CAC /* Karriaredagen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Karriaredagen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0396B06E2A250193008E6CAC /* KarriaredagenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KarriaredagenApp.swift; sourceTree = "<group>"; };
 		0396B0702A250193008E6CAC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -107,6 +108,7 @@
 				0396B0872A25E0CC008E6CAC /* Views */,
 				0396B0882A25E107008E6CAC /* Model */,
 				0396B0722A250194008E6CAC /* Assets.xcassets */,
+				0345B2732A29D15B00110EC4 /* Info.plist */,
 				0396B0892A25E112008E6CAC /* Resources */,
 				0396B0742A250194008E6CAC /* Preview Content */,
 			);
