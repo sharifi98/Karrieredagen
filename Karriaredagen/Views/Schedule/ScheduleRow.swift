@@ -10,7 +10,7 @@ import SwiftUI
 // yespss
 struct ScheduleRow: View {
     var event: Event
-    var colors: [Color] = [.orange, .blue, .purple, .green, .pink, .yellow, .red, .gray]
+    var colors: [Color] = [.gray, .orange]
     
     var body: some View {
         
@@ -18,6 +18,7 @@ struct ScheduleRow: View {
             VStack(alignment: .leading) {
                 Text(event.name)
                     .font(.title3)
+                    .foregroundColor(.orange)
                 Text("\(event.start_time) - \(event.end_time)")
                     .font(.subheadline)
                 Text("\(event.location)")
@@ -30,7 +31,7 @@ struct ScheduleRow: View {
         .padding(20)
         .foregroundColor(.white)
         .clipShape(Rectangle())
-        .background(colors.randomElement() ?? .orange) // Use a random color, defaults to orange if randomElement() returns nil
+        .background(Color(red: 0.02, green: 0.06, blue: 0.2))
         .cornerRadius(20)
         .shadow(color: Color.black.opacity(0.3), radius: 7, x: 10, y: 10)
         

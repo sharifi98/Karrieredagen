@@ -15,7 +15,6 @@ struct ScheduleList: View {
         NavigationView {
             ScrollView {
                 VStack(alignment: .leading, spacing: 10) {
-                    Text("Timeplan")
                     Divider()
                     
                     ForEach(events) { event in
@@ -29,14 +28,14 @@ struct ScheduleList: View {
                     
                 }
                 .padding(.horizontal)
-            }
+            } 
             .sheet(isPresented: $isShowingSheet) {
                 // Here you pass the selected event to your detail view
                 if let eventDetail = selectedEvent {
                     EventDetailView(event: eventDetail)
                 }
             }
-            .navigationTitle("Arrangementer")
+            .navigationTitle("Timeplan")
         }
     }
 }

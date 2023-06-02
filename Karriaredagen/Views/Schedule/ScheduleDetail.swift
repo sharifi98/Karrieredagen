@@ -13,6 +13,10 @@ struct EventDetailView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 10) {
+                event.image
+                    .resizable()
+                    .scaledToFit()
+                
                 Text(event.name)
                     .font(.title)
 
@@ -50,9 +54,6 @@ struct EventDetailView: View {
                     }
                 }
                 
-                event.image
-                    .resizable()
-                    .scaledToFit()
             }
             .padding()
         }
