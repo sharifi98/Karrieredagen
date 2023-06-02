@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ScheduleList: View {
+    @State private var isShowingSheet = false
+    @State private var selectedEvent: Event?
+
     var body: some View {
         NavigationView {
             ScrollView {
@@ -16,22 +19,22 @@ struct ScheduleList: View {
                     Divider()
                     
                     ForEach(events) { event in
-                        NavigationLink {
-                            ScheduleRow(event: event)
-                        } label: {
+                        Button(action: {
+                            selectedEvent = event
+                            isShowingSheet = true
+                        }) {
                             ScheduleRow(event: event)
                         }
                     }
                     
-                    ForEach(events) { event in
-                        NavigationLink {
-                            ScheduleRow(event: event)
-                        } label: {
-                            ScheduleRow(event: event)
-                        }
-                    }
                 }
                 .padding(.horizontal)
+            }
+            .sheet(isPresented: $isShowingSheet) {
+                // Here you pass the selected event to your detail view
+                if let eventDetail = selectedEvent {
+                    EventDetailView(event: eventDetail)
+                }
             }
             .navigationTitle("Arrangementer")
         }

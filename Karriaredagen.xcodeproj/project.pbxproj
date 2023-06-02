@@ -24,6 +24,8 @@
 		0396B08D2A25F024008E6CAC /* CompanyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0396B08C2A25F024008E6CAC /* CompanyList.swift */; };
 		0396B08F2A25F136008E6CAC /* CompanyDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0396B08E2A25F136008E6CAC /* CompanyDetail.swift */; };
 		0396B0912A260E6C008E6CAC /* GriegView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0396B0902A260E6B008E6CAC /* GriegView.swift */; };
+		03ECA4592A29C23A007E0829 /* ScheduleDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ECA4582A29C23A007E0829 /* ScheduleDetail.swift */; };
+		03ECA45B2A29C442007E0829 /* OmOssView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ECA45A2A29C442007E0829 /* OmOssView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		0396B08E2A25F136008E6CAC /* CompanyDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyDetail.swift; sourceTree = "<group>"; };
 		0396B0902A260E6B008E6CAC /* GriegView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GriegView.swift; sourceTree = "<group>"; };
 		0396B0922A2614E7008E6CAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		03ECA4582A29C23A007E0829 /* ScheduleDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleDetail.swift; sourceTree = "<group>"; };
+		03ECA45A2A29C442007E0829 /* OmOssView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmOssView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,7 @@
 			children = (
 				0313999D2A262E130003427A /* ScheduleRow.swift */,
 				0313999F2A2635380003427A /* ScheduleList.swift */,
+				03ECA4582A29C23A007E0829 /* ScheduleDetail.swift */,
 			);
 			path = Schedule;
 			sourceTree = "<group>";
@@ -125,6 +130,7 @@
 				0396B0702A250193008E6CAC /* ContentView.swift */,
 				031399952A2621FD0003427A /* Company */,
 				0396B0902A260E6B008E6CAC /* GriegView.swift */,
+				03ECA45A2A29C442007E0829 /* OmOssView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -221,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0396B0712A250193008E6CAC /* ContentView.swift in Sources */,
+				03ECA45B2A29C442007E0829 /* OmOssView.swift in Sources */,
 				0313999C2A2625670003427A /* Event.swift in Sources */,
 				0396B0822A25DAE4008E6CAC /* MapView.swift in Sources */,
 				0396B0802A25D9B8008E6CAC /* SquareImage.swift in Sources */,
@@ -231,6 +238,7 @@
 				0396B0862A25E068008E6CAC /* ModelData.swift in Sources */,
 				0396B08B2A25EA18008E6CAC /* CompanyRow.swift in Sources */,
 				0396B08D2A25F024008E6CAC /* CompanyList.swift in Sources */,
+				03ECA4592A29C23A007E0829 /* ScheduleDetail.swift in Sources */,
 				0396B08F2A25F136008E6CAC /* CompanyDetail.swift in Sources */,
 				031399A02A2635380003427A /* ScheduleList.swift in Sources */,
 			);
@@ -358,6 +366,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Karriaredagen/Preview Content\"";
@@ -376,6 +385,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = co.hosseinsharifi.Karriaredagen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -387,6 +397,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Karriaredagen/Preview Content\"";
@@ -405,6 +416,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = co.hosseinsharifi.Karriaredagen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -14,14 +14,18 @@ struct CompanyRow: View {
             company.image
                 .resizable()
                 .clipShape(Rectangle())
-                //.overlay(Rectangle().stroke(.gray, lineWidth: 2))
+            //.overlay(Rectangle().stroke(.gray, lineWidth: 2))
                 .frame(width: 50, height: 50)
-            Text(company.name)
+            VStack {
+                Text(company.name)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                Text("Stand \(company.standNumber)")
+                    .font(.caption)
+                    .foregroundColor(.gray)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+            }
             Spacer()
         }
-        
-        
-
     }
 }
 
@@ -29,9 +33,9 @@ struct CompanyRow_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             CompanyRow(company: companies[0])
-
+            
         }
-
+        
         .previewLayout(.fixed(width: 300, height: 70))
         
     }

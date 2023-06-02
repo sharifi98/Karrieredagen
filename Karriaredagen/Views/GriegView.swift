@@ -8,7 +8,10 @@
 import SwiftUI
 
 struct GriegView: View {
+    
     var body: some View {
+                
+        
         Image("stand")
             .resizable()
             .ignoresSafeArea()

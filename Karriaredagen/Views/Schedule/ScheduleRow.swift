@@ -31,7 +31,7 @@ struct ScheduleRow: View {
         .clipShape(Rectangle())
         .background(colors.randomElement() ?? .orange) // Use a random color, defaults to orange if randomElement() returns nil
         .cornerRadius(20)
-        .shadow(radius: 4)
+        .shadow(color: Color.black.opacity(0.3), radius: 7, x: 10, y: 10)
         
     }
 }

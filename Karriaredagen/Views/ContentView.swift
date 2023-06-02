@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
+        
         TabView {
             CompanyList()
                 .tabItem {
@@ -22,13 +23,12 @@ struct ContentView: View {
                 .tabItem {
                     Label("Kart", systemImage: "map")
                 }
-            Image("karriaredagen2023")
-                .resizable()
-                .ignoresSafeArea()
+            OmOssView()
                 .tabItem {
-                    Label("Se mer", systemImage: "ellipsis.circle")
+                    Label("Om oss", systemImage: "ellipsis.circle")
                 }
         }
+        .ignoresSafeArea()
     }
 }
 

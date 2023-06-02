@@ -15,6 +15,8 @@ struct CompanyList: View {
         }
         
     }
+    
+    
     var body: some View {
         
         NavigationView {
@@ -29,6 +31,7 @@ struct CompanyList: View {
             .navigationTitle("Bedrifter")
             .searchable(text: $searchText, prompt: "Søk etter bedrift")
             .background(Color.blue) // Add this line to change the background color
+            
         }
     }
 }
