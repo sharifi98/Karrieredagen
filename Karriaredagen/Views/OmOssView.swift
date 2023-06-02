@@ -7,6 +7,7 @@
 
 import SwiftUI
 // hello
+//yes
 struct OmOssView: View {
     let imageNames = [
         "DSC06717",

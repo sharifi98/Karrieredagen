@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// yes
 struct ScheduleRow: View {
     var event: Event
     var colors: [Color] = [.orange, .blue, .purple, .green, .pink, .yellow, .red, .gray]
