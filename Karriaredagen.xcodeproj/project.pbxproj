@@ -126,8 +126,8 @@
 		0396B0872A25E0CC008E6CAC /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				031399982A2623570003427A /* Schedule */,
 				0396B0702A250193008E6CAC /* ContentView.swift */,
+				031399982A2623570003427A /* Schedule */,
 				031399952A2621FD0003427A /* Company */,
 				0396B0902A260E6B008E6CAC /* GriegView.swift */,
 				03ECA45A2A29C442007E0829 /* OmOssView.swift */,

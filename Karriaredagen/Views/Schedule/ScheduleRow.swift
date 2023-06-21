@@ -23,10 +23,9 @@ struct ScheduleRow: View {
                     .font(.subheadline)
                 Text("\(event.location)")
                     .font(.subheadline)
-                
-
             }
             Spacer()
+            Label("\(event.duration) min", systemImage: "clock")
         }
         .padding(20)
         .foregroundColor(.white)

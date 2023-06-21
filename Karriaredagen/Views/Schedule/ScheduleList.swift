@@ -13,29 +13,38 @@ struct ScheduleList: View {
 
     var body: some View {
         NavigationView {
-            ScrollView {
-                VStack(alignment: .leading, spacing: 10) {
-                    Divider()
-                    
-                    ForEach(events) { event in
-                        Button(action: {
-                            selectedEvent = event
-                            isShowingSheet = true
-                        }) {
-                            ScheduleRow(event: event)
+            ZStack {
+                
+                Image("marinebackground")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .edgesIgnoringSafeArea(.all)
+                
+                ScrollView {
+                    VStack(alignment: .leading, spacing: 10) {
+                        Divider()
+                        
+                        ForEach(events) { event in
+                            Button(action: {
+                                selectedEvent = event
+                                isShowingSheet = true
+                            }) {
+                                ScheduleRow(event: event)
+                            }
                         }
+                        
                     }
-                    
+                    .padding(.horizontal)
                 }
-                .padding(.horizontal)
-            } 
-            .sheet(isPresented: $isShowingSheet) {
-                // Here you pass the selected event to your detail view
-                if let eventDetail = selectedEvent {
-                    EventDetailView(event: eventDetail)
+                .sheet(isPresented: $isShowingSheet) {
+                    // Here you pass the selected event to your detail view
+                    if let eventDetail = selectedEvent {
+                        EventDetailView(event: eventDetail)
+                    }
                 }
-            }
             .navigationTitle("Timeplan")
+            
+            }
         }
     }
 }

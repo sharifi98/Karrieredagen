@@ -16,6 +16,7 @@ struct Event: Hashable, Codable, Identifiable {
     var location: String
     var speakers: [String]?
     var companies: [String]?
+    var duration: Int
     
     private var imageName: String
     var image: Image {

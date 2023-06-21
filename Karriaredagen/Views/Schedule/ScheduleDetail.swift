@@ -48,6 +48,7 @@ struct EventDetailView: View {
                     }
                 } else {
                     Text("No companies listed.")
+                    
                 }
             }
             
@@ -55,7 +56,7 @@ struct EventDetailView: View {
             
             HStack(alignment: .center) {
                 Spacer()
-                ExtractedView()
+                DismissScheduleDetailSheetButton()
                 Spacer()
             }
             
@@ -71,7 +72,7 @@ struct EventDetailView_Previews: PreviewProvider {
     }
 }
 
-struct ExtractedView: View {
+struct DismissScheduleDetailSheetButton: View {
     @Environment(\.dismiss) var dismiss
     
     var body: some View {
