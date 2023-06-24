@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct OmOssView: View {
+struct HvemErSpringbrettetView: View {    
     let imageNames = [
         "DSC06717",
         "DSC06261-2",
@@ -30,9 +30,7 @@ struct OmOssView: View {
     
     var body: some View {
         NavigationView {
-            
-            
-            
+
             VStack {
                 // ScrollView for images
                 ScrollView(.horizontal) {
@@ -40,14 +38,13 @@ struct OmOssView: View {
                         ForEach(imageNames, id: \.self) { imageName in
                             Image(imageName)
                                 .resizable()
-                                .scaledToFit()
                                 .frame(width: 343, height: 275)
+                                .scaledToFit()
                                 .clipShape(RoundedRectangle(cornerRadius: 20))
                                 .shadow(color: Color.black.opacity(0.3), radius: 7, x: 10, y: 10)
                                 .padding(5)
                         }
                     }
-                    .padding()
                 }
                 
                 // Regular VStack for text
@@ -55,6 +52,7 @@ struct OmOssView: View {
                     VStack {
                         
                         Divider()
+                        
                         Text("Springbrettet er en av Bergens fremste studentorganisasjoner, og jobber med å minske avstanden mellom studenter og næringsliv. Vi er en tverrfaglig organisasjon som består av medlemmer fra et bredt spekter av ulike studieretninger. Springbrettet ble opprettet i 2007, da en gjeng engasjerte og nytenkende studenter gikk sammen for å avholde Karrieredager i Grieghallen. Siden den gang har organisasjonen hatt en enorm utvikling. I dag skaper vi noen av de viktigste møteplassene mellom studenter og næringsliv, og tilbyr en fantastisk læringsarena for våre medlemmer.\n \n Karrieredagen i Grieghallen er selve flaggskipet til Springbrettet, og er Vestlandets største karrieredagsmesse. Her møtes tusenvis av studenter opp mot 70 ulike bedrifter til karrieredagsmesse, foredrag og bankett. Karrieredagen gir den innsikten man ikke tilegner seg på skolebenken, og her vil man finne opplegg for enhver smak.\n\nVi søker hele tiden etter å knytte næringsliv og studenter sammen på nye og kreative måter. I tillegg til våre Karrieredager på høsten, arrangerer vi også en rekke andre arrangementer i løpet av året. Eksempler er ulike seminarer, kurs eller konkurranser. Fra og med 2020 har Springbrettet også drevet Podcasten «Karrierestudio», hvor vi inviterer inn norske næringslivsledere for å dele sine råd og erfaringer.")
                     }
                     .padding()
@@ -66,8 +64,8 @@ struct OmOssView: View {
     }
 }
 
-struct OmOssView_Previews: PreviewProvider {
+struct HvemErSpringbrettetView_Previews: PreviewProvider {
     static var previews: some View {
-        OmOssView()
+        HvemErSpringbrettetView()
     }
 }

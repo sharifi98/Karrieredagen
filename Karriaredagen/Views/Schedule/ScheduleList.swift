@@ -15,10 +15,10 @@ struct ScheduleList: View {
         NavigationView {
             ZStack {
                 
-                Image("marinebackground")
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .edgesIgnoringSafeArea(.all)
+                //Image("marinebackground")
+                //    .resizable()
+                //    .aspectRatio(contentMode: .fill)
+                //    .edgesIgnoringSafeArea(.all)
                 
                 ScrollView {
                     VStack(alignment: .leading, spacing: 10) {

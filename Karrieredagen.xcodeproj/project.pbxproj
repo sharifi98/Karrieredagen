@@ -11,7 +11,8 @@
 		0313999C2A2625670003427A /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0313999B2A2625670003427A /* Event.swift */; };
 		0313999E2A262E130003427A /* ScheduleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0313999D2A262E130003427A /* ScheduleRow.swift */; };
 		031399A02A2635380003427A /* ScheduleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0313999F2A2635380003427A /* ScheduleList.swift */; };
-		0396B06F2A250193008E6CAC /* KarriaredagenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0396B06E2A250193008E6CAC /* KarriaredagenApp.swift */; };
+		031C6BE42A46DC7900332564 /* OmOssView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031C6BE32A46DC7900332564 /* OmOssView.swift */; };
+		0396B06F2A250193008E6CAC /* KarrieredagenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0396B06E2A250193008E6CAC /* KarrieredagenApp.swift */; };
 		0396B0712A250193008E6CAC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0396B0702A250193008E6CAC /* ContentView.swift */; };
 		0396B0732A250194008E6CAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0396B0722A250194008E6CAC /* Assets.xcassets */; };
 		0396B0762A250194008E6CAC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0396B0752A250194008E6CAC /* Preview Assets.xcassets */; };
@@ -25,7 +26,7 @@
 		0396B08F2A25F136008E6CAC /* CompanyDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0396B08E2A25F136008E6CAC /* CompanyDetail.swift */; };
 		0396B0912A260E6C008E6CAC /* GriegView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0396B0902A260E6B008E6CAC /* GriegView.swift */; };
 		03ECA4592A29C23A007E0829 /* ScheduleDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ECA4582A29C23A007E0829 /* ScheduleDetail.swift */; };
-		03ECA45B2A29C442007E0829 /* OmOssView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ECA45A2A29C442007E0829 /* OmOssView.swift */; };
+		03ECA45B2A29C442007E0829 /* HvemErSpringbrettetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ECA45A2A29C442007E0829 /* HvemErSpringbrettetView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,9 +34,10 @@
 		0313999B2A2625670003427A /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		0313999D2A262E130003427A /* ScheduleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleRow.swift; sourceTree = "<group>"; };
 		0313999F2A2635380003427A /* ScheduleList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleList.swift; sourceTree = "<group>"; };
+		031C6BE32A46DC7900332564 /* OmOssView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmOssView.swift; sourceTree = "<group>"; };
 		0345B2732A29D15B00110EC4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0396B06B2A250193008E6CAC /* Karriaredagen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Karriaredagen.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0396B06E2A250193008E6CAC /* KarriaredagenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KarriaredagenApp.swift; sourceTree = "<group>"; };
+		0396B06B2A250193008E6CAC /* Karrieredagen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Karrieredagen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0396B06E2A250193008E6CAC /* KarrieredagenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KarrieredagenApp.swift; sourceTree = "<group>"; };
 		0396B0702A250193008E6CAC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0396B0722A250194008E6CAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0396B0752A250194008E6CAC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -49,7 +51,7 @@
 		0396B08E2A25F136008E6CAC /* CompanyDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyDetail.swift; sourceTree = "<group>"; };
 		0396B0902A260E6B008E6CAC /* GriegView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GriegView.swift; sourceTree = "<group>"; };
 		03ECA4582A29C23A007E0829 /* ScheduleDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleDetail.swift; sourceTree = "<group>"; };
-		03ECA45A2A29C442007E0829 /* OmOssView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmOssView.swift; sourceTree = "<group>"; };
+		03ECA45A2A29C442007E0829 /* HvemErSpringbrettetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HvemErSpringbrettetView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,15 @@
 			path = Schedule;
 			sourceTree = "<group>";
 		};
+		03614BA92A44C289004F70F6 /* OmOss */ = {
+			isa = PBXGroup;
+			children = (
+				031C6BE32A46DC7900332564 /* OmOssView.swift */,
+				03ECA45A2A29C442007E0829 /* HvemErSpringbrettetView.swift */,
+			);
+			path = OmOss;
+			sourceTree = "<group>";
+		};
 		0396B0622A250193008E6CAC = {
 			isa = PBXGroup;
 			children = (
@@ -96,7 +107,7 @@
 		0396B06C2A250193008E6CAC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0396B06B2A250193008E6CAC /* Karriaredagen.app */,
+				0396B06B2A250193008E6CAC /* Karrieredagen.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,7 +115,7 @@
 		0396B06D2A250193008E6CAC /* Karriaredagen */ = {
 			isa = PBXGroup;
 			children = (
-				0396B06E2A250193008E6CAC /* KarriaredagenApp.swift */,
+				0396B06E2A250193008E6CAC /* KarrieredagenApp.swift */,
 				0396B0872A25E0CC008E6CAC /* Views */,
 				0396B0882A25E107008E6CAC /* Model */,
 				0396B0722A250194008E6CAC /* Assets.xcassets */,
@@ -129,8 +140,8 @@
 				0396B0702A250193008E6CAC /* ContentView.swift */,
 				031399982A2623570003427A /* Schedule */,
 				031399952A2621FD0003427A /* Company */,
+				03614BA92A44C289004F70F6 /* OmOss */,
 				0396B0902A260E6B008E6CAC /* GriegView.swift */,
-				03ECA45A2A29C442007E0829 /* OmOssView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -157,9 +168,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0396B06A2A250193008E6CAC /* Karriaredagen */ = {
+		0396B06A2A250193008E6CAC /* Karrieredagen */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0396B0792A250194008E6CAC /* Build configuration list for PBXNativeTarget "Karriaredagen" */;
+			buildConfigurationList = 0396B0792A250194008E6CAC /* Build configuration list for PBXNativeTarget "Karrieredagen" */;
 			buildPhases = (
 				0396B0672A250193008E6CAC /* Sources */,
 				0396B0682A250193008E6CAC /* Frameworks */,
@@ -169,9 +180,9 @@
 			);
 			dependencies = (
 			);
-			name = Karriaredagen;
+			name = Karrieredagen;
 			productName = Karriaredagen;
-			productReference = 0396B06B2A250193008E6CAC /* Karriaredagen.app */;
+			productReference = 0396B06B2A250193008E6CAC /* Karrieredagen.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -189,7 +200,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0396B0662A250193008E6CAC /* Build configuration list for PBXProject "Karriaredagen" */;
+			buildConfigurationList = 0396B0662A250193008E6CAC /* Build configuration list for PBXProject "Karrieredagen" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -202,7 +213,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0396B06A2A250193008E6CAC /* Karriaredagen */,
+				0396B06A2A250193008E6CAC /* Karrieredagen */,
 			);
 		};
 /* End PBXProject section */
@@ -227,13 +238,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0396B0712A250193008E6CAC /* ContentView.swift in Sources */,
-				03ECA45B2A29C442007E0829 /* OmOssView.swift in Sources */,
+				03ECA45B2A29C442007E0829 /* HvemErSpringbrettetView.swift in Sources */,
 				0313999C2A2625670003427A /* Event.swift in Sources */,
 				0396B0822A25DAE4008E6CAC /* MapView.swift in Sources */,
 				0396B0802A25D9B8008E6CAC /* SquareImage.swift in Sources */,
 				0396B0842A25DE2B008E6CAC /* Company.swift in Sources */,
+				031C6BE42A46DC7900332564 /* OmOssView.swift in Sources */,
 				0313999E2A262E130003427A /* ScheduleRow.swift in Sources */,
-				0396B06F2A250193008E6CAC /* KarriaredagenApp.swift in Sources */,
+				0396B06F2A250193008E6CAC /* KarrieredagenApp.swift in Sources */,
 				0396B0912A260E6C008E6CAC /* GriegView.swift in Sources */,
 				0396B0862A25E068008E6CAC /* ModelData.swift in Sources */,
 				0396B08B2A25EA18008E6CAC /* CompanyRow.swift in Sources */,
@@ -426,7 +438,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0396B0662A250193008E6CAC /* Build configuration list for PBXProject "Karriaredagen" */ = {
+		0396B0662A250193008E6CAC /* Build configuration list for PBXProject "Karrieredagen" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0396B0772A250194008E6CAC /* Debug */,
@@ -435,7 +447,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0396B0792A250194008E6CAC /* Build configuration list for PBXNativeTarget "Karriaredagen" */ = {
+		0396B0792A250194008E6CAC /* Build configuration list for PBXNativeTarget "Karrieredagen" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0396B07A2A250194008E6CAC /* Debug */,
