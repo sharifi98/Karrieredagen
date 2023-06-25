@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		030447B22A48855700966396 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030447B12A48855700966396 /* CustomNavigationBar.swift */; };
 		031399972A2623350003427A /* scheduleData.json in Resources */ = {isa = PBXBuildFile; fileRef = 031399962A2623350003427A /* scheduleData.json */; };
 		0313999C2A2625670003427A /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0313999B2A2625670003427A /* Event.swift */; };
 		0313999E2A262E130003427A /* ScheduleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0313999D2A262E130003427A /* ScheduleRow.swift */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		030447B12A48855700966396 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
 		031399962A2623350003427A /* scheduleData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = scheduleData.json; sourceTree = "<group>"; };
 		0313999B2A2625670003427A /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		0313999D2A262E130003427A /* ScheduleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleRow.swift; sourceTree = "<group>"; };
@@ -71,14 +73,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		030447B02A48854500966396 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				030447B12A48855700966396 /* CustomNavigationBar.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
 		031399952A2621FD0003427A /* Company */ = {
 			isa = PBXGroup;
 			children = (
+				0396B08C2A25F024008E6CAC /* CompanyList.swift */,
+				0396B08A2A25EA18008E6CAC /* CompanyRow.swift */,
+				0396B08E2A25F136008E6CAC /* CompanyDetail.swift */,
 				0396B07F2A25D9B8008E6CAC /* SquareImage.swift */,
 				0396B0812A25DAE4008E6CAC /* MapView.swift */,
-				0396B08A2A25EA18008E6CAC /* CompanyRow.swift */,
-				0396B08C2A25F024008E6CAC /* CompanyList.swift */,
-				0396B08E2A25F136008E6CAC /* CompanyDetail.swift */,
 			);
 			path = Company;
 			sourceTree = "<group>";
@@ -151,6 +161,7 @@
 				03614BA92A44C289004F70F6 /* OmOss */,
 				0396B0902A260E6B008E6CAC /* GriegView.swift */,
 				031C6BEF2A47090F00332564 /* GifImage.swift */,
+				030447B02A48854500966396 /* Modifiers */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -202,7 +213,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					0396B06A2A250193008E6CAC = {
 						CreatedOnToolsVersion = 14.3;
@@ -262,6 +273,7 @@
 				0396B0862A25E068008E6CAC /* ModelData.swift in Sources */,
 				0396B08B2A25EA18008E6CAC /* CompanyRow.swift in Sources */,
 				0396B08D2A25F024008E6CAC /* CompanyList.swift in Sources */,
+				030447B22A48855700966396 /* CustomNavigationBar.swift in Sources */,
 				03ECA4592A29C23A007E0829 /* ScheduleDetail.swift in Sources */,
 				0396B08F2A25F136008E6CAC /* CompanyDetail.swift in Sources */,
 				031399A02A2635380003427A /* ScheduleList.swift in Sources */,
@@ -307,6 +319,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -367,6 +380,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

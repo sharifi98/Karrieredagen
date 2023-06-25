@@ -19,26 +19,36 @@ struct CompanyList: View {
     
     var body: some View {
         
+        
+        
         NavigationStack {
             List(filteredCompanies) { company in
                 NavigationLink {
                     CompanyDetail(company: company)
                 } label: {
                     CompanyRow(company: company)
+                        .background(Color.clear) // Change the background color of each row to clear
                 }
             }
             .listStyle(.inset)
-            .navigationTitle("Bedrifter")
             .searchable(text: $searchText, prompt: "Søk etter bedrift")
-            .background(Color.blue) // Add this line to change the background color
-            .toolbarBackground(
-                Color.orange,
-                for: .navigationBar)
-            .toolbarBackground(.visible, for: .navigationBar)
-            
+            .toolbar {
+                ToolbarItem {
+                    HStack {
+                        Image("SB")
+                            .resizable()
+                            .scaledToFit()
+                        Text("Bedrifter")
+                            .font(.headline)
+                        
+                        Spacer()
+                    }
+                }
+            }
         }
         
     }
+    
 }
 
 struct CompanyList_Previews: PreviewProvider {

@@ -10,6 +10,7 @@ import SwiftUI
 struct KarrieredagenInformationView: View {
     var body: some View {
         NavigationView {
+            
             ZStack {
                 Rectangle()
                     .fill(Color(red: 0.046, green: 0.127, blue: 0.21))
@@ -17,12 +18,12 @@ struct KarrieredagenInformationView: View {
                 ScrollView {
                     VStack {
                         GifImage("KD21")
-                            .frame(width: 270, height: 150)
+                            .frame(width: 266, height: 150)
                             .clipped()
-                            .cornerRadius(15)
+                            .cornerRadius(10)
                             .shadow(radius: 20)
                         
-                        Text("Karrieredagen er en mulighet for studenter til å inspireres av de utallige arbeidsmulighetene som finnes i jobbmarkedet.Samtidig som det er en flott anledning for bedrifter til å komme et skritt nærmere fremtidige arbeidstagere! \n\nVi er stolte over å være arrangør for Vestlandets største tverrfaglige møteplass som knytter studenter og arbeidsmarkedet tettere sammen.")
+                        Text("Karrieredagen er en mulighet for studenter til å inspireres av de utallige arbeidsmulighetene som finnes i jobbmarkedet. Samtidig som det er en flott anledning for bedrifter til å komme et skritt nærmere fremtidige arbeidstagere! \n\nVi er stolte over å være arrangør for Vestlandets største tverrfaglige møteplass som knytter studenter og arbeidsmarkedet tettere sammen.")
                             .font(.headline)
                             .foregroundColor(.white)
                             .padding(.top, 20)
@@ -31,7 +32,9 @@ struct KarrieredagenInformationView: View {
 
                     }
                     .navigationTitle("Karrieredagen")
-                    .navigationBarTitleDisplayMode(.inline)
+                    .navigationBarTitleDisplayMode(.automatic)
+                    .navigationBarWithOrangeBackground()
+                    .padding()
                 }
             }
         }

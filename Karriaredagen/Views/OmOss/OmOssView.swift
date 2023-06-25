@@ -11,21 +11,46 @@ struct OmOssView: View {
     var body: some View {
         NavigationView {
             List {
-                NavigationLink(destination: KarrieredagenView()) {
-                    Label("Karrieredagen", systemImage: "network")
+                NavigationLink(destination: KarrieredagenInformationView()) {
+                    Label {
+                        Text("Karrieredagen")
+                    } icon: {
+                        Image(systemName: "network")
+                            .foregroundColor(.blue)
+                    }
                     
                 }
                 
                 NavigationLink(destination: SpringbrettfondetView()) {
-                    Label("Springbrettfondet", systemImage: "chart.line.uptrend.xyaxis")
+
+                    Label {
+                        Text("Springbrettfondet")
+                    } icon: {
+                        Image(systemName: "chart.line.uptrend.xyaxis")
+                            .foregroundColor(.green)
+                    }
+                    
                 }
                 
                 NavigationLink(destination: ProsjekterView()) {
-                    Label("Prosjekter", systemImage: "hammer")
+                    
+                    Label {
+                        Text("Prosjekter")
+                    } icon: {
+                        Image(systemName: "hammer")
+                            .foregroundColor(.purple)
+                    }
                 }
                 
                 NavigationLink(destination: HvemErSpringbrettetView()) {
-                    Label("Om oss", systemImage: "info.circle")
+                    
+                    Label {
+                        Text("Om Oss")
+                    } icon: {
+                        Image(systemName: "info.circle")
+                            .foregroundColor(.gray)
+                    }
+
                 }
             }
             .foregroundColor(.orange)

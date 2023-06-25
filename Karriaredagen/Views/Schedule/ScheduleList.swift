@@ -43,10 +43,7 @@ struct ScheduleList: View {
                     }
                 }
                 .navigationTitle("Timeplan")
-                .toolbarBackground(
-                    Color.orange,
-                    for: .navigationBar)
-                .toolbarBackground(.visible, for: .navigationBar)
+                .navigationBarWithOrangeBackground()
                 
             }
         }
