@@ -84,7 +84,7 @@ struct DismissScheduleDetailSheetButton: View {
         .padding(10)
         .foregroundColor(.white)
         .clipShape(Rectangle())
-        .background(.blue)
+        .background(.orange)
         .cornerRadius(15)
     }
 }

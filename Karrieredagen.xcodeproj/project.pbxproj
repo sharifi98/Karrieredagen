@@ -12,6 +12,9 @@
 		0313999E2A262E130003427A /* ScheduleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0313999D2A262E130003427A /* ScheduleRow.swift */; };
 		031399A02A2635380003427A /* ScheduleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0313999F2A2635380003427A /* ScheduleList.swift */; };
 		031C6BE42A46DC7900332564 /* OmOssView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031C6BE32A46DC7900332564 /* OmOssView.swift */; };
+		031C6BEC2A46EE8800332564 /* KarrieredagenInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031C6BEB2A46EE8800332564 /* KarrieredagenInformationView.swift */; };
+		031C6BF02A47090F00332564 /* GifImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031C6BEF2A47090F00332564 /* GifImage.swift */; };
+		031C6BF22A4709B000332564 /* KD21.gif in Resources */ = {isa = PBXBuildFile; fileRef = 031C6BF12A4709B000332564 /* KD21.gif */; };
 		0396B06F2A250193008E6CAC /* KarrieredagenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0396B06E2A250193008E6CAC /* KarrieredagenApp.swift */; };
 		0396B0712A250193008E6CAC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0396B0702A250193008E6CAC /* ContentView.swift */; };
 		0396B0732A250194008E6CAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0396B0722A250194008E6CAC /* Assets.xcassets */; };
@@ -35,6 +38,9 @@
 		0313999D2A262E130003427A /* ScheduleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleRow.swift; sourceTree = "<group>"; };
 		0313999F2A2635380003427A /* ScheduleList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleList.swift; sourceTree = "<group>"; };
 		031C6BE32A46DC7900332564 /* OmOssView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmOssView.swift; sourceTree = "<group>"; };
+		031C6BEB2A46EE8800332564 /* KarrieredagenInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KarrieredagenInformationView.swift; sourceTree = "<group>"; };
+		031C6BEF2A47090F00332564 /* GifImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifImage.swift; sourceTree = "<group>"; };
+		031C6BF12A4709B000332564 /* KD21.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = KD21.gif; sourceTree = "<group>"; };
 		0345B2732A29D15B00110EC4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0396B06B2A250193008E6CAC /* Karrieredagen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Karrieredagen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0396B06E2A250193008E6CAC /* KarrieredagenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KarrieredagenApp.swift; sourceTree = "<group>"; };
@@ -91,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				031C6BE32A46DC7900332564 /* OmOssView.swift */,
+				031C6BEB2A46EE8800332564 /* KarrieredagenInformationView.swift */,
 				03ECA45A2A29C442007E0829 /* HvemErSpringbrettetView.swift */,
 			);
 			path = OmOss;
@@ -115,6 +122,7 @@
 		0396B06D2A250193008E6CAC /* Karriaredagen */ = {
 			isa = PBXGroup;
 			children = (
+				031C6BF12A4709B000332564 /* KD21.gif */,
 				0396B06E2A250193008E6CAC /* KarrieredagenApp.swift */,
 				0396B0872A25E0CC008E6CAC /* Views */,
 				0396B0882A25E107008E6CAC /* Model */,
@@ -142,6 +150,7 @@
 				031399952A2621FD0003427A /* Company */,
 				03614BA92A44C289004F70F6 /* OmOss */,
 				0396B0902A260E6B008E6CAC /* GriegView.swift */,
+				031C6BEF2A47090F00332564 /* GifImage.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -227,6 +236,7 @@
 				0396B0762A250194008E6CAC /* Preview Assets.xcassets in Resources */,
 				0396B0732A250194008E6CAC /* Assets.xcassets in Resources */,
 				0396B07E2A25059D008E6CAC /* companyData.json in Resources */,
+				031C6BF22A4709B000332564 /* KD21.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +249,8 @@
 			files = (
 				0396B0712A250193008E6CAC /* ContentView.swift in Sources */,
 				03ECA45B2A29C442007E0829 /* HvemErSpringbrettetView.swift in Sources */,
+				031C6BF02A47090F00332564 /* GifImage.swift in Sources */,
+				031C6BEC2A46EE8800332564 /* KarrieredagenInformationView.swift in Sources */,
 				0313999C2A2625670003427A /* Event.swift in Sources */,
 				0396B0822A25DAE4008E6CAC /* MapView.swift in Sources */,
 				0396B0802A25D9B8008E6CAC /* SquareImage.swift in Sources */,

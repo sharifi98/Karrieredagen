@@ -10,9 +10,9 @@ import SwiftUI
 struct ScheduleList: View {
     @State private var isShowingSheet = false
     @State private var selectedEvent: Event?
-
+    
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
                 
                 //Image("marinebackground")
@@ -42,8 +42,12 @@ struct ScheduleList: View {
                         EventDetailView(event: eventDetail)
                     }
                 }
-            .navigationTitle("Timeplan")
-            
+                .navigationTitle("Timeplan")
+                .toolbarBackground(
+                    Color.orange,
+                    for: .navigationBar)
+                .toolbarBackground(.visible, for: .navigationBar)
+                
             }
         }
     }
