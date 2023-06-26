@@ -1,55 +1,55 @@
-//
-//  ScheduleList.swift
-//  Karriaredagen
-//
-//  Created by Hossein Sharifi on 30/05/2023.
-//
-
 import SwiftUI
 
 struct ScheduleList: View {
-    @State private var isShowingSheet = false
     @State private var selectedEvent: Event?
-    
+
     var body: some View {
-        NavigationStack {
+        NavigationView {
             ZStack {
-                
-                //Image("marinebackground")
-                //    .resizable()
-                //    .aspectRatio(contentMode: .fill)
-                //    .edgesIgnoringSafeArea(.all)
-                
+                backgroundImage
                 ScrollView {
-                    VStack(alignment: .leading, spacing: 10) {
-                        Divider()
-                        
-                        ForEach(events) { event in
-                            Button(action: {
-                                selectedEvent = event
-                                isShowingSheet = true
-                            }) {
-                                ScheduleRow(event: event)
-                            }
-                        }
-                        
-                    }
-                    .padding(.horizontal)
+                    eventList
                 }
-                .sheet(isPresented: $isShowingSheet) {
-                    // Here you pass the selected event to your detail view
-                    if let eventDetail = selectedEvent {
-                        EventDetailView(event: eventDetail)
-                    }
+                .sheet(item: $selectedEvent) { eventDetail in
+                    EventDetailView(event: eventDetail)
                 }
-                .navigationTitle("Timeplan")
                 .navigationBarWithOrangeBackground()
-                
+                .toolbar {
+                    ToolbarItemGroup(placement: .navigationBarLeading) {
+                        Text("Timeplan")
+                            .font(.system(size: 36, weight: .semibold))
+                            .foregroundColor(.orange)
+                    }
+                }
             }
         }
     }
+    
+    var backgroundImage: some View {
+        Image("marinebackground")
+            .resizable()
+            .aspectRatio(contentMode: .fill)
+            .edgesIgnoringSafeArea(.all)
+    }
+    
+    var eventList: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            Divider()
+            ForEach(events) { event in
+                eventRow(for: event)
+            }
+        }
+        .padding(.horizontal)
+    }
+    
+    func eventRow(for event: Event) -> some View {
+        Button(action: {
+            selectedEvent = event
+        }) {
+            ScheduleRow(event: event)
+        }
+    }
 }
-
 
 struct ScheduleList_Previews: PreviewProvider {
     static var previews: some View {

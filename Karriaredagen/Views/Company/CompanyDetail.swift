@@ -47,7 +47,6 @@ struct CompanyDetail: View {
         }
         .navigationTitle(company.name)
         .navigationBarTitleDisplayMode(.inline)
-        .navigationBarWithOrangeBackground()
     }
 }
 

@@ -12,9 +12,10 @@ struct KarrieredagenInformationView: View {
         NavigationView {
             
             ZStack {
-                Rectangle()
-                    .fill(Color(red: 0.046, green: 0.127, blue: 0.21))
-                    .ignoresSafeArea()
+                Image("marinebackground")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .edgesIgnoringSafeArea(.all)
                 ScrollView {
                     VStack {
                         GifImage("KD21")
@@ -31,8 +32,13 @@ struct KarrieredagenInformationView: View {
                             .lineSpacing(5)
 
                     }
-                    .navigationTitle("Karrieredagen")
-                    .navigationBarTitleDisplayMode(.automatic)
+                    .toolbar {
+                        ToolbarItemGroup(placement: .navigationBarLeading) {
+                            Text("Karrieredagen")
+                                .font(.system(size: 36, weight: .semibold))
+                                .foregroundColor(Color(red: 1.0, green: 0.416, blue: 0.0))
+                        }
+                    }
                     .navigationBarWithOrangeBackground()
                     .padding()
                 }

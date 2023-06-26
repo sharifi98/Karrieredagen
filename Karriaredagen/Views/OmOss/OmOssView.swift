@@ -53,6 +53,7 @@ struct OmOssView: View {
 
                 }
             }
+            //.foregroundColor(Color(red: 0.945, green: 0.529, blue: 0.196))
             .foregroundColor(.orange)
             //.navigationTitle("Om Oss")
             .listStyle(.grouped)

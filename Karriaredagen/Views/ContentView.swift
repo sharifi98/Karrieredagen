@@ -1,19 +1,13 @@
-//
-//  ContentView.swift
-//  Karriaredagen
-//
-//  Created by Hossein Sharifi on 29/05/2023.
-//
-
 import SwiftUI
+
+
 
 struct ContentView: View {
     var body: some View {
-        
         TabView {
-            CompanyList()
+            KDView()
                 .tabItem {
-                    Label("Bedrifter", systemImage: "briefcase")
+                    Label("KD", systemImage: "graduationcap")
                 }
             ScheduleList()
                 .tabItem {
@@ -29,6 +23,9 @@ struct ContentView: View {
                 }
         }
         .ignoresSafeArea()
+        .tabViewStyle(DefaultTabViewStyle()) // Apply a custom tab view style
+        .accentColor(.orange) // Set the tab item's text and icon color
+        .shadow(color: .gray, radius: 10, x: 0, y: 5) // Add a shadow
     }
 }
 

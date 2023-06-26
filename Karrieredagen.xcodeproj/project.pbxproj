@@ -16,6 +16,7 @@
 		031C6BEC2A46EE8800332564 /* KarrieredagenInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031C6BEB2A46EE8800332564 /* KarrieredagenInformationView.swift */; };
 		031C6BF02A47090F00332564 /* GifImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031C6BEF2A47090F00332564 /* GifImage.swift */; };
 		031C6BF22A4709B000332564 /* KD21.gif in Resources */ = {isa = PBXBuildFile; fileRef = 031C6BF12A4709B000332564 /* KD21.gif */; };
+		037010172A49AADB007388E7 /* KDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037010162A49AADB007388E7 /* KDView.swift */; };
 		0396B06F2A250193008E6CAC /* KarrieredagenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0396B06E2A250193008E6CAC /* KarrieredagenApp.swift */; };
 		0396B0712A250193008E6CAC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0396B0702A250193008E6CAC /* ContentView.swift */; };
 		0396B0732A250194008E6CAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0396B0722A250194008E6CAC /* Assets.xcassets */; };
@@ -44,6 +45,7 @@
 		031C6BEF2A47090F00332564 /* GifImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifImage.swift; sourceTree = "<group>"; };
 		031C6BF12A4709B000332564 /* KD21.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = KD21.gif; sourceTree = "<group>"; };
 		0345B2732A29D15B00110EC4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		037010162A49AADB007388E7 /* KDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDView.swift; sourceTree = "<group>"; };
 		0396B06B2A250193008E6CAC /* Karrieredagen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Karrieredagen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0396B06E2A250193008E6CAC /* KarrieredagenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KarrieredagenApp.swift; sourceTree = "<group>"; };
 		0396B0702A250193008E6CAC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,8 +98,8 @@
 		031399982A2623570003427A /* Schedule */ = {
 			isa = PBXGroup;
 			children = (
-				0313999D2A262E130003427A /* ScheduleRow.swift */,
 				0313999F2A2635380003427A /* ScheduleList.swift */,
+				0313999D2A262E130003427A /* ScheduleRow.swift */,
 				03ECA4582A29C23A007E0829 /* ScheduleDetail.swift */,
 			);
 			path = Schedule;
@@ -156,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				0396B0702A250193008E6CAC /* ContentView.swift */,
+				037010162A49AADB007388E7 /* KDView.swift */,
 				031399982A2623570003427A /* Schedule */,
 				031399952A2621FD0003427A /* Company */,
 				03614BA92A44C289004F70F6 /* OmOss */,
@@ -275,6 +278,7 @@
 				0396B08D2A25F024008E6CAC /* CompanyList.swift in Sources */,
 				030447B22A48855700966396 /* CustomNavigationBar.swift in Sources */,
 				03ECA4592A29C23A007E0829 /* ScheduleDetail.swift in Sources */,
+				037010172A49AADB007388E7 /* KDView.swift in Sources */,
 				0396B08F2A25F136008E6CAC /* CompanyDetail.swift in Sources */,
 				031399A02A2635380003427A /* ScheduleList.swift in Sources */,
 			);
@@ -416,12 +420,13 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = co.hosseinsharifi.Karriaredagen;
+				PRODUCT_BUNDLE_IDENTIFIER = co.hosseinsharifi.Karrieredagen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -447,12 +452,13 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = co.hosseinsharifi.Karriaredagen;
+				PRODUCT_BUNDLE_IDENTIFIER = co.hosseinsharifi.Karrieredagen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;

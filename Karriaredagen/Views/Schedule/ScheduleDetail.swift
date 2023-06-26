@@ -9,60 +9,75 @@ import SwiftUI
 
 struct EventDetailView: View {
     var event: Event
-    
+
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
-            event.image
-                .resizable()
-                .scaledToFit()
-            
+            eventImageView
+
             Text(event.name)
                 .font(.title)
-            
-            Text("\(event.start_time) - \(event.end_time)")
+
+            eventTiming
                 .font(.subheadline)
-            
+
             Text(event.location)
                 .font(.subheadline)
-            
-            
-            Group {
-                Text("Speakers:")
-                    .font(.headline)
-                if let speakers = event.speakers {
-                    ForEach(speakers, id: \.self) { speaker in
-                        Text(speaker)
-                    }
-                } else {
-                    Text("No speakers listed.")
-                }
-            }
-            
-            
-            Group {
-                Text("Companies:")
-                    .font(.headline)
-                if let companies = event.companies {
-                    ForEach(companies, id: \.self) { company in
-                        Text(company)
-                    }
-                } else {
-                    Text("No companies listed.")
-                    
-                }
-            }
-            
+
+            speakersGroup
+
+            companiesGroup
+
             Spacer()
-            
-            HStack(alignment: .center) {
-                Spacer()
-                DismissScheduleDetailSheetButton()
-                Spacer()
-            }
-            
+
+            dismissalButton
         }
         .padding()
-        
+    }
+    
+    var eventImageView: some View {
+        event.image
+            .resizable()
+            .scaledToFit()
+    }
+    
+    var eventTiming: some View {
+        Text("\(event.start_time) - \(event.end_time)")
+    }
+    
+    var speakersGroup: some View {
+        Group {
+            Text("Speakers:")
+                .font(.headline)
+            if let speakers = event.speakers {
+                ForEach(speakers, id: \.self) { speaker in
+                    Text(speaker)
+                }
+            } else {
+                Text("No speakers listed.")
+            }
+        }
+    }
+    
+    var companiesGroup: some View {
+        Group {
+            Text("Companies:")
+                .font(.headline)
+            if let companies = event.companies {
+                ForEach(companies, id: \.self) { company in
+                    Text(company)
+                }
+            } else {
+                Text("No companies listed.")
+            }
+        }
+    }
+    
+    var dismissalButton: some View {
+        HStack(alignment: .center) {
+            Spacer()
+            DismissScheduleDetailSheetButton()
+            Spacer()
+        }
     }
 }
 
@@ -74,17 +89,24 @@ struct EventDetailView_Previews: PreviewProvider {
 
 struct DismissScheduleDetailSheetButton: View {
     @Environment(\.dismiss) var dismiss
-    
+
     var body: some View {
         Button {
             dismiss()
         } label: {
             Text("Tilbake")
         }
-        .padding(10)
-        .foregroundColor(.white)
-        .clipShape(Rectangle())
-        .background(.orange)
-        .cornerRadius(15)
+        .dismissButtonStyle()
+    }
+}
+
+extension View {
+    func dismissButtonStyle() -> some View {
+        self
+            .padding(10)
+            .foregroundColor(.white)
+            .clipShape(Rectangle())
+            .background(.orange)
+            .cornerRadius(15)
     }
 }
