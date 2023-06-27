@@ -8,10 +8,10 @@
 import SwiftUI
 import MapKit
 
-
 struct MapAnnotationItem: Identifiable {
     let id = UUID()
     let coordinate: CLLocationCoordinate2D
+    let color: Color
 }
 
 struct MapView: View {
@@ -21,19 +21,19 @@ struct MapView: View {
     
     var body: some View {
         Map(coordinateRegion: $region, annotationItems: annotations) { annotation in
-            MapPin(coordinate: annotation.coordinate)
+            MapMarker(coordinate: annotation.coordinate, tint: annotation.color)
         }
         .onAppear {
-            setRegion(coordinate)
+            setRegionAndMarker(coordinate)
         }
     }
     
-    private func setRegion(_ coordinate: CLLocationCoordinate2D) {
+    private func setRegionAndMarker(_ coordinate: CLLocationCoordinate2D) {
         region = MKCoordinateRegion(
             center: coordinate,
             span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
         )
-        annotations.append(MapAnnotationItem(coordinate: coordinate))
+        annotations.append(MapAnnotationItem(coordinate: coordinate, color: Color(.red)))
     }
 }
 

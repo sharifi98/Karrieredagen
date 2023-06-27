@@ -31,6 +31,7 @@ struct KarrieredagenInformationView: View {
                             .padding(.top, 20)
                             .padding(.horizontal, 15)
                             .lineSpacing(5)
+                        
 
                     }
                     .toolbar {

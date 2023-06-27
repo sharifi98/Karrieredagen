@@ -46,8 +46,7 @@ extension View {
             .padding(20)
             .foregroundColor(.white)
             .clipShape(Rectangle())
-            //.background(Color(red: 0.02, green: 0.06, blue: 0.2))
-            .background(Color(.blue))
+            .background(Color(red: 0.02, green: 0.06, blue: 0.2))
             .cornerRadius(20)
             .shadow(color: Color.black.opacity(0.6), radius: 7, x: 10, y: 10)
     }
