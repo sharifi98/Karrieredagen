@@ -23,6 +23,7 @@ struct KarrieredagenInformationView: View {
                             .clipped()
                             .cornerRadius(10)
                             .shadow(radius: 20)
+                            .padding(30)
                         
                         Text("Karrieredagen er en mulighet for studenter til å inspireres av de utallige arbeidsmulighetene som finnes i jobbmarkedet. Samtidig som det er en flott anledning for bedrifter til å komme et skritt nærmere fremtidige arbeidstagere! \n\nVi er stolte over å være arrangør for Vestlandets største tverrfaglige møteplass som knytter studenter og arbeidsmarkedet tettere sammen.")
                             .font(.headline)
@@ -36,7 +37,7 @@ struct KarrieredagenInformationView: View {
                         ToolbarItemGroup(placement: .navigationBarLeading) {
                             Text("Karrieredagen")
                                 .font(.system(size: 36, weight: .semibold))
-                                .foregroundColor(Color(red: 1.0, green: 0.416, blue: 0.0))
+                                .foregroundColor(Color("KDOrange"))
                         }
                     }
                     .navigationBarWithOrangeBackground()

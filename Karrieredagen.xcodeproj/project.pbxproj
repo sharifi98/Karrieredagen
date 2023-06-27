@@ -15,7 +15,8 @@
 		031C6BE42A46DC7900332564 /* OmOssView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031C6BE32A46DC7900332564 /* OmOssView.swift */; };
 		031C6BEC2A46EE8800332564 /* KarrieredagenInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031C6BEB2A46EE8800332564 /* KarrieredagenInformationView.swift */; };
 		031C6BF02A47090F00332564 /* GifImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031C6BEF2A47090F00332564 /* GifImage.swift */; };
-		031C6BF22A4709B000332564 /* KD21.gif in Resources */ = {isa = PBXBuildFile; fileRef = 031C6BF12A4709B000332564 /* KD21.gif */; };
+		031CE3B42A4B0C8C005F4428 /* KDaftermovie.gif in Resources */ = {isa = PBXBuildFile; fileRef = 031CE3B32A4B0C8C005F4428 /* KDaftermovie.gif */; };
+		031CE3B92A4B0FEE005F4428 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 031CE3B82A4B0FEE005F4428 /* SDWebImageSwiftUI */; };
 		037010172A49AADB007388E7 /* KDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037010162A49AADB007388E7 /* KDView.swift */; };
 		0396B06F2A250193008E6CAC /* KarrieredagenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0396B06E2A250193008E6CAC /* KarrieredagenApp.swift */; };
 		0396B0712A250193008E6CAC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0396B0702A250193008E6CAC /* ContentView.swift */; };
@@ -43,7 +44,7 @@
 		031C6BE32A46DC7900332564 /* OmOssView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmOssView.swift; sourceTree = "<group>"; };
 		031C6BEB2A46EE8800332564 /* KarrieredagenInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KarrieredagenInformationView.swift; sourceTree = "<group>"; };
 		031C6BEF2A47090F00332564 /* GifImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifImage.swift; sourceTree = "<group>"; };
-		031C6BF12A4709B000332564 /* KD21.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = KD21.gif; sourceTree = "<group>"; };
+		031CE3B32A4B0C8C005F4428 /* KDaftermovie.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = KDaftermovie.gif; sourceTree = "<group>"; };
 		0345B2732A29D15B00110EC4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		037010162A49AADB007388E7 /* KDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDView.swift; sourceTree = "<group>"; };
 		0396B06B2A250193008E6CAC /* Karrieredagen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Karrieredagen.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				031CE3B92A4B0FEE005F4428 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,7 +136,7 @@
 		0396B06D2A250193008E6CAC /* Karriaredagen */ = {
 			isa = PBXGroup;
 			children = (
-				031C6BF12A4709B000332564 /* KD21.gif */,
+				031CE3B32A4B0C8C005F4428 /* KDaftermovie.gif */,
 				0396B06E2A250193008E6CAC /* KarrieredagenApp.swift */,
 				0396B0872A25E0CC008E6CAC /* Views */,
 				0396B0882A25E107008E6CAC /* Model */,
@@ -204,6 +206,9 @@
 			dependencies = (
 			);
 			name = Karrieredagen;
+			packageProductDependencies = (
+				031CE3B82A4B0FEE005F4428 /* SDWebImageSwiftUI */,
+			);
 			productName = Karriaredagen;
 			productReference = 0396B06B2A250193008E6CAC /* Karrieredagen.app */;
 			productType = "com.apple.product-type.application";
@@ -232,6 +237,9 @@
 				Base,
 			);
 			mainGroup = 0396B0622A250193008E6CAC;
+			packageReferences = (
+				031CE3B72A4B0FEE005F4428 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 0396B06C2A250193008E6CAC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -246,11 +254,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				031CE3B42A4B0C8C005F4428 /* KDaftermovie.gif in Resources */,
 				031399972A2623350003427A /* scheduleData.json in Resources */,
 				0396B0762A250194008E6CAC /* Preview Assets.xcassets in Resources */,
 				0396B0732A250194008E6CAC /* Assets.xcassets in Resources */,
 				0396B07E2A25059D008E6CAC /* companyData.json in Resources */,
-				031C6BF22A4709B000332564 /* KD21.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,6 +497,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		031CE3B72A4B0FEE005F4428 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		031CE3B82A4B0FEE005F4428 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 031CE3B72A4B0FEE005F4428 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0396B0632A250193008E6CAC /* Project object */;
 }

@@ -21,7 +21,9 @@ struct ScheduleList: View {
                             .foregroundColor(.orange)
                     }
                 }
+                .padding()
             }
+            
         }
     }
     
