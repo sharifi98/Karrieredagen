@@ -18,7 +18,7 @@ struct KarrieredagenInformationView: View {
                     .edgesIgnoringSafeArea(.all)
                 ScrollView {
                     VStack {
-                        GifImage("KD21")
+                        GifImage("KDaftermovie")
                             .frame(width: 266, height: 150)
                             .clipped()
                             .cornerRadius(10)

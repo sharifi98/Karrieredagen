@@ -31,9 +31,10 @@ struct HvemErSpringbrettetView: View {
     var body: some View {
         NavigationStack {
             ZStack {
-                Rectangle()
-                    .fill(Color(red: 0.046, green: 0.127, blue: 0.21))
-                    .ignoresSafeArea()
+                Image("marinebackground")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .edgesIgnoringSafeArea(.all)
                 
                 ScrollView(.vertical) { // Wrapping everything inside a single ScrollView
                     VStack {

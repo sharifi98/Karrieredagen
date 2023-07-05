@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct OmOssView: View {
+    
+    let images1 = ["Screenshot 2023-07-05 at 15-56-54 Springbrettfondet — Springbrettet", "Screenshot 2023-07-05 at 15-57-16 Springbrettfondet — Springbrettet"]
+    
     var body: some View {
         NavigationView {
             ZStack {
@@ -29,7 +32,7 @@ struct OmOssView: View {
                             }
                         }
                         
-                        NavigationLink(destination: KarrieredagenInformationView()) {
+                        NavigationLink(destination: SpringbrettfondetView()) {
                             Label {
                                 Text("Springbrettfondet")
                             } icon: {
