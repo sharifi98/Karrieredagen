@@ -39,7 +39,7 @@ struct HvemErSpringbrettetView: View {
                 ScrollView(.vertical) { // Wrapping everything inside a single ScrollView
                     VStack {
                         // ScrollView for images
-                        ScrollView(.horizontal) {
+                        ScrollView(.horizontal, showsIndicators: false) {
                             LazyHStack(alignment: .top) {
                                 ForEach(imageNames, id: \.self) { imageName in
                                     Image(imageName)

@@ -1,6 +1,15 @@
 import SwiftUI
 
 struct SpringbrettfondetView: View {
+    
+    let imageNames = [
+        "Screenshot 2023-07-05 at 15-56-54 Springbrettfondet — Springbrettet",
+        "Screenshot 2023-07-05 at 15-57-16 Springbrettfondet — Springbrettet",
+        "Screenshot 2023-07-05 at 15-57-32 Springbrettfondet — Springbrettet",
+        "Screenshot 2023-07-05 at 15-57-50 Springbrettfondet — Springbrettet",
+        "Screenshot 2023-07-05 at 15-58-05 Springbrettfondet — Springbrettet"
+    ]
+    
     var body: some View {
         ZStack {
             Image("marinebackground")
@@ -8,12 +17,12 @@ struct SpringbrettfondetView: View {
                 .aspectRatio(contentMode: .fill)
                 .edgesIgnoringSafeArea(.all)
             
-            ScrollView {
+            ScrollView(.vertical) {
                 VStack(alignment: .leading, spacing: 20) {
                     Text("Hva er Springbrettfondet?")
                         .font(.title)
-                        .padding()
                         .foregroundColor(Color("KDOrange"))
+                        .padding(.leading)
                     
                     Text("""
                     Springbrettfondet er en utvidelse av Springbrettets innsats for å bygge broer mellom studenter og næringslivet på Vestlandet. Fondet tilbyr nå økonomisk støtte til studenter og studentgrupper for initiativer som støtter vår organisasjonsfilosofi og forbedrer studentenes engasjement.
@@ -23,7 +32,7 @@ struct SpringbrettfondetView: View {
                     
                     Text("Hvem kan søke støtte?")
                         .font(.title)
-                        .padding()
+                        .padding(.leading)
                         .foregroundColor(Color("KDOrange"))
                     
                     Text("""
@@ -64,8 +73,84 @@ Søknader til Springbrettfondet leveres via lenken nedenfor. Vi vil vurdere din 
                     
                     Text("Sjekk ut initiativer vi har støttet tidligere!")
                         .font(.title)
-                        .padding()
+                        .padding(.leading)
                         .foregroundColor(Color("KDOrange"))
+                    
+                    VStack {
+                        Text("Norsk Akuttmedisinsk Studentforum (2023)")
+                            .font(.headline)
+                            .foregroundColor(.white)
+                        
+                    
+                    ScrollView(.horizontal) {
+                        VStack {
+                            Text("Arrangementet er et tverrfaglig samarbeid med foredrag og medisinske simuleringer.")
+                                .foregroundColor(.white)
+                            
+                            LazyHStack(alignment: .top) {
+                                
+                                Image(imageNames[0])
+                                    .resizable()
+                                    .frame(width: 360, height: 275)
+                                    .scaledToFit()
+                                    .clipShape(RoundedRectangle(cornerRadius: 20))
+                                    .shadow(color: Color.black.opacity(0.3), radius: 7, x: 10, y: 10)
+                                    .padding(5)
+                                Image(imageNames[1])
+                                    .resizable()
+                                    .frame(width: 360, height: 275)
+                                    .scaledToFit()
+                                    .clipShape(RoundedRectangle(cornerRadius: 20))
+                                    .shadow(color: Color.black.opacity(0.3), radius: 7, x: 10, y: 10)
+                                    .padding(5)
+                            }
+                        }
+                    }
+                    }
+                    
+                    VStack {
+                        
+                        Text("Sampolkonferansen (2021)")
+                            .foregroundColor(.white)
+                            .font(.headline)
+                        
+                        ScrollView(.horizontal, showsIndicators: true) {
+                            VStack(alignment: .leading, spacing: 10) {
+                                Text("SAMPOL-konferansen 2021 tok for seg temaet ulikhet, og bærte tittelen «Grenseløs ulikhet: er verdenssamfunnet på bristepunktet?». ")
+                                    .font(.headline)
+                                    .foregroundColor(.white)
+                                    .padding()
+                                
+                                
+                                LazyHStack(alignment: .top) {
+                                    Image(imageNames[2])
+                                        .resizable()
+                                        .frame(width: 360, height: 275)
+                                        .scaledToFit()
+                                        .clipShape(RoundedRectangle(cornerRadius: 20))
+                                        .shadow(color: Color.black.opacity(0.3), radius: 7, x: 10, y: 10)
+                                        .padding(5)
+                                    
+                                    Image(imageNames[3])
+                                        .resizable()
+                                        .frame(width: 360, height: 275)
+                                        .scaledToFit()
+                                        .clipShape(RoundedRectangle(cornerRadius: 20))
+                                        .shadow(color: Color.black.opacity(0.3), radius: 7, x: 10, y: 10)
+                                        .padding(5)
+                                    
+                                    Image(imageNames[4])
+                                        .resizable()
+                                        .frame(width: 360, height: 275)
+                                        .scaledToFit()
+                                        .clipShape(RoundedRectangle(cornerRadius: 20))
+                                        .shadow(color: Color.black.opacity(0.3), radius: 7, x: 10, y: 10)
+                                        .padding(5)
+                                }
+                            }
+                        }
+                    }
+                    
                     
                     
                 }
@@ -78,7 +163,7 @@ Søknader til Springbrettfondet leveres via lenken nedenfor. Vi vil vurdere din 
                 }
                 .navigationBarWithOrangeBackground()
                 .padding()
-
+                
             }
         }
     }

@@ -10,12 +10,21 @@ struct ScheduleList: View {
                     .resizable()
                     .ignoresSafeArea()
                 ScrollView {
+                    
+                    Spacer()
+                        .frame(height: 90)
+
+                    
                     VStack(spacing: 10) {
                         ForEach(events) { event in
                             eventRow(for: event)
                         }
                     }
                     .padding(.horizontal)
+                    
+                    Spacer()
+                        .frame(height: 90)
+
                 }
                 .sheet(item: $selectedEvent) { eventDetail in
                     EventDetailView(event: eventDetail)
