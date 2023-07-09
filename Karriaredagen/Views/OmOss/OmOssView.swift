@@ -41,7 +41,7 @@ struct OmOssView: View {
                             }
                         }
                         
-                        NavigationLink(destination: KarrieredagenInformationView()) {
+                        NavigationLink(destination: Karrierestudio()) {
                             Label {
                                 Text("Prosjekter")
                             } icon: {
