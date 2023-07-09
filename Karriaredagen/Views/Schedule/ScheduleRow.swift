@@ -1,10 +1,3 @@
-//
-//  ScheduleRow.swift
-//  Karriaredagen
-//
-//  Created by Hossein Sharifi on 30/05/2023.
-//
-
 import SwiftUI
 
 struct ScheduleRow: View {
@@ -22,20 +15,28 @@ struct ScheduleRow: View {
     
     // A computed property for the event details
     var eventDetails: some View {
-        VStack(alignment: .leading) {
+        VStack(alignment: .leading, spacing: 8) {
             Text(event.name)
-                .font(.title3)
+                .font(.headline)
                 .foregroundColor(.orange)
             Text("\(event.start_time) - \(event.end_time)")
                 .font(.subheadline)
-            Text("\(event.location)")
+                .foregroundColor(.white)
+            Text(event.location)
                 .font(.subheadline)
+                .foregroundColor(.white)
         }
     }
     
     // A computed property for the duration label
     var durationLabel: some View {
-        Label("\(event.duration) min", systemImage: "clock")
+        HStack(spacing: 4) {
+            Image(systemName: "clock")
+                .foregroundColor(.white)
+            Text("\(event.duration) min")
+                .font(.subheadline)
+                .foregroundColor(.white)
+        }
     }
 }
 
@@ -43,17 +44,18 @@ struct ScheduleRow: View {
 extension View {
     func formattingRow() -> some View {
         self
-            .padding(20)
+            .padding()
             .foregroundColor(.white)
-            .clipShape(Rectangle())
-            .background(Color(red: 0.02, green: 0.06, blue: 0.2))
+            .background(Color(red: 0.02, green: 0.06, blue: 0.2).opacity(0.5))
             .cornerRadius(20)
-            .shadow(color: Color.black.opacity(0.6), radius: 7, x: 10, y: 10)
+            .shadow(color: Color.black.opacity(0.3), radius: 5, x: 2, y: 2)
     }
 }
 
 struct ScheduleRow_Previews: PreviewProvider {
     static var previews: some View {
         ScheduleRow(event: events[0])
+            .previewLayout(.sizeThatFits)
+            .padding()
     }
 }
