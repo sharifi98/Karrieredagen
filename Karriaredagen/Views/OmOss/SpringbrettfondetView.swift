@@ -117,7 +117,6 @@ Søknader til Springbrettfondet leveres via lenken nedenfor. Vi vil vurdere din 
                         ScrollView(.horizontal, showsIndicators: true) {
                             VStack(alignment: .leading, spacing: 10) {
                                 Text("SAMPOL-konferansen 2021 tok for seg temaet ulikhet, og bærte tittelen «Grenseløs ulikhet: er verdenssamfunnet på bristepunktet?». ")
-                                    .font(.headline)
                                     .foregroundColor(.white)
                                     .padding()
                                 
