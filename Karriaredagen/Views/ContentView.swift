@@ -1,44 +1,37 @@
 import SwiftUI
 
-
-
 struct ContentView: View {
-    
-    
-    
+    init() {
+        UITabBar.appearance().backgroundColor = UIColor.black
+    }
+
     var body: some View {
-        
         TabView {
             KDView()
+                .background(Color.black) // Set the background color here
                 .tabItem {
                     Label("KD", systemImage: "graduationcap")
                 }
-                .toolbar(.visible, for: .tabBar)
-                .toolbarBackground(Color("KDBlue"), for: .tabBar)
-            
+
             ScheduleList()
+                .background(Color.black) // Set the background color here
                 .tabItem {
                     Label("Timeplan", systemImage: "calendar")
                 }
-                .toolbarBackground(Color("KDBlue"), for: .tabBar)
-                
+
             GriegView()
+                .background(Color.black) // Set the background color here
                 .tabItem {
                     Label("Kart", systemImage: "map")
                 }
-                .toolbarBackground(Color("KDBlue"), for: .tabBar)
-              
+
             OmOssView()
+                .background(Color.black) // Set the background color here
                 .tabItem {
                     Label("Om oss", systemImage: "ellipsis.circle")
                 }
-                .toolbarBackground(Color("KDBlue"), for: .tabBar)
         }
         .accentColor(.orange) // Set the tab item's text and icon color
-        
-        
-        
-        
     }
 }
 

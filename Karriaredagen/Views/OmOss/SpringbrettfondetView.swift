@@ -154,6 +154,7 @@ Søknader til Springbrettfondet leveres via lenken nedenfor. Vi vil vurdere din 
                     
                     
                 }
+                .navigationBarWithTransparentBackground()
                 .toolbar {
                     ToolbarItemGroup(placement: .navigationBarLeading) {
                         Text("Springbrettfondet")
@@ -161,7 +162,6 @@ Søknader til Springbrettfondet leveres via lenken nedenfor. Vi vil vurdere din 
                             .foregroundColor(Color("KDOrange"))
                     }
                 }
-                .navigationBarWithOrangeBackground()
                 .padding()
                 
             }

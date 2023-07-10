@@ -26,10 +26,11 @@ struct ScheduleList: View {
                         .frame(height: 90)
 
                 }
+                .overlay(Rectangle().foregroundColor(.clear))
                 .sheet(item: $selectedEvent) { eventDetail in
                     EventDetailView(event: eventDetail)
                 }
-                .navigationBarWithOrangeBackground()
+                .navigationBarWithTransparentBackground()
                 .toolbar {
                     ToolbarItem(placement: .navigationBarLeading) {
                         Text("Timeplan")

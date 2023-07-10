@@ -41,7 +41,7 @@ struct KarrieredagenInformationView: View {
                                 .foregroundColor(Color("KDOrange"))
                         }
                     }
-                    .navigationBarWithOrangeBackground()
+                    .navigationBarWithTransparentBackground()
                     .padding()
                 }
             }

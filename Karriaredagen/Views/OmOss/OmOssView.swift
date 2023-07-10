@@ -100,7 +100,7 @@ struct OmOssView: View {
                 }
                 .foregroundColor(.orange)
                 .listStyle(.grouped)
-                .navigationBarWithOrangeBackground()
+                .navigationBarWithTransparentBackground()
                 .toolbar {
                     ToolbarItemGroup(placement: .navigationBarLeading) {
                         Text("Om oss")

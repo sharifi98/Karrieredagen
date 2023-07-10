@@ -72,11 +72,12 @@ struct Karrierestudio: View {
                                 }
                     }
 
-                    
+                    Spacer()
+                        .frame(height: 90)
                     
 
                 }
-                .navigationBarWithOrangeBackground()
+                .navigationBarWithTransparentBackground()
                 .toolbar {
                     ToolbarItemGroup(placement: .navigationBarLeading) {
                         Text("Karrierestudio")

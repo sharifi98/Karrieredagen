@@ -64,7 +64,7 @@ struct HvemErSpringbrettetView: View {
                         .padding()
                     }
                 }
-                .navigationBarWithOrangeBackground()
+                .navigationBarWithTransparentBackground()
                 .toolbar {
                     ToolbarItemGroup(placement: .navigationBarLeading) {
                             Text("Hva er Springbrettet?")
