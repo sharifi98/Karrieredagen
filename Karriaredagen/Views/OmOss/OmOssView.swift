@@ -43,7 +43,7 @@ struct OmOssView: View {
                         
                         NavigationLink(destination: Karrierestudio()) {
                             Label {
-                                Text("Prosjekter")
+                                Text("Karrierestudio")
                             } icon: {
                                 Image(systemName: "hammer")
                                     .foregroundColor(.purple)

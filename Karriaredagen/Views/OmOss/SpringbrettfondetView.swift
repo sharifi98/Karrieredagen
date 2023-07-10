@@ -157,7 +157,7 @@ Søknader til Springbrettfondet leveres via lenken nedenfor. Vi vil vurdere din 
                 .toolbar {
                     ToolbarItemGroup(placement: .navigationBarLeading) {
                         Text("Springbrettfondet")
-                            .font(.system(size: 36, weight: .semibold))
+                            .font(.custom("AvenirNext-Bold", size: 20))
                             .foregroundColor(Color("KDOrange"))
                     }
                 }

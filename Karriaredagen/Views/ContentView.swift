@@ -2,9 +2,9 @@ import SwiftUI
 
 struct ContentView: View {
     init() {
-        UITabBar.appearance().backgroundColor = UIColor.black
+        UITabBar.appearance().backgroundColor = UIColor.black.withAlphaComponent(0.1)
     }
-
+    
     var body: some View {
         TabView {
             KDView()

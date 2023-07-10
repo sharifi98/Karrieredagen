@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-
 struct Karrierestudio: View {
     var body: some View {
         NavigationView {
@@ -16,85 +15,80 @@ struct Karrierestudio: View {
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .edgesIgnoringSafeArea(.all)
-                    
+                
                 ScrollView {
                     VStack {
+                        VStack {
+                            ZStack {
+                                Image("Karrierestudio")
+                                    .resizable()
+                                    .frame(width: 380, height: 350)
+                                    .clipped()
+                                    .cornerRadius(10)
+                                
+                                Text("Karrierestudio")
+                                    .foregroundColor(.white)
+                                    .font(.system(size: 46, weight: .semibold))
+                                    .offset(y: 150)
+                            }
+                        }
+                        .padding(.top)
                         
-                        ZStack {
-                            Image("Karrierestudio")
-                                .resizable()
-                                .frame(width: 380, height: 350)
-                                .clipped()
-                                .cornerRadius(10)
+                        HStack {
+                            Text("Hvem er vi?")
+                                .foregroundColor(Color("KDOrange"))
+                                .font(.custom("AvenirNext-Bold", size: 30))
+                                .padding()
                             
-                            Text("Karrierestudio")
-                                .foregroundColor(.white)
-                            //.foregroundColor(Color("KDOrange"))
-                                .font(.system(size: 46, weight: .semibold))
-                                .offset(y: 150)
+                            Spacer()
                         }
                         
-                    }
-                    
-                    HStack {
-                        Text("Hvem er vi?")
-                            .foregroundColor(Color("KDOrange"))
-                            .font(.custom("AvenirNext-Bold", size: 30))
+                        VStack {
+                            Text("I Karrierestudio reiser representanter fra studentorganisasjonen Springbrettet rundt i vårt langstrakte land for å snakke med sentrale personer i norsk næringsliv. Tidligere gjester inkluderer bl.a. Sentralbanksjef Øystein Olsen og Konsernsjefen i Schibsted, Kristin Skogen Lund.")
+                            
+                            Text(" ")
+                            
+                            Text("I samtalene hører vi bl.a. historier om næringslivsledernes vei dit de er i dag, deres råd til unge og fremadstormende, og hva de ville gjort annerledes om de var i 20-årene med den kunnskapen de har i dag. På veien forsøker vi å finne ut av hva fremtidens grønne norske næringsliv skal bestå av, og hvilke muligheter det åpner for oss studenter.")
+                        }
                         .padding()
+                        .font(.custom("AvenirNext-Bold", size: 20))
+                        .foregroundColor(.white)
                         
-                        Spacer()
-                    }
-                    
-                    VStack {
-                        Text("I Karrierestudio reiser representanter fra studentorganisasjonen Springbrettet rundt i vårt langstrakte land for å snakke med sentrale personer i norsk næringsliv. Tidligere gjester inkluderer bl.a. Sentralbanksjef Øystein Olsen og Konsernsjefen i Schibsted, Kristin Skogen Lund.")
-                        
-                        Text(" ")
-                        
-                        Text("I samtalene hører vi bl.a. historier om næringslivsledernes vei dit de er i dag, deres råd til unge og fremadstormende, og hva de ville gjort annerledes om de var i 20-årene med den kunnskapen de har i dag. På veien forsøker vi å finne ut av hva fremtidens grønne norske næringsliv skal bestå av, og hvilke muligheter det åpner for oss studenter.")
-                    }
-                    .padding()
-                    .font(.custom("AvenirNext-Bold", size: 20))
-                    .foregroundColor(.white)
-                    
-                    VStack {
-                        Link(destination: URL(string: "https://open.spotify.com/show/6ASAsnRx8KDiNvBpnpTeWQ?utm_source=generator")!) {
-                                    HStack {
-                                        Image("spotify")
-                                            .resizable()
-                                            .frame(width: 24, height: 24)
-                                        Text("Listen on Spotify")
-                                            .font(.headline)
-                                            .foregroundColor(.white)
-                                    }
-                                    .padding()
-                                    .background(Color.green) // You might need to adjust the color to match Spotify's specific green
-                                    .cornerRadius(40)
+                        VStack {
+                            Link(destination: URL(string: "https://open.spotify.com/show/6ASAsnRx8KDiNvBpnpTeWQ?utm_source=generator")!) {
+                                HStack {
+                                    Image("spotify")
+                                        .resizable()
+                                        .frame(width: 24, height: 24)
+                                    Text("Listen on Spotify")
+                                        .font(.headline)
+                                        .foregroundColor(.white)
                                 }
+                                .padding()
+                                .background(Color.green) // You might need to adjust the color to match Spotify's specific green
+                                .cornerRadius(40)
+                            }
+                        }
+                        .padding(.bottom)
                     }
-
+                    .padding(.horizontal)
                     Spacer()
                         .frame(height: 90)
-                    
-
                 }
-                .navigationBarWithTransparentBackground()
-                .toolbar {
-                    ToolbarItemGroup(placement: .navigationBarLeading) {
-                        Text("Karrierestudio")
-                            .font(.custom("AvenirNext-Bold", size: 20))
-                            .foregroundColor(Color("KDOrange"))
-                        
-
-                        
-                        
-                    }
+            }
+            .navigationBarWithTransparentBackground() // <-- outside of ScrollView
+            .toolbar {
+                ToolbarItemGroup(placement: .navigationBarLeading) {
+                    Text("Karrierestudio")
+                        .font(.custom("AvenirNext-Bold", size: 20))
+                        .foregroundColor(Color("KDOrange"))
                 }
             }
         }
     }
 }
 
-struct ProsjekterView_Previews: PreviewProvider {
+struct Karrierestudio_Previews: PreviewProvider {
     static var previews: some View {
         Karrierestudio()
     }

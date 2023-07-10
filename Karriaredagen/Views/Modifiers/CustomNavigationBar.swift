@@ -5,7 +5,6 @@
 //  Created by Hossein Sharifi on 25/06/2023.
 //
 
-
 import SwiftUI
 
 struct CustomNavigationBar: ViewModifier {
@@ -16,13 +15,22 @@ struct CustomNavigationBar: ViewModifier {
             .navigationBarBackButtonHidden(false)
             .navigationBarItems(leading: EmptyView())
             .background(NavigationConfigurator { nc in
-                nc.navigationBar.setBackgroundImage(UIImage(), for: .default)
-                nc.navigationBar.shadowImage = UIImage()
-                nc.navigationBar.barStyle = .black // This makes the bar content white on a dark background
+                let visualEffectView   = UIVisualEffectView(effect: UIBlurEffect(style: .dark))
+                visualEffectView.frame =  nc.navigationBar.bounds
+
+                let colorView = UIView(frame: nc.navigationBar.bounds)
+                colorView.backgroundColor = UIColor(named: "KDBlue")?.withAlphaComponent(0.5)
+                colorView.isUserInteractionEnabled = false
+                
+                visualEffectView.contentView.addSubview(colorView)
+                
+                nc.navigationBar.addSubview(visualEffectView)
+                nc.navigationBar.sendSubviewToBack(visualEffectView)
             })
             .preferredColorScheme(.dark) // This forces the view to use the dark color scheme
     }
 }
+
 
 struct NavigationConfigurator: UIViewControllerRepresentable {
     var configure: (UINavigationController) -> Void = { _ in }

@@ -8,21 +8,7 @@
 import SwiftUI
 
 @main
-struct KarrieredagenApp: App {
-    
-    init() {
-        // Apply the style to all navigation bars
-        let appearance = UINavigationBarAppearance()
-        appearance.configureWithOpaqueBackground()
-        appearance.backgroundColor = .black
-        appearance.titleTextAttributes = [.foregroundColor: UIColor.white]
-        appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
-
-        UINavigationBar.appearance().standardAppearance = appearance
-        UINavigationBar.appearance().compactAppearance = appearance
-        UINavigationBar.appearance().scrollEdgeAppearance = appearance
-    }
-    
+struct KarrieredagenApp: App {    
     var body: some Scene {
         WindowGroup {
             ContentView()
