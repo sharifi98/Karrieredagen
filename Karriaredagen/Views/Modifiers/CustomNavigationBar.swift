@@ -13,7 +13,7 @@ struct CustomNavigationBar: ViewModifier {
         content
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarHidden(false)
-            .navigationBarBackButtonHidden(true)
+            .navigationBarBackButtonHidden(false)
             .navigationBarItems(leading: EmptyView())
             .background(NavigationConfigurator { nc in
                 nc.navigationBar.setBackgroundImage(UIImage(), for: .default)
