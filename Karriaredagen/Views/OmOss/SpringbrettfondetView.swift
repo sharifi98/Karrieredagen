@@ -48,18 +48,10 @@ struct SpringbrettfondetView: View {
                                 .padding()
                                 .foregroundColor(.white)
                                 .background(.gray)
-                                .cornerRadius(40)
+                                .cornerRadius(20)
                         }
                         
                         
-                        Link(destination: URL(string: "https://forms.gle/7knVYGPF7Ehh3RCUA")!) {
-                            Text("Søknadsskjema")
-                                .frame(minWidth: 0, maxWidth: .infinity)
-                                .padding()
-                                .foregroundColor(.white)
-                                .background(Color("KDOrange"))
-                                .cornerRadius(40)
-                        }
                         
                     }
                     .padding()
@@ -70,6 +62,15 @@ Søknader til Springbrettfondet leveres via lenken nedenfor. Vi vil vurdere din 
                     .padding()
                     .foregroundColor(.white)
                     
+                    Link(destination: URL(string: "https://forms.gle/7knVYGPF7Ehh3RCUA")!) {
+                        Text("Søknadsskjema")
+                            .frame(minWidth: 0, maxWidth: .infinity)
+                            .padding()
+                            .foregroundColor(.white)
+                            .background(Color("KDOrange"))
+                            .cornerRadius(20)
+                    }
+                    .padding()
                     
                     Text("Sjekk ut initiativer vi har støttet tidligere!")
                         .font(.title)
