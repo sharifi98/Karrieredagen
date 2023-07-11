@@ -45,7 +45,7 @@ struct OmOssView: View {
                             Label {
                                 Text("Karrierestudio")
                             } icon: {
-                                Image(systemName: "hammer")
+                                Image(systemName: "music.mic")
                                     .foregroundColor(.purple)
                             }
                         }
