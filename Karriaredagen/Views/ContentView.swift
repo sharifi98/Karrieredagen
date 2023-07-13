@@ -12,7 +12,7 @@ struct ContentView: View {
                 .tabItem {
                     Label("KD", systemImage: "graduationcap")
                 }
-
+/*
             ScheduleList()
                 .background(Color.black) // Set the background color here
                 .tabItem {
@@ -24,12 +24,13 @@ struct ContentView: View {
                 .tabItem {
                     Label("Kart", systemImage: "map")
                 }
-
+ */
             OmOssView()
                 .background(Color.black) // Set the background color here
                 .tabItem {
                     Label("Om oss", systemImage: "ellipsis.circle")
                 }
+
         }
         .accentColor(.orange) // Set the tab item's text and icon color
     }

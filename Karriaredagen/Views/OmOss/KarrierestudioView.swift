@@ -60,7 +60,7 @@ struct Karrierestudio: View {
                                     Image("spotify")
                                         .resizable()
                                         .frame(width: 24, height: 24)
-                                    Text("Listen on Spotify")
+                                    Text("Lytt på Spotify")
                                         .font(.headline)
                                         .foregroundColor(.white)
                                 }
@@ -68,6 +68,21 @@ struct Karrierestudio: View {
                                 .background(Color.green) // You might need to adjust the color to match Spotify's specific green
                                 .cornerRadius(40)
                             }
+                            
+                            Link(destination: URL(string: "https://open.spotify.com/show/6ASAsnRx8KDiNvBpnpTeWQ?utm_source=generator")!) {
+                                HStack {
+                                    Image("instagramreal")
+                                        .resizable()
+                                        .frame(width: 30, height: 30)
+                                    Text("Følg oss på Instagram")
+                                        .font(.headline)
+                                        .foregroundColor(.white)
+                                }
+                                .padding()
+                                .background(Color.pink) // You might need to adjust the color to match Spotify's specific green
+                                .cornerRadius(40)
+                            }
+                            
                         }
                         .padding(.bottom)
                     }

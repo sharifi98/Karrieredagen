@@ -10,7 +10,7 @@ struct KDView: View {
     let grieghallencord = CLLocationCoordinate2D(latitude: 60.38880103170712, longitude: 5.328235989579929)
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ScrollView {
                 ZStack {
                     Image("marinebackground")
@@ -59,13 +59,17 @@ struct KDView: View {
                             NavigationButton(destination: GriegView(), text: "Kart", image: Image(systemName: "map"), showView: $showGriegView)
                             
                         }
+                        
+                        Text("")
+                            .padding(30)
+                        
                         VStack {
                             Text("Grieghallen")
                                 .font(.custom("AvenirNext-Regular", size: 20))
                                 .foregroundColor(.white)
 
                             MapView(coordinate: grieghallencord)
-                                .frame(width: 200, height: 300/1.618)
+                                .frame(width: 300, height: 300/1.618)
                                 .clipShape(RoundedRectangle(cornerRadius: 20))
                                 .overlay(
                                     RoundedRectangle(cornerRadius: 20)
@@ -76,10 +80,10 @@ struct KDView: View {
                                 .padding()
                         }
                         .padding()
+                        
 
                         VStack {
                             
-                            Spacer()
                             
                             
                             Text("Kontakt oss")
