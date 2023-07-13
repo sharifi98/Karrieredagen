@@ -36,6 +36,7 @@ struct ScheduleList: View {
                         Text("Timeplan")
                             .font(.system(size: 36, weight: .semibold))
                             .foregroundColor(.orange)
+                            .padding(.bottom, 30.0)
                     }
                 }
                 .padding()
