@@ -52,7 +52,7 @@
 		0358A3A92A5AF44D00B68428 /* KarrierestudioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KarrierestudioView.swift; sourceTree = "<group>"; };
 		036B44F32A6093BB0059EB50 /* DiTView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiTView.swift; sourceTree = "<group>"; };
 		037010162A49AADB007388E7 /* KDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDView.swift; sourceTree = "<group>"; };
-		0396B06B2A250193008E6CAC /* Karrieredagen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Karrieredagen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0396B06B2A250193008E6CAC /* Springbrettet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Springbrettet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0396B06E2A250193008E6CAC /* KarrieredagenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KarrieredagenApp.swift; sourceTree = "<group>"; };
 		0396B0702A250193008E6CAC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0396B0722A250194008E6CAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -129,7 +129,7 @@
 		0396B0622A250193008E6CAC = {
 			isa = PBXGroup;
 			children = (
-				0396B06D2A250193008E6CAC /* Karriaredagen */,
+				0396B06D2A250193008E6CAC /* Springbrettet */,
 				0396B06C2A250193008E6CAC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -137,12 +137,12 @@
 		0396B06C2A250193008E6CAC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0396B06B2A250193008E6CAC /* Karrieredagen.app */,
+				0396B06B2A250193008E6CAC /* Springbrettet.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0396B06D2A250193008E6CAC /* Karriaredagen */ = {
+		0396B06D2A250193008E6CAC /* Springbrettet */ = {
 			isa = PBXGroup;
 			children = (
 				031CE3B32A4B0C8C005F4428 /* KDaftermovie.gif */,
@@ -154,7 +154,7 @@
 				0396B0892A25E112008E6CAC /* Resources */,
 				0396B0742A250194008E6CAC /* Preview Content */,
 			);
-			path = Karriaredagen;
+			path = Springbrettet;
 			sourceTree = "<group>";
 		};
 		0396B0742A250194008E6CAC /* Preview Content */ = {
@@ -202,9 +202,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0396B06A2A250193008E6CAC /* Karrieredagen */ = {
+		0396B06A2A250193008E6CAC /* Springbrettet */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0396B0792A250194008E6CAC /* Build configuration list for PBXNativeTarget "Karrieredagen" */;
+			buildConfigurationList = 0396B0792A250194008E6CAC /* Build configuration list for PBXNativeTarget "Springbrettet" */;
 			buildPhases = (
 				0396B0672A250193008E6CAC /* Sources */,
 				0396B0682A250193008E6CAC /* Frameworks */,
@@ -214,12 +214,12 @@
 			);
 			dependencies = (
 			);
-			name = Karrieredagen;
+			name = Springbrettet;
 			packageProductDependencies = (
 				031CE3B82A4B0FEE005F4428 /* SDWebImageSwiftUI */,
 			);
 			productName = Karriaredagen;
-			productReference = 0396B06B2A250193008E6CAC /* Karrieredagen.app */;
+			productReference = 0396B06B2A250193008E6CAC /* Springbrettet.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -237,7 +237,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0396B0662A250193008E6CAC /* Build configuration list for PBXProject "Karrieredagen" */;
+			buildConfigurationList = 0396B0662A250193008E6CAC /* Build configuration list for PBXProject "Springbrettet" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -253,7 +253,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0396B06A2A250193008E6CAC /* Karrieredagen */,
+				0396B06A2A250193008E6CAC /* Springbrettet */,
 			);
 		};
 /* End PBXProject section */
@@ -431,11 +431,11 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Karriaredagen/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Springbrettet/Preview Content\"";
 				DEVELOPMENT_TEAM = WP99484WGY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Karriaredagen/Info.plist;
+				INFOPLIST_FILE = Springbrettet/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -463,11 +463,11 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Karriaredagen/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Springbrettet/Preview Content\"";
 				DEVELOPMENT_TEAM = WP99484WGY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Karriaredagen/Info.plist;
+				INFOPLIST_FILE = Springbrettet/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -490,7 +490,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0396B0662A250193008E6CAC /* Build configuration list for PBXProject "Karrieredagen" */ = {
+		0396B0662A250193008E6CAC /* Build configuration list for PBXProject "Springbrettet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0396B0772A250194008E6CAC /* Debug */,
@@ -499,7 +499,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0396B0792A250194008E6CAC /* Build configuration list for PBXNativeTarget "Karrieredagen" */ = {
+		0396B0792A250194008E6CAC /* Build configuration list for PBXNativeTarget "Springbrettet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0396B07A2A250194008E6CAC /* Debug */,
