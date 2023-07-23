@@ -25,6 +25,12 @@ struct KarrieredagenInformationView: View {
                             .shadow(radius: 20)
                             .padding(30)
                         
+                        Text("Vestlandets største tverrfaglige møteplass for bedrifter og studenter.")
+                            .font(.custom("AvenirNext-Bold", size: 20))
+                            .foregroundColor(Color("KDOrange"))
+                            .lineSpacing(5)
+                            
+                        
                         Text("Karrieredagen er en mulighet for studenter til å inspireres av de utallige arbeidsmulighetene som finnes i jobbmarkedet. Samtidig som det er en flott anledning for bedrifter til å komme et skritt nærmere fremtidige arbeidstagere! \n\nVi er stolte over å være arrangør for Vestlandets største tverrfaglige møteplass som knytter studenter og arbeidsmarkedet tettere sammen.")
                             .font(.headline)
                             .foregroundColor(.white)

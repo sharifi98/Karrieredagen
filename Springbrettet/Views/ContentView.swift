@@ -2,7 +2,7 @@ import SwiftUI
 
 struct ContentView: View {
     init() {
-        UITabBar.appearance().backgroundColor = UIColor.black.withAlphaComponent(0.1)
+        UITabBar.appearance().backgroundColor = UIColor.black.withAlphaComponent(0.9)
     }
     
     var body: some View {
@@ -32,7 +32,7 @@ struct ContentView: View {
                 }
 
         }
-        .accentColor(.orange) // Set the tab item's text and icon color
+        .accentColor(Color("KDOrange")) // Set the tab item's text and icon color
     }
 }
 

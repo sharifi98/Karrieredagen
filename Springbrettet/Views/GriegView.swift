@@ -8,12 +8,16 @@
 import SwiftUI
 
 struct GriegView: View {
-    
+    @GestureState private var magnifyBy = CGFloat(1.0)
+
     var body: some View {
-                
-        
         Image("stand")
             .resizable()
+            .aspectRatio(contentMode: .fit)
+            .scaleEffect(magnifyBy)
+            .gesture(MagnificationGesture().updating($magnifyBy) { currentState, gestureState, transaction in
+                gestureState = currentState
+            })
             .ignoresSafeArea()
     }
 }

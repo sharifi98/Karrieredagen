@@ -40,13 +40,14 @@ struct KDView: View {
                         }
                         
                         VStack {
-                            Text("Alt du trenger å vite om Karrieredagen, samlet på ett sted. Vi ser frem til en fantastisk dag. Tusen takk til alle sammarbeidspartnere.")
+                            Text("Alt du trenger å vite om Karrieredagen og Springbrettet, samlet på ett sted. Vi ser frem til en fantastisk dag.")
                                 .font(.custom("AvenirNext-Regular", size: 20))
                                 .foregroundColor(.white)
                                 .fixedSize(horizontal: false, vertical: true)
                                 .frame(maxWidth: 400)
                                 .padding()
                                 .multilineTextAlignment(.center)
+                            
                         }
                     
                         
@@ -64,7 +65,7 @@ struct KDView: View {
                             .padding(30)
                         
                         VStack {
-                            Text("Grieghallen")
+                            Text("Karrieredagen holdes i Grieghallen")
                                 .font(.custom("AvenirNext-Regular", size: 20))
                                 .foregroundColor(.white)
 
