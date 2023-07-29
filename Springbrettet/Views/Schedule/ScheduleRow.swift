@@ -2,7 +2,6 @@ import SwiftUI
 
 struct ScheduleRow: View {
     var event: Event
-    var colors: [Color] = [.gray, .orange]
 
     var body: some View {
         HStack {
@@ -13,29 +12,27 @@ struct ScheduleRow: View {
         .formattingRow()
     }
     
-    // A computed property for the event details
     var eventDetails: some View {
         VStack(alignment: .leading, spacing: 8) {
             Text(event.name)
-                .font(.headline)
-                .foregroundColor(.orange)
+                .font(.custom("AvenirNext-Bold", size: 20))
+                .foregroundColor(Color("KDOrange"))
             Text("\(event.start_time) - \(event.end_time)")
-                .font(.subheadline)
-                .foregroundColor(.white)
+                .font(.custom("AvenirNext-Regular", size: 18))
+                .foregroundColor(Color("KDOrange"))
             Text(event.location)
-                .font(.subheadline)
-                .foregroundColor(.white)
+                .font(.custom("AvenirNext-Regular", size: 18))
+                .foregroundColor(Color("KDOrange"))
         }
     }
     
-    // A computed property for the duration label
     var durationLabel: some View {
         HStack(spacing: 4) {
             Image(systemName: "clock")
-                .foregroundColor(.white)
+                .foregroundColor(Color("KDOrange"))
             Text("\(event.duration) min")
-                .font(.subheadline)
-                .foregroundColor(.white)
+                .font(.custom("AvenirNext-Regular", size: 18))
+                .foregroundColor(Color("KDOrange"))
         }
     }
 }
@@ -46,7 +43,7 @@ extension View {
         self
             .padding()
             .foregroundColor(.white)
-            .background(Color(red: 0.02, green: 0.06, blue: 0.2).opacity(0.5))
+            .background(Color(.systemGray6))
             .cornerRadius(20)
             .shadow(color: Color.black.opacity(0.3), radius: 5, x: 2, y: 2)
     }

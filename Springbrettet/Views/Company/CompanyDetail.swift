@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import MapKit
+import SDWebImageSwiftUI
 
 struct CompanyDetail: View {
     
@@ -23,23 +25,26 @@ struct CompanyDetail: View {
             
             VStack(alignment: .leading) {
                 Text(company.name)
-                    .font(.title)
+                    .font(.custom("AvenirNext-Bold", size: 30))
+                    .foregroundColor(Color("KDOrange"))
                 
                 HStack {
                     Text("Stand \(company.standNumber)")
-                        .font(.subheadline)
+                        .font(.custom("AvenirNext-Regular", size: 20))
                     Spacer()
                     Text(company.industry)
-                        .font(.subheadline)
+                        .font(.custom("AvenirNext-Regular", size: 20))
                 }
                 .font(.subheadline)
-                .foregroundColor(.secondary)
+                .foregroundColor(.gray)
                 
                 Divider()
                 Text("Info")
-                    .font(.title2)
+                    .font(.custom("AvenirNext-Bold", size: 25))
+                    .foregroundColor(Color("KDOrange"))
 
                 Text(company.description)
+                    .font(.custom("AvenirNext-Regular", size: 20))
                 
             }
             .padding()
@@ -55,3 +60,7 @@ struct CompanyDetail_Previews: PreviewProvider {
         CompanyDetail(company: companies[0])
     }
 }
+
+
+
+

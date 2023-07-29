@@ -1,56 +1,59 @@
-//
-//  KarrieredagenInformationView.swift
-//  Karrieredagen
-//
-//  Created by Hossein Sharifi on 24/06/2023.
-//
-
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct KarrieredagenInformationView: View {
+
     var body: some View {
         NavigationView {
-            
-            ZStack {
-                Image("marinebackground")
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .edgesIgnoringSafeArea(.all)
-                ScrollView {
-                    VStack {
-                        GifImage("KDaftermovie_cropped")
-                            .frame(width: 266, height: 150)
+            ScrollView {
+                VStack {
+                    ZStack {
+                        WebImage(url: Bundle.main.url(forResource: "KDaftermovie_cropped", withExtension: "gif"))
+                            .resizable()
+                            .frame(width: 500, height: 300)
                             .clipped()
                             .cornerRadius(10)
                             .shadow(radius: 20)
-                            .padding(30)
+                            .opacity(0.5)
+                        
+                        VStack {
+                            Text("Karrieredagen")
+                                .font(.custom("AvenirNext-Bold", size: 40))
+                                .foregroundColor(Color("KDOrange"))
+                        }
+                    }
+                    
+                    VStack {
                         
                         Text("Vestlandets største tverrfaglige møteplass for bedrifter og studenter.")
                             .font(.custom("AvenirNext-Bold", size: 20))
+                            .frame(maxWidth: 350)
                             .foregroundColor(Color("KDOrange"))
                             .lineSpacing(5)
-                            
+                            .multilineTextAlignment(.center)
                         
                         Text("Karrieredagen er en mulighet for studenter til å inspireres av de utallige arbeidsmulighetene som finnes i jobbmarkedet. Samtidig som det er en flott anledning for bedrifter til å komme et skritt nærmere fremtidige arbeidstagere! \n\nVi er stolte over å være arrangør for Vestlandets største tverrfaglige møteplass som knytter studenter og arbeidsmarkedet tettere sammen.")
-                            .font(.headline)
+                            .font(.custom("AvenirNext-Regular", size: 20))
                             .foregroundColor(.white)
-                            .padding(.top, 20)
-                            .padding(.horizontal, 15)
-                            .lineSpacing(5)
-                        
-
+                            .fixedSize(horizontal: false, vertical: true)
+                            .frame(maxWidth: 350)
+                            .padding()
+                            .multilineTextAlignment(.center)
                     }
-                    .padding()
-                    .navigationBarWithTransparentBackground()
-                    .toolbar {
-                        ToolbarItemGroup(placement: .navigationBarLeading) {
-                            Text("Karrieredagen")
-                                .font(.custom("AvenirNext-Bold", size: 20))
-                                .foregroundColor(Color("KDOrange"))
-                            
+                }
+                .padding()
+                .navigationBarWithTransparentBackground()
+                .toolbar {
+                    ToolbarItemGroup(placement: .navigationBarLeading) {
+                        HStack(alignment: .center) {
+                            Image("SB")
+                                .resizable()
+                                .scaledToFit()
+                                .padding(.bottom, 10.0)
                         }
                     }
                 }
+                .overlay(Rectangle().foregroundColor(.clear))
             }
         }
     }

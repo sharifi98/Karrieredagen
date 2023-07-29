@@ -5,10 +5,8 @@ struct ScheduleList: View {
 
     var body: some View {
         NavigationView {
-            ZStack {
-                Image("marinebackground")
-                    .resizable()
-                    .ignoresSafeArea()
+            
+                
                 ScrollView {
                     
                     Spacer()
@@ -34,14 +32,12 @@ struct ScheduleList: View {
                 .toolbar {
                     ToolbarItem(placement: .navigationBarLeading) {
                         Text("Timeplan")
-                            .font(.system(size: 36, weight: .semibold))
-                            .foregroundColor(.orange)
+                            .font(.custom("AvenirNext-Bold", size: 36))
+                            .foregroundColor(Color("KDOrange"))
                             .padding(.bottom, 30)
                     }
                 }
                 .padding()
-            }
-            .edgesIgnoringSafeArea(.all)
         }
     }
     
@@ -51,7 +47,7 @@ struct ScheduleList: View {
         }) {
             ScheduleRow(event: event)
         }
-        .foregroundColor(.white)
+        .foregroundColor(Color("KDOrange"))
     }
 }
 

@@ -14,7 +14,7 @@ struct ContentView: View {
                     Label("Karrieredagen", systemImage: "graduationcap")
                 }
             
-            JobTipsView()
+            CVTipsView()
                 .background(Color.blue)
                 .tabItem {
                     Label("CV tips", systemImage: "text.quote")
