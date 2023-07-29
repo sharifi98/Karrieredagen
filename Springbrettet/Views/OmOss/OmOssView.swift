@@ -23,6 +23,16 @@ struct OmOssView: View {
 
                 List {
                     Section {
+                        
+                        NavigationLink(destination: HvemErSpringbrettetView()) {
+                            Label {
+                                Text("Hva er Springbrettet?")
+                            } icon: {
+                                Image(systemName: "info.circle")
+                                    .foregroundColor(.gray)
+                            }
+                        }
+                        
                         NavigationLink(destination: KarrieredagenInformationView()) {
                             Label {
                                 Text("Karrieredagen")
@@ -41,6 +51,14 @@ struct OmOssView: View {
                             }
                         }
                         
+                        NavigationLink(destination: DiTView()) {
+                            Label {
+                                Text("Damer i toppen")
+                            } icon: {
+                                Image(systemName: "star.fill")
+                            }
+                        }
+                        
                         NavigationLink(destination: Karrierestudio()) {
                             Label {
                                 Text("Karrierestudio")
@@ -50,14 +68,7 @@ struct OmOssView: View {
                             }
                         }
                         
-                        NavigationLink(destination: HvemErSpringbrettetView()) {
-                            Label {
-                                Text("Hva er Springbrettet?")
-                            } icon: {
-                                Image(systemName: "info.circle")
-                                    .foregroundColor(.gray)
-                            }
-                        }
+                        
                     }
                     
                     Section {

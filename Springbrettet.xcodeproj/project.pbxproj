@@ -15,7 +15,6 @@
 		031C6BE42A46DC7900332564 /* OmOssView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031C6BE32A46DC7900332564 /* OmOssView.swift */; };
 		031C6BEC2A46EE8800332564 /* KarrieredagenInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031C6BEB2A46EE8800332564 /* KarrieredagenInformationView.swift */; };
 		031C6BF02A47090F00332564 /* GifImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031C6BEF2A47090F00332564 /* GifImage.swift */; };
-		031CE3B42A4B0C8C005F4428 /* KDaftermovie.gif in Resources */ = {isa = PBXBuildFile; fileRef = 031CE3B32A4B0C8C005F4428 /* KDaftermovie.gif */; };
 		031CE3B92A4B0FEE005F4428 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 031CE3B82A4B0FEE005F4428 /* SDWebImageSwiftUI */; };
 		0358A3AA2A5AF44D00B68428 /* KarrierestudioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0358A3A92A5AF44D00B68428 /* KarrierestudioView.swift */; };
 		036B44F42A6093BB0059EB50 /* DiTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036B44F32A6093BB0059EB50 /* DiTView.swift */; };
@@ -33,6 +32,7 @@
 		0396B08D2A25F024008E6CAC /* CompanyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0396B08C2A25F024008E6CAC /* CompanyList.swift */; };
 		0396B08F2A25F136008E6CAC /* CompanyDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0396B08E2A25F136008E6CAC /* CompanyDetail.swift */; };
 		0396B0912A260E6C008E6CAC /* GriegView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0396B0902A260E6B008E6CAC /* GriegView.swift */; };
+		03D995222A75393E00B8F6A8 /* KDaftermovie_cropped.gif in Resources */ = {isa = PBXBuildFile; fileRef = 03D995212A75393E00B8F6A8 /* KDaftermovie_cropped.gif */; };
 		03E47FEE2A558F4C005BCDAA /* SpringbrettfondetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E47FED2A558F4C005BCDAA /* SpringbrettfondetView.swift */; };
 		03ECA4592A29C23A007E0829 /* EventDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ECA4582A29C23A007E0829 /* EventDetailView.swift */; };
 		03ECA45B2A29C442007E0829 /* HvemErSpringbrettetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ECA45A2A29C442007E0829 /* HvemErSpringbrettetView.swift */; };
@@ -47,7 +47,6 @@
 		031C6BE32A46DC7900332564 /* OmOssView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmOssView.swift; sourceTree = "<group>"; };
 		031C6BEB2A46EE8800332564 /* KarrieredagenInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KarrieredagenInformationView.swift; sourceTree = "<group>"; };
 		031C6BEF2A47090F00332564 /* GifImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifImage.swift; sourceTree = "<group>"; };
-		031CE3B32A4B0C8C005F4428 /* KDaftermovie.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = KDaftermovie.gif; sourceTree = "<group>"; };
 		0345B2732A29D15B00110EC4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0358A3A92A5AF44D00B68428 /* KarrierestudioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KarrierestudioView.swift; sourceTree = "<group>"; };
 		036B44F32A6093BB0059EB50 /* DiTView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiTView.swift; sourceTree = "<group>"; };
@@ -66,6 +65,7 @@
 		0396B08C2A25F024008E6CAC /* CompanyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyList.swift; sourceTree = "<group>"; };
 		0396B08E2A25F136008E6CAC /* CompanyDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyDetail.swift; sourceTree = "<group>"; };
 		0396B0902A260E6B008E6CAC /* GriegView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GriegView.swift; sourceTree = "<group>"; };
+		03D995212A75393E00B8F6A8 /* KDaftermovie_cropped.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = KDaftermovie_cropped.gif; sourceTree = "<group>"; };
 		03E47FED2A558F4C005BCDAA /* SpringbrettfondetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpringbrettfondetView.swift; sourceTree = "<group>"; };
 		03ECA4582A29C23A007E0829 /* EventDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailView.swift; sourceTree = "<group>"; };
 		03ECA45A2A29C442007E0829 /* HvemErSpringbrettetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HvemErSpringbrettetView.swift; sourceTree = "<group>"; };
@@ -145,7 +145,7 @@
 		0396B06D2A250193008E6CAC /* Springbrettet */ = {
 			isa = PBXGroup;
 			children = (
-				031CE3B32A4B0C8C005F4428 /* KDaftermovie.gif */,
+				03D995212A75393E00B8F6A8 /* KDaftermovie_cropped.gif */,
 				0396B06E2A250193008E6CAC /* KarrieredagenApp.swift */,
 				0396B0872A25E0CC008E6CAC /* Views */,
 				0396B0882A25E107008E6CAC /* Model */,
@@ -263,10 +263,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				031CE3B42A4B0C8C005F4428 /* KDaftermovie.gif in Resources */,
 				031399972A2623350003427A /* scheduleData.json in Resources */,
 				0396B0762A250194008E6CAC /* Preview Assets.xcassets in Resources */,
 				0396B0732A250194008E6CAC /* Assets.xcassets in Resources */,
+				03D995222A75393E00B8F6A8 /* KDaftermovie_cropped.gif in Resources */,
 				0396B07E2A25059D008E6CAC /* companyData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

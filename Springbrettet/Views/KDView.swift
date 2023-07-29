@@ -19,7 +19,7 @@ struct KDView: View {
 
                     VStack {
                         ZStack {
-                            WebImage(url: Bundle.main.url(forResource: "KDaftermovie", withExtension: "gif"))
+                            WebImage(url: Bundle.main.url(forResource: "KDaftermovie_cropped", withExtension: "gif"))
                                 .resizable()
                                 .frame(width: 500, height: 300)
                                 .clipped()
@@ -44,7 +44,7 @@ struct KDView: View {
                                 .font(.custom("AvenirNext-Regular", size: 20))
                                 .foregroundColor(.white)
                                 .fixedSize(horizontal: false, vertical: true)
-                                .frame(maxWidth: 400)
+                                .frame(maxWidth: 350)
                                 .padding()
                                 .multilineTextAlignment(.center)
                             

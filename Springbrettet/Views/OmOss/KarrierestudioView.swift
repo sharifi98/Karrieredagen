@@ -50,7 +50,7 @@ struct Karrierestudio: View {
                             
                             Text("I samtalene hører vi bl.a. historier om næringslivsledernes vei dit de er i dag, deres råd til unge og fremadstormende, og hva de ville gjort annerledes om de var i 20-årene med den kunnskapen de har i dag. På veien forsøker vi å finne ut av hva fremtidens grønne norske næringsliv skal bestå av, og hvilke muligheter det åpner for oss studenter.")
                         }
-                        .padding()
+                        .padding(5)
                         .font(.custom("AvenirNext-Bold", size: 20))
                         .foregroundColor(.white)
                         
