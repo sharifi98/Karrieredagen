@@ -102,7 +102,7 @@ struct DismissScheduleDetailSheetButton: View {
         } label: {
             Text("Tilbake")
                 .font(.custom("AvenirNext-Bold", size: 18))
-                .foregroundColor(Color("KDOrange"))
+                .foregroundColor(.white)
         }
         .dismissButtonStyle()
     }
@@ -112,8 +112,8 @@ extension View {
     func dismissButtonStyle() -> some View {
         self
             .padding(10)
-            .foregroundColor(Color("KDOrange"))
-            .background(Color.white)
+            .foregroundColor(.white)
+            .background(Color("KDOrange"))
             .clipShape(Rectangle())
             .cornerRadius(15)
             .overlay(

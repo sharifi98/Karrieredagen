@@ -5,7 +5,30 @@ import SDWebImageSwiftUI
 
 struct KDView: View {
     @State private var selectedEvent: Event?
+    @State private var selectedView: String = "CompanyList"
     let grieghallencord = CLLocationCoordinate2D(latitude: 60.38880103170712, longitude: 5.328235989579929)
+    
+    let imageNames = [
+        "DSC06717",
+        "DSC06261-2",
+        "DSC06217",
+        "DSC06236",
+        "DSC06272",
+        "DSC06279",
+        "DSC06291",
+        "DSC06322",
+        "DSC06337-2",
+        "DSC06439",
+        "DSC06452",
+        "DSC06466",
+        "DSC06482",
+        "DSC06485",
+        "DSC06492",
+        "DSC06633",
+        "DSC06728",
+    ]
+    
+    @State private var selectedImageIndex = 0
 
     var body: some View {
         NavigationView {
@@ -60,10 +83,23 @@ struct KDView: View {
                     }.foregroundColor(Color("KDOrange"))
                 }
 
-                Spacer() // Add a Spacer to push the VStack below towards the center of the screen
-
                 VStack {
-                    Text("Karrieredagen, et viktig arrangement hvor studenter kan møte potensielle arbeidsgivere og få innsikt i forskjellige yrkesmuligheter, vil bli holdt i Grieghallen. Dette er en ypperlig anledning for studenter til å knytte nettverk, lære mer om jobbmulighetene i sin bransje, og få verdifull veiledning fra erfarne fagfolk. Grieghallen, som ligger i hjertet av Bergen, tilbyr et ideelt sted for dette arrangementet med sin rikholdige plass og gode fasiliteter.")
+                    TabView(selection: $selectedImageIndex) {
+                        ForEach(imageNames, id: \.self) { imageName in
+                            Image(imageName)
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 288, height: 220)
+                                .clipShape(RoundedRectangle(cornerRadius: 20))
+                                .shadow(color: Color.black.opacity(0.3), radius: 7, x: 10, y: 10)
+                                .padding(.vertical)
+                                .tag(imageNames.firstIndex(of: imageName)!)
+                        }
+                    }
+                    .tabViewStyle(PageTabViewStyle())
+                    .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .interactive))
+                    
+                    Text("Karrieredagen er  arrangement hvor studenter kan møte potensielle arbeidsgivere og få innsikt i forskjellige yrkesmuligheter. Dette er en ypperlig anledning for studenter til å knytte nettverk, lære mer om jobbmulighetene i sin bransje, og få verdifull veiledning fra erfarne fagfolk. Grieghallen, som ligger i hjertet av Bergen, tilbyr et ideelt sted for dette arrangementet med sin rikholdige plass og gode fasiliteter.")
                         .font(.custom("AvenirNext-Regular", size: 15))
                         .multilineTextAlignment(.center)
 
