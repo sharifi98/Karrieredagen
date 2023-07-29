@@ -35,14 +35,16 @@ struct HvemErSpringbrettetView: View {
                             ForEach(imageNames, id: \.self) { imageName in
                                 Image(imageName)
                                     .resizable()
-                                    .frame(width: 360, height: 275)
+                                    .frame(width: 288, height: 220)
                                     .scaledToFit()
                                     .clipShape(RoundedRectangle(cornerRadius: 20))
                                     .shadow(color: Color.black.opacity(0.3), radius: 7, x: 10, y: 10)
-                                    .padding(5)
+                                    .padding(.vertical)
                             }
                         }
                     }
+                    .edgesIgnoringSafeArea(.horizontal)
+                    .padding(.horizontal, -15)
                     
                     VStack(alignment: .leading) {
                         

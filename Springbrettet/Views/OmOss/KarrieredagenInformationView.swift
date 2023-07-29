@@ -18,7 +18,7 @@ struct KarrieredagenInformationView: View {
                     .edgesIgnoringSafeArea(.all)
                 ScrollView {
                     VStack {
-                        GifImage("KDaftermovie")
+                        GifImage("KDaftermovie_cropped")
                             .frame(width: 266, height: 150)
                             .clipped()
                             .cornerRadius(10)
@@ -40,15 +40,16 @@ struct KarrieredagenInformationView: View {
                         
 
                     }
+                    .padding()
+                    .navigationBarWithTransparentBackground()
                     .toolbar {
                         ToolbarItemGroup(placement: .navigationBarLeading) {
                             Text("Karrieredagen")
-                                .font(.system(size: 36, weight: .semibold))
+                                .font(.custom("AvenirNext-Bold", size: 20))
                                 .foregroundColor(Color("KDOrange"))
+                            
                         }
                     }
-                    .navigationBarWithTransparentBackground()
-                    .padding()
                 }
             }
         }

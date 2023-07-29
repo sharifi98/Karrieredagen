@@ -1,5 +1,6 @@
 import SwiftUI
 
+
 struct ContentView: View {
     init() {
         UITabBar.appearance().backgroundColor = UIColor.black.withAlphaComponent(0.9)
@@ -10,7 +11,13 @@ struct ContentView: View {
             KDView()
                 .background(Color.black) // Set the background color here
                 .tabItem {
-                    Label("KD", systemImage: "graduationcap")
+                    Label("Karrieredagen", systemImage: "graduationcap")
+                }
+            
+            JobTipsView()
+                .background(Color.blue)
+                .tabItem {
+                    Label("CV tips", systemImage: "text.quote")
                 }
 /*
             ScheduleList()
@@ -30,6 +37,8 @@ struct ContentView: View {
                 .tabItem {
                     Label("Om oss", systemImage: "ellipsis.circle")
                 }
+            
+            
 
         }
         .accentColor(Color("KDOrange")) // Set the tab item's text and icon color

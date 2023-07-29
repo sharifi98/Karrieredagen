@@ -86,6 +86,9 @@ struct DiTView: View {
                         )
                     }
                     
+                    Text("")
+                        .padding()
+                    
                 }
             }
         }

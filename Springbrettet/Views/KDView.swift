@@ -1,22 +1,25 @@
 import SwiftUI
 import MapKit
+import WebKit
 import SDWebImageSwiftUI
 
 struct KDView: View {
     @State private var showCompanyList = false
     @State private var showScheduleList = false
     @State private var showGriegView = false
+    @State private var showInstagram = false
     @State private var selectedEvent: Event?
     let grieghallencord = CLLocationCoordinate2D(latitude: 60.38880103170712, longitude: 5.328235989579929)
-
+    
     var body: some View {
         NavigationStack {
             ScrollView {
                 ZStack {
+                    
                     Image("marinebackground")
                         .resizable()
                         .ignoresSafeArea()
-
+                    
                     VStack {
                         ZStack {
                             WebImage(url: Bundle.main.url(forResource: "KDaftermovie_cropped", withExtension: "gif"))
@@ -49,7 +52,7 @@ struct KDView: View {
                                 .multilineTextAlignment(.center)
                             
                         }
-                    
+                        
                         
                         VStack {
                             
@@ -58,6 +61,9 @@ struct KDView: View {
                             NavigationButton(destination: ScheduleList(), text: "Timeplan", image: Image(systemName: "calendar"), showView: $showScheduleList)
                             
                             NavigationButton(destination: GriegView(), text: "Kart", image: Image(systemName: "map"), showView: $showGriegView)
+                            
+                            NavigationButton(destination: InstagramView(), text: "Tilbakemelding", image: Image(systemName: "questionmark.bubble"), showView: $showInstagram)
+                            
                             
                         }
                         
@@ -68,7 +74,7 @@ struct KDView: View {
                             Text("Karrieredagen holdes i Grieghallen")
                                 .font(.custom("AvenirNext-Regular", size: 20))
                                 .foregroundColor(.white)
-
+                            
                             MapView(coordinate: grieghallencord)
                                 .frame(width: 300, height: 300/1.618)
                                 .clipShape(RoundedRectangle(cornerRadius: 20))
@@ -82,7 +88,6 @@ struct KDView: View {
                         }
                         .padding()
                         
-
                         VStack {
                             
                             
@@ -96,7 +101,7 @@ struct KDView: View {
                                     .foregroundColor(.red)
                                 Text("Christies gate 9, 5015 Bergen")
                             }
-
+                            
                             
                             HStack {
                                 Image(systemName: "envelope.fill")
@@ -104,7 +109,7 @@ struct KDView: View {
                                 Text("post@springbrettet.org")
                             }
                         }
-                    
+                        
                         
                         Text("Springbrettet")
                             .foregroundStyle(Color("KDOrange"))
@@ -112,7 +117,7 @@ struct KDView: View {
                             .padding()
                     }
                     .frame(maxHeight: .infinity, alignment: .top)
-
+                    
                 }
             }
             .background(Color("KDBlue"))
@@ -124,13 +129,6 @@ struct KDView: View {
                             .resizable()
                             .scaledToFit()
                             .padding(.bottom, 10.0)
-
-                        /*
-                        Text("Springbrettet")
-                            .font(.custom("AvenirNext-Bold", size: 36))
-                            .foregroundColor(Color("KDOrange"))
-                            .padding(.bottom, 15.0)
-                         */
                     }
                 }
             }
@@ -140,7 +138,7 @@ struct KDView: View {
             }
         }
     }
-
+    
     func eventRow(for event: Event) -> some View {
         Button(action: {
             selectedEvent = event
@@ -151,12 +149,30 @@ struct KDView: View {
     }
 }
 
+struct InstagramView: View {
+    var body: some View {
+        WebView(request: URLRequest(url: URL(string: "https://docs.google.com/forms/d/1IFTBhLFb-sJoX3DxiBgVaUpGO8O4gqmeX8yR71EhgLM/edit")!))
+    }
+}
+
+struct WebView: UIViewRepresentable {
+    let request: URLRequest
+    
+    func makeUIView(context: Context) -> WKWebView  {
+        let webView = WKWebView()
+        webView.load(request)
+        return webView
+    }
+    
+    func updateUIView(_ uiView: WKWebView, context: Context) { }
+}
+
 struct NavigationButton<Destination: View>: View {
     var destination: Destination
     var text: String
     var image: Image
     @Binding var showView: Bool
-
+    
     var body: some View {
         Button(action: { showView = true }) {
             HStack {
@@ -164,12 +180,12 @@ struct NavigationButton<Destination: View>: View {
                     .resizable()
                     .frame(width: 20, height: 20)
                     .foregroundColor(.white)
-
+                
                 Text(text)
                     .font(.custom("AvenirNext-Bold", size: 20))
             }
             .padding()
-            .frame(minWidth: 200, maxWidth: 200)
+            .frame(minWidth: 200, maxWidth: 220)
             .background(Color("KDOrange"))
             .foregroundColor(.white)
             .cornerRadius(11)
