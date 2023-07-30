@@ -56,7 +56,7 @@ struct KDView: View {
                     }
 
                     VStack {
-                        Text("Alt du trenger å vite om Karrieredagen og Springbrettet, samlet på ett sted. Vi ser frem til en fantastisk dag.")
+                        Text("Alt du trenger å vite om Karrieredagen og Springbrettet, samlet på ett sted.")
                             .font(.custom("AvenirNext-Regular", size: 20))
                             .fixedSize(horizontal: false, vertical: true)
                             .frame(maxWidth: 350)
@@ -78,9 +78,40 @@ struct KDView: View {
                         Label("Kart", systemImage: "map")
                     }.foregroundColor(Color("KDOrange"))
 
-                    NavigationLink(destination: InstagramView()) {
+                    NavigationLink(destination: FeedBackView()) {
                         Label("Tilbakemelding", systemImage: "questionmark.bubble")
                     }.foregroundColor(Color("KDOrange"))
+                }
+                
+                Section(header: Text("Springbrettets prosjekter")) {
+                    NavigationLink(destination: SpringbrettfondetView()) {
+                        Label {
+                            Text("Springbrettfondet")
+                        } icon: {
+                            Image(systemName: "chart.line.uptrend.xyaxis")
+                                .foregroundColor(.green)
+                        }
+                    }
+                    
+                    NavigationLink(destination: DiTView()) {
+                        Label {
+                            Text("Damer i toppen")
+                        } icon: {
+                            Image(systemName: "star.fill")
+                                .foregroundColor(.yellow)
+                        }
+                    }
+                    
+                    NavigationLink(destination: Karrierestudio()) {
+                        Label {
+                            Text("Karrierestudio")
+                        } icon: {
+                            Image(systemName: "music.mic")
+                                .foregroundColor(.purple)
+                        }
+                    }
+
+                    
                 }
 
                 VStack {
@@ -102,6 +133,7 @@ struct KDView: View {
                     Text("Karrieredagen er  arrangement hvor studenter kan møte potensielle arbeidsgivere og få innsikt i forskjellige yrkesmuligheter. Dette er en ypperlig anledning for studenter til å knytte nettverk, lære mer om jobbmulighetene i sin bransje, og få verdifull veiledning fra erfarne fagfolk. Grieghallen, som ligger i hjertet av Bergen, tilbyr et ideelt sted for dette arrangementet med sin rikholdige plass og gode fasiliteter.")
                         .font(.custom("AvenirNext-Regular", size: 15))
                         .multilineTextAlignment(.center)
+                        .padding()
 
                     MapView(coordinate: grieghallencord)
                         .frame(width: 300, height: 300/1.618)
@@ -112,7 +144,6 @@ struct KDView: View {
                         )
                         .shadow(radius: 7)
                         .background(Color.white.clipShape(RoundedRectangle(cornerRadius: 20)))
-                        .padding()
                 }
                 .padding()
 
@@ -125,6 +156,7 @@ struct KDView: View {
                             .foregroundColor(.red)
                         Text("Christies gate 9, 5015 Bergen")
                     }
+                    
 
                     HStack(alignment: .center) {
                         Image(systemName: "envelope.fill")
@@ -169,7 +201,7 @@ struct KDView: View {
     }
 }
 
-struct InstagramView: View {
+struct FeedBackView: View {
     var body: some View {
         WebView(request: URLRequest(url: URL(string: "https://docs.google.com/forms/d/1IFTBhLFb-sJoX3DxiBgVaUpGO8O4gqmeX8yR71EhgLM/edit")!))
     }

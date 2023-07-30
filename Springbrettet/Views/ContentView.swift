@@ -4,7 +4,11 @@ import SwiftUI
 struct ContentView: View {
     init() {
         UITabBar.appearance().backgroundColor = UIColor.black.withAlphaComponent(0.9)
+        if #available(iOS 15, *) {
+            UITabBar.appearance().unselectedItemTintColor = UIColor.white
+        }
     }
+
     
     var body: some View {
         TabView {
@@ -41,6 +45,7 @@ struct ContentView: View {
             
 
         }
+        //.accentColor(Color("KDOrange")) // Set the tab item's text and icon color
         .accentColor(Color("KDOrange")) // Set the tab item's text and icon color
     }
 }

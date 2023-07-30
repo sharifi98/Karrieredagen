@@ -10,6 +10,7 @@ struct ScheduleRow: View {
             durationLabel
         }
         .formattingRow()
+        .frame(maxWidth: .infinity) // Add this line
     }
     
     var eventDetails: some View {
@@ -56,3 +57,4 @@ struct ScheduleRow_Previews: PreviewProvider {
             .padding()
     }
 }
+
