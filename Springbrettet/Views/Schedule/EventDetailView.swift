@@ -13,11 +13,11 @@ struct EventDetailView: View {
 
             eventTiming
                 .font(.custom("AvenirNext-Regular", size: 20))
-                .foregroundColor(Color("KDOrange"))
+                .foregroundColor(.white)
 
             Text(event.location)
                 .font(.custom("AvenirNext-Regular", size: 20))
-                .foregroundColor(Color("KDOrange"))
+                .foregroundColor(.white)
 
             speakersGroup
 
@@ -54,7 +54,7 @@ struct EventDetailView: View {
             } else {
                 Text("No speakers listed.")
                     .font(.custom("AvenirNext-Regular", size: 18))
-                    .foregroundColor(Color("KDOrange"))
+                    .foregroundColor(.white)
             }
         }
     }
@@ -68,12 +68,12 @@ struct EventDetailView: View {
                 ForEach(companies, id: \.self) { company in
                     Text(company)
                         .font(.custom("AvenirNext-Regular", size: 18))
-                        .foregroundColor(Color("KDOrange"))
+                        .foregroundColor(.white)
                 }
             } else {
                 Text("No companies listed.")
                     .font(.custom("AvenirNext-Regular", size: 18))
-                    .foregroundColor(Color("KDOrange"))
+                    .foregroundColor(.white)
             }
         }
     }

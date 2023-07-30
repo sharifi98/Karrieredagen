@@ -25,26 +25,23 @@ struct CompanyDetail: View {
             
             VStack(alignment: .leading) {
                 Text(company.name)
-                    .font(.custom("AvenirNext-Bold", size: 30))
+                    .font(.system(size: 30))
                     .foregroundColor(Color("KDOrange"))
                 
                 HStack {
                     Text("Stand \(company.standNumber)")
-                        .font(.custom("AvenirNext-Regular", size: 20))
                     Spacer()
                     Text(company.industry)
-                        .font(.custom("AvenirNext-Regular", size: 20))
                 }
                 .font(.subheadline)
                 .foregroundColor(.gray)
                 
                 Divider()
                 Text("Info")
-                    .font(.custom("AvenirNext-Bold", size: 25))
+                    .font(.system(size: 25))
                     .foregroundColor(Color("KDOrange"))
 
                 Text(company.description)
-                    .font(.custom("AvenirNext-Regular", size: 20))
                 
             }
             .padding()
