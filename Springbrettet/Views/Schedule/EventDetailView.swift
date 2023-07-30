@@ -1,10 +1,3 @@
-//
-//  ScheduleDetail.swift
-//  Karriaredagen
-//
-//  Created by Hossein Sharifi on 02/06/2023.
-//
-
 import SwiftUI
 
 struct EventDetailView: View {
@@ -15,13 +8,16 @@ struct EventDetailView: View {
             eventImageView
 
             Text(event.name)
-                .font(.title)
+                .font(.custom("AvenirNext-Bold", size: 24))
+                .foregroundColor(Color("KDOrange"))
 
             eventTiming
-                .font(.subheadline)
+                .font(.custom("AvenirNext-Regular", size: 20))
+                .foregroundColor(Color("KDOrange"))
 
             Text(event.location)
-                .font(.subheadline)
+                .font(.custom("AvenirNext-Regular", size: 20))
+                .foregroundColor(Color("KDOrange"))
 
             speakersGroup
 
@@ -47,13 +43,18 @@ struct EventDetailView: View {
     var speakersGroup: some View {
         Group {
             Text("Speakers:")
-                .font(.headline)
+                .font(.custom("AvenirNext-Bold", size: 20))
+                .foregroundColor(Color("KDOrange"))
             if let speakers = event.speakers {
                 ForEach(speakers, id: \.self) { speaker in
                     Text(speaker)
+                        .font(.custom("AvenirNext-Regular", size: 18))
+                        .foregroundColor(Color("KDOrange"))
                 }
             } else {
                 Text("No speakers listed.")
+                    .font(.custom("AvenirNext-Regular", size: 18))
+                    .foregroundColor(Color("KDOrange"))
             }
         }
     }
@@ -61,13 +62,18 @@ struct EventDetailView: View {
     var companiesGroup: some View {
         Group {
             Text("Companies:")
-                .font(.headline)
+                .font(.custom("AvenirNext-Bold", size: 20))
+                .foregroundColor(Color("KDOrange"))
             if let companies = event.companies {
                 ForEach(companies, id: \.self) { company in
                     Text(company)
+                        .font(.custom("AvenirNext-Regular", size: 18))
+                        .foregroundColor(Color("KDOrange"))
                 }
             } else {
                 Text("No companies listed.")
+                    .font(.custom("AvenirNext-Regular", size: 18))
+                    .foregroundColor(Color("KDOrange"))
             }
         }
     }
@@ -95,6 +101,8 @@ struct DismissScheduleDetailSheetButton: View {
             dismiss()
         } label: {
             Text("Tilbake")
+                .font(.custom("AvenirNext-Bold", size: 18))
+                .foregroundColor(.white)
         }
         .dismissButtonStyle()
     }
@@ -105,8 +113,12 @@ extension View {
         self
             .padding(10)
             .foregroundColor(.white)
+            .background(Color("KDOrange"))
             .clipShape(Rectangle())
-            .background(.orange)
             .cornerRadius(15)
+            .overlay(
+                RoundedRectangle(cornerRadius: 15)
+                    .stroke(Color("KDOrange"), lineWidth: 4)
+            )
     }
 }

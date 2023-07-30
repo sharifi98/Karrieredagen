@@ -22,13 +22,7 @@ struct HvemErSpringbrettetView: View {
     ]
     
     var body: some View {
-        ZStack {
-            Image("marinebackground")
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .edgesIgnoringSafeArea(.all)
-            
-            ScrollView(.vertical) {
+            ScrollView {
                 VStack {
                     ScrollView(.horizontal, showsIndicators: false) {
                         LazyHStack(alignment: .top) {
@@ -79,7 +73,6 @@ struct HvemErSpringbrettetView: View {
                 }
                 
             }
-        }
     }
 }
 

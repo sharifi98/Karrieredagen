@@ -4,7 +4,11 @@ import SwiftUI
 struct ContentView: View {
     init() {
         UITabBar.appearance().backgroundColor = UIColor.black.withAlphaComponent(0.9)
+        if #available(iOS 15, *) {
+            UITabBar.appearance().unselectedItemTintColor = UIColor.white
+        }
     }
+
     
     var body: some View {
         TabView {
@@ -14,7 +18,7 @@ struct ContentView: View {
                     Label("Karrieredagen", systemImage: "graduationcap")
                 }
             
-            JobTipsView()
+            CVTipsView()
                 .background(Color.blue)
                 .tabItem {
                     Label("CV tips", systemImage: "text.quote")
@@ -41,6 +45,7 @@ struct ContentView: View {
             
 
         }
+        //.accentColor(Color("KDOrange")) // Set the tab item's text and icon color
         .accentColor(Color("KDOrange")) // Set the tab item's text and icon color
     }
 }
