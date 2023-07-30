@@ -1,16 +1,17 @@
 [
     {
         "id" : 1,
-        "name": "Opening Ceremony",
+        "name": "Åpningsseremoni",
         "start_time": "09:00",
         "end_time": "09:30",
-        "location": "Main Stage",
+        "location": "Hovedscenen",
         "imageName": "grieghallenaud",
-        "duration": 60
+        "duration": 60,
+        "description": "Dette markerer den offisielle starten av arrangementet med potensielle taler og introduksjoner."
     },
     {
         "id" : 2,
-        "name": "Corporate Presentations",
+        "name": "Bedriftspresentasjon",
         "start_time": "09:30",
         "end_time": "10:30",
         "companies": [
@@ -22,31 +23,34 @@
             "NCC",
             "Totalenergies"
         ],
-        "location": "Main Stage",
+        "location": "Hovedscenen",
         "imageName": "grieghallenaud",
-        "duration": 60
+        "duration": 60,
+        "description": "Bedriftene vil dele informasjon om seg selv, deres mål, og potensielle fremtidige muligheter."
     },
     {
         "id" : 3,
-        "name": "Networking Break",
+        "name": "Nettverkspause",
         "start_time": "10:30",
         "end_time": "11:00",
-        "location": "Main Stage",
+        "location": "Hovedscenen",
         "imageName": "grieghallenaud",
-        "duration": 60
+        "duration": 60,
+        "description": "Dette gir en sjanse for deltakerne til å mingle, utveksle kontakter og diskutere presentasjonene og begivenhetene så langt."
     },
     {
         "id" : 4,
-        "name": "Lunch",
+        "name": "Lunsj",
         "start_time": "11:00",
         "end_time": "12:00",
-        "location": "Main Stage",
+        "location": "Hovedscenen",
         "imageName": "",
-        "duration": 60
+        "duration": 60,
+        "description": "Dette er en tid for alle å slappe av, nyte et måltid og fortsette nettverk i en mer avslappet atmosfære."
     },
     {
         "id" : 5,
-        "name": "Speakers",
+        "name": "Talere",
         "start_time": "12:00",
         "end_time": "13:00",
         "speakers": [
@@ -54,28 +58,29 @@
             "Bouvet",
             "Nordea"
         ],
-        "location": "Main Stage",
+        "location": "Hovedscenen",
         "imageName": "",
-        "duration": 60
-        
+        "duration": 60,
+        "description": "Talere fra Accenture, Bouvet, og Nordea vil dele sin visdom, erfaring og perspektiver om forskjellige emner."
     },
     {
         "id" : 6,
-        "name": "Competitions",
+        "name": "Konkurranser",
         "start_time": "13:00",
         "end_time": "14:30",
-        "location": "Main Stage",
+        "location": "Hovedscenen",
         "imageName": "",
-        "duration": 60
+        "duration": 60,
+        "description": "Det vil være forskjellige konkurranser, som involverer en rekke morsomme og engasjerende aktiviteter, kanskje med premier for vinnerne."
     },
     {
         "id" : 7,
-        "name": "Closing Ceremony",
+        "name": "Avslutningsseremoni",
         "start_time": "14:30",
         "end_time": "15:00",
-        "location": "Main Stage",
+        "location": "Hovedscenen",
         "imageName": "",
-        "duration": 60
+        "duration": 60,
+        "description": "Dette markerer den offisielle avslutningen av arrangementet, med potensielle taler, takk og høydepunkter fra dagen."
     }
 ]
- 

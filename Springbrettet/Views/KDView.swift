@@ -121,14 +121,14 @@ struct KDView: View {
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 288, height: 220)
-                                .clipShape(RoundedRectangle(cornerRadius: 20))
-                                .shadow(color: Color.black.opacity(0.3), radius: 7, x: 10, y: 10)
+                                .shadow(color: Color.black.opacity(0.9), radius: 7, x: 10, y: 10)
                                 .padding(.vertical)
                                 .tag(imageNames.firstIndex(of: imageName)!)
                         }
                     }
                     .tabViewStyle(PageTabViewStyle())
-                    .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .interactive))
+                    .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .automatic))
+                    .padding()
                     
                     Text("Karrieredagen er  arrangement hvor studenter kan møte potensielle arbeidsgivere og få innsikt i forskjellige yrkesmuligheter. Dette er en ypperlig anledning for studenter til å knytte nettverk, lære mer om jobbmulighetene i sin bransje, og få verdifull veiledning fra erfarne fagfolk. Grieghallen, som ligger i hjertet av Bergen, tilbyr et ideelt sted for dette arrangementet med sin rikholdige plass og gode fasiliteter.")
                         .font(.custom("AvenirNext-Regular", size: 15))
@@ -148,28 +148,40 @@ struct KDView: View {
                 .padding()
 
                 VStack(alignment: .center) {
-                    Text("Kontakt oss")
-                        .foregroundColor(.gray)
+                    
+                    HStack {
+                        Spacer()
+                        Text("Kontakt oss")
+                            .foregroundColor(.gray)
+                        Spacer()
+                    }
 
                     HStack(alignment: .center) {
+                        Spacer()
                         Image(systemName: "mappin")
                             .foregroundColor(.red)
                         Text("Christies gate 9, 5015 Bergen")
+                        Spacer()
                     }
                     
 
                     HStack(alignment: .center) {
+                        Spacer()
                         Image(systemName: "envelope.fill")
                             .foregroundColor(Color("KDOrange"))
                         Text("post@springbrettet.org")
+                        Spacer()
                     }
                     
-                    Text("Springbrettet")
-                        .foregroundColor(Color("KDOrange"))
-                        .font(.custom("AvenirNext-Bold", size: 40))
+                    HStack {
+                        Spacer()
+                        Text("Springbrettet")
+                            .foregroundColor(Color("KDOrange"))
+                            .font(.custom("AvenirNext-Bold", size: 40))
                         .padding()
+                        Spacer()
+                    }
                 }
-                .padding()
 
             }
             .listStyle(GroupedListStyle())

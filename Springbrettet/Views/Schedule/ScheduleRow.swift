@@ -20,20 +20,21 @@ struct ScheduleRow: View {
                 .foregroundColor(Color("KDOrange"))
             Text("\(event.start_time) - \(event.end_time)")
                 .font(.custom("AvenirNext-Regular", size: 18))
-                .foregroundColor(Color("KDOrange"))
+                .foregroundColor(.white)
             Text(event.location)
                 .font(.custom("AvenirNext-Regular", size: 18))
-                .foregroundColor(Color("KDOrange"))
+                //.foregroundColor(Color("KDOrange"))
+                .foregroundColor(.white)
         }
     }
     
     var durationLabel: some View {
         HStack(spacing: 4) {
             Image(systemName: "clock")
-                .foregroundColor(Color("KDOrange"))
+                .foregroundColor(.white)
             Text("\(event.duration) min")
                 .font(.custom("AvenirNext-Regular", size: 18))
-                .foregroundColor(Color("KDOrange"))
+                .foregroundColor(.white)
         }
     }
 }

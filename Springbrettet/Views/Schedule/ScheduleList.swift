@@ -9,10 +9,6 @@ struct ScheduleList: View {
                 
                 ScrollView {
                     
-                    Spacer()
-                        .frame(height: 90)
-
-                    
                     VStack(spacing: 10) {
                         ForEach(events) { event in
                             eventRow(for: event)
