@@ -81,6 +81,10 @@ struct KDView: View {
                     NavigationLink(destination: FeedBackView()) {
                         Label("Tilbakemelding", systemImage: "questionmark.bubble")
                     }.foregroundColor(Color("KDOrange"))
+                    
+                    NavigationLink(destination: CVTipsView()) {
+                        Label("Tips til jobbsøknad", systemImage: "pencil")
+                    }.foregroundColor(Color("KDOrange"))
                 }
                 
                 Section(header: Text("Springbrettets prosjekter")) {
@@ -147,39 +151,40 @@ struct KDView: View {
                 }
                 .padding()
 
-                VStack(alignment: .center) {
-                    
-                    HStack {
-                        Spacer()
-                        Text("Kontakt oss")
-                            .foregroundColor(.gray)
-                        Spacer()
-                    }
-
-                    HStack(alignment: .center) {
-                        Spacer()
-                        Image(systemName: "mappin")
-                            .foregroundColor(.red)
-                        Text("Christies gate 9, 5015 Bergen")
-                        Spacer()
-                    }
-                    
-
-                    HStack(alignment: .center) {
-                        Spacer()
-                        Image(systemName: "envelope.fill")
-                            .foregroundColor(Color("KDOrange"))
-                        Text("post@springbrettet.org")
-                        Spacer()
-                    }
-                    
-                    HStack {
-                        Spacer()
-                        Text("Springbrettet")
-                            .foregroundColor(Color("KDOrange"))
-                            .font(.custom("AvenirNext-Bold", size: 40))
-                        .padding()
-                        Spacer()
+                VStack {
+                    Section {
+                        HStack {
+                            Spacer()
+                            Text("Kontakt oss")
+                                .foregroundColor(.gray)
+                            Spacer()
+                        }
+                        
+                        HStack(alignment: .center) {
+                            Spacer()
+                            Image(systemName: "mappin")
+                                .foregroundColor(.red)
+                            Text("Christies gate 9, 5015 Bergen")
+                            Spacer()
+                        }
+                        
+                        
+                        HStack(alignment: .center) {
+                            Spacer()
+                            Image(systemName: "envelope.fill")
+                                .foregroundColor(Color("KDOrange"))
+                            Text("post@springbrettet.org")
+                            Spacer()
+                        }
+                        
+                        HStack {
+                            Spacer()
+                            Text("Springbrettet")
+                                .foregroundColor(Color("KDOrange"))
+                                .font(.custom("AvenirNext-Bold", size: 40))
+                                .padding()
+                            Spacer()
+                        }
                     }
                 }
 

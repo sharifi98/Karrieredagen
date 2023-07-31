@@ -103,6 +103,7 @@ struct OmOssView: View {
                         }) {
                             HStack {
                                 Image(systemName: "point.3.filled.connected.trianglepath.dotted")
+                                
                                 Text("LinkedIn")
                             }
                             .foregroundColor(.cyan)

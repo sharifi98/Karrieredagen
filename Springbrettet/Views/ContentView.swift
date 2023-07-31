@@ -17,12 +17,15 @@ struct ContentView: View {
                 .tabItem {
                     Label("Karrieredagen", systemImage: "graduationcap")
                 }
-            
+            /*
+             
             CVTipsView()
                 .background(Color.blue)
                 .tabItem {
                     Label("CV tips", systemImage: "text.quote")
                 }
+            
+            */
 /*
             ScheduleList()
                 .background(Color.black) // Set the background color here
@@ -36,14 +39,12 @@ struct ContentView: View {
                     Label("Kart", systemImage: "map")
                 }
  */
+            
             OmOssView()
                 .background(Color.black) // Set the background color here
                 .tabItem {
                     Label("Om oss", systemImage: "ellipsis.circle")
                 }
-            
-            
-
         }
         //.accentColor(Color("KDOrange")) // Set the tab item's text and icon color
         .accentColor(Color("KDOrange")) // Set the tab item's text and icon color
