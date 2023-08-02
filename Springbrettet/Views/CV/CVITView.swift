@@ -7,70 +7,77 @@
 
 import SwiftUI
 
-import SwiftUI
-
 struct CVITView: View {
     var body: some View {
-        NavigationView {
-            List {
-                VStack(alignment: .leading, spacing: 20) {
-                    
-                    Group {
-                        Text("CV - IT")
-                            .font(.system(size: 24))
-                            .foregroundColor(Color("KDOrange"))
-                        
-                        sectionView(title: "Personlige Detaljer:", content: """
-                            Navn: Ivar Informatikk
-                            Adresse: Dataveien 10, 1234 Programmering, Norge
-                            Telefon: 12345678
-                            Epost: ivar.informatikk@example.com
-                            LinkedIn: linkedin.com/in/ivar-informatikk
-                            """)
-                        
-                        sectionView(title: "Utdannelse:", content: """
-                            Bachelor i Informatikk, Universitetet i Oslo, 2020 - 2023
-                            """)
-                        
-                        sectionView(title: "Arbeidserfaring:", content: """
-                            Sommerintern, TechCorp AS, juni 2022 - august 2022
-                            Utviklet en mobilapp for intern bruk som forbedret produktiviteten med 20%
-                            Jobbet i et agilt team og brukte Scrum-metodikk
-                            """)
-                    }
-                    
-                    Group {
-                        sectionView(title: "Ferdigheter:", content: """
-                            Programmeringsspråk: Java, Python, C#
-                            Prosjektledelse og Scrum
-                            Mobilapputvikling
-                            """)
-                        
-                        sectionView(title: "Sertifiseringer:", content: """
-                            Oracle Certified Professional, Java SE 8 Programmer
-                            """)
-                        
-                        sectionView(title: "Referanser:", content: """
-                            Kan gis ved forespørsel
-                            """)
-                    }
-                    .padding(.horizontal)
+        List {
+            VStack(alignment: .leading) {
+                Text("CV - IT")
+                    .font(.system(size: 24))
+                    .foregroundColor(Color("KDOrange"))
+                
+                Group {
+                    Text("Personlige Detaljer:")
+                        .font(.headline)
+                        .foregroundColor(Color("KDOrange"))
+                        .padding(.vertical)
+                    Text("Navn: Ivar Informatikk\nAdresse: Dataveien 10, 1234 Programmering, Norge\nTelefon: 12345678\nEpost: ivar.informatikk@example.com\nLinkedIn: linkedin.com/in/ivar-informatikk")
+                        .font(.body)
+                        .foregroundColor(.secondary)
                 }
-                .padding(.top)
+
+                Group {
+                    Text("Utdannelse:")
+                        .font(.headline)
+                        .foregroundColor(Color("KDOrange"))
+                        .padding(.vertical)
+                    Text("Bachelor i Informatikk, Universitetet i Oslo, 2020 - 2023")
+                        .font(.body)
+                        .foregroundColor(.secondary)
+                }
+
+                Group {
+                    Text("Arbeidserfaring:")
+                        .font(.headline)
+                        .foregroundColor(Color("KDOrange"))
+                        .padding(.vertical)
+                    Text("Sommerintern, TechCorp AS, juni 2022 - august 2022\nUtviklet en mobilapp for intern bruk som forbedret produktiviteten med 20%\nJobbet i et agilt team og brukte Scrum-metodikk")
+                        .font(.body)
+                        .foregroundColor(.secondary)
+                }
+
+                Group {
+                    Text("Ferdigheter:")
+                        .font(.headline)
+                        .foregroundColor(Color("KDOrange"))
+                        .padding(.vertical)
+                    Text("Programmeringsspråk: Java, Python, C#\nProsjektledelse og Scrum\nMobilapputvikling")
+                        .font(.body)
+                        .foregroundColor(.secondary)
+                }
+
+                Group {
+                    Text("Sertifiseringer:")
+                        .font(.headline)
+                        .foregroundColor(Color("KDOrange"))
+                        .padding(.vertical)
+                    Text("Oracle Certified Professional, Java SE 8 Programmer")
+                        .font(.body)
+                        .foregroundColor(.secondary)
+                }
+
+                Group {
+                    Text("Referanser:")
+                        .font(.headline)
+                        .foregroundColor(Color("KDOrange"))
+                        .padding(.vertical)
+                    Text("Kan gis ved forespørsel")
+                        .font(.body)
+                        .foregroundColor(.secondary)
+                }
             }
+            .padding()
         }
-    }
-    
-    func sectionView(title: String, content: String) -> some View {
-        VStack(alignment: .leading) {
-            Text(title)
-                .font(.system(size: 20))
-                .foregroundColor(Color("KDOrange"))
-            Text(content)
-                .font(.body)
-                .foregroundColor(.secondary)
-                .padding()
-        }
+        .listStyle(.grouped)
     }
 }
 
@@ -79,4 +86,3 @@ struct CVITView_Previews: PreviewProvider {
         CVITView()
     }
 }
-

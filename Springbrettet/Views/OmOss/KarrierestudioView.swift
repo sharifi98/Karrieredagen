@@ -26,14 +26,6 @@ struct Karrierestudio: View {
                 }
                 
                 
-                HStack {
-                    Text("Hvem er vi?")
-                        .foregroundColor(Color("KDOrange"))
-                        .font(.custom("AvenirNext-Bold", size: 30))
-                    
-                    Spacer()
-                }
-                
                 VStack {
                     Text("I Karrierestudio reiser representanter fra studentorganisasjonen Springbrettet rundt i vårt langstrakte land for å snakke med sentrale personer i norsk næringsliv. Tidligere gjester inkluderer bl.a. Sentralbanksjef Øystein Olsen og Konsernsjefen i Schibsted, Kristin Skogen Lund.")
                     

@@ -12,7 +12,7 @@ struct ContentView: View {
     
     var body: some View {
         TabView {
-            KDView()
+            HomeView()
                 .background(Color.black) // Set the background color here
                 .tabItem {
                     Label("Karrieredagen", systemImage: "graduationcap")

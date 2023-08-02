@@ -11,20 +11,14 @@
     },
     {
         "id" : 2,
-        "name": "Bedriftspresentasjon",
+        "name": "Aker BP BEDPRES",
         "start_time": "09:30",
         "end_time": "10:30",
         "companies": [
-            "Aker Solutions AS",
-            "Eika Forsikring",
-            "Forsvaret",
-            "Håndelshøyskolen BI",
-            "Lerøy Seafood Group ASA",
-            "NCC",
-            "Totalenergies"
+            "Aker BP"
         ],
         "location": "Hovedscenen",
-        "imageName": "grieghallenaud",
+        "imageName": "akersolutions",
         "duration": 60,
         "description": "Bedriftene vil dele informasjon om seg selv, deres mål, og potensielle fremtidige muligheter."
     },

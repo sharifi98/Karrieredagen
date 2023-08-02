@@ -42,31 +42,6 @@ struct OmOssView: View {
                             }
                         }
                         
-                        NavigationLink(destination: SpringbrettfondetView()) {
-                            Label {
-                                Text("Springbrettfondet")
-                            } icon: {
-                                Image(systemName: "chart.line.uptrend.xyaxis")
-                                    .foregroundColor(.green)
-                            }
-                        }
-                        
-                        NavigationLink(destination: DiTView()) {
-                            Label {
-                                Text("Damer i toppen")
-                            } icon: {
-                                Image(systemName: "star.fill")
-                            }
-                        }
-                        
-                        NavigationLink(destination: Karrierestudio()) {
-                            Label {
-                                Text("Karrierestudio")
-                            } icon: {
-                                Image(systemName: "music.mic")
-                                    .foregroundColor(.purple)
-                            }
-                        }
                         
                         
                     }

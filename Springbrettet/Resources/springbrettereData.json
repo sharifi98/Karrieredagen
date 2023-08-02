@@ -1,0 +1,76 @@
+[
+    {
+        "id": 1,
+        "role": "Leder for Karrieredagsgruppen",
+        "name": "Eirin Syvertsen",
+        "email": "Eirin.Syvertsen@springbrettet.org",
+        "studie": "UiB, Energi",
+        "imageName": "eirin"
+        
+    },
+    {
+        "id": 2,
+        "role": "Nestleder",
+        "name": "Maria Norheim Morken",
+        "email": "maria.morken@springbrettet.org",
+        "studie": "UiB, Samfunnsøkonomi",
+        "imageName": "morken"
+    },
+    {
+        "id": 3,
+        "role": "Logistikksjef",
+        "name": "Kristin Hjermann",
+        "email": "kristin.hjermann@springbrettet.org",
+        "studie": "BI, Organisasjonspsykologi, HR og ledelse",
+        "imageName": "kristin"
+    },
+    {
+        "id": 4,
+        "role": "Bookingsjef",
+        "name": "Herman Ween Fredriksen",
+        "email": "herman.fredriksen@springbrettet.org",
+        "studie": "BI, Økonomi og administrasjon",
+        "imageName": "herman"
+    },
+    {
+        "id": 5,
+        "role": "Booking",
+        "name": "Hossein Sharifi",
+        "email": "hossein.sharifi@springbrettet.org",
+        "studie": "UiB, Programvareutvikling",
+        "imageName": "hossein"
+    },
+    {
+        "id": 6,
+        "role": "Booking",
+        "name": "Marthe Schiørn",
+        "email": "marthe.schiorn@springbrettet.org",
+        "studie": "UiB, Rettsvitenskap",
+        "imageName": "marthe"
+    },
+    {
+        "id": 7,
+        "role": "Booking",
+        "name": "Myriam Ask Lazrek",
+        "email": "myriam.lazrek@springbrettet.org",
+        "studie": "UiB, Europastudium med Sampol og Samfunnsøkonomi",
+        "imageName": "myriam"
+    },
+    {
+        "id": 8,
+        "role": "Booking",
+        "name": "Henrik Bråthen Kristoff",
+        "email": "henrik.kristoff@springbrettet.org",
+        "studie": "BI, Markedsføringsledelse",
+        "imageName": "kristoff"
+    },
+    {
+        "id": 9,
+        "role": "Booking",
+        "name": "Thea Soltveit Taranger",
+        "email": "thea.taranger@springbrettet.org",
+        "studie": "UiB, Psykologi",
+        "imageName": "thea"
+    }
+    
+]

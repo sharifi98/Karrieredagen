@@ -3,7 +3,7 @@ import MapKit
 import WebKit
 import SDWebImageSwiftUI
 
-struct KDView: View {
+struct HomeView: View {
     @State private var selectedEvent: Event?
     @State private var selectedView: String = "CompanyList"
     let grieghallencord = CLLocationCoordinate2D(latitude: 60.38880103170712, longitude: 5.328235989579929)
@@ -53,6 +53,8 @@ struct KDView: View {
                                 .foregroundColor(.white)
                                 .underline()
                         }
+                        .padding(-30)
+                        
                     }
 
                     VStack {
@@ -137,7 +139,6 @@ struct KDView: View {
                     Text("Karrieredagen er  arrangement hvor studenter kan møte potensielle arbeidsgivere og få innsikt i forskjellige yrkesmuligheter. Dette er en ypperlig anledning for studenter til å knytte nettverk, lære mer om jobbmulighetene i sin bransje, og få verdifull veiledning fra erfarne fagfolk. Grieghallen, som ligger i hjertet av Bergen, tilbyr et ideelt sted for dette arrangementet med sin rikholdige plass og gode fasiliteter.")
                         .font(.custom("AvenirNext-Regular", size: 15))
                         .multilineTextAlignment(.center)
-                        .padding()
 
                     MapView(coordinate: grieghallencord)
                         .frame(width: 300, height: 300/1.618)
@@ -189,7 +190,7 @@ struct KDView: View {
                 }
 
             }
-            .listStyle(GroupedListStyle())
+            .listStyle(.insetGrouped)
             .navigationBarWithTransparentBackground()
             .toolbar {
                 ToolbarItemGroup(placement: .navigationBarLeading) {
@@ -238,6 +239,6 @@ struct WebView: UIViewRepresentable {
 
 struct KDView_Previews: PreviewProvider {
     static var previews: some View {
-        KDView()
+        HomeView()
     }
 }

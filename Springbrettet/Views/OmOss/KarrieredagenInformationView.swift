@@ -2,7 +2,7 @@ import SwiftUI
 import SDWebImageSwiftUI
 
 struct KarrieredagenInformationView: View {
-
+    
     var body: some View {
         
             List {
@@ -13,7 +13,6 @@ struct KarrieredagenInformationView: View {
                             .clipped()
                             .cornerRadius(10)
                             .shadow(radius: 20)
-                            .opacity(0.5)
                         
                         VStack {
                             Text("Karrieredagen")
@@ -49,7 +48,53 @@ struct KarrieredagenInformationView: View {
                         .frame(maxWidth: 350)
                         .padding()
                         .multilineTextAlignment(.center)
+                    
+                    Rectangle().frame(height: 2)
+                        .foregroundColor(.white)
+                        .padding(.vertical)
+                    Text("Gruppen bak Karrieredagen 2023")
+                        .font(.headline)
+                        .padding(.bottom, 5)
+                    
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        HStack {
+                            ForEach(springbrettereData, id: \.id) { member in
+                                
+                                NavigationLink {
+                                    
+                                    PersonView(person: member)
+                                } label: {
+                                    VStack {
+                                        member.image
+                                            .resizable()
+                                            .scaledToFit()
+                                            .frame(height: 200)
+                                            .clipShape(Circle())
+                                            .overlay(
+                                                Circle()
+                                                    .stroke(Color("KDOrange"), lineWidth: 1)
+                                            )
+                                        
+                                        VStack {
+                                            Text(member.name)
+                                                .font(.headline)
+                                                .foregroundColor(.primary)
+                                            Text(member.role)
+                                                .font(.subheadline)
+                                                .foregroundColor(.secondary)
+                                        }
+                                        
+                                    }
+                                }
+
+                                
+                            }
+                        }
+                    }
                 }
+                
+            
+
             }
             .listStyle(GroupedListStyle())
     }
@@ -60,3 +105,5 @@ struct KarrieredagenInformationView_Previews: PreviewProvider {
         KarrieredagenInformationView()
     }
 }
+
+
