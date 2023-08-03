@@ -80,10 +80,6 @@ struct HomeView: View {
                         Label("Kart", systemImage: "map")
                     }.foregroundColor(Color("KDOrange"))
 
-                    NavigationLink(destination: FeedBackView()) {
-                        Label("Tilbakemelding", systemImage: "questionmark.bubble")
-                    }.foregroundColor(Color("KDOrange"))
-                    
                     NavigationLink(destination: CVTipsView()) {
                         Label("Tips til jobbsøknad", systemImage: "pencil")
                     }.foregroundColor(Color("KDOrange"))
@@ -117,6 +113,13 @@ struct HomeView: View {
                         }
                     }
 
+                    
+                }
+                
+                Section {
+                    NavigationLink(destination: FeedBackView()) {
+                        Label("Tilbakemelding", systemImage: "questionmark.bubble")
+                    }.foregroundColor(Color("KDOrange"))
                     
                 }
 

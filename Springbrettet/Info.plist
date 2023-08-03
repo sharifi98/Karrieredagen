@@ -6,8 +6,10 @@
 	<array/>
 	<key>UILaunchScreen</key>
 	<dict>
+		<key>UIColorName</key>
+		<string>launch-screen-background</string>
 		<key>UIImageName</key>
-		<string>kd</string>
+		<string>SB(1)</string>
 	</dict>
 </dict>
 </plist>
