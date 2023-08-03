@@ -11,11 +11,25 @@ struct PersonView: View {
     let person: Person
     
     var body: some View {
-        ScrollView {
+        List {
             VStack {
                 Image(person.imageName) // Assuming your Person struct has a imageName property
                     .resizable() // Add this line to let image resize itself
                     .aspectRatio(contentMode: .fill) // Preserve the aspect ratio of original image
+                
+                VStack {
+                    Text(person.name)
+                        .font(.custom("AvenirNext-Bold", size: 20))
+                        .foregroundColor(Color("KDOrange"))
+                    Text(person.role)
+                        .font(.custom("AvenirNext-Bold", size: 15))
+                    Text(person.studie)
+                        .font(.custom("AvenirNext-Bold", size: 15))
+                        .foregroundColor(.secondary)
+                    Link(person.email, destination: URL(string: person.email)!)
+                        .font(.custom("AvenirNext-Bold", size: 15))
+                    
+                }
             }
         }
     }
