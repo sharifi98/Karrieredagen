@@ -1,471 +1,806 @@
 [
   {
     "id": 1,
-    "name": "Wood Group Norge",
+    "name": "ABB",
     "standNumber": 1,
-    "industry": "Ingeniør",
-    "description": "At Wood, we recognise that achieving a sustainable future is one of the biggest challenges facing our generation. It underpins all that we do. It is what unites us and what makes us unique. We are led by our purpose to unlock solutions to the world’s most critical challenges, in energy and the built environment.",
-    "imageName": "wood",
+    "industry": "Unknown",
+    "description": "ABB er en svensk-sveitsisk internasjonal bedrift som hovedsakelig opererer innen robotikk, kraft, tungt elektrisk utstyr og automatiseringsteknologi.",
+    "imageName": "default",
     "coordinates": {
-      "longitude": 5.235047960397285,
-      "latitude": 60.28623464467215
+      "longitude": 0,
+      "latitude": 0
     }
   },
   {
     "id": 2,
-    "name": "ABB AS",
+    "name": "Adecco",
     "standNumber": 2,
-    "industry": "Ingeniør",
-    "description": "",
-    "imageName": "abb",
+    "industry": "Uknown",
+    "description": "Adecco er et sveitsisk-fransk selskap med base i Zürich, Sveits. Det er verdens nest største leverandør av menneskelige ressurser og midlertidig bemanning, og er et Fortune Global 500-selskap.",
+    "imageName": "default",
     "coordinates": {
-      "longitude": 5.235047960397285,
-      "latitude": 60.28623464467215
+      "longitude": 0,
+      "latitude": 0
     }
   },
   {
     "id": 3,
-    "name": "Stacc AS",
+    "name": "Aker Solutions",
     "standNumber": 3,
-    "industry": "Fintech",
-    "description": "",
-    "imageName": "stacc",
+    "industry": "Unknown",
+    "description": "Aker Solutions hjelper verden med å møte sine energibehov ved å utvikle produkter, systemer og tjenester som kreves for å låse opp energi. Målet deres er å maksimere utvinning og effektivitet av olje- og gassressurser samtidig som de bruker sin ekspertise til å utvikle bærekraftige løsninger for fremtiden.",
+    "imageName": "default",
     "coordinates": {
-      "longitude": 5.235047960397285,
-      "latitude": 60.28623464467215
+      "longitude": 0,
+      "latitude": 0
     }
   },
   {
     "id": 4,
-    "name": "Equinor",
+    "name": "Avfall Norge",
     "standNumber": 4,
-    "industry": "Ingeniør",
-    "description": "A leading name in the energy sector, committed to accommodating the world's energy needs in a responsible manner, applying technology and creating innovative business solutions.",
-    "imageName": "equinor",
+    "industry": "Unknown",
+    "description": "Avfall Norge organiserer den norske avfalls- og gjenvinningsindustrien og dens interessenter. De representerer mer enn 200 forskjellige offentlige og private selskaper som jobber med avfallshåndtering, gjenvinning og resirkulerte materialer enten direkte eller som konsulenter, rådgivere eller leverandører.",
+    "imageName": "default",
     "coordinates": {
-      "longitude": 5.235047960397285,
-      "latitude": 60.28623464467215
+      "longitude": 0,
+      "latitude": 0
     }
   },
   {
     "id": 5,
-    "name": "DNB",
+    "name": "Bane NOR",
     "standNumber": 5,
-    "industry": "Finans/Økonom",
-    "description": "DNB is Norway's largest financial services group and one of the largest in the Nordic region in terms of market capitalisation.",
-    "imageName": "dnb",
+    "industry": "Unknown",
+    "description": "Bane NOR SF er den norske statlige etaten som er ansvarlig for å eie, vedlikeholde, drive og utvikle det norske jernbanenettet, inkludert sporet og stasjonene",
+    "imageName": "default",
     "coordinates": {
-      "longitude": 5.235047960397285,
-      "latitude": 60.28623464467215
+      "longitude": 0,
+      "latitude": 0
     }
   },
   {
     "id": 6,
-    "name": "TV 2",
+    "name": "Eika Forsikring",
     "standNumber": 6,
-    "industry": "Media",
-    "description": "TV 2 is one of the largest commercial television broadcasters in Norway.",
-    "imageName": "tv2",
+    "industry": "Unknown",
+    "description": "Eika Forsikring er en del av Eika Gruppen, som leverer konkurransedyktige forsikringsprodukter og -tjenester til bankene i alliansen. De bidrar også med fagkunnskap innen områder som sikkerhet, styring og kontroll, bærekraft, antihvitvask, personvern, bedriftsmarkedet og betalingsløsninger.",
+    "imageName": "default",
     "coordinates": {
-      "longitude": 5.235047960397285,
-      "latitude": 60.28623464467215
+      "longitude": 0,
+      "latitude": 0
     }
   },
   {
     "id": 7,
-    "name": "Statens vegvesen",
+    "name": "Handelshøyskolen BI",
     "standNumber": 7,
-    "industry": "Byggingeniør, rettsvitenskap, økonomi",
-    "description": "The Norwegian Public Roads Administration (Statens vegvesen) is responsible for the planning, construction and operation of the national and county road networks in Norway.",
-    "imageName": "statensvegvesen",
+    "industry": "Unknown",
+    "description": "Handelshøyskolen BI (BI Norwegian Business School) er en privat høyskole i Norge. Den ble grunnlagt som en privat, kommersiell og ikke-akkreditert kveldsskole i 1943, og tilbød kortere kurs i næringslivs- og kontorrelaterte emner for handelsfolk.",
+    "imageName": "default",
     "coordinates": {
-      "longitude": 5.235047960397285,
-      "latitude": 60.28623464467215
+      "longitude": 0,
+      "latitude": 0
     }
   },
   {
     "id": 8,
-    "name": "Capgemini",
+    "name": "NCC",
     "standNumber": 8,
-    "industry": "IT, Konsulenttjenester",
-    "description": "Capgemini is a global leader in consulting, digital transformation, technology, and engineering services.",
-    "imageName": "capgemini",
+    "industry": "Unknown",
+    "description": "NCC er et bygg- og anleggsselskap med ekspertise til å håndtere og lede komplekse byggeprosesser fra start til slutt. De er involvert i en rekke prosjekter, inkludert bygging av skoler, barnehager, helsebygg, veier, jernbane, tunneler, kontorer, og mer. NCC er også engasjert i bærekraft og biologisk mangfold, med et fokus på utvikling av fremtidens beste og mest bærekraftige løsninger.",
+    "imageName": "default",
     "coordinates": {
-      "longitude": 5.235047960397285,
-      "latitude": 60.28623464467215
+      "longitude": 0,
+      "latitude": 0
     }
   },
   {
     "id": 9,
-    "name": "Bergen kommune",
+    "name": "Å Energi (Agder Energi)",
     "standNumber": 9,
-    "industry": "Offentlig forvaltning",
-    "description": "Bergen kommune, or Bergen municipality, is the local government administration of the city of Bergen, Norway.",
-    "imageName": "bergenkommune",
+    "industry": "Unknown",
+    "description": "Å Energi (tidligere Agder Energi) er en norsk energigruppe som driver med vannkraftproduksjon, elektrisitetsdistribusjon, elektrisitetshandel og tjenester for kunder i næringslivet og forbrukermarkedet.",
+    "imageName": "default",
     "coordinates": {
-      "longitude": 5.235047960397285,
-      "latitude": 60.28623464467215
+      "longitude": 0,
+      "latitude": 0
     }
   },
   {
     "id": 10,
-    "name": "Mowi ASA",
+    "name": "ABG Sundal Collier",
     "standNumber": 10,
-    "industry": "Sjømatnæringen",
-    "description": "Mowi ASA, formerly known as Marine Harvest, is one of the largest seafood companies in the world and the world’s largest producer of Atlantic salmon.",
-    "imageName": "mowi",
+    "industry": "Unknown",
+    "description": "ABGSC gir distribusjon av nordiske verdipapirer til lokale og internasjonale investorer. Selskapet ble grunnlagt i 1984 og har hovedkontor i Oslo, Norge. Gruppen har for øyeblikket omtrent 250 partnere og ansatte som jobber fra kontorer i Oslo, Stockholm, København, London, New York City og Frankfurt.",
+    "imageName": "default",
     "coordinates": {
-      "longitude": 5.235047960397285,
-      "latitude": 60.28623464467215
+      "longitude": 0,
+      "latitude": 0
     }
-    
   },
   {
     "id": 11,
-    "name": "Aibel AS",
+    "name": "Aider Accounting",
     "standNumber": 11,
-    "industry": "Olje/Gass, Energi bransje",
-    "description": "Aibel AS is a leading service name within the oil, gas and offshore wind industries, providing customers with engineering, construction, modifications and maintenance solutions.",
-    "imageName": "aibel",
+    "industry": "Unknown",
+    "description": "Aider er et kompetansehus som tilbyr tjenester innen regnskap, rådgivning og teknologi, med et fokus på automatisering og smarte systemløsninger. De har som mål å redefinere regnskapsbransjen og jobber for å gjøre komplekse prosesser enklere for sine kunder. Aider tilbyr også rådgivning innen HR og bærekraft, og har en ambisjon om å ligge i forkant av utviklingen i bransjen.",
+    "imageName": "default",
     "coordinates": {
-      "longitude": 5.235047960397285,
-      "latitude": 60.28623464467215
+      "longitude": 0,
+      "latitude": 0
     }
   },
   {
     "id": 12,
-    "name": "Aker Solutions",
+    "name": "DNB",
     "standNumber": 12,
-    "industry": "Ingeniør",
-    "description": "Aker Solutions provides products, systems, and services to the global energy industry. They are specialized in the design and delivery of offshore and onshore facilities.",
-    "imageName": "akersolutions",
+    "industry": "Unknown",
+    "description": "DNB er Norges største finansielle tjenestegruppe og en av de største i Norden når det gjelder markedsverdi. De tilbyr en rekke finansielle produkter og tjenester, inkludert lån, forsikring, sparing, kredittkort og ulike bank- og finansieringstjenester. DNB har også spesialiserte tilbud for unge boligkjøpere, gründere, og tilbyr digitale løsninger som mobilbanking. Selskapet har en internasjonal tilstedeværelse med kontorer i Luxembourg, Sverige, og Danmark.",
+    "imageName": "default",
     "coordinates": {
-      "longitude": 5.235047960397285,
-      "latitude": 60.28623464467215
+      "longitude": 0,
+      "latitude": 0
     }
   },
   {
     "id": 13,
-    "name": "Nav Region Bergen",
+    "name": "DOF Subsea AS",
     "standNumber": 13,
-    "industry": "Offentlig",
-    "description": "NAV is the Norwegian Labour and Welfare Administration. They deliver financial benefits and provide employment services.",
-    "imageName": "nav",
+    "industry": "Unknown",
+    "description": "DOF Subsea er et undervannsoperatørselskap som leverer undervannsløsninger til offshore energiindustrien.",
+    "imageName": "default",
     "coordinates": {
-      "longitude": 5.235047960397285,
-      "latitude": 60.28623464467215
+      "longitude": 0,
+      "latitude": 0
     }
   },
   {
     "id": 14,
-    "name": "Gjensidige forsikring",
+    "name": "Forsvaret",
     "standNumber": 14,
-    "industry": "IT, HR, Finans/Økonomi, Forsikring, Markedsføring, Kommunikasjon",
-    "description": "Gjensidige is a leading Nordic insurance group built by customers, for customers.",
-    "imageName": "gjensidige",
+    "industry": "Unknown",
+    "description": "Forsvaret er de norske væpnede styrker ansvarlig for Norges militære forsvar.",
+    "imageName": "default",
     "coordinates": {
-      "longitude": 5.235047960397285,
-      "latitude": 60.28623464467215
+      "longitude": 0,
+      "latitude": 0
     }
   },
   {
     "id": 15,
-    "name": "Politiet",
+    "name": "KCA Deutag Drilling Norge",
     "standNumber": 15,
-    "industry": "Offentlig forvaltning",
-    "description": "The Norwegian Police Service is the Norwegian civilian police agency responsible for enforcing the law, maintaining social order, and providing general security.",
-    "imageName": "politiet",
+    "industry": "Unknown",
+    "description": "KCA Deutag er et internasjonalt bore- og ingeniørselskap som tilbyr operasjoner til havs og på land over hele verden, med spesialisering innen bore-, riggdesign- og driftstjenester. Med over et århundres erfaring og en bred global tilstedeværelse, er selskapet engasjert i kontinuerlig vekst og innovasjon innen energisektoren.",
+    "imageName": "default",
     "coordinates": {
-      "longitude": 5.235047960397285,
-      "latitude": 60.28623464467215
+      "longitude": 0,
+      "latitude": 0
     }
   },
   {
     "id": 16,
-    "name": "Multiconsult",
+    "name": "Lerøy Seafood",
     "standNumber": 16,
-    "industry": "Ingeniør, Konsulenttjenester",
-    "description": "Multiconsult is a leading Norwegian multidisciplinary engineering consulting name, with more than 2,800 employees distributed among 45 offices in Norway and abroad.",
-    "imageName": "multiconsult",
+    "industry": "Unknown",
+    "description": "Lerøy Seafood Group ASA er et sjømatproduksjons- og distribusjonsselskap basert i Bergen, Norge. Selskapet startet virksomheten på 1800-tallet da fiskeren Ole Mikkel Lerøen begynte å selge fisk og annen sjømat på fiskemarkedet i Bergen. I 1939 ble det primære datterselskapet Hallvar Lærøy AS grunnlagt.",
+    "imageName": "default",
     "coordinates": {
-      "longitude": 5.235047960397285,
-      "latitude": 60.28623464467215
+      "longitude": 0,
+      "latitude": 0
     }
   },
   {
     "id": 17,
-    "name": "Olavstoppen",
+    "name": "Odfjell Technology",
     "standNumber": 17,
-    "industry": "IT og Design",
-    "description": "Olavstoppen AS provides information technology and design services, including software development and technical consultancy services.",
-    "imageName": "olavstoppen",
+    "industry": "Technology",
+    "description": "Odfjell Technology er en integrert leverandør av offshoreoperasjoner, brønntjenesteteknologi og ingeniørløsninger med global tilstedeværelse.",
+    "imageName": "default",
     "coordinates": {
-      "longitude": 5.235047960397285,
-      "latitude": 60.28623464467215
+      "longitude": 0,
+      "latitude": 0
     }
   },
   {
     "id": 18,
-    "name": "Forsvaret",
+    "name": "Politiet",
     "standNumber": 18,
-    "industry": "HR/Rekruttering",
-    "description": "The Norwegian Armed Forces (Forsvaret) is the military organization responsible for the defense of Norway. It offers a wide range of positions within various fields.",
-    "imageName": "forsvaret",
+    "industry": "Technology",
+    "description": "Politiet er den norske polititjenesten ansvarlig for håndhevelse av lov innenfor Norge.",
+    "imageName": "default",
     "coordinates": {
-      "longitude": 5.235047960397285,
-      "latitude": 60.28623464467215
+      "longitude": 0,
+      "latitude": 0
     }
   },
   {
     "id": 19,
-    "name": "REdu (Avfall Norge)",
+    "name": "Stacc",
     "standNumber": 19,
-    "industry": "Gjenvinning",
-    "description": "Avfall Norge is a national interest organization for waste management and recycling in Norway. They work for waste minimization, efficient resource use, and safe, effective waste management.",
-    "imageName": "avfallnorge",
+    "industry": "Unknown",
+    "description": "Stacc er et norsk fintech-selskap med mer enn 30 års erfaring med å levere digitale løsninger og konsulenttjenester til banker, eiendomsfinansieringsleverandører, forsikringsselskaper, pensjonsfond, familiekontorer og offentlig sektor i Norden. Stacc kombinerer finansiell teknologi med design og strategisk kunnskap.",
+    "imageName": "default",
     "coordinates": {
-      "longitude": 5.235047960397285,
-      "latitude": 60.28623464467215
+      "longitude": 0,
+      "latitude": 0
     }
   },
   {
     "id": 20,
-    "name": "Wintershall Dea Norge",
+    "name": "Statsbygg",
     "standNumber": 20,
-    "industry": "Oil, Gas and Carbon Management",
-    "description": "Wintershall Dea Norge is a German oil and gas name active in exploration, production, and transportation of hydrocarbons. The name is also active in carbon management solutions.",
-    "imageName": "wintershalldeanorge",
+    "industry": "Unknown",
+    "description": "Statsbygg gir eiendomsforvaltning, byggeplanlegging og -ledelse, rådgivning og utviklingstjenester.",
+    "imageName": "default",
     "coordinates": {
-      "longitude": 5.235047960397285,
-      "latitude": 60.28623464467215
+      "longitude": 0,
+      "latitude": 0
     }
   },
   {
     "id": 21,
-    "name": "View Ledger",
+    "name": "THREE60 Energy",
     "standNumber": 21,
-    "industry": "Regnskap, økonomi, lønn/HR",
-    "description": "View Ledger is a technology name that offers innovative, user-friendly software solutions for accounting and financial management.",
-    "imageName": "viewledger",
+    "industry": "Unknown",
+    "description": "THREE60 Energy Norway er et norsk høyteknologisk ingeniør- og undersjøisk konsulentselskap bestående av et team av profesjonelle som gir prosjektbaserte ingeniørkonsulent- og ledelsestjenester. Deres hovedkompetanse ligger innenfor Undersjøisk Boring & Brønn og Undersjøiske & Fasiliteter.",
+    "imageName": "default",
     "coordinates": {
-      "longitude": 5.235047960397285,
-      "latitude": 60.28623464467215
+      "longitude": 0,
+      "latitude": 0
     }
   },
   {
     "id": 22,
-    "name": "Accenture",
+    "name": "Totalenergies",
     "standNumber": 22,
-    "industry": "Konsulenttjenester",
-    "description": "Accenture is a global professional services name, providing a broad range of services in strategy and consulting, interactive, technology and operations.",
-    "imageName": "accenture",
+    "industry": "Unknown",
+    "description": "TotalEnergies Norge er en ledende aktør innen olje- og gassutforskning og -produksjon, med betydelige interesser i flere produksjonslisenser og et forskningssenter i Stavanger fokusert på CO2-fangst og -lagring. De engasjerer seg også i utviklingen av et CO2-lagringsprosjekt, og tilbyr løsninger til sine B2B-kunder gjennom datterselskaper Saft og Hutchinson.",
+    "imageName": "default",
     "coordinates": {
-      "longitude": 5.235047960397285,
-      "latitude": 60.28623464467215
+      "longitude": 0,
+      "latitude": 0
     }
   },
   {
     "id": 23,
-    "name": "THREE60 Energy Norway",
+    "name": "Handelsbanken",
     "standNumber": 23,
-    "industry": "Energi, konsulenttjenester, IT",
-    "description": "THREE60 Energy is a fast-growing energy services provider, delivering an integrated service in engineering, procurement, construction, and operations & maintenance.",
-    "imageName": "three60energynorway",
+    "industry": "Finance",
+    "description": "Handelsbanken er en av Europas sikreste banker, ifølge Global Finance, som tilbyr kundene sine et bredt spekter av tjenester, inkludert sparing, budsjettstøtte, og personlig økonomisk rådgivning. De legger stor vekt på kundeservice og sikkerhet, med sterke tiltak for å bekjempe svindel og et engasjement for å hjelpe kundene å navigere gjennom økonomiske utfordringer.",
+    "imageName": "default",
     "coordinates": {
-      "longitude": 5.235047960397285,
-      "latitude": 60.28623464467215
+      "longitude": 0,
+      "latitude": 0
     }
   },
   {
     "id": 24,
-    "name": "Aker Solutions",
+    "name": "Aibel",
     "standNumber": 24,
-    "industry": "Ingeniør",
-    "description": "Aker Solutions helps the world meet its energy needs by providing products, systems, and services for the oil and gas industry, including subsea production equipment and offshore field design.",
-    "imageName": "akersolutions",
+    "industry": "Unknown",
+    "description": "Aibel er et servicefirma innen olje-, gass- og offshore vindindustriene. Selskapet gir ingeniørkonstruksjon modifikasjoner og vedlikehold gjennom en prosjekts livssyklus.",
+    "imageName": "default",
     "coordinates": {
-      "longitude": 5.235047960397285,
-      "latitude": 60.28623464467215
+      "longitude": 0,
+      "latitude": 0
     }
   },
   {
     "id": 25,
-    "name": "Tolletaten",
+    "name": "Bouvet",
     "standNumber": 25,
-    "industry": "IT, HR, Finans og jus.",
-    "description": "Tolletaten (The Norwegian Customs) is a Norwegian government agency responsible for controlling the import and export of goods and services to and from Norway.",
-    "imageName": "tolletaten",
+    "industry": "Unknown",
+    "description": "Bouvet er en ledende skandinavisk konsulent som leverer tjenester innen teknologi kommunikasjon og bedriftsledelse. Det har over 2 000 ansatte i 17 norske og svenske byer.",
+    "imageName": "default",
     "coordinates": {
-      "longitude": 5.235047960397285,
-      "latitude": 60.28623464467215
+      "longitude": 0,
+      "latitude": 0
     }
   },
   {
     "id": 26,
-    "name": "Tryg Forsikring",
+    "name": "Capgemini",
     "standNumber": 26,
-    "industry": "Finans",
-    "description": "Tryg Forsikring is one of the largest insurance companies in the Nordic region, providing a variety of insurance services for private individuals and businesses.",
-    "imageName": "trygforsikring",
+    "industry": "Unknown",
+    "description": "Capgemini er et globalt konsulentselskap med kontorer over hele verden. ",
+    "imageName": "default",
     "coordinates": {
-      "longitude": 5.235047960397285,
-      "latitude": 60.28623464467215
+      "longitude": 0,
+      "latitude": 0
     }
   },
   {
     "id": 27,
-    "name": "Riksrevisjonen",
+    "name": "Exsitec",
     "standNumber": 27,
-    "industry": "Revisjon",
-    "description": "Riksrevisjonen is the supreme audit institution of Norway, responsible for auditing the financial transactions of the Norwegian government.",
-    "imageName": "riksrevisjonen",
+    "industry": "Technology",
+    "description": "Exsitec er et ledende IT-rådgivingsselskap innen økonomi-, logistikk-, HRM - og CRM-systemer",
+    "imageName": "default",
     "coordinates": {
-      "longitude": 5.235047960397285,
-      "latitude": 60.28623464467215
+      "longitude": 0,
+      "latitude": 0
     }
   },
   {
     "id": 28,
-    "name": "Nordea",
+    "name": "Gjensidige",
     "standNumber": 28,
-    "industry": "Bank/Finans, IT",
-    "description": "Nordea is a large financial services group in the Nordic and Baltic region, providing a wide range of banking services to personal, corporate, and institutional customers.",
-    "imageName": "nordea",
+    "industry": "Unknown",
+    "description": "Gjensidige Group er et nordisk skadeforsikringsselskap notert på Oslo Børs. Det tilbyr pensjon og sparing.",
+    "imageName": "default",
     "coordinates": {
-      "longitude": 5.235047960397285,
-      "latitude": 60.28623464467215
+      "longitude": 0,
+      "latitude": 0
     }
   },
   {
     "id": 29,
-    "name": "Safetec Nordic",
+    "name": "Lyse AS",
     "standNumber": 29,
-    "industry": "Ingeniørfag, samfunnsvitenskap, psykologi, sikring og beredskap,",
-    "description": "Safetec Nordic is a consulting name that provides risk management and safety services to businesses in a range of sectors, including energy, transportation, and public sector.",
-    "imageName": "safetecnordic",
+    "industry": "Unknown",
+    "description": "Lyse produserer og leverer strøm til hele Norge. Vi tilbyr også TV og internett fra Altibox.",
+    "imageName": "default",
     "coordinates": {
-      "longitude": 5.235047960397285,
-      "latitude": 60.28623464467215
+      "longitude": 0,
+      "latitude": 0
     }
   },
   {
     "id": 30,
-    "name": "NCC",
+    "name": "Nordea",
     "standNumber": 30,
-    "industry": "Bygg og anlegg, entreprenør",
-    "description": "NCC is a leading construction and property development name in the Nordic region, with operations in housing, commercial property development, and roads.",
-    "imageName": "ncc",
+    "industry": "Unknown",
+    "description": "Nordea Bank Abp, vanligvis referert til som Nordea, er en nordisk finansiell tjenestegruppe som opererer i Nord-Europa med hovedkontor i Helsinki, Finland. Navnet er en blanding av ordene “Nordic” og “idea”.",
+    "imageName": "default",
     "coordinates": {
-      "longitude": 5.235047960397285,
-      "latitude": 60.28623464467215
+      "longitude": 0,
+      "latitude": 0
     }
   },
   {
     "id": 31,
-    "name": "Eika Gruppen",
+    "name": "Sammen Karriere",
     "standNumber": 31,
-    "industry": "Finans/Økonomi (Bank og Forsikring)",
-    "description": "Eika Gruppen is one of the largest financial groups in Norway, offering a wide range of financial products and services including banking, insurance, and real estate brokerage.",
-    "imageName": "eikagruppen",
+    "industry": "Unknown",
+    "description": "Sammen Karriere er en tjeneste som tilbyr studenter karriereveiledning, intervjutrening, CV- og søknadshjelp, og andre ressurser for å forberede dem for arbeidsmarkedet. De tilbyr også spesialiserte kurs og workshops, inkludert et LinkedIn-kurs og skriveverksteder for CV og jobbsøknader, samt gir innsikt i arbeidsdagen gjennom deres Externship-program.",
+    "imageName": "default",
     "coordinates": {
-      "longitude": 5.235047960397285,
-      "latitude": 60.28623464467215
+      "longitude": 0,
+      "latitude": 0
     }
   },
   {
     "id": 32,
-    "name": "KCA Deutag",
+    "name": "TechnipFMC",
     "standNumber": 32,
-    "industry": "Ingeniør Energi, olje og gass",
-    "description": "KCA Deutag is a leading global drilling and engineering contractor with operations in over 20 countries. The name is involved in both onshore and offshore oil and gas sectors.",
-    "imageName": "kcadeutag",
+    "industry": "Technology",
+    "description": "TechnipFMC er en global leder innen olje- og gassindustrien, med over 50 års erfaring i offshore virksomhet i Norge, og er en pioner innen utvikling av havbunnssystemer for produksjon av olje og gass. Med 2600 ansatte i Norge alene, bidrar de til lokal sysselsetting og investerer i prosjekter for næringsutvikling, samtidig som de spiller en nøkkelrolle i store prosjekter som Gullfaks, Hywind, Johan Sverdrup, Ormen Lange og Snorre.",
+    "imageName": "default",
     "coordinates": {
-      "longitude": 5.235047960397285,
-      "latitude": 60.28623464467215
+      "longitude": 0,
+      "latitude": 0
     }
   },
   {
     "id": 33,
-    "name": "Lerøy Seafood Group ASA",
+    "name": "VIEW Ledger",
     "standNumber": 33,
-    "industry": "Vi har jobbe innen flere sektorer, IT,HR, Salg, Logistikk, Økonomi.....",
-    "description": "Lerøy Seafood Group is a world-leading seafood corporation, offering sustainable and high-quality seafood to customers across the globe.",
-    "imageName": "leroyseafood",
+    "industry": "Unknown",
+    "description": "VIEW Ledger AB er et selskap som opererer i bemannings- og rekrutteringsbransjen. Det sysselsetter 51–100 mennesker og har $10M–$25M i inntekter. Selskapet har hovedkontor i Stockholm, Stockholm, Sverige.",
+    "imageName": "default",
     "coordinates": {
-      "longitude": 5.235047960397285,
-      "latitude": 60.28623464467215
+      "longitude": 0,
+      "latitude": 0
     }
   },
   {
     "id": 34,
-    "name": "Bergen Engines",
+    "name": "Accenture",
     "standNumber": 34,
-    "industry": "IT, Ingeniør, HR, Finans/Økonomi, Markedsføring og kommunikasjon, Salg, Logistikk, maskinering, montering (produksjonsarbeid)",
-    "description": "Bergen Engines, part of UK-based Rolls-Royce Power Systems, develops and produces medium-speed engines for marine and power generation applications.",
-    "imageName": "bergenengines",
+    "industry": "Unknown",
+    "description": "Accenture er et profesjonelt tjenesteselskap basert i Dublin, Irland, som spesialiserer seg på IT-tjenester og rådgivning.",
+    "imageName": "default",
     "coordinates": {
-      "longitude": 5.235047960397285,
-      "latitude": 60.28623464467215
+      "longitude": 0,
+      "latitude": 0
     }
   },
   {
     "id": 35,
-    "name": "Bouvet Norge AS",
+    "name": "Bergen Engines",
     "standNumber": 35,
-    "industry": "IT",
-    "description": "Bouvet Norge AS is a Norwegian consulting name that assists businesses in change implementation, utilizing technology and communication channels effectively.",
-    "imageName": "bouvetnorge",
+    "industry": "Unknown",
+    "description": "Bergen Engines AS bygger ikoniske mellomhastighets væskebrente og gassbrente stempelmotorer for marine og landbaserte applikasjoner. Motorene deres kan bli funnet i drift i noen av de mest krevende og fiendtlige miljøene på jorden, både på land og til sjøs.",
+    "imageName": "default",
     "coordinates": {
-      "longitude": 5.235047960397285,
-      "latitude": 60.28623464467215
+      "longitude": 0,
+      "latitude": 0
     }
   },
   {
     "id": 36,
-    "name": "TotalEnergies EP Norge As",
+    "name": "Bergen kommune",
     "standNumber": 36,
-    "industry": "Energi, Finans/økonomi, HR, Ingeniør",
-    "description": "TotalEnergies EP Norge As is a subsidiary of the multinational TotalEnergies, which is involved in every sector of the oil industry, including upstream (exploration, development, and production of crude oil and natural gas) and downstream operations (refining, petrochemicals, specialty chemicals, trading and shipping of crude oil and petroleum products).",
-    "imageName": "totalenergies",
+    "industry": "Unknown",
+    "description": "Bergen kommune er den lokale regjeringen for byen Bergen i Norge.",
+    "imageName": "default",
     "coordinates": {
-      "longitude": 5.235047960397285,
-      "latitude": 60.28623464467215
+      "longitude": 0,
+      "latitude": 0
     }
   },
   {
     "id": 37,
-    "name": "Adecco Group Norway",
+    "name": "Clara Adventure Labs",
     "standNumber": 37,
-    "industry": "HR / Rekruttering",
-    "description": "Adecco Group Norway is part of the Adecco Group, the world’s leading HR solutions name. They offer a wide variety of services, from temporary and permanent staffing to career transition and talent development.",
-    "imageName": "adeccogroup",
+    "industry": "Unknown",
+    "description": "Clara Adventure Labs er et venture-lab for banebrytende innovasjoner innen industriell teknologi og materialer, støttet av Aker.",
+    "imageName": "default",
     "coordinates": {
-      "longitude": 5.235047960397285,
-      "latitude": 60.28623464467215
+      "longitude": 0,
+      "latitude": 0
     }
   },
   {
     "id": 38,
-    "name": "Omega 365",
+    "name": "Eviny (BKK)",
     "standNumber": 38,
-    "industry": "IT, Ingeniør, HR/Rekruttering, Konsulenttjenester",
-    "description": "Omega 365 provides specialist consultant services to the energy sector, IT industries and infrastructure projects worldwide. The name delivers software solutions and project information management services to support project execution.",
-    "imageName": "omega365",
+    "industry": "Unknown",
+    "description": "Eviny er et fornybart selskap som jobber for å gjøre det mulig å bruke ren, fornybar energi overalt. I 2021 ble kraftselskapet som nordmenn kjenner som BKK delt i to: BKK og Eviny.",
+    "imageName": "default",
     "coordinates": {
-      "longitude": 5.235047960397285,
-      "latitude": 60.28623464467215
+      "longitude": 0,
+      "latitude": 0
     }
   },
   {
     "id": 39,
-    "name": "Posten Norge AS",
+    "name": "KPMG",
     "standNumber": 39,
-    "industry": "Logistikk",
-    "description": "Posten Norge AS, doing business as Posten, is the name of the Norwegian postal service. The name has a monopoly on distribution of letters weighing less than 50g throughout the country and also provides logistics, package, express, bank, retail and other services.",
-    "imageName": "postennorge",
+    "industry": "Unknown",
+    "description": "KPMG er en av verdens største profesjonelle tjenesteselskaper og en av de fire store revisorene, sammen med Deloitte, EY og PwC. Hovedkontoret ligger i Amstelveen, Nederland.\n",
+    "imageName": "default",
     "coordinates": {
-      "longitude": 5.235047960397285,
-      "latitude": 60.28623464467215
+      "longitude": 0,
+      "latitude": 0
+    }
+  },
+  {
+    "id": 40,
+    "name": "Multiconsult",
+    "standNumber": 40,
+    "industry": "Unknown",
+    "description": "Multiconsult er en av de ledende firmaene innen rådgivende ingeniører og designere i Norge og Skandinavia.",
+    "imageName": "default",
+    "coordinates": {
+      "longitude": 0,
+      "latitude": 0
+    }
+  },
+  {
+    "id": 41,
+    "name": "Netcompany",
+    "standNumber": 41,
+    "industry": "Unknown",
+    "description": "Netcompany er en dansk børsnotert IT-konsulent med hovedkontor i København, Danmark. Siden grunnleggelsen i 2000 har selskapet vokst, både nasjonalt og internasjonalt, til et selskap med 10 kontorer i 6 forskjellige land.",
+    "imageName": "default",
+    "coordinates": {
+      "longitude": 0,
+      "latitude": 0
+    }
+  },
+  {
+    "id": 42,
+    "name": "Norconsult",
+    "standNumber": 42,
+    "industry": "Unknown",
+    "description": "Norconsult er et norsk konsulentfirma.",
+    "imageName": "default",
+    "coordinates": {
+      "longitude": 0,
+      "latitude": 0
+    }
+  },
+  {
+    "id": 43,
+    "name": "Olavstoppen",
+    "standNumber": 43,
+    "industry": "Unknown",
+    "description": "Olavstoppen (OT) er et heleid datterselskap av Bouvet. Olavstoppen består av designere og utviklere som skaper produkter med positiv innvirkning på mennesker og samfunn.",
+    "imageName": "default",
+    "coordinates": {
+      "longitude": 0,
+      "latitude": 0
+    }
+  },
+  {
+    "id": 44,
+    "name": "Riksrevisjonen",
+    "standNumber": 44,
+    "industry": "Unknown",
+    "description": "Riksrevisjonen er Riksrevisjonen i Norge.",
+    "imageName": "default",
+    "coordinates": {
+      "longitude": 0,
+      "latitude": 0
+    }
+  },
+  {
+    "id": 45,
+    "name": "Wood",
+    "standNumber": 45,
+    "industry": "Unknown",
+    "description": "Wood er en av verdens ledende konsulent- og ingeniørselskaper som opererer innen energi- og materialmarkeder.",
+    "imageName": "default",
+    "coordinates": {
+      "longitude": 0,
+      "latitude": 0
+    }
+  },
+  {
+    "id": 46,
+    "name": "Departementene",
+    "standNumber": 46,
+    "industry": "Unknown",
+    "description": "Departementene de norske regjeringsdepartementene.",
+    "imageName": "default",
+    "coordinates": {
+      "longitude": 0,
+      "latitude": 0
+    }
+  },
+  {
+    "id": 47,
+    "name": "Framtidsfylket",
+    "standNumber": 47,
+    "industry": "Unknown",
+    "description": "",
+    "imageName": "default",
+    "coordinates": {
+      "longitude": 0,
+      "latitude": 0
+    }
+  },
+  {
+    "id": 48,
+    "name": "Kongsberg Gruppen",
+    "standNumber": 48,
+    "industry": "Unknown",
+    "description": "Kongsberg Gruppen er en internasjonal teknologigruppe som leverer høyteknologiske systemer og løsninger til kunder innen handelsmarine, forsvar, luftfart, offshore olje og gassindustrier samt fornybare og nytteindustrier.",
+    "imageName": "default",
+    "coordinates": {
+      "longitude": 0,
+      "latitude": 0
+    }
+  },
+  {
+    "id": 49,
+    "name": "Posten Norge As",
+    "standNumber": 49,
+    "industry": "Unknown",
+    "description": "Posten Norge AS, handlet som Posten Norge eller bare Posten, er en norsk posttjeneste eid av det norske Samferdselsdepartementet. Det gir posttjenester som å sende brev og pakker nasjonalt og internasjonalt.",
+    "imageName": "default",
+    "coordinates": {
+      "longitude": 0,
+      "latitude": 0
+    }
+  },
+  {
+    "id": 50,
+    "name": "Sjøfartsdirektoratet",
+    "standNumber": 50,
+    "industry": "Unknown",
+    "description": "Sjøfartsdirektoratet er Sjøfartsdirektoratet i Norge.",
+    "imageName": "default",
+    "coordinates": {
+      "longitude": 0,
+      "latitude": 0
+    }
+  },
+  {
+    "id": 51,
+    "name": "Skatteetaten",
+    "standNumber": 51,
+    "industry": "Unknown",
+    "description": "Skatteetaten er Skatteetaten i Norge. Det er ansvarlig for å sikre at skattene blir fastsatt og innkrevd på riktig måte, samt å opprettholde Folkeregisteret.",
+    "imageName": "default",
+    "coordinates": {
+      "longitude": 0,
+      "latitude": 0
+    }
+  },
+  {
+    "id": 52,
+    "name": "Statens vegvesen",
+    "standNumber": 52,
+    "industry": "Unknown",
+    "description": "Statens vegvesen er en norsk statlig etat ansvarlig for nasjonale og fylkeskommunale offentlige veier i Norge. Dette inkluderer planlegging, bygging og drift av nasjonale og fylkeskommunale veier, føreropplæring og lisensiering, kjøretøyinspeksjon og subsidier til bilferger.",
+    "imageName": "default",
+    "coordinates": {
+      "longitude": 0,
+      "latitude": 0
+    }
+  },
+  {
+    "id": 53,
+    "name": "Statforvalterens fellestjenester",
+    "standNumber": 53,
+    "industry": "Unknown",
+    "description": "Statforvalterens fellestjenester refererer til fylkesmannens felles tjenester.",
+    "imageName": "default",
+    "coordinates": {
+      "longitude": 0,
+      "latitude": 0
+    }
+  },
+  {
+    "id": 54,
+    "name": "Toll og Avgiftsetaten",
+    "standNumber": 54,
+    "industry": "Unknown",
+    "description": "Toll og Avgiftsetaten, nå kjent som Tolletaten (den norske tollvesenet), er en norsk statlig etat under Finansdepartementet ansvarlig for å sikre overholdelse av lover og forskrifter om grenseoverskridende bevegelse av varer.",
+    "imageName": "default",
+    "coordinates": {
+      "longitude": 0,
+      "latitude": 0
+    }
+  },
+  {
+    "id": 55,
+    "name": "Tryg",
+    "standNumber": 55,
+    "industry": "Unknown",
+    "description": "Tryg er et forsikringsselskap basert i Danmark.",
+    "imageName": "default",
+    "coordinates": {
+      "longitude": 0,
+      "latitude": 0
+    }
+  },
+  {
+    "id": 56,
+    "name": "TV 2",
+    "standNumber": 56,
+    "industry": "Unknown",
+    "description": "TV 2 er en norsk gratis TV-kanal. Hovedkontoret ligger i Bergen. TV 2 begynte å sende 5. september 1992. Det er ett av Norges største medieselskaper.",
+    "imageName": "default",
+    "coordinates": {
+      "longitude": 0,
+      "latitude": 0
+    }
+  },
+  {
+    "id": 57,
+    "name": "Wintershall DEa",
+    "standNumber": 57,
+    "industry": "Unknown",
+    "description": "Wintershall DEa er Europas ledende uavhengige gass- og oljeselskap med full livssyklus evner for leting, utvikling og produksjonsaktiviteter. Det fokuserer på regioner som Nord-Europa, Nord-Afrika, Midtøsten og Latin-Amerika.",
+    "imageName": "default",
+    "coordinates": {
+      "longitude": 0,
+      "latitude": 0
+    }
+  },
+  {
+    "id": 58,
+    "name": "FN-sambandet",
+    "standNumber": 58,
+    "industry": "Unknown",
+    "description": "FN-sambandet, også kjent som FN-sambandet i Norge (FN-sambandet Norge), er en uavhengig medlemsorganisasjon som jobber for å informere om FNs arbeid for fred, utvikling, menneskerettigheter, demokrati, nedrustning, internasjonal lov, humanitært arbeid, likestilling, klimaendring/miljøvern.",
+    "imageName": "default",
+    "coordinates": {
+      "longitude": 0,
+      "latitude": 0
+    }
+  },
+  {
+    "id": 59,
+    "name": "Equinor",
+    "standNumber": 59,
+    "industry": "Unknown",
+    "description": "Equinor, tidligere kjent som Statoil til mai 2018, er et norsk multinasjonalt energiselskap med hovedkontor i Stavanger. Det opererer hovedsakelig i Norge, men har også operasjoner i andre land.",
+    "imageName": "default",
+    "coordinates": {
+      "longitude": 0,
+      "latitude": 0
+    }
+  },
+  {
+    "id": 60,
+    "name": "Intility",
+    "standNumber": 60,
+    "industry": "Technology",
+    "description": "Intility er et norsk IT-selskap som leverer IT-driftstjenester. Selskapet ble etablert i 2000. Intility har hovedkontor på Schweigaards gate 39 på Grønland (Oslo). Selskapet har også avdelingskontorer i Trondheim, Bergen og Stockholm. Per juni 2021 hadde selskapet over 400 ansatte.",
+    "imageName": "default",
+    "coordinates": {
+      "longitude": 0,
+      "latitude": 0
+    }
+  },
+  {
+    "id": 61,
+    "name": "Mowi ASA",
+    "standNumber": 61,
+    "industry": "Unknown",
+    "description": "Mowi ASA, tidligere kjent som Marine Harvest ASA (til 1. januar 2019), (Pan Fish før 6. februar 2007), er et norsk sjømatselskap med virksomhet i flere land rundt om i verden. Selskapet sysselsetter 11 500 mennesker over hele verden og det representeres i 25 land. I 2022 hadde det en omsetning på EUR 4,9 milliarder.",
+    "imageName": "default",
+    "coordinates": {
+      "longitude": 0,
+      "latitude": 0
+    }
+  },
+  {
+    "id": 62,
+    "name": "NAV Region Bergen",
+    "standNumber": 62,
+    "industry": "Unknown",
+    "description": "NAV er Norges offentlige etat for arbeid og velferd, som tilbyr tjenester og støtte innen områder som arbeid, helse og sykdom, familie og barn, pensjon, sosiale tjenester, og hjelpemidler og tilrettelegging. Med et vidt spekter av tjenester, bidrar NAV til arbeidsformidling, administrasjon av pensjoner, utbetaling av økonomisk støtte, og veiledning for å hjelpe borgere i ulike livssituasjoner.",
+    "imageName": "default",
+    "coordinates": {
+      "longitude": 0,
+      "latitude": 0
+    }
+  },
+  {
+    "id": 63,
+    "name": "Oceaneering",
+    "standNumber": 63,
+    "industry": "Unknown",
+    "description": "Oceaneering er en global leverandør av konstruerte produkter og tjenester med hovedkontor i Houston, Texas. Det opprettholder regionale kontorer i Amerika, Asia, Afrika, Europa og Midtøsten.",
+    "imageName": "default",
+    "coordinates": {
+      "longitude": 0,
+      "latitude": 0
+    }
+  },
+  {
+    "id": 64,
+    "name": "Omega 365",
+    "standNumber": 64,
+    "industry": "Unknown",
+    "description": "Omega 365 er en global tjenesteleverandør som spesialiserer seg på prosjektledelse, tekniske tjenester og bemanningsløsninger, primært innen teknologi, olje og gass, og energisektorene. De tilbyr et bredt spekter av tjenester, inkludert dokumenthåndtering, fullføring, kostnadsstyring, kontraktsstyring, kvalitetsstyring, risikostyring, og mer, og legger vekt på å integrere disse løsningene for å spare tid og penger for klientene.",
+    "imageName": "default",
+    "coordinates": {
+      "longitude": 0,
+      "latitude": 0
+    }
+  },
+  {
+    "id": 65,
+    "name": "pwc",
+    "standNumber": 65,
+    "industry": "Unknown",
+    "description": "PwC er en av verdens største profesjonelle tjenesteselskaper og en av de fire store revisorene, sammen med Deloitte, EY og KPMG. Hovedkontoret ligger i London, Storbritannia.",
+    "imageName": "default",
+    "coordinates": {
+      "longitude": 0,
+      "latitude": 0
+    }
+  },
+  {
+    "id": 66,
+    "name": "Safetec",
+    "standNumber": 66,
+    "industry": "Unknown",
+    "description": "Safetec er en ledende, uavhengig konsulentvirksomhet som tilbyr spesialiserte tjenester innen risikostyring, miljørådgivning og ekspertise på ytelsesforbedring av eiendeler. Med et sterkt fokus på bærekraft, tilbyr Safetec en rekke tjenester, inkludert ledelse, organisasjon og sikkerhet, revisjon og ekspertise, beredskap, sikkerhet, teknisk og operasjonell sikkerhet, risikoanalyse og konsekvensanalyse.",
+    "imageName": "default",
+    "coordinates": {
+      "longitude": 0,
+      "latitude": 0
+    }
+  },
+  {
+    "id": 67,
+    "name": "Standard norge AS",
+    "standNumber": 67,
+    "industry": "Unknown",
+    "description": "Standard Norge er den ledende aktøren innen nasjonal og internasjonal standardisering i Norge. Sammen med kundene utvikler de løsninger som øker effektiviteten, konkurranseevnen og reduserer risikoen i bedrifter og samfunn.",
+    "imageName": "default",
+    "coordinates": {
+      "longitude": 0,
+      "latitude": 0
     }
   }
 ]
