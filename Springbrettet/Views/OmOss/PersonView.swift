@@ -12,7 +12,9 @@ struct PersonView: View {
     
     var body: some View {
         List {
+            
             VStack {
+                
                 Image(person.imageName) // Assuming your Person struct has a imageName property
                     .resizable() // Add this line to let image resize itself
                     .aspectRatio(contentMode: .fill) // Preserve the aspect ratio of original image
@@ -26,9 +28,9 @@ struct PersonView: View {
                     Text(person.studie)
                         .font(.custom("AvenirNext-Bold", size: 15))
                         .foregroundColor(.secondary)
-                    Link(person.email, destination: URL(string: person.email)!)
+                    Link(person.email, destination: URL(string: "mailto:\(person.email)")!)
                         .font(.custom("AvenirNext-Bold", size: 15))
-                    
+
                 }
             }
         }

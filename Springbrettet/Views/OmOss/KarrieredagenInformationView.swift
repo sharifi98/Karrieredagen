@@ -56,38 +56,46 @@ struct KarrieredagenInformationView: View {
                         .font(.headline)
                         .padding(.bottom, 5)
                     
-                    ScrollView(.horizontal, showsIndicators: false) {
-                        HStack {
-                            ForEach(springbrettereData, id: \.id) { member in
-                                
-                                NavigationLink {
+                    ZStack {
+                        
+                        Rectangle()
+                            .frame(width: 370, height: 200)
+                            .clipShape(Rectangle())
+                            .cornerRadius(20)
+                            .foregroundColor(.orange)
+                        ScrollView(.horizontal, showsIndicators: false) {
+                            HStack {
+                                ForEach(springbrettereData, id: \.id) { member in
                                     
-                                    PersonView(person: member)
-                                } label: {
-                                    VStack {
-                                        member.image
-                                            .resizable()
-                                            .scaledToFit()
-                                            .frame(height: 200)
-                                            .clipShape(Circle())
-                                            .overlay(
-                                                Circle()
-                                                    .stroke(Color("KDOrange"), lineWidth: 1)
-                                            )
-                                        
+                                    NavigationLink {
+                                        PersonView(person: member)
+                                    } label: {
                                         VStack {
-                                            Text(member.name)
-                                                .font(.headline)
-                                                .foregroundColor(.primary)
-                                            Text(member.role)
-                                                .font(.subheadline)
-                                                .foregroundColor(.secondary)
+                                            member.image
+                                                .resizable()
+                                                .scaledToFit()
+                                                .frame(height: 100)
+                                                .clipShape(Circle())
+                                                .overlay(
+                                                    Circle()
+                                                        .stroke(Color("KDOrange"), lineWidth: 6)
+                                                )
+                                            
+                                            VStack {
+                                                Text(member.name)
+                                                    .font(.headline)
+                                                    .foregroundColor(.primary)
+                                                Text(member.role)
+                                                    .font(.subheadline)
+                                                    .foregroundColor(.secondary)
+                                            }
+                                            
                                         }
-                                        
+                                        .padding()
                                     }
-                                }
 
-                                
+                                    
+                                }
                             }
                         }
                     }
