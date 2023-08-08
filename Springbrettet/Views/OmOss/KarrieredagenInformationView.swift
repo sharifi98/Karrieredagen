@@ -2,6 +2,7 @@ import SwiftUI
 import SDWebImageSwiftUI
 
 struct KarrieredagenInformationView: View {
+    @State private var animateMembers = false
     
     var body: some View {
         
@@ -97,6 +98,7 @@ struct KarrieredagenInformationView: View {
                                     
                                 }
                             }
+                            
                         }
                     }
                 }
@@ -107,6 +109,9 @@ struct KarrieredagenInformationView: View {
             .listStyle(GroupedListStyle())
     }
 }
+
+
+
 
 struct KarrieredagenInformationView_Previews: PreviewProvider {
     static var previews: some View {

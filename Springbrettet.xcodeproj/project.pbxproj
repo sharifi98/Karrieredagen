@@ -35,7 +35,6 @@
 		0396B08D2A25F024008E6CAC /* CompanyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0396B08C2A25F024008E6CAC /* CompanyList.swift */; };
 		0396B08F2A25F136008E6CAC /* CompanyDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0396B08E2A25F136008E6CAC /* CompanyDetail.swift */; };
 		0396B0912A260E6C008E6CAC /* GriegView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0396B0902A260E6B008E6CAC /* GriegView.swift */; };
-		03D5C9432A82A7E0007D5508 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D5C9422A82A7E0007D5508 /* CardView.swift */; };
 		03D5C9452A82A9DC007D5508 /* Studenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D5C9442A82A9DC007D5508 /* Studenter.swift */; };
 		03D995222A75393E00B8F6A8 /* KDaftermovie_cropped.gif in Resources */ = {isa = PBXBuildFile; fileRef = 03D995212A75393E00B8F6A8 /* KDaftermovie_cropped.gif */; };
 		03E44CB32A76D16A00A57B1E /* CVITView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E44CB22A76D16A00A57B1E /* CVITView.swift */; };
@@ -77,7 +76,6 @@
 		0396B08C2A25F024008E6CAC /* CompanyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyList.swift; sourceTree = "<group>"; };
 		0396B08E2A25F136008E6CAC /* CompanyDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyDetail.swift; sourceTree = "<group>"; };
 		0396B0902A260E6B008E6CAC /* GriegView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GriegView.swift; sourceTree = "<group>"; };
-		03D5C9422A82A7E0007D5508 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		03D5C9442A82A9DC007D5508 /* Studenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Studenter.swift; sourceTree = "<group>"; };
 		03D995212A75393E00B8F6A8 /* KDaftermovie_cropped.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = KDaftermovie_cropped.gif; sourceTree = "<group>"; };
 		03E44CB22A76D16A00A57B1E /* CVITView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVITView.swift; sourceTree = "<group>"; };
@@ -126,7 +124,6 @@
 			children = (
 				0313999F2A2635380003427A /* ScheduleList.swift */,
 				0313999D2A262E130003427A /* ScheduleRow.swift */,
-				03D5C9422A82A7E0007D5508 /* CardView.swift */,
 				03ECA4582A29C23A007E0829 /* EventDetailView.swift */,
 			);
 			path = Schedule;
@@ -318,7 +315,6 @@
 				035359F22A79A704003AB9B3 /* Person.swift in Sources */,
 				03ECA45B2A29C442007E0829 /* HvemErSpringbrettetView.swift in Sources */,
 				0361E1532A75630800AC4ABF /* CVTipsView.swift in Sources */,
-				03D5C9432A82A7E0007D5508 /* CardView.swift in Sources */,
 				031C6BF02A47090F00332564 /* GifImage.swift in Sources */,
 				036B44F42A6093BB0059EB50 /* DiTView.swift in Sources */,
 				03E44CB32A76D16A00A57B1E /* CVITView.swift in Sources */,

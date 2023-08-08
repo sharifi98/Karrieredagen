@@ -117,6 +117,20 @@ struct HomeView: View {
                 }
                 
                 Section {
+                    
+                    
+                    NavigationLink(destination: Studenter()) {
+                        HStack {
+                            Image("SB")
+                                .resizable()
+                                .frame(width: 30, height: 30) // Set your desired width and height here
+                                .aspectRatio(contentMode: .fill)
+                            
+                            Text("Bli med i Springbrettet")
+                        }
+                    }.foregroundColor(Color("KDOrange"))
+
+                    
                     NavigationLink(destination: FeedBackView()) {
                         Label("Tilbakemelding", systemImage: "questionmark.bubble")
                     }.foregroundColor(Color("KDOrange"))

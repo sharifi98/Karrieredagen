@@ -20,33 +20,30 @@ struct Studenter: View {
                     // Replace "TextColor" with the appropriate color name if needed
                         .padding() // Add some padding around the text
                 }
+                
+                Section {
+                    
+                    // change to correct linking and buttons
+                    
+                    Link(destination: URL(string: "https://www.instagram.com/springbrettet/")!) {
+                        Label("Instagram", systemImage: "camera")
+                    }
+                    .foregroundColor(.pink)
+                    
+                    Link(destination: URL(string: "https://www.facebook.com/springbrettet")!) {
+                        Label("Facebook", systemImage: "person")
+                    }
+                    .foregroundColor(.blue)
+                    
+                    Link(destination: URL(string: "https://www.linkedin.com/company/springbrettet/mycompany/")!) {
+                        Label("LinkedIn", systemImage: "point.3.filled.connected.trianglepath.dotted")
+                    }
+                    .foregroundColor(.cyan)
+
+                }
             }
             
-            Link(destination: URL(string: "https://open.spotify.com/show/6ASAsnRx8KDiNvBpnpTeWQ?utm_source=generator")!) {
-                Text("Lytt på Spotify")
-                    .padding()
-                    .background(Color("KDOrange"))
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
-                    .overlay(
-                        Image(systemName: "music.note")
-                            .foregroundColor(.white)
-                    , alignment: .leading)
-            }
-            .buttonStyle(PlainButtonStyle())
 
-            Link(destination: URL(string: "https://instagram.com/karrierestudio?igshid=MzRlODBiNWFlZA==")!) {
-                Text("Følg oss på Instagram")
-                    .padding()
-                    .background(Color("KDOrange"))
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
-                    .overlay(
-                        Image(systemName: "camera")
-                            .foregroundColor(.white)
-                    , alignment: .leading)
-            }
-            .buttonStyle(PlainButtonStyle())
 
 
         }
