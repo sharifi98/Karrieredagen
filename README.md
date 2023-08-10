@@ -1,4 +1,4 @@
-# Springbrett App
+# Springbrettet App
 
 ![App Logo](./path-to-your-app-logo.png) 
 
