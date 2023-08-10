@@ -34,7 +34,6 @@
 		0396B08B2A25EA18008E6CAC /* CompanyRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0396B08A2A25EA18008E6CAC /* CompanyRow.swift */; };
 		0396B08D2A25F024008E6CAC /* CompanyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0396B08C2A25F024008E6CAC /* CompanyList.swift */; };
 		0396B08F2A25F136008E6CAC /* CompanyDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0396B08E2A25F136008E6CAC /* CompanyDetail.swift */; };
-		0396B0912A260E6C008E6CAC /* GriegView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0396B0902A260E6B008E6CAC /* GriegView.swift */; };
 		03D5C9452A82A9DC007D5508 /* Studenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D5C9442A82A9DC007D5508 /* Studenter.swift */; };
 		03D995222A75393E00B8F6A8 /* KDaftermovie_cropped.gif in Resources */ = {isa = PBXBuildFile; fileRef = 03D995212A75393E00B8F6A8 /* KDaftermovie_cropped.gif */; };
 		03E44CB32A76D16A00A57B1E /* CVITView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E44CB22A76D16A00A57B1E /* CVITView.swift */; };
@@ -75,7 +74,6 @@
 		0396B08A2A25EA18008E6CAC /* CompanyRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyRow.swift; sourceTree = "<group>"; };
 		0396B08C2A25F024008E6CAC /* CompanyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyList.swift; sourceTree = "<group>"; };
 		0396B08E2A25F136008E6CAC /* CompanyDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyDetail.swift; sourceTree = "<group>"; };
-		0396B0902A260E6B008E6CAC /* GriegView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GriegView.swift; sourceTree = "<group>"; };
 		03D5C9442A82A9DC007D5508 /* Studenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Studenter.swift; sourceTree = "<group>"; };
 		03D995212A75393E00B8F6A8 /* KDaftermovie_cropped.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = KDaftermovie_cropped.gif; sourceTree = "<group>"; };
 		03E44CB22A76D16A00A57B1E /* CVITView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVITView.swift; sourceTree = "<group>"; };
@@ -202,7 +200,6 @@
 				031399982A2623570003427A /* Schedule */,
 				031399952A2621FD0003427A /* Company */,
 				03614BA92A44C289004F70F6 /* OmOss */,
-				0396B0902A260E6B008E6CAC /* GriegView.swift */,
 				033F06C92A758BC0007B6D8D /* CV */,
 				031C6BEF2A47090F00332564 /* GifImage.swift */,
 				030447B02A48854500966396 /* Modifiers */,
@@ -330,7 +327,6 @@
 				0358A3AA2A5AF44D00B68428 /* KarrierestudioView.swift in Sources */,
 				0313999E2A262E130003427A /* ScheduleRow.swift in Sources */,
 				0396B06F2A250193008E6CAC /* KarrieredagenApp.swift in Sources */,
-				0396B0912A260E6C008E6CAC /* GriegView.swift in Sources */,
 				0396B0862A25E068008E6CAC /* ModelData.swift in Sources */,
 				0396B08B2A25EA18008E6CAC /* CompanyRow.swift in Sources */,
 				0396B08D2A25F024008E6CAC /* CompanyList.swift in Sources */,

@@ -1,102 +1,132 @@
-//
-//  OmOssView.swift
-//  Karriaredagen
-//
-//  Created by Hossein Sharifi on 24/06/2023.
-//
-
 import SwiftUI
 
+
 struct OmOssView: View {
-    
+
     let images1 = ["Screenshot 2023-07-05 at 15-56-54 Springbrettfondet — Springbrettet", "Screenshot 2023-07-05 at 15-57-16 Springbrettfondet — Springbrettet"]
+
     
+
     var body: some View {
+
         NavigationView {
-            ZStack {
-                
-                List {
-                    Section {
-                        
-                        NavigationLink(destination: HvemErSpringbrettetView()) {
-                            Label {
-                                Text("Hva er Springbrettet?")
-                            } icon: {
-                                Image(systemName: "info.circle")
-                                    .foregroundColor(.gray)
-                            }
-                        }
-                        
-                        NavigationLink(destination: KarrieredagenInformationView()) {
-                            Label {
-                                Text("Karrieredagen")
-                            } icon: {
-                                Image(systemName: "network")
-                                    .foregroundColor(.blue)
-                            }
-                        }
-                        
-                        
-                        
+
+            List {
+
+                Section(header: Text("Springbrettet")) {
+
+                    NavigationLink(destination: HvemErSpringbrettetView()) {
+
+                        Label("Hva er Springbrettet?", systemImage: "info.circle")
+
+                            .foregroundColor(.gray)
+
                     }
+
                     
-                    Section {
-                        Button(action: {
-                            if let url = URL(string: "https://www.facebook.com/springbrettet/") {
-                                UIApplication.shared.open(url)
-                            }
-                        }) {
-                            HStack {
-                                Image(systemName: "person")
-                                Text("Facebook")
-                            }
+
+                    NavigationLink(destination: KarrieredagenInformationView()) {
+
+                        Label("Karrieredagen", systemImage: "network")
+
                             .foregroundColor(.blue)
-                        }
-                        
-                        Button(action: {
-                            if let url = URL(string: "https://www.instagram.com/springbrettet/") {
-                                UIApplication.shared.open(url)
-                            }
-                        }) {
-                            HStack {
-                                Image(systemName: "camera")
-                                Text("Instagram")
-                            }
-                            .foregroundColor(.pink)
-                        }
-                        
-                        Button(action: {
-                            if let url = URL(string: "https://www.linkedin.com/company/springbrettet/mycompany/") {
-                                UIApplication.shared.open(url)
-                            }
-                        }) {
-                            HStack {
-                                Image(systemName: "point.3.filled.connected.trianglepath.dotted")
-                                
-                                Text("LinkedIn")
-                            }
-                            .foregroundColor(.cyan)
-                        }
+
                     }
+
                 }
-                .foregroundColor(.orange)
-                .listStyle(.grouped)
-                .navigationBarWithTransparentBackground()
-                .toolbar {
-                    ToolbarItemGroup(placement: .navigationBarLeading) {
-                        Text("Om oss")
-                            .font(.custom("AvenirNext-Bold", size: 25))
-                            .foregroundColor(Color("KDOrange"))
+
+                
+
+                Section(header: Text("Følg oss")) {
+
+                    Button(action: {
+
+                        openURL("https://www.facebook.com/springbrettet/")
+
+                    }) {
+
+                        Label("Facebook", systemImage: "person")
+
+                            .foregroundColor(.blue)
+
                     }
+
+                    
+
+                    Button(action: {
+
+                        openURL("https://www.instagram.com/springbrettet/")
+
+                    }) {
+
+                        Label("Instagram", systemImage: "camera")
+
+                            .foregroundColor(.pink)
+
+                    }
+
+                    
+
+                    Button(action: {
+
+                        openURL("https://www.linkedin.com/company/springbrettet/mycompany/")
+
+                    }) {
+
+                        Label("LinkedIn", systemImage: "point.3.connected.trianglepath.dotted")
+
+                            .foregroundColor(.cyan)
+
+                    }
+
+                }
+
             }
+
+            .listStyle(GroupedListStyle())
+
+
+            .navigationBarTitleDisplayMode(.inline)
+
+            .toolbar {
+
+                ToolbarItem(placement: .navigationBarLeading) {
+
+                    Text("Om oss")
+
+                        .font(.title)
+
+                        .foregroundColor(Color("KDOrange"))
+
+                }
+
             }
+
         }
+
     }
+
+    
+
+    private func openURL(_ urlString: String) {
+
+        if let url = URL(string: urlString) {
+
+            UIApplication.shared.open(url)
+
+        }
+
+    }
+
 }
+
 
 struct OmOssView_Previews: PreviewProvider {
-    static var previews: some View {
-        OmOssView()
-    }
-}
 
+    static var previews: some View {
+
+        OmOssView()
+
+    }
+
+}

@@ -67,25 +67,62 @@ struct HomeView: View {
                     }
                 }
 
-                Section(header: Text("Karrieredagen")) {
+                
+                
+                Section {
+                    
+                    Text("Karrieredagen")
+                        .font(.headline)
+                    
                     NavigationLink(destination: CompanyList()) {
-                        Label("Se bedriftene", systemImage: "suitcase")
-                    }.foregroundColor(Color("KDOrange"))
+                        Label {
+                            Text("Se bedriftene")
+                        } icon: {
+                            Image(systemName: "suitcase.fill")
+                                .foregroundColor(Color("KDOrange"))
+                        }
+                    }
 
                     NavigationLink(destination: ScheduleList()) {
-                        Label("Timeplan", systemImage: "calendar")
-                    }.foregroundColor(Color("KDOrange"))
+                        Label {
+                            Text("Timeplan")
+                        } icon: {
+                            Image(systemName: "calendar")
+                                .foregroundColor(Color("KDOrange"))
+                        }
+                    }
 
+                    /*
+                     
                     NavigationLink(destination: GriegView()) {
-                        Label("Kart", systemImage: "map")
-                    }.foregroundColor(Color("KDOrange"))
+                        Label {
+                            Text("Kart")
+                        } icon: {
+                            Image(systemName: "map")
+                                .foregroundColor(Color("KDOrange"))
+                        }
+                    }
+                     
+                    */
 
                     NavigationLink(destination: CVTipsView()) {
-                        Label("Tips til jobbsøknad", systemImage: "pencil")
-                    }.foregroundColor(Color("KDOrange"))
+                        Label {
+                            Text("Tips til jobbsøknad")
+                        } icon: {
+                            Image(systemName: "pencil")
+                                .foregroundColor(Color("KDOrange"))
+                        }
+                    }
                 }
+
+
                 
-                Section(header: Text("Springbrettets prosjekter")) {
+                Section {
+                    
+                    Text("Springbrettets prosjekter")
+
+                        .font(.headline)
+                    
                     NavigationLink(destination: SpringbrettfondetView()) {
                         Label {
                             Text("Springbrettfondet")
@@ -112,6 +149,17 @@ struct HomeView: View {
                                 .foregroundColor(.purple)
                         }
                     }
+                    
+                    NavigationLink(destination: SalmonCityView()) {
+                        Label {
+                            Text("Salmon City")
+                        } icon: {
+                            Image(systemName: "fish")
+                                .foregroundColor(.blue)
+                        }
+                    }
+                    
+                    
 
                     
                 }
@@ -134,63 +182,71 @@ struct HomeView: View {
                     }.foregroundColor(Color("KDOrange"))
                     
                 }
+                
+                
 
-                VStack {
-                    
-                    Text("Karrieredagen gir studenter mulighet til å møte arbeidsgivere, utforske yrkesmuligheter, bygge nettverk og få veiledning fra eksperter.")
-                        .font(.custom("AvenirNext-Regular", size: 15))
-                        .multilineTextAlignment(.center)
-                    
+                Section {
+                    VStack {
+                        
+                        Text("Karrieredagen gir studenter mulighet til å møte arbeidsgivere, utforske yrkesmuligheter, bygge nettverk og få veiledning fra eksperter.")
+                            .font(.custom("AvenirNext-Regular", size: 15))
+                            .multilineTextAlignment(.center)
+                        
 
-                    MapView(coordinate: grieghallencord)
-                        .frame(width: 300, height: 300/1.618)
-                        .clipShape(RoundedRectangle(cornerRadius: 20))
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 20)
-                                .stroke(Color("KDBlue"), lineWidth: 4)
-                        )
-                        .shadow(radius: 7)
-                        .background(Color.white.clipShape(RoundedRectangle(cornerRadius: 20)))
-                    Text("Arrangementet finner sted i Grieghallen i Bergen.")
-                        .font(.custom("AvenirNext-Regular", size: 15))
-                        .multilineTextAlignment(.center)
+                        MapView(coordinate: grieghallencord)
+                            .frame(width: 300, height: 300/1.618)
+                            .clipShape(RoundedRectangle(cornerRadius: 20))
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 20)
+                                    .stroke(Color("KDBlue"), lineWidth: 4)
+                            )
+                            .shadow(radius: 7)
+                            .background(Color.white.clipShape(RoundedRectangle(cornerRadius: 20)))
+                        Text("Arrangementet finner sted i Grieghallen i Bergen.")
+                            .font(.custom("AvenirNext-Regular", size: 15))
+                            .multilineTextAlignment(.center)
+                    }
+                    .padding()
                 }
-                .padding()
-
-                VStack {
-                        HStack {
-                            Spacer()
-                            Text("Kontakt oss")
-                                .foregroundColor(.gray)
-                            Spacer()
-                        }
-                        
-                        HStack(alignment: .center) {
-                            Spacer()
-                            Image(systemName: "mappin")
-                                .foregroundColor(.red)
-                            Text("Christies gate 9, 5015 Bergen")
-                            Spacer()
-                        }
-                        
-                        
-                        HStack(alignment: .center) {
-                            Spacer()
-                            Image(systemName: "envelope.fill")
-                                .foregroundColor(Color("KDOrange"))
-                            Text("post@springbrettet.org")
-                            Spacer()
-                        }
-                        
-                        HStack {
-                            Spacer()
-                            Text("Springbrettet")
-                                .foregroundColor(Color("KDOrange"))
-                                .font(.custom("AvenirNext-Bold", size: 40))
-                                .padding()
-                            Spacer()
-                        }
+                
+                Section {
+                    VStack {
+                            HStack {
+                                Spacer()
+                                Text("Kontakt oss")
+                                    .foregroundColor(.gray)
+                                Spacer()
+                            }
+                            
+                            HStack(alignment: .center) {
+                                Spacer()
+                                Image(systemName: "mappin")
+                                    .foregroundColor(.red)
+                                Text("Christies gate 9, 5015 Bergen")
+                                Spacer()
+                            }
+                            
+                            
+                            HStack(alignment: .center) {
+                                Spacer()
+                                Image(systemName: "envelope.fill")
+                                    .foregroundColor(Color("KDOrange"))
+                                Text("post@springbrettet.org")
+                                Spacer()
+                            }
+                            
+                            HStack {
+                                Spacer()
+                                Text("Springbrettet")
+                                    .foregroundColor(Color("KDOrange"))
+                                    .font(.custom("AvenirNext-Bold", size: 40))
+                                    .padding()
+                                Spacer()
+                            }
+                    }
                 }
+
+               
 
             }
             .listStyle(.insetGrouped)
@@ -225,6 +281,12 @@ struct HomeView: View {
 struct FeedBackView: View {
     var body: some View {
         WebView(request: URLRequest(url: URL(string: "https://docs.google.com/forms/d/1IFTBhLFb-sJoX3DxiBgVaUpGO8O4gqmeX8yR71EhgLM/edit")!))
+    }
+}
+
+struct SalmonCityView: View {
+    var body: some View {
+        WebView(request: URLRequest(url: URL(string: "https://www.salmoncity.no/")!))
     }
 }
 

@@ -54,7 +54,7 @@ struct CVTipsView: View {
                         .font(.system(size: 20))
                         .foregroundColor(Color("KDOrange"))
                     Text("Tips og Eksempler")
-                        .foregroundColor(Color("KDOrange"))
+                        .foregroundColor(.secondary)
                     Text("Her finner du nyttige råd og anbefalinger for å hjelpe deg med å skrive en overbevisende CV og søknad. Disse tipsene er designet for å hjelpe deg med å fremheve dine ferdigheter, erfaringer og unike kvaliteter, slik at du kan skille deg ut fra andre søkere. Scroll ned for å se tipsene. Husk, øvelse gjør mester! For å gi deg en bedre forståelse av hvordan disse tipsene kan anvendes i praksis, har vi inkludert eksempler på en CV og søknad for forskjellige studiebakgrunner (IT, økonomi, juss og HR) helt nederst på siden.")
                         .font(.body)
                         .foregroundColor(.secondary)

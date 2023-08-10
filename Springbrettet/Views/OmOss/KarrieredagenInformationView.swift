@@ -63,7 +63,7 @@ struct KarrieredagenInformationView: View {
                             .frame(width: 370, height: 200)
                             .clipShape(Rectangle())
                             .cornerRadius(20)
-                            .foregroundColor(.orange)
+                            .foregroundColor(Color("KDOrange"))
                         ScrollView(.horizontal, showsIndicators: false) {
                             HStack {
                                 ForEach(springbrettereData, id: \.id) { member in
@@ -88,7 +88,7 @@ struct KarrieredagenInformationView: View {
                                                     .foregroundColor(.primary)
                                                 Text(member.role)
                                                     .font(.subheadline)
-                                                    .foregroundColor(.secondary)
+                                                    .foregroundColor(.primary)
                                             }
                                             
                                         }
