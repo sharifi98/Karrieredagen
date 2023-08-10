@@ -15,12 +15,6 @@ struct OmOssView: View {
         NavigationView {
             ZStack {
                 
-                Image("marinebackground")
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .edgesIgnoringSafeArea(.all)
-                
-
                 List {
                     Section {
                         

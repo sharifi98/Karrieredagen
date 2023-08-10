@@ -117,8 +117,6 @@ struct HomeView: View {
                 }
                 
                 Section {
-                    
-                    
                     NavigationLink(destination: Studenter()) {
                         HStack {
                             Image("SB")
@@ -138,22 +136,8 @@ struct HomeView: View {
                 }
 
                 VStack {
-                    TabView(selection: $selectedImageIndex) {
-                        ForEach(imageNames, id: \.self) { imageName in
-                            Image(imageName)
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 288, height: 220)
-                                .shadow(color: Color.black.opacity(0.9), radius: 7, x: 10, y: 10)
-                                .padding(.vertical)
-                                .tag(imageNames.firstIndex(of: imageName)!)
-                        }
-                    }
-                    .tabViewStyle(PageTabViewStyle())
-                    .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .automatic))
-                    .padding()
                     
-                    Text("Karrieredagen er  arrangement hvor studenter kan møte potensielle arbeidsgivere og få innsikt i forskjellige yrkesmuligheter. Dette er en ypperlig anledning for studenter til å knytte nettverk, lære mer om jobbmulighetene i sin bransje, og få verdifull veiledning fra erfarne fagfolk. Grieghallen, som ligger i hjertet av Bergen, tilbyr et ideelt sted for dette arrangementet med sin rikholdige plass og gode fasiliteter.")
+                    Text("Karrieredagen gir studenter mulighet til å møte arbeidsgivere, utforske yrkesmuligheter, bygge nettverk og få veiledning fra eksperter.")
                         .font(.custom("AvenirNext-Regular", size: 15))
                         .multilineTextAlignment(.center)
                     
@@ -167,11 +151,13 @@ struct HomeView: View {
                         )
                         .shadow(radius: 7)
                         .background(Color.white.clipShape(RoundedRectangle(cornerRadius: 20)))
+                    Text("Arrangementet finner sted i Grieghallen i Bergen.")
+                        .font(.custom("AvenirNext-Regular", size: 15))
+                        .multilineTextAlignment(.center)
                 }
                 .padding()
 
                 VStack {
-                    Section {
                         HStack {
                             Spacer()
                             Text("Kontakt oss")
@@ -204,7 +190,6 @@ struct HomeView: View {
                                 .padding()
                             Spacer()
                         }
-                    }
                 }
 
             }

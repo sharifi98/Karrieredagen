@@ -8,7 +8,31 @@
 import SwiftUI
 
 struct Studenter: View {
+    
+    let imageNames = [
+        "DSC06717",
+        "DSC06261-2",
+        "DSC06217",
+        "DSC06236",
+        "DSC06272",
+        "DSC06279",
+        "DSC06291",
+        "DSC06322",
+        "DSC06337-2",
+        "DSC06439",
+        "DSC06452",
+        "DSC06466",
+        "DSC06482",
+        "DSC06485",
+        "DSC06492",
+        "DSC06633",
+        "DSC06728",
+    ]
+    @State private var selectedImageIndex = 0
+
     var body: some View {
+        
+
         VStack {
             List { // Add some spacing between Text views
                 Section {
@@ -19,6 +43,8 @@ struct Studenter: View {
                         .font(.custom("AvenirNext-Regular", size: 20))
                     // Replace "TextColor" with the appropriate color name if needed
                         .padding() // Add some padding around the text
+                    
+
                 }
                 
                 Section {
@@ -43,7 +69,7 @@ struct Studenter: View {
                 }
             }
             
-
+        
 
 
         }

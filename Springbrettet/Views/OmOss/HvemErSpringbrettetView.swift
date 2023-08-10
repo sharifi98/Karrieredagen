@@ -23,36 +23,12 @@ struct HvemErSpringbrettetView: View {
     
     var body: some View {
         List {
-            /*
-                ScrollView(.horizontal, showsIndicators: false) {
-                    LazyHStack(alignment: .top) {
-                        ForEach(imageNames, id: \.self) { imageName in
-                            Image(imageName)
-                                .resizable()
-                                .frame(width: 288, height: 220)
-                                .scaledToFit()
-                                .clipShape(RoundedRectangle(cornerRadius: 20))
-                                .shadow(color: Color.black.opacity(0.3), radius: 7, x: 10, y: 10)
-                                .padding(.vertical)
-                        }
-                    }
-                }
-                .edgesIgnoringSafeArea(.horizontal)
-                .padding(.horizontal, -15)
-            */
-            
+        
             
             
             Section {
                 
                 VStack {
-                    
-                    Image("DSC06728")
-                        .resizable()
-                        .scaledToFit()
-                        .ignoresSafeArea()
-                    
-                    
                     Text("Bindeleddet")
                         .underline()
                         .foregroundStyle(Color("KDOrange"))
@@ -62,10 +38,23 @@ struct HvemErSpringbrettetView: View {
                         .font(.custom("AvenirNext-Bold", size: 18))
                 }
                 .padding(4)
-                
+
                 
                 Text("Springbrettet er en av Bergens fremste studentorganisasjoner, og jobber med å minske avstanden mellom studenter og næringsliv. Vi er en tverrfaglig organisasjon som består av medlemmer fra et bredt spekter av ulike studieretninger. Springbrettet ble opprettet i 2007, da en gjeng engasjerte og nytenkende studenter gikk sammen for å avholde Karrieredager i Grieghallen. Siden den gang har organisasjonen hatt en enorm utvikling. I dag skaper vi noen av de viktigste møteplassene mellom studenter og næringsliv, og tilbyr en fantastisk læringsarena for våre medlemmer.\n \nKarrieredagen i Grieghallen er selve flaggskipet til Springbrettet, og er Vestlandets største karrieredagsmesse. Her møtes tusenvis av studenter opp mot 70 ulike bedrifter til karrieredagsmesse, foredrag og bankett. Karrieredagen gir den innsikten man ikke tilegner seg på skolebenken, og her vil man finne opplegg for enhver smak.\n\nVi søker hele tiden etter å knytte næringsliv og studenter sammen på nye og kreative måter. I tillegg til våre Karrieredager på høsten, arrangerer vi også en rekke andre arrangementer i løpet av året. Eksempler er ulike seminarer, kurs eller konkurranser. Fra og med 2020 har Springbrettet også drevet Podcasten «Karrierestudio», hvor vi inviterer inn norske næringslivsledere for å dele sine råd og erfaringer.")
                     .foregroundStyle(.white)
+                
+                ScrollView(.horizontal, showsIndicators: false) {
+                    LazyHStack(alignment: .top) {
+                        ForEach(imageNames, id: \.self) { imageName in
+                            Image(imageName)
+                                .resizable()
+                                .frame(width: 288, height: 220)
+                                .clipShape(RoundedRectangle(cornerRadius: 20))
+                                .shadow(color: Color.black.opacity(0.3), radius: 7, x: 10, y: 10)
+                                .padding(.vertical)
+                        }
+                    }
+                }
                 
             }
             .padding()
@@ -78,6 +67,8 @@ struct HvemErSpringbrettetView: View {
                     
                 }
             }
+            
+            
             
         }
         .listStyle(.grouped)
