@@ -8,11 +8,16 @@
 import SwiftUI
 
 @main
-struct KarrieredagenApp: App {    
+struct KarrieredagenApp: App {
+    
+    @StateObject private var modelData = ModelData()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .preferredColorScheme(.dark)
+                .environmentObject(modelData)
+                
         }
     }
 }

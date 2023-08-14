@@ -34,6 +34,7 @@
 		0396B08B2A25EA18008E6CAC /* CompanyRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0396B08A2A25EA18008E6CAC /* CompanyRow.swift */; };
 		0396B08D2A25F024008E6CAC /* CompanyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0396B08C2A25F024008E6CAC /* CompanyList.swift */; };
 		0396B08F2A25F136008E6CAC /* CompanyDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0396B08E2A25F136008E6CAC /* CompanyDetail.swift */; };
+		03C6425C2A8A3D2B001FF571 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C6425B2A8A3D2B001FF571 /* FavoriteButton.swift */; };
 		03D5C9452A82A9DC007D5508 /* Studenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D5C9442A82A9DC007D5508 /* Studenter.swift */; };
 		03D995222A75393E00B8F6A8 /* KDaftermovie_cropped.gif in Resources */ = {isa = PBXBuildFile; fileRef = 03D995212A75393E00B8F6A8 /* KDaftermovie_cropped.gif */; };
 		03E44CB32A76D16A00A57B1E /* CVITView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E44CB22A76D16A00A57B1E /* CVITView.swift */; };
@@ -74,6 +75,7 @@
 		0396B08A2A25EA18008E6CAC /* CompanyRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyRow.swift; sourceTree = "<group>"; };
 		0396B08C2A25F024008E6CAC /* CompanyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyList.swift; sourceTree = "<group>"; };
 		0396B08E2A25F136008E6CAC /* CompanyDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyDetail.swift; sourceTree = "<group>"; };
+		03C6425B2A8A3D2B001FF571 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		03D5C9442A82A9DC007D5508 /* Studenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Studenter.swift; sourceTree = "<group>"; };
 		03D995212A75393E00B8F6A8 /* KDaftermovie_cropped.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = KDaftermovie_cropped.gif; sourceTree = "<group>"; };
 		03E44CB22A76D16A00A57B1E /* CVITView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVITView.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				0396B08A2A25EA18008E6CAC /* CompanyRow.swift */,
 				0396B08E2A25F136008E6CAC /* CompanyDetail.swift */,
 				0396B07F2A25D9B8008E6CAC /* SquareImage.swift */,
+				03C6425B2A8A3D2B001FF571 /* FavoriteButton.swift */,
 				0396B0812A25DAE4008E6CAC /* MapView.swift */,
 			);
 			path = Company;
@@ -311,6 +314,7 @@
 				0396B0712A250193008E6CAC /* ContentView.swift in Sources */,
 				035359F22A79A704003AB9B3 /* Person.swift in Sources */,
 				03ECA45B2A29C442007E0829 /* HvemErSpringbrettetView.swift in Sources */,
+				03C6425C2A8A3D2B001FF571 /* FavoriteButton.swift in Sources */,
 				0361E1532A75630800AC4ABF /* CVTipsView.swift in Sources */,
 				031C6BF02A47090F00332564 /* GifImage.swift in Sources */,
 				036B44F42A6093BB0059EB50 /* DiTView.swift in Sources */,

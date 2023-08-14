@@ -72,6 +72,7 @@ struct HomeView: View {
                 Section {
                     
                     Text("Karrieredagen")
+                        .foregroundColor(Color("KDOrange"))
                         .font(.headline)
                     
                     NavigationLink(destination: CompanyList()) {
@@ -114,13 +115,35 @@ struct HomeView: View {
                         }
                     }
                 }
+                
+                Section {
+                    VStack {
+                        
+                        Text("Karrieredagen gir studenter mulighet til å møte arbeidsgivere, utforske yrkesmuligheter, bygge nettverk og få veiledning fra eksperter.")
+                            .font(.custom("AvenirNext-Regular", size: 15))
+                            .multilineTextAlignment(.center)
+                        
 
-
+                        MapView(coordinate: grieghallencord)
+                            .frame(width: 300, height: 300/1.618)
+                            .clipShape(RoundedRectangle(cornerRadius: 20))
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 20)
+                                    .stroke(Color("KDBlue"), lineWidth: 4)
+                            )
+                            .shadow(radius: 7)
+                            .background(Color.white.clipShape(RoundedRectangle(cornerRadius: 20)))
+                        Text("Arrangementet finner sted i Grieghallen i Bergen.")
+                            .font(.custom("AvenirNext-Regular", size: 15))
+                            .multilineTextAlignment(.center)
+                    }
+                    .padding()
+                }
                 
                 Section {
                     
                     Text("Springbrettets prosjekter")
-
+                        .foregroundColor(Color("KDOrange"))
                         .font(.headline)
                     
                     NavigationLink(destination: SpringbrettfondetView()) {
@@ -169,7 +192,7 @@ struct HomeView: View {
                         HStack {
                             Image("SB")
                                 .resizable()
-                                .frame(width: 30, height: 30) // Set your desired width and height here
+                                .frame(width: 30, height: 30)
                                 .aspectRatio(contentMode: .fill)
                             
                             Text("Bli med i Springbrettet")
@@ -181,32 +204,6 @@ struct HomeView: View {
                         Label("Tilbakemelding", systemImage: "questionmark.bubble")
                     }.foregroundColor(Color("KDOrange"))
                     
-                }
-                
-                
-
-                Section {
-                    VStack {
-                        
-                        Text("Karrieredagen gir studenter mulighet til å møte arbeidsgivere, utforske yrkesmuligheter, bygge nettverk og få veiledning fra eksperter.")
-                            .font(.custom("AvenirNext-Regular", size: 15))
-                            .multilineTextAlignment(.center)
-                        
-
-                        MapView(coordinate: grieghallencord)
-                            .frame(width: 300, height: 300/1.618)
-                            .clipShape(RoundedRectangle(cornerRadius: 20))
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 20)
-                                    .stroke(Color("KDBlue"), lineWidth: 4)
-                            )
-                            .shadow(radius: 7)
-                            .background(Color.white.clipShape(RoundedRectangle(cornerRadius: 20)))
-                        Text("Arrangementet finner sted i Grieghallen i Bergen.")
-                            .font(.custom("AvenirNext-Regular", size: 15))
-                            .multilineTextAlignment(.center)
-                    }
-                    .padding()
                 }
                 
                 Section {

@@ -15,6 +15,7 @@ struct Company: Hashable, Codable, Identifiable {
     var standNumber: Int
     var industry: String
     var description: String
+    var isFavorite: Bool
     
     
     private var imageName: String

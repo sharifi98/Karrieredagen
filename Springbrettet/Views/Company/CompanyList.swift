@@ -8,26 +8,40 @@
 import SwiftUI
 
 struct CompanyList: View {
+    @EnvironmentObject var modelData: ModelData
     @State private var searchText = ""
+    @State private var showFavoritesOnly = false
+    
+    
 
     var filteredCompanies: [Company] {
-        companies.filter { company in
-            searchText.isEmpty || company.name.localizedStandardContains(searchText)
+        modelData.companies.filter { company in
+            (!showFavoritesOnly || company.isFavorite) &&
+            (searchText.isEmpty || company.name.localizedStandardContains(searchText))
         }
     }
+
     
     var body: some View {
-        List(filteredCompanies) { company in
-            NavigationLink {
-                CompanyDetail(company: company)
-            } label: {
-                CompanyRow(company: company)
+        List {
+            
+            Toggle(isOn: $showFavoritesOnly) {
+                Text("Favoritter")
+            }
+            
+            ForEach(filteredCompanies) { company in
+                NavigationLink {
+                    CompanyDetail(company: company)
+                } label: {
+                    CompanyRow(company: company)
+                }
             }
         }
         .listStyle(GroupedListStyle())
         .navigationTitle("Bedrifter")
         .searchable(text: $searchText, prompt: "Søk etter bedrift")
         .foregroundColor(Color("KDOrange"))
+        
     }
 }
 
@@ -35,6 +49,7 @@ struct CompanyList: View {
 struct CompanyList_Previews: PreviewProvider {
     static var previews: some View {
         CompanyList()
+            .environmentObject(ModelData())
     }
 }
 

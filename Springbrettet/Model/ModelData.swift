@@ -11,6 +11,10 @@ var companies: [Company] = load("companyData.json")
 var events: [Event] = load("scheduleData.json")
 var springbrettereData: [Person] = load("springbrettereData.json")
 
+final class ModelData: ObservableObject {
+    @Published var companies: [Company] = load("companyData.json")
+}
+
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data
 

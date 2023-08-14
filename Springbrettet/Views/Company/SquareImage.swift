@@ -17,27 +17,15 @@ struct SquareImage: View {
     var body: some View {
 
         image
-
             .resizable()
-
-            .aspectRatio(contentMode: .fill)
-
             .frame(width: 250, height: 200)
-
             .clipShape(RoundedRectangle(cornerRadius: 20))
-
             .overlay(
-
                 RoundedRectangle(cornerRadius: 20)
-
                     .stroke(Color.white, lineWidth: 4)
-
             )
-
             .shadow(radius: 7)
-
             .background(Color.white)
-
             .clipShape(RoundedRectangle(cornerRadius: 20))
 
     }
@@ -49,7 +37,7 @@ struct SquareImage_Previews: PreviewProvider {
 
     static var previews: some View {
 
-        SquareImage(image: Image("wood"))
+        SquareImage(image: Image("akersolutions"))
 
     }
 
