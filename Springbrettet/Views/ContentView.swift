@@ -24,7 +24,7 @@ struct ContentView: View {
                     Label("Om oss", systemImage: "ellipsis.circle")
                 }
         }
-        .accentColor(Color("KDOrange")) // Set the tab item's text and icon color
+        .accentColor(Color("KDOrange"))
     }
 }
 

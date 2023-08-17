@@ -29,7 +29,7 @@ struct HomeView: View {
     ]
     
     @State private var selectedImageIndex = 0
-
+    
     var body: some View {
         NavigationView {
             List {
@@ -42,12 +42,13 @@ struct HomeView: View {
                             .cornerRadius(10)
                             .shadow(radius: 20)
                             .opacity(0.5)
-
+                        
+                        
                         VStack {
                             Text("Karrieredagen")
                                 .font(.custom("AvenirNext-Bold", size: 40))
                                 .foregroundColor(Color("KDOrange"))
-
+                            
                             Text("26.09.2023")
                                 .font(.custom("AvenirNext-Bold", size: 30))
                                 .foregroundColor(.white)
@@ -55,8 +56,10 @@ struct HomeView: View {
                         }
                         .padding(-30)
                         
+                        
+                        
                     }
-
+                    
                     VStack {
                         Text("Alt du trenger å vite om Karrieredagen og Springbrettet, samlet på ett sted.")
                             .font(.custom("AvenirNext-Regular", size: 20))
@@ -66,14 +69,16 @@ struct HomeView: View {
                             .multilineTextAlignment(.center)
                     }
                 }
-
+                .listRowBackground(Color("KDBlue"))
+                
                 
                 
                 Section {
                     
                     Text("Karrieredagen")
-                        .foregroundColor(Color("KDOrange"))
+                        .foregroundColor(.white)
                         .font(.headline)
+                        .listRowBackground(Color("KDOrange"))
                     
                     NavigationLink(destination: CompanyList()) {
                         Label {
@@ -83,7 +88,7 @@ struct HomeView: View {
                                 .foregroundColor(Color("KDOrange"))
                         }
                     }
-
+                    
                     NavigationLink(destination: ScheduleList()) {
                         Label {
                             Text("Timeplan")
@@ -92,10 +97,10 @@ struct HomeView: View {
                                 .foregroundColor(Color("KDOrange"))
                         }
                     }
-
-                    /*
-                     
-                    NavigationLink(destination: GriegView()) {
+                    
+                    
+                    
+                    NavigationLink(destination: GrieghallenView()) {
                         Label {
                             Text("Kart")
                         } icon: {
@@ -103,9 +108,9 @@ struct HomeView: View {
                                 .foregroundColor(Color("KDOrange"))
                         }
                     }
-                     
-                    */
-
+                    
+                    
+                    
                     NavigationLink(destination: CVTipsView()) {
                         Label {
                             Text("Tips til jobbsøknad")
@@ -123,7 +128,7 @@ struct HomeView: View {
                             .font(.custom("AvenirNext-Regular", size: 15))
                             .multilineTextAlignment(.center)
                         
-
+                        
                         MapView(coordinate: grieghallencord)
                             .frame(width: 300, height: 300/1.618)
                             .clipShape(RoundedRectangle(cornerRadius: 20))
@@ -139,12 +144,14 @@ struct HomeView: View {
                     }
                     .padding()
                 }
+                .listRowBackground(Color("KDBlue"))
                 
                 Section {
                     
                     Text("Springbrettets prosjekter")
-                        .foregroundColor(Color("KDOrange"))
+                        .foregroundColor(.white)
                         .font(.headline)
+                        .listRowBackground(Color("KDOrange"))
                     
                     NavigationLink(destination: SpringbrettfondetView()) {
                         Label {
@@ -181,10 +188,6 @@ struct HomeView: View {
                                 .foregroundColor(.blue)
                         }
                     }
-                    
-                    
-
-                    
                 }
                 
                 Section {
@@ -198,7 +201,7 @@ struct HomeView: View {
                             Text("Bli med i Springbrettet")
                         }
                     }.foregroundColor(Color("KDOrange"))
-
+                    
                     
                     NavigationLink(destination: FeedBackView()) {
                         Label("Tilbakemelding", systemImage: "questionmark.bubble")
@@ -206,45 +209,45 @@ struct HomeView: View {
                     
                 }
                 
+                
                 Section {
                     VStack {
-                            HStack {
-                                Spacer()
-                                Text("Kontakt oss")
-                                    .foregroundColor(.gray)
-                                Spacer()
-                            }
-                            
-                            HStack(alignment: .center) {
-                                Spacer()
-                                Image(systemName: "mappin")
-                                    .foregroundColor(.red)
-                                Text("Christies gate 9, 5015 Bergen")
-                                Spacer()
-                            }
-                            
-                            
-                            HStack(alignment: .center) {
-                                Spacer()
-                                Image(systemName: "envelope.fill")
-                                    .foregroundColor(Color("KDOrange"))
-                                Text("post@springbrettet.org")
-                                Spacer()
-                            }
-                            
-                            HStack {
-                                Spacer()
-                                Text("Springbrettet")
-                                    .foregroundColor(Color("KDOrange"))
-                                    .font(.custom("AvenirNext-Bold", size: 40))
-                                    .padding()
-                                Spacer()
-                            }
+                        HStack {
+                            Spacer()
+                            Text("Kontakt oss")
+                                .foregroundColor(.gray)
+                            Spacer()
+                        }
+                        
+                        HStack(alignment: .center) {
+                            Spacer()
+                            Image(systemName: "mappin")
+                                .foregroundColor(.red)
+                            Text("Christies gate 9, 5015 Bergen")
+                            Spacer()
+                        }
+                        
+                        
+                        HStack(alignment: .center) {
+                            Spacer()
+                            Image(systemName: "envelope.fill")
+                                .foregroundColor(Color("KDOrange"))
+                            Text("post@springbrettet.org")
+                            Spacer()
+                        }
+                        
+                        HStack {
+                            Spacer()
+                            Text("Springbrettet")
+                                .foregroundColor(Color("KDOrange"))
+                                .font(.custom("AvenirNext-Bold", size: 40))
+                                .padding()
+                            Spacer()
+                        }
+                        
                     }
                 }
-
-               
-
+                .listRowBackground(Color("KDBlue"))
             }
             .listStyle(.insetGrouped)
             .navigationBarWithTransparentBackground()
@@ -262,9 +265,10 @@ struct HomeView: View {
             .sheet(item: $selectedEvent) { eventDetail in
                 EventDetailView(event: eventDetail)
             }
+            
         }
     }
-
+    
     func eventRow(for event: Event) -> some View {
         Button(action: {
             selectedEvent = event
@@ -289,13 +293,13 @@ struct SalmonCityView: View {
 
 struct WebView: UIViewRepresentable {
     let request: URLRequest
-
+    
     func makeUIView(context: Context) -> WKWebView  {
         let webView = WKWebView()
         webView.load(request)
         return webView
     }
-
+    
     func updateUIView(_ uiView: WKWebView, context: Context) { }
 }
 

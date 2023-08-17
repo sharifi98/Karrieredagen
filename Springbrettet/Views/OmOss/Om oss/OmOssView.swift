@@ -12,121 +12,76 @@ struct OmOssView: View {
         NavigationView {
 
             List {
-
                 Section(header: Text("Springbrettet")) {
-
                     NavigationLink(destination: HvemErSpringbrettetView()) {
-
                         Label("Hva er Springbrettet?", systemImage: "info.circle")
-
-                            .foregroundColor(.gray)
-
+                            .foregroundColor(Color("KDOrange"))
                     }
-
                     
-
                     NavigationLink(destination: KarrieredagenInformationView()) {
-
                         Label("Karrieredagen", systemImage: "network")
-
                             .foregroundColor(.blue)
-
                     }
 
                 }
-
                 
-
                 Section(header: Text("Følg oss")) {
-
                     Button(action: {
-
                         openURL("https://www.facebook.com/springbrettet/")
-
                     }) {
-
                         Label("Facebook", systemImage: "person")
-
                             .foregroundColor(.blue)
-
                     }
-
-                    
 
                     Button(action: {
-
                         openURL("https://www.instagram.com/springbrettet/")
-
                     }) {
-
                         Label("Instagram", systemImage: "camera")
-
                             .foregroundColor(.pink)
-
                     }
-
                     
-
                     Button(action: {
 
                         openURL("https://www.linkedin.com/company/springbrettet/mycompany/")
-
                     }) {
-
                         Label("LinkedIn", systemImage: "point.3.connected.trianglepath.dotted")
-
                             .foregroundColor(.cyan)
-
                     }
-
                 }
-
+            
+                // TODO
+                // Add springbrett leader members
+                    HStack {
+                        Spacer()
+                        Image("SB")
+                            .resizable()
+                            .frame(width: 90, height: 90)
+                            .aspectRatio(contentMode: .fill)
+                        Spacer()
+                    }
             }
-
-            .listStyle(GroupedListStyle())
-
-
+            .listStyle(.automatic)
             .navigationBarTitleDisplayMode(.inline)
-
             .toolbar {
-
                 ToolbarItem(placement: .navigationBarLeading) {
-
                     Text("Om oss")
-
                         .font(.title)
-
                         .foregroundColor(Color("KDOrange"))
-
                 }
-
             }
-
         }
-
     }
-
-    
 
     private func openURL(_ urlString: String) {
-
         if let url = URL(string: urlString) {
-
             UIApplication.shared.open(url)
-
         }
-
     }
-
 }
 
 
 struct OmOssView_Previews: PreviewProvider {
-
     static var previews: some View {
-
         OmOssView()
-
     }
-
 }
