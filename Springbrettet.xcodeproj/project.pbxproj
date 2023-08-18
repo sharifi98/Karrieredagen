@@ -23,6 +23,9 @@
 		036B44F42A6093BB0059EB50 /* DiTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036B44F32A6093BB0059EB50 /* DiTView.swift */; };
 		037010172A49AADB007388E7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037010162A49AADB007388E7 /* HomeView.swift */; };
 		03728C1C2A8F7E4500B80581 /* HvaErSpringbrettet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03728C1B2A8F7E4500B80581 /* HvaErSpringbrettet.swift */; };
+		03728C1E2A8FA38B00B80581 /* lederData.json in Resources */ = {isa = PBXBuildFile; fileRef = 03728C1D2A8FA38B00B80581 /* lederData.json */; };
+		03728C202A8FA3BE00B80581 /* Leder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03728C1F2A8FA3BE00B80581 /* Leder.swift */; };
+		03728C222A8FA6E300B80581 /* PersonView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03728C212A8FA6E300B80581 /* PersonView2.swift */; };
 		0396B06F2A250193008E6CAC /* KarrieredagenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0396B06E2A250193008E6CAC /* KarrieredagenApp.swift */; };
 		0396B0712A250193008E6CAC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0396B0702A250193008E6CAC /* ContentView.swift */; };
 		0396B0732A250194008E6CAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0396B0722A250194008E6CAC /* Assets.xcassets */; };
@@ -45,7 +48,6 @@
 		03E44CB72A76F87100A57B1E /* CVJussView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E44CB62A76F87100A57B1E /* CVJussView.swift */; };
 		03E47FEE2A558F4C005BCDAA /* SpringbrettfondetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E47FED2A558F4C005BCDAA /* SpringbrettfondetView.swift */; };
 		03ECA4592A29C23A007E0829 /* EventDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ECA4582A29C23A007E0829 /* EventDetailView.swift */; };
-		03ECA45B2A29C442007E0829 /* HvemErSpringbrettetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ECA45A2A29C442007E0829 /* HvemErSpringbrettetView.swift */; };
 		03EFFE142A7AD3CC005B223C /* springbrettereData.json in Resources */ = {isa = PBXBuildFile; fileRef = 03EFFE132A7AD3CC005B223C /* springbrettereData.json */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +68,9 @@
 		036B44F32A6093BB0059EB50 /* DiTView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiTView.swift; sourceTree = "<group>"; };
 		037010162A49AADB007388E7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		03728C1B2A8F7E4500B80581 /* HvaErSpringbrettet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HvaErSpringbrettet.swift; sourceTree = "<group>"; };
+		03728C1D2A8FA38B00B80581 /* lederData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lederData.json; sourceTree = "<group>"; };
+		03728C1F2A8FA3BE00B80581 /* Leder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leder.swift; sourceTree = "<group>"; };
+		03728C212A8FA6E300B80581 /* PersonView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonView2.swift; sourceTree = "<group>"; };
 		0396B06B2A250193008E6CAC /* Springbrettet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Springbrettet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0396B06E2A250193008E6CAC /* KarrieredagenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KarrieredagenApp.swift; sourceTree = "<group>"; };
 		0396B0702A250193008E6CAC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -89,7 +94,6 @@
 		03E44CB62A76F87100A57B1E /* CVJussView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVJussView.swift; sourceTree = "<group>"; };
 		03E47FED2A558F4C005BCDAA /* SpringbrettfondetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpringbrettfondetView.swift; sourceTree = "<group>"; };
 		03ECA4582A29C23A007E0829 /* EventDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailView.swift; sourceTree = "<group>"; };
-		03ECA45A2A29C442007E0829 /* HvemErSpringbrettetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HvemErSpringbrettetView.swift; sourceTree = "<group>"; };
 		03EFFE132A7AD3CC005B223C /* springbrettereData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = springbrettereData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -219,6 +223,7 @@
 				0396B0832A25DE2B008E6CAC /* Company.swift */,
 				0313999B2A2625670003427A /* Event.swift */,
 				035359F12A79A704003AB9B3 /* Person.swift */,
+				03728C1F2A8FA3BE00B80581 /* Leder.swift */,
 				0396B0852A25E068008E6CAC /* ModelData.swift */,
 			);
 			path = Model;
@@ -230,6 +235,7 @@
 				0396B07D2A25059D008E6CAC /* companyData.json */,
 				031399962A2623350003427A /* scheduleData.json */,
 				03EFFE132A7AD3CC005B223C /* springbrettereData.json */,
+				03728C1D2A8FA38B00B80581 /* lederData.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -240,7 +246,7 @@
 				031C6BE32A46DC7900332564 /* OmOssView.swift */,
 				031C6BEB2A46EE8800332564 /* KarrieredagenInformationView.swift */,
 				036285632A7ADDD0007E165B /* PersonView.swift */,
-				03ECA45A2A29C442007E0829 /* HvemErSpringbrettetView.swift */,
+				03728C212A8FA6E300B80581 /* PersonView2.swift */,
 				03728C1B2A8F7E4500B80581 /* HvaErSpringbrettet.swift */,
 			);
 			path = "Om oss";
@@ -325,6 +331,7 @@
 				0396B0732A250194008E6CAC /* Assets.xcassets in Resources */,
 				03EFFE142A7AD3CC005B223C /* springbrettereData.json in Resources */,
 				03D995222A75393E00B8F6A8 /* KDaftermovie_cropped.gif in Resources */,
+				03728C1E2A8FA38B00B80581 /* lederData.json in Resources */,
 				0396B07E2A25059D008E6CAC /* companyData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,13 +344,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0396B0712A250193008E6CAC /* ContentView.swift in Sources */,
+				03728C202A8FA3BE00B80581 /* Leder.swift in Sources */,
 				035359F22A79A704003AB9B3 /* Person.swift in Sources */,
-				03ECA45B2A29C442007E0829 /* HvemErSpringbrettetView.swift in Sources */,
 				03C6425C2A8A3D2B001FF571 /* FavoriteButton.swift in Sources */,
 				0361E1532A75630800AC4ABF /* CVTipsView.swift in Sources */,
 				031C6BF02A47090F00332564 /* GifImage.swift in Sources */,
 				036B44F42A6093BB0059EB50 /* DiTView.swift in Sources */,
 				03C642612A8B7EC4001FF571 /* GrieghallenView.swift in Sources */,
+				03728C222A8FA6E300B80581 /* PersonView2.swift in Sources */,
 				03E44CB32A76D16A00A57B1E /* CVITView.swift in Sources */,
 				031C6BEC2A46EE8800332564 /* KarrieredagenInformationView.swift in Sources */,
 				03728C1C2A8F7E4500B80581 /* HvaErSpringbrettet.swift in Sources */,
@@ -498,7 +506,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.1;
 				DEVELOPMENT_ASSET_PATHS = "\"Springbrettet/Preview Content\"";
 				DEVELOPMENT_TEAM = WP99484WGY;
 				ENABLE_PREVIEWS = YES;
@@ -514,7 +522,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1;
 				PRODUCT_BUNDLE_IDENTIFIER = co.hosseinsharifi.Karrieredagen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -531,7 +539,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.1;
 				DEVELOPMENT_ASSET_PATHS = "\"Springbrettet/Preview Content\"";
 				DEVELOPMENT_TEAM = WP99484WGY;
 				ENABLE_PREVIEWS = YES;
@@ -547,7 +555,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1;
 				PRODUCT_BUNDLE_IDENTIFIER = co.hosseinsharifi.Karrieredagen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

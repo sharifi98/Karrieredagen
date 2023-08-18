@@ -10,6 +10,7 @@ import Foundation
 var companies: [Company] = load("companyData.json")
 var events: [Event] = load("scheduleData.json")
 var springbrettereData: [Person] = load("springbrettereData.json")
+var lederData: [Leder] = load("lederData.json")
 
 final class ModelData: ObservableObject {
     @Published var companies: [Company] = load("companyData.json")

@@ -12,7 +12,15 @@ struct OmOssView: View {
         NavigationView {
 
             List {
-                Section(header: Text("Springbrettet")) {
+                
+                
+                Section {
+                    
+                    Text("Springbrettet")
+                        .foregroundColor(.white)
+                        .font(.headline)
+                        .listRowBackground(Color("KDOrange"))
+                    
                     NavigationLink(destination: HvaErSpringbrettet()) {
                         Label("Hva er Springbrettet?", systemImage: "info.circle")
                             .foregroundColor(Color("KDOrange"))
@@ -25,7 +33,17 @@ struct OmOssView: View {
 
                 }
                 
-                Section(header: Text("Følg oss")) {
+                
+                
+                
+                
+                Section {
+                    
+                    Text("Følg oss")
+                        .foregroundColor(.white)
+                        .font(.headline)
+                        .listRowBackground(Color.blue)
+                    
                     Button(action: {
                         openURL("https://www.facebook.com/springbrettet/")
                     }) {
@@ -51,6 +69,54 @@ struct OmOssView: View {
             
                 // TODO
                 // Add springbrett leader members
+                
+                Section {
+                    
+                    Text("Styret i Springbrettet")
+                        .listRowBackground(Color("KDOrange"))
+                    ZStack {
+                        ScrollView(.horizontal, showsIndicators: false) {
+                            HStack {
+                                ForEach(lederData, id: \.id) { member in
+                                    
+                                    NavigationLink(destination: PersonView2(leder: member)) {
+                                        VStack {
+                                            
+                                            
+                                            member.image
+                                                .resizable()
+                                                .scaledToFit()
+                                                .frame(height: 140)
+                                                .clipShape(Circle())
+                                                .overlay(
+                                                    Circle()
+                                                        .stroke(Color("KDOrange"), lineWidth: 3)
+                                                )
+                                            
+                                            VStack {
+                                                Text(member.name)
+                                                    .font(.headline)
+                                                    .foregroundColor(.primary)
+                                                Text(member.role)
+                                                    .font(.subheadline)
+                                                    .foregroundColor(.primary)
+                                            }
+                                            
+                                        }
+                                        .padding()
+                                    }
+
+                                    
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+
+            
+                
+                
                 VStack {
                     HStack {
                             Spacer()

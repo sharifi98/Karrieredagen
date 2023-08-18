@@ -30,7 +30,7 @@ struct PersonView: View {
                         .foregroundColor(.secondary)
                     Link(person.email, destination: URL(string: "mailto:\(person.email)")!)
                         .font(.custom("AvenirNext-Bold", size: 15))
-
+                    
                 }
             }
         }

@@ -1,0 +1,65 @@
+[
+    {
+        "id": 1,
+        "role": "Leder for Springbrettet",
+        "name": "Thomas Normann",
+        "email": "Thomas.Normann@springbrettet.org",
+        "imageName": "thomas"
+    },
+    {
+        "id": 2,
+        "role": "Nestleder for Springbrettet",
+        "name": "Emma Dillevig",
+        "email": "Emma.Dillevig@springbrettet.org",
+        "imageName": "emma"
+    },
+    {
+        "id": 3,
+        "role": "Leder for karrieredagsgruppen",
+        "name": "Eirin Syvertsen",
+        "email": "Eirin.Syvertsen@springbrettet.org",
+        "imageName": "eirin2"
+    },
+    {
+        "id": 4,
+        "role": "Leder for kommunikasjonsgruppen",
+        "name": "Ulrikke Butz Vablum",
+        "email": "Ulrikke.Butz.Vablum@springbrettet.org",
+        "imageName": "ulrikke"
+    },
+    {
+        "id": 5,
+        "role": "Leder for prosjektgruppen",
+        "name": "Eline Sand",
+        "email": "Eline.Sand@springbrettet.org",
+        "imageName": "eline"
+    },
+    {
+        "id": 6,
+        "role": "Leder for arrangementgruppen",
+        "name": "Johannes Elgaaen",
+        "email": "Johannes.Elgaaen@springbrettet.org",
+        "imageName": "johannes"
+    },
+    {
+        "id": 7,
+        "role": "Leder for interngruppen",
+        "name": "Henrik Aksnes",
+        "email": "Henrik.Aksnes@springbrettet.org",
+        "imageName": "henrik"
+    },
+    {
+        "id": 8,
+        "role": "HR - ansvarlig",
+        "name": "Vera Eydal Thømming",
+        "email": "Vera.Thoemming@springbrettet.org",
+        "imageName": "vera"
+    },
+    {
+        "id": 9,
+        "role": "Økonomiansvarlig",
+        "name": "Philip Kanavin",
+        "email": "Philip.Kanavin@springbrettet.org",
+        "imageName": "philip"
+    }
+]
