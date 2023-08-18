@@ -2,6 +2,7 @@
     {
         "id" : 1,
         "name": "Åpningsseremoni",
+        "date": "2023-09-26",
         "start_time": "09:00",
         "end_time": "09:30",
         "location": "Hovedscenen",
@@ -12,6 +13,7 @@
     {
         "id" : 2,
         "name": "Aker BP BEDPRES",
+        "date": "2023-09-26",
         "start_time": "09:30",
         "end_time": "10:30",
         "companies": [
@@ -25,6 +27,7 @@
     {
         "id" : 3,
         "name": "Nettverkspause",
+        "date": "2023-09-26",
         "start_time": "10:30",
         "end_time": "11:00",
         "location": "Hovedscenen",
@@ -35,6 +38,7 @@
     {
         "id" : 4,
         "name": "Lunsj",
+        "date": "2023-09-26",
         "start_time": "11:00",
         "end_time": "12:00",
         "location": "Hovedscenen",
@@ -45,6 +49,7 @@
     {
         "id" : 5,
         "name": "Talere",
+        "date": "2023-09-26",
         "start_time": "12:00",
         "end_time": "13:00",
         "speakers": [
@@ -60,6 +65,7 @@
     {
         "id" : 6,
         "name": "Konkurranser",
+        "date": "2023-09-26",
         "start_time": "13:00",
         "end_time": "14:30",
         "location": "Hovedscenen",
@@ -70,6 +76,7 @@
     {
         "id" : 7,
         "name": "Avslutningsseremoni",
+        "date": "2023-09-26",
         "start_time": "14:30",
         "end_time": "15:00",
         "location": "Hovedscenen",

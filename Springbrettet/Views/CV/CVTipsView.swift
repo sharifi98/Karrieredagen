@@ -41,6 +41,7 @@ struct CVTipsView: View {
         case IT
         case Economics
         case Juss
+        case HR
 
         var id: String { self.rawValue }
     }
@@ -55,7 +56,7 @@ struct CVTipsView: View {
                         .foregroundColor(Color("KDOrange"))
                     Text("Tips og Eksempler")
                         .foregroundColor(.secondary)
-                    Text("Her finner du nyttige råd og anbefalinger for å hjelpe deg med å skrive en overbevisende CV og søknad. Disse tipsene er designet for å hjelpe deg med å fremheve dine ferdigheter, erfaringer og unike kvaliteter, slik at du kan skille deg ut fra andre søkere. Scroll ned for å se tipsene. Husk, øvelse gjør mester! For å gi deg en bedre forståelse av hvordan disse tipsene kan anvendes i praksis, har vi inkludert eksempler på en CV og søknad for forskjellige studiebakgrunner (IT, økonomi, juss og HR) helt nederst på siden.")
+                    Text("Her finner du nyttige råd og anbefalinger for å hjelpe deg med å skrive en overbevisende CV og søknad. Disse tipsene er designet for å hjelpe deg med å fremheve dine ferdigheter, erfaringer og unike kvaliteter, slik at du kan skille deg ut fra andre søkere. Scroll ned for å se tipsene. Husk, øvelse gjør mester! For å gi deg en bedre forståelse av hvordan disse tipsene kan anvendes i praksis, har vi inkludert eksempler på en CV og søknad for forskjellige studiebakgrunner (IT, økonomi, rettsvitenskap og HR) helt nederst på siden.")
                         .font(.body)
                         .foregroundColor(.secondary)
                         .padding()
@@ -83,7 +84,7 @@ struct CVTipsView: View {
                         isSheetPresented.toggle()
                     }) {
                         VStack {
-                            Text("ØKAD-CV")
+                            Text("ØK-CV")
                             Image(systemName: "list.clipboard")
                         }
                     }
@@ -97,7 +98,7 @@ struct CVTipsView: View {
                         isSheetPresented.toggle()
                     }) {
                         VStack {
-                            Text("JUSS-CV")
+                            Text("JUS-CV")
                             Image(systemName: "scalemass")
                         }
                     }
@@ -105,6 +106,19 @@ struct CVTipsView: View {
                     .padding()
 
                     Spacer()
+                    
+                    Button(action: {
+                        selectedCV = .HR
+                        isSheetPresented.toggle()
+                    }) {
+                        VStack {
+                            Text("HR-CV")
+                            Image(systemName: "person.3")
+                        }
+                    }
+                    .foregroundColor(.white)
+                    .padding()
+
                 }
                 
                 ForEach(tips, id: \.0) { tipTitle, tipContent in
@@ -132,6 +146,8 @@ struct CVTipsView: View {
                     CVEconomicsView()
                 case .Juss:
                     CVJussView()
+                case .HR:
+                    HRCVView()
                 }
             }
 

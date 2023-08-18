@@ -34,6 +34,7 @@
 		0396B08B2A25EA18008E6CAC /* CompanyRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0396B08A2A25EA18008E6CAC /* CompanyRow.swift */; };
 		0396B08D2A25F024008E6CAC /* CompanyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0396B08C2A25F024008E6CAC /* CompanyList.swift */; };
 		0396B08F2A25F136008E6CAC /* CompanyDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0396B08E2A25F136008E6CAC /* CompanyDetail.swift */; };
+		039EB7FB2A8F6D34005EE9E5 /* HRCVView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039EB7FA2A8F6D34005EE9E5 /* HRCVView.swift */; };
 		03C6425C2A8A3D2B001FF571 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C6425B2A8A3D2B001FF571 /* FavoriteButton.swift */; };
 		03C642612A8B7EC4001FF571 /* GrieghallenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C642602A8B7EC4001FF571 /* GrieghallenView.swift */; };
 		03D5C9452A82A9DC007D5508 /* Studenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D5C9442A82A9DC007D5508 /* Studenter.swift */; };
@@ -76,6 +77,7 @@
 		0396B08A2A25EA18008E6CAC /* CompanyRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyRow.swift; sourceTree = "<group>"; };
 		0396B08C2A25F024008E6CAC /* CompanyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyList.swift; sourceTree = "<group>"; };
 		0396B08E2A25F136008E6CAC /* CompanyDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyDetail.swift; sourceTree = "<group>"; };
+		039EB7FA2A8F6D34005EE9E5 /* HRCVView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRCVView.swift; sourceTree = "<group>"; };
 		03C6425B2A8A3D2B001FF571 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		03C642602A8B7EC4001FF571 /* GrieghallenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrieghallenView.swift; sourceTree = "<group>"; };
 		03D5C9442A82A9DC007D5508 /* Studenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Studenter.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				0361E1522A75630800AC4ABF /* CVTipsView.swift */,
+				039EB7FA2A8F6D34005EE9E5 /* HRCVView.swift */,
 				03E44CB22A76D16A00A57B1E /* CVITView.swift */,
 				03E44CB42A76D33600A57B1E /* CVEconomicsView.swift */,
 				03E44CB62A76F87100A57B1E /* CVJussView.swift */,
@@ -353,6 +356,7 @@
 				0396B06F2A250193008E6CAC /* KarrieredagenApp.swift in Sources */,
 				0396B0862A25E068008E6CAC /* ModelData.swift in Sources */,
 				0396B08B2A25EA18008E6CAC /* CompanyRow.swift in Sources */,
+				039EB7FB2A8F6D34005EE9E5 /* HRCVView.swift in Sources */,
 				0396B08D2A25F024008E6CAC /* CompanyList.swift in Sources */,
 				03D5C9452A82A9DC007D5508 /* Studenter.swift in Sources */,
 				030447B22A48855700966396 /* CustomNavigationBar.swift in Sources */,
@@ -496,7 +500,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Springbrettet/Info.plist;
-				INFOPLIST_KEY_NSCalendarsUsageDescription = "\"We need access to add events to your calendar\"";
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "<string>We need access to add events to your calendar.</string>";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -529,7 +533,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Springbrettet/Info.plist;
-				INFOPLIST_KEY_NSCalendarsUsageDescription = "\"We need access to add events to your calendar\"";
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "<string>We need access to add events to your calendar.</string>";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

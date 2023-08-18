@@ -29,7 +29,7 @@ struct DiTView: View {
             
             Section {
                 Link(destination: URL(string: "https://www.facebook.com/groups/928191017996338/?hoisted_section_header_type=recently_seen&multi_permalinks=1167470484068389")!) {
-                    Label("Følg oss på Facebook", systemImage: "music.note")
+                    Label("Følg oss på Facebook", systemImage: "person")
                 }
                 .foregroundColor(Color("KDOrange"))
                 

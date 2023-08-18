@@ -1,4 +1,5 @@
 import SwiftUI
+import EventKit
 
 struct EventDetailView: View {
     var event: Event
@@ -11,6 +12,10 @@ struct EventDetailView: View {
                 .font(.custom("AvenirNext-Bold", size: 24))
                 .foregroundColor(Color("KDOrange"))
 
+            eventDate
+                .font(.custom("AvenirNext-Regular", size: 20))
+                .foregroundColor(.white)
+
             eventTiming
                 .font(.custom("AvenirNext-Regular", size: 20))
                 .foregroundColor(.white)
@@ -22,6 +27,7 @@ struct EventDetailView: View {
             speakersGroup
 
             companiesGroup
+
 
             Spacer()
 
@@ -36,6 +42,10 @@ struct EventDetailView: View {
             .scaledToFit()
     }
     
+    var eventDate: some View {
+        Text(event.date)
+    }
+
     var eventTiming: some View {
         Text("\(event.start_time) - \(event.end_time)")
     }
@@ -78,10 +88,80 @@ struct EventDetailView: View {
         }
     }
     
+    var addToCalendarButton: some View {
+        Button(action: {
+            addToCalendar(event: event)
+        }) {
+            HStack {
+                Image(systemName: "calendar")
+                Text("Legg til i kalender")
+            }
+        }
+        .padding()
+        .background(Color("KDBlue"))
+        .foregroundColor(.white)
+        .cornerRadius(10)
+    }
+    
+    func addToCalendar(event: Event) {
+        let eventStore = EKEventStore()
+        
+        switch EKEventStore.authorizationStatus(for: .event) {
+        case .authorized:
+            insertEvent(store: eventStore, event: event)
+        case .denied:
+            print("Access denied")
+        case .notDetermined:
+            eventStore.requestAccess(to: .event, completion: { (granted: Bool, error: Error?) -> Void in
+                if granted {
+                    insertEvent(store: eventStore, event: event)
+                } else {
+                    print("Access denied")
+                }
+            })
+        default:
+            print("Case Default")
+        }
+    }
+
+    func insertEvent(store: EKEventStore, event: Event) {
+        let ekEvent = EKEvent(eventStore: store)
+        
+        ekEvent.title = event.name
+        
+        // Combine the event's date, start_time, and end_time to form full Date objects
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm"
+        
+        if let startDate = dateFormatter.date(from: "\(event.date) \(event.start_time)"),
+           let endDate = dateFormatter.date(from: "\(event.date) \(event.end_time)") {
+            ekEvent.startDate = startDate
+            ekEvent.endDate = endDate
+        } else {
+            print("Error: Could not convert date and time to Date object")
+            return
+        }
+        
+        ekEvent.notes = event.description
+        ekEvent.calendar = store.defaultCalendarForNewEvents
+        
+        do {
+            try store.save(ekEvent, span: .thisEvent)
+        } catch let error as NSError {
+            print("Error: \(error)")
+        }
+    }
+
+    
     var dismissalButton: some View {
         HStack(alignment: .center) {
             Spacer()
-            DismissScheduleDetailSheetButton()
+            
+            VStack {
+                addToCalendarButton
+                Spacer()
+                DismissScheduleDetailSheetButton()
+            }
             Spacer()
         }
     }
@@ -89,7 +169,7 @@ struct EventDetailView: View {
 
 struct EventDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        EventDetailView(event: events[0])
+        EventDetailView(event: events[0]) // Assuming events is an array of Event objects
     }
 }
 
