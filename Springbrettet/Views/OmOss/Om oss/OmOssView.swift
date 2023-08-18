@@ -13,14 +13,14 @@ struct OmOssView: View {
 
             List {
                 Section(header: Text("Springbrettet")) {
-                    NavigationLink(destination: HvemErSpringbrettetView()) {
+                    NavigationLink(destination: HvaErSpringbrettet()) {
                         Label("Hva er Springbrettet?", systemImage: "info.circle")
                             .foregroundColor(Color("KDOrange"))
                     }
                     
                     NavigationLink(destination: KarrieredagenInformationView()) {
                         Label("Karrieredagen", systemImage: "network")
-                            .foregroundColor(.blue)
+                            .foregroundColor(Color("KDOrange"))
                     }
 
                 }
@@ -51,14 +51,19 @@ struct OmOssView: View {
             
                 // TODO
                 // Add springbrett leader members
+                VStack {
                     HStack {
-                        Spacer()
-                        Image("SB")
-                            .resizable()
-                            .frame(width: 90, height: 90)
-                            .aspectRatio(contentMode: .fill)
-                        Spacer()
+                            Spacer()
+                            Image("SB")
+                                .resizable()
+                                .frame(width: 90, height: 90)
+                                .aspectRatio(contentMode: .fill)
+                            Spacer()
                     }
+                    Text("Versjon 1.1.3")
+                        .foregroundColor(.secondary)
+                    Text("Laget av Hossein Sharifi")
+                }
             }
             .listStyle(.automatic)
             .navigationBarTitleDisplayMode(.inline)
