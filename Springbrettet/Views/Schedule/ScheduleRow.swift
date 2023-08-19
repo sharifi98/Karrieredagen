@@ -13,7 +13,7 @@ struct ScheduleRow: View {
 
                 Text(event.name)
 
-                    .font(.title2)
+                    .font(.headline)
 
                     .fontWeight(.bold)
 
@@ -70,7 +70,7 @@ struct ScheduleRow_Previews: PreviewProvider {
 
     static var previews: some View {
 
-        ScheduleRow(event: events[0])
+        ScheduleRow(event: events[6])
 
             .previewLayout(.sizeThatFits)
 
