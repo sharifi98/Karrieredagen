@@ -38,7 +38,7 @@ struct KarrieredagenInformationView: View {
                     Text("Vestlandets største tverrfaglige møteplass for bedrifter og studenter.")
                         .font(.custom("AvenirNext-Bold", size: 20))
                         .frame(maxWidth: 350)
-                        .foregroundColor(Color("KDOrange"))
+                        .foregroundColor(.white)
                         .lineSpacing(5)
                         .multilineTextAlignment(.center)
                     

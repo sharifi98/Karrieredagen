@@ -5,16 +5,19 @@ struct EventDetailView: View {
     var event: Event
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 10) {
+        
+        
+        
+        VStack(alignment: .center, spacing: 10) {
+            
             eventImageView
+            
+            Divider()
 
             Text(event.name)
                 .font(.custom("AvenirNext-Bold", size: 24))
                 .foregroundColor(Color("KDOrange"))
 
-            eventDate
-                .font(.custom("AvenirNext-Regular", size: 20))
-                .foregroundColor(.white)
 
             eventTiming
                 .font(.custom("AvenirNext-Regular", size: 20))
@@ -24,9 +27,12 @@ struct EventDetailView: View {
                 .font(.custom("AvenirNext-Regular", size: 20))
                 .foregroundColor(.white)
 
-            speakersGroup
+            
+            Text(event.description)
+                .foregroundColor(.secondary)
+            
+            
 
-            companiesGroup
 
 
             Spacer()
@@ -52,14 +58,13 @@ struct EventDetailView: View {
     
     var speakersGroup: some View {
         Group {
-            Text("Speakers:")
+            Text("Foredragsholder:")
                 .font(.custom("AvenirNext-Bold", size: 20))
                 .foregroundColor(Color("KDOrange"))
             if let speakers = event.speakers {
                 ForEach(speakers, id: \.self) { speaker in
                     Text(speaker)
                         .font(.custom("AvenirNext-Regular", size: 18))
-                        .foregroundColor(Color("KDOrange"))
                 }
             } else {
                 Text("No speakers listed.")
@@ -71,7 +76,7 @@ struct EventDetailView: View {
     
     var companiesGroup: some View {
         Group {
-            Text("Companies:")
+            Text("Bedrift:")
                 .font(.custom("AvenirNext-Bold", size: 20))
                 .foregroundColor(Color("KDOrange"))
             if let companies = event.companies {
@@ -98,8 +103,8 @@ struct EventDetailView: View {
             }
         }
         .padding()
-        .background(Color("KDBlue"))
-        .foregroundColor(.white)
+        .background(.white)
+        .foregroundColor(.black)
         .cornerRadius(10)
     }
     
@@ -131,7 +136,7 @@ struct EventDetailView: View {
         
         // Combine the event's date, start_time, and end_time to form full Date objects
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm"
+        dateFormatter.dateFormat = "dd-MM-yyyy HH:mm"
         
         if let startDate = dateFormatter.date(from: "\(event.date) \(event.start_time)"),
            let endDate = dateFormatter.date(from: "\(event.date) \(event.end_time)") {
@@ -159,7 +164,6 @@ struct EventDetailView: View {
             
             VStack {
                 addToCalendarButton
-                Spacer()
                 DismissScheduleDetailSheetButton()
             }
             Spacer()
@@ -169,7 +173,7 @@ struct EventDetailView: View {
 
 struct EventDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        EventDetailView(event: events[0]) // Assuming events is an array of Event objects
+        EventDetailView(event: events[2]) // Assuming events is an array of Event objects
     }
 }
 

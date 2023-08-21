@@ -73,7 +73,8 @@ struct OmOssView: View {
                 Section {
                     
                     Text("Styret i Springbrettet")
-                        .listRowBackground(Color("KDOrange"))
+                        .listRowBackground(LinearGradient(gradient: Gradient(colors: [Color("KDOrange"), Color.yellow]), startPoint: .top, endPoint: .bottom))
+                        
                     ZStack {
                         ScrollView(.horizontal, showsIndicators: false) {
                             HStack {

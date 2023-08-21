@@ -1,87 +1,63 @@
 [
     {
         "id" : 1,
-        "name": "Åpningsseremoni",
-        "date": "2023-09-26",
-        "start_time": "09:00",
-        "end_time": "09:30",
-        "location": "Hovedscenen",
+        "name": "Dørene åpner",
+        "date": "26-09-2023",
+        "start_time": "10:00",
+        "end_time": "15:00",
+        "location": "Grieghallen",
         "imageName": "grieghallenaud",
-        "duration": 60,
-        "description": "Dette markerer den offisielle starten av arrangementet med potensielle taler og introduksjoner."
+        "duration": 0,
+        "description": "Dørene åpner"
     },
     {
         "id" : 2,
-        "name": "Aker BP BEDPRES",
-        "date": "2023-09-26",
-        "start_time": "09:30",
-        "end_time": "10:30",
+        "name": "Aker Solutions",
+        "date": "26-09-2023",
+        "start_time": "10:45",
+        "end_time": "11:30",
         "companies": [
-            "Aker BP"
+            "Aker Solutions"
         ],
         "location": "Hovedscenen",
         "imageName": "akersolutions",
-        "duration": 60,
-        "description": "Bedriftene vil dele informasjon om seg selv, deres mål, og potensielle fremtidige muligheter."
+        "duration": 45,
+        "description": "Aker Solutions vil dele informasjon om seg selv, deres mål, og potensielle fremtidige muligheter."
     },
     {
-        "id" : 3,
-        "name": "Nettverkspause",
-        "date": "2023-09-26",
-        "start_time": "10:30",
-        "end_time": "11:00",
-        "location": "Hovedscenen",
-        "imageName": "grieghallenaud",
+        "id": 3,
+        "name": "Thomas Gjertsen",
+        "date": "26-09-2023",
+        "start_time": "12:15",
+        "end_time": "13:00",
+        "location": "Peer Gynt salen",
+        "imageName": "thomasgjertsen",
+        "speakers": [
+            "Thomas Gjertsen"
+        ],
         "duration": 60,
-        "description": "Dette gir en sjanse for deltakerne til å mingle, utveksle kontakter og diskutere presentasjonene og begivenhetene så langt."
+        "description": "Thomas Gjertsen utforsker hvorfor talentfulle og hardtarbeidende mennesker noen ganger mislykkes. Med inspirasjon fra psykologen Daniel Kahneman, gir han innsikt i beslutningstaking og hvordan man kan øke sjansene for suksess. Han deler også fra sine egne erfaringer som en kjent humorist og gründer, og vektlegger viktigheten av refleksjon og tankefull beslutningstaking."
     },
     {
         "id" : 4,
-        "name": "Lunsj",
-        "date": "2023-09-26",
-        "start_time": "11:00",
-        "end_time": "12:00",
+        "name": "DNB",
+        "date": "26-09-2023",
+        "start_time": "13:30",
+        "end_time": "14:15",
         "location": "Hovedscenen",
-        "imageName": "",
+        "imageName": "dnb",
         "duration": 60,
-        "description": "Dette er en tid for alle å slappe av, nyte et måltid og fortsette nettverk i en mer avslappet atmosfære."
+        "description": "DNB vil dele informasjon om seg selv, deres mål, og potensielle fremtidige muligheter."
     },
     {
         "id" : 5,
-        "name": "Talere",
-        "date": "2023-09-26",
-        "start_time": "12:00",
-        "end_time": "13:00",
-        "speakers": [
-            "Accenture",
-            "Bouvet",
-            "Nordea"
-        ],
-        "location": "Hovedscenen",
-        "imageName": "",
-        "duration": 60,
-        "description": "Talere fra Accenture, Bouvet, og Nordea vil dele sin visdom, erfaring og perspektiver om forskjellige emner."
-    },
-    {
-        "id" : 6,
-        "name": "Konkurranser",
-        "date": "2023-09-26",
-        "start_time": "13:00",
-        "end_time": "14:30",
-        "location": "Hovedscenen",
-        "imageName": "",
-        "duration": 60,
-        "description": "Det vil være forskjellige konkurranser, som involverer en rekke morsomme og engasjerende aktiviteter, kanskje med premier for vinnerne."
-    },
-    {
-        "id" : 7,
-        "name": "Avslutningsseremoni",
-        "date": "2023-09-26",
+        "name": "Dørene",
+        "date": "26-09-2023",
         "start_time": "14:30",
         "end_time": "15:00",
-        "location": "Hovedscenen",
+        "location": "Grieghallen",
         "imageName": "",
         "duration": 60,
-        "description": "Dette markerer den offisielle avslutningen av arrangementet, med potensielle taler, takk og høydepunkter fra dagen."
+        "description": "Dørene stenger"
     }
 ]

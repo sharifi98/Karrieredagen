@@ -61,5 +61,12 @@
         "name": "Philip Kanavin",
         "email": "Philip.Kanavin@springbrettet.org",
         "imageName": "philip"
+    },
+    {
+        "id": 10,
+        "role": "IT-ansvarlig",
+        "name": "Hossein Sharifi",
+        "email": "Hossein.Sharifi@springbrettet.org",
+        "imageName": "hossein2"
     }
 ]
