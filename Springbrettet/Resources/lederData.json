@@ -9,9 +9,9 @@
     {
         "id": 2,
         "role": "Nestleder for Springbrettet",
-        "name": "Emma Dillevig",
-        "email": "Emma.Dillevig@springbrettet.org",
-        "imageName": "emma"
+        "name": "Amanda Brusletto",
+        "email": "Amanda.Brusletto@springbrettet.org",
+        "imageName": "amanda"
     },
     {
         "id": 3,
@@ -23,9 +23,9 @@
     {
         "id": 4,
         "role": "Leder for kommunikasjonsgruppen",
-        "name": "Ulrikke Butz Vablum",
-        "email": "Ulrikke.Butz.Vablum@springbrettet.org",
-        "imageName": "ulrikke"
+        "name": "Vera Eydal Thømming",
+        "email": "Vera.Eydal@springbrettet.org",
+        "imageName": "vera"
     },
     {
         "id": 5,
@@ -44,29 +44,22 @@
     {
         "id": 7,
         "role": "Leder for interngruppen",
-        "name": "Henrik Aksnes",
-        "email": "Henrik.Aksnes@springbrettet.org",
-        "imageName": "henrik"
+        "name": "Frigg Sommervoll",
+        "email": "frigg.sommervoll@springbrettet.org",
+        "imageName": "frigg"
     },
     {
         "id": 8,
         "role": "HR - ansvarlig",
-        "name": "Vera Eydal Thømming",
-        "email": "Vera.Thoemming@springbrettet.org",
-        "imageName": "vera"
+        "name": "Emily Jonassen Granberg ",
+        "email": "emily.jonassen@springbrettet.org",
+        "imageName": "emily"
     },
     {
         "id": 9,
         "role": "Økonomiansvarlig",
-        "name": "Philip Kanavin",
-        "email": "Philip.Kanavin@springbrettet.org",
-        "imageName": "philip"
-    },
-    {
-        "id": 10,
-        "role": "IT-ansvarlig",
-        "name": "Hossein Sharifi",
-        "email": "Hossein.Sharifi@springbrettet.org",
-        "imageName": "hossein2"
+        "name": "Herman Fredriksen",
+        "email": "Herman.Fredriksen@springbrettet.org",
+        "imageName": "herman2"
     }
 ]

@@ -73,7 +73,7 @@ struct OmOssView: View {
                 Section {
                     
                     Text("Styret i Springbrettet")
-                        .listRowBackground(LinearGradient(gradient: Gradient(colors: [Color("KDOrange"), Color.yellow]), startPoint: .top, endPoint: .bottom))
+                        .listRowBackground(LinearGradient(gradient: Gradient(colors: [Color("KDOrange"), Color.red]), startPoint: .top, endPoint: .bottom))
                         
                     ZStack {
                         ScrollView(.horizontal, showsIndicators: false) {
@@ -87,7 +87,7 @@ struct OmOssView: View {
                                             member.image
                                                 .resizable()
                                                 .scaledToFit()
-                                                .frame(height: 140)
+                                                .frame(width: 150, height: 200)
                                                 .clipShape(Circle())
                                                 .overlay(
                                                     Circle()
