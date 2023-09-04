@@ -30,6 +30,7 @@ struct EventDetailView: View {
             
             Text(event.description)
                 .foregroundColor(.secondary)
+                .multilineTextAlignment(.center)
             
             
 
