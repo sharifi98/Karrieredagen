@@ -29,36 +29,43 @@ struct HomeView: View {
     ]
     
     @State private var selectedImageIndex = 0
+    @State private var showKarrieredagenInformationView = false
     
     var body: some View {
         NavigationView {
             List {
                 VStack {
-                    ZStack {
-                        WebImage(url: Bundle.main.url(forResource: "KDaftermovie_cropped", withExtension: "gif"))
-                            .resizable()
-                            .frame(width: 500, height: 300)
-                            .clipped()
-                            .cornerRadius(10)
-                            .shadow(radius: 20)
-                            .opacity(0.5)
-                        
-                        
-                        VStack {
-                            Text("Karrieredagen")
-                                .font(.custom("AvenirNext-Bold", size: 40))
-                                .foregroundColor(Color("KDOrange"))
+                    
+                    Button {
+                        self.showKarrieredagenInformationView.toggle()
+                    } label: {
+                        ZStack {
+                            WebImage(url: Bundle.main.url(forResource: "KDaftermovie_cropped", withExtension: "gif"))
+                                .resizable()
+                                .frame(width: 500, height: 300)
+                                .clipped()
+                                .cornerRadius(10)
+                                .shadow(radius: 20)
+                                .opacity(0.5)
                             
-                            Text("26.09.2023")
-                                .font(.custom("AvenirNext-Bold", size: 30))
-                                .foregroundColor(.white)
-                                .underline()
+                            VStack {
+                                Text("Karrieredagen")
+                                    .font(.custom("AvenirNext-Bold", size: 40))
+                                    .foregroundColor(Color("KDOrange"))
+                                
+                                Text("26.09.2023")
+                                    .font(.custom("AvenirNext-Bold", size: 30))
+                                    .foregroundColor(.white)
+                                    .underline()
+                            }
+                            .padding(-30)
+                            
                         }
-                        .padding(-30)
-                        
-                        
-                        
                     }
+                    .sheet(isPresented: $showKarrieredagenInformationView) {
+                        KarrieredagenInformationView()
+                    }
+                    
                     
                     VStack {
                         Text("Alt du trenger å vite om Karrieredagen og Springbrettet, samlet på ett sted.")

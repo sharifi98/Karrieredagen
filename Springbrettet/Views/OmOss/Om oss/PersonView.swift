@@ -11,13 +11,17 @@ struct PersonView: View {
     let person: Person
     
     var body: some View {
-        List {
-            
+        ZStack {
+            Background()
             VStack {
                 
                 Image(person.imageName) // Assuming your Person struct has a imageName property
                     .resizable() // Add this line to let image resize itself
-                    .aspectRatio(contentMode: .fill) // Preserve the aspect ratio of original image
+                    .aspectRatio(contentMode: .fit) // Preserve the aspect ratio of original image
+                    .frame(width: 300)
+                    .clipped()
+                    .clipShape(Rectangle())
+                    .cornerRadius(10)
                 
                 VStack {
                     Text(person.name)
@@ -32,6 +36,8 @@ struct PersonView: View {
                         .font(.custom("AvenirNext-Bold", size: 15))
                     
                 }
+                
+                Spacer()
             }
         }
     }

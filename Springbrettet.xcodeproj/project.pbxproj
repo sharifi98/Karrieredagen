@@ -16,6 +16,7 @@
 		031C6BEC2A46EE8800332564 /* KarrieredagenInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031C6BEB2A46EE8800332564 /* KarrieredagenInformationView.swift */; };
 		031C6BF02A47090F00332564 /* GifImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031C6BEF2A47090F00332564 /* GifImage.swift */; };
 		031CE3B92A4B0FEE005F4428 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 031CE3B82A4B0FEE005F4428 /* SDWebImageSwiftUI */; };
+		0337135D2AA9E3E00018CA2E /* HosseinSharifiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0337135C2AA9E3E00018CA2E /* HosseinSharifiView.swift */; };
 		035359F22A79A704003AB9B3 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035359F12A79A704003AB9B3 /* Person.swift */; };
 		0358A3AA2A5AF44D00B68428 /* KarrierestudioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0358A3A92A5AF44D00B68428 /* KarrierestudioView.swift */; };
 		0361E1532A75630800AC4ABF /* CVTipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0361E1522A75630800AC4ABF /* CVTipsView.swift */; };
@@ -60,6 +61,7 @@
 		031C6BE32A46DC7900332564 /* OmOssView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmOssView.swift; sourceTree = "<group>"; };
 		031C6BEB2A46EE8800332564 /* KarrieredagenInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KarrieredagenInformationView.swift; sourceTree = "<group>"; };
 		031C6BEF2A47090F00332564 /* GifImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifImage.swift; sourceTree = "<group>"; };
+		0337135C2AA9E3E00018CA2E /* HosseinSharifiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HosseinSharifiView.swift; sourceTree = "<group>"; };
 		0345B2732A29D15B00110EC4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		035359F12A79A704003AB9B3 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		0358A3A92A5AF44D00B68428 /* KarrierestudioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KarrierestudioView.swift; sourceTree = "<group>"; };
@@ -244,6 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				031C6BE32A46DC7900332564 /* OmOssView.swift */,
+				0337135C2AA9E3E00018CA2E /* HosseinSharifiView.swift */,
 				031C6BEB2A46EE8800332564 /* KarrieredagenInformationView.swift */,
 				036285632A7ADDD0007E165B /* PersonView.swift */,
 				03728C212A8FA6E300B80581 /* PersonView2.swift */,
@@ -352,6 +355,7 @@
 				036B44F42A6093BB0059EB50 /* DiTView.swift in Sources */,
 				03C642612A8B7EC4001FF571 /* GrieghallenView.swift in Sources */,
 				03728C222A8FA6E300B80581 /* PersonView2.swift in Sources */,
+				0337135D2AA9E3E00018CA2E /* HosseinSharifiView.swift in Sources */,
 				03E44CB32A76D16A00A57B1E /* CVITView.swift in Sources */,
 				031C6BEC2A46EE8800332564 /* KarrieredagenInformationView.swift in Sources */,
 				03728C1C2A8F7E4500B80581 /* HvaErSpringbrettet.swift in Sources */,

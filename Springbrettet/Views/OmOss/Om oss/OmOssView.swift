@@ -5,7 +5,7 @@ struct OmOssView: View {
 
     let images1 = ["Screenshot 2023-07-05 at 15-56-54 Springbrettfondet — Springbrettet", "Screenshot 2023-07-05 at 15-57-16 Springbrettfondet — Springbrettet"]
 
-    
+    @State var showSheetView = false
 
     var body: some View {
 
@@ -116,21 +116,29 @@ struct OmOssView: View {
                 }
 
             
-                
-                
-                VStack {
-                    HStack {
-                            Spacer()
-                            Image("SB")
-                                .resizable()
-                                .frame(width: 90, height: 90)
-                                .aspectRatio(contentMode: .fill)
-                            Spacer()
+                Button {
+                    self.showSheetView.toggle()
+                } label: {
+                    VStack {
+                        HStack {
+                                Spacer()
+                                Image("SB")
+                                    .resizable()
+                                    .frame(width: 90, height: 90)
+                                    .aspectRatio(contentMode: .fill)
+                                Spacer()
+                        }
+                        Text("Versjon 1.1.3")
+                            .foregroundColor(.secondary)
+                        Text("Laget av Hossein Sharifi")
                     }
-                    Text("Versjon 1.1.3")
-                        .foregroundColor(.secondary)
-                    Text("Laget av Hossein Sharifi")
                 }
+                .sheet(isPresented: $showSheetView) {
+                    HosseinSharifiView()
+                        .presentationDetents([.medium, .large])
+                }
+                
+                
             }
             .listStyle(.automatic)
             .navigationBarTitleDisplayMode(.inline)
