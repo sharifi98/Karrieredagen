@@ -76,6 +76,10 @@ struct Background: View{
     }
 }
 
-#Preview {
-    HosseinSharifiView()
+struct HosseinSharifi_Previews: PreviewProvider {
+    static var previews: some View {
+        HosseinSharifiView()
+    }
 }
+
+
