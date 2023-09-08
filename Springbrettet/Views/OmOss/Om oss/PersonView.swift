@@ -22,6 +22,7 @@ struct PersonView: View {
                     .clipped()
                     .clipShape(Rectangle())
                     .cornerRadius(10)
+                    .padding()
                 
                 VStack {
                     Text(person.name)
@@ -39,6 +40,7 @@ struct PersonView: View {
                 
                 Spacer()
             }
+            
         }
     }
 }

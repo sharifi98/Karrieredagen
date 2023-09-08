@@ -74,6 +74,10 @@ struct HomeView: View {
                             .frame(maxWidth: 350)
                             .padding()
                             .multilineTextAlignment(.center)
+                        
+                        Text("Trykk her for mer informasjon") // Add this line
+                            .font(.custom("AvenirNext-Bold", size: 18)) // Customize the font style and size
+                            .foregroundColor(Color("KDOrange")) // Customize the text color
                     }
                 }
                 .listRowBackground(Color("KDBlue"))

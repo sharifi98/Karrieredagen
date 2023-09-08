@@ -89,41 +89,6 @@ struct KarrieredagenInformationView: View {
                         }
                         
                     
-                        ScrollView(.horizontal, showsIndicators: false) {
-                            HStack {
-                                ForEach(springbrettereData, id: \.id) { member in
-                                    Button {
-                                        self.showPersonView.toggle()
-                                    } label: {
-                                        VStack {
-                                            member.image
-                                                .resizable()
-                                                .scaledToFit()
-                                                .frame(height: 100)
-                                                .clipShape(Circle())
-                                                .overlay(
-                                                    Circle()
-                                                        .stroke(Color("KDOrange"), lineWidth: 3)
-                                                )
-                                            
-                                            VStack {
-                                                Text(member.name)
-                                                    .font(.headline)
-                                                    .foregroundColor(.primary)
-                                                Text(member.role)
-                                                    .font(.subheadline)
-                                                    .foregroundColor(.primary)
-                                            }
-                                        }
-                                        .sheet(isPresented: $showPersonView) {
-                                            PersonView(person: member)
-                                                .presentationDetents([.medium, .large])
-                                        }
-                                        .padding()
-                                    }
-                                }
-                            }
-                        }
                         
                     }
                 }
