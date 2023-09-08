@@ -32,11 +32,6 @@ struct EventDetailView: View {
                 .foregroundColor(.secondary)
                 .multilineTextAlignment(.center)
             
-            
-
-
-
-            Spacer()
 
             dismissalButton
         }
