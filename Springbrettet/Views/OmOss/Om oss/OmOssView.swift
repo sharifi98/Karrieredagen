@@ -26,10 +26,15 @@ struct OmOssView: View {
                             .foregroundColor(Color("KDOrange"))
                     }
                     
+                    /*
+                     
                     NavigationLink(destination: KarrieredagenInformationView()) {
                         Label("Karrieredagen", systemImage: "network")
                             .foregroundColor(Color("KDOrange"))
                     }
+                     
+                    */
+                    
 
                 }
                 
@@ -135,7 +140,7 @@ struct OmOssView: View {
                 }
                 .sheet(isPresented: $showSheetView) {
                     HosseinSharifiView()
-                        .presentationDetents([.medium, .large])
+                        .presentationDetents([.medium])
                 }
                 
                 

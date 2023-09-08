@@ -64,6 +64,7 @@ struct HomeView: View {
                     }
                     .sheet(isPresented: $showKarrieredagenInformationView) {
                         KarrieredagenInformationView()
+                            .presentationDetents([.fraction(0.9)])
                     }
                     
                     
