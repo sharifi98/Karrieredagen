@@ -8,34 +8,38 @@ struct EventDetailView: View {
         
         
         
-        VStack(alignment: .center, spacing: 10) {
-            
-            eventImageView
-            
-            Divider()
+        ZStack {
+            Background2()
+            VStack(alignment: .center, spacing: 10) {
+                
+                eventImageView
+                
+                Divider()
 
-            Text(event.name)
-                .font(.custom("AvenirNext-Bold", size: 24))
-                .foregroundColor(Color("KDOrange"))
+                Text(event.name)
+                    .font(.custom("AvenirNext-Bold", size: 24))
+                    .foregroundColor(Color("KDOrange"))
 
 
-            eventTiming
-                .font(.custom("AvenirNext-Regular", size: 20))
-                .foregroundColor(.white)
+                eventTiming
+                    .font(.custom("AvenirNext-Regular", size: 20))
+                    .foregroundColor(.white)
 
-            Text(event.location)
-                .font(.custom("AvenirNext-Regular", size: 20))
-                .foregroundColor(.white)
+                Text(event.location)
+                    .font(.custom("AvenirNext-Regular", size: 20))
+                    .foregroundColor(.white)
 
-            
-            Text(event.description)
-                .foregroundColor(.secondary)
-                .multilineTextAlignment(.center)
-            
+                
+                Text(event.description)
+                    .foregroundColor(.white)
+                    .multilineTextAlignment(.center)
+                
 
-            dismissalButton
+                dismissalButton
+                    .padding()
+            }
+            .padding()
         }
-        .padding()
     }
     
     var eventImageView: some View {
@@ -169,7 +173,7 @@ struct EventDetailView: View {
 
 struct EventDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        EventDetailView(event: events[2]) // Assuming events is an array of Event objects
+        EventDetailView(event: events[2])
     }
 }
 
@@ -194,11 +198,6 @@ extension View {
             .padding(10)
             .foregroundColor(.white)
             .background(Color("KDOrange"))
-            .clipShape(Rectangle())
-            .cornerRadius(15)
-            .overlay(
-                RoundedRectangle(cornerRadius: 15)
-                    .stroke(Color("KDOrange"), lineWidth: 4)
-            )
+            .cornerRadius(10)
     }
 }

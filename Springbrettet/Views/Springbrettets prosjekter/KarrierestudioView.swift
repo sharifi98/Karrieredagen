@@ -22,9 +22,10 @@ struct Karrierestudio: View {
                             .cornerRadius(10)
                         
                         Text("Karrierestudio")
-                            .foregroundColor(.white)
+                            .foregroundColor(Color("KDOrange"))
                             .font(.system(size: 46, weight: .semibold))
                             .offset(y: 150)
+                            
                     }
                     
                     

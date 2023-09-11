@@ -38,20 +38,25 @@ struct HvaErSpringbrettet: View {
                         ForEach(imageNames, id: \.self) { imageName in
                             Image(imageName)
                                 .resizable()
-                                .frame(width: 288, height: 220)
+                                .frame(width: 300, height: 220)
                                 .clipShape(RoundedRectangle(cornerRadius: 20))
                                 .shadow(color: Color.black.opacity(0.3), radius: 7, x: 10, y: 10)
+                                .padding()
                         }
                     }
                 }
                 .padding(.bottom, 10)
                 
                 VStack {
-                    Text("Bindeleddet")
+                    
+                    Text("Vi er")
+                        .font(.custom("AvenirNext-Bold", size: 18))
+                    
+                    Text("bindeleddet")
                         .underline()
                         .foregroundStyle(Color("KDOrange"))
-                        .font(.custom("AvenirNext-Bold", size: 30))
-                        .padding(.bottom, 10)
+                        .font(.custom("AvenirNext-Bold", size: 40))
+                        .bold()
 
                     Text("mellom studenter og næringslivet")
                         .font(.custom("AvenirNext-Bold", size: 18))

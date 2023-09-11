@@ -6,35 +6,37 @@ struct ScheduleList: View {
     var body: some View {
         NavigationView {
             
-                
+            ZStack {
+                Background()
                 ScrollView {
-                    
-                    VStack(spacing: 10) {
-                        ForEach(events) { event in
-                            eventRow(for: event)
+                        
+                        VStack(spacing: 10) {
+                            ForEach(events) { event in
+                                eventRow(for: event)
+                            }
+                        }
+                        .padding(.horizontal)
+                        
+                        Spacer()
+                            .frame(height: 90)
+
+                    }
+                    .overlay(Rectangle().foregroundColor(.clear))
+                    .sheet(item: $selectedEvent) { eventDetail in
+                        EventDetailView(event: eventDetail)
+                            .presentationDetents([.medium, .large])
+                    }
+                    .navigationBarWithTransparentBackground()
+                    .toolbar {
+                        ToolbarItem(placement: .navigationBarLeading) {
+                            Text("Timeplan")
+                                .font(.custom("AvenirNext-Bold", size: 36))
+                                .foregroundColor(Color("KDOrange"))
+                                .padding(.bottom, 30)
                         }
                     }
-                    .padding(.horizontal)
-                    
-                    Spacer()
-                        .frame(height: 90)
-
-                }
-                .overlay(Rectangle().foregroundColor(.clear))
-                .sheet(item: $selectedEvent) { eventDetail in
-                    EventDetailView(event: eventDetail)
-                        .presentationDetents([.medium, .large])
-                }
-                .navigationBarWithTransparentBackground()
-                .toolbar {
-                    ToolbarItem(placement: .navigationBarLeading) {
-                        Text("Timeplan")
-                            .font(.custom("AvenirNext-Bold", size: 36))
-                            .foregroundColor(Color("KDOrange"))
-                            .padding(.bottom, 30)
-                    }
-                }
                 .padding()
+            }
         }
     }
     
