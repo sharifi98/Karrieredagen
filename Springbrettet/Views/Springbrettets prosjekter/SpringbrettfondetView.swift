@@ -86,10 +86,7 @@ struct SpringbrettfondetView: View {
                         imageNames: Array(imageNames.suffix(3))
                     )
                     
-                    // Added padding to the bottom to avoid content being too close to the bottom edge
-                    Spacer().frame(height: 20)
                 }
-                
                 .navigationBarWithTransparentBackground()
                 .toolbar {
                     ToolbarItemGroup(placement: .navigationBarLeading) {
