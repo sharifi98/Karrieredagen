@@ -35,8 +35,16 @@ struct PersonView: View {
                         .foregroundColor(.secondary)
                     Link(person.email, destination: URL(string: "mailto:\(person.email)")!)
                         .font(.custom("AvenirNext-Bold", size: 15))
-                    
                 }
+                
+                VStack {
+                    if let url = URL(string: "\(person.linkedin)") {
+                        Link(destination: url) {
+                            Image("linkedin")
+                        }
+                    }
+                }
+                .padding()
                 
                 Spacer()
             }

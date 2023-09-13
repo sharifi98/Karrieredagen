@@ -5,7 +5,8 @@
         "name": "Eirin Syvertsen",
         "email": "Eirin.Syvertsen@springbrettet.org",
         "studie": "UiB - Energi",
-        "imageName": "eirin"
+        "imageName": "eirin",
+        "linkedin" : "https://www.linkedin.com/in/eirin-marie-saure-syvertsen-20930621b/"
         
     },
     {
@@ -14,7 +15,8 @@
         "name": "Maria Norheim Morken",
         "email": "maria.morken@springbrettet.org",
         "studie": "UiB - Samfunnsøkonomi",
-        "imageName": "morken"
+        "imageName": "morken",
+        "linkedin" : "https://www.linkedin.com/in/maria-norheim-morken-5b42a4241/"
     },
     {
         "id": 3,
@@ -22,7 +24,9 @@
         "name": "Kristin Hjermann",
         "email": "kristin.hjermann@springbrettet.org",
         "studie": "BI - Organisasjonspsykologi, HR og ledelse",
-        "imageName": "kristin"
+        "imageName": "kristin",
+        "linkedin" : "https://www.linkedin.com/in/kristin-hjermann-41324a1bb/"
+        
     },
     {
         "id": 4,
@@ -30,7 +34,8 @@
         "name": "Herman Ween Fredriksen",
         "email": "herman.fredriksen@springbrettet.org",
         "studie": "BI - Økonomi og administrasjon",
-        "imageName": "herman"
+        "imageName": "herman",
+        "linkedin" : "https://www.linkedin.com/in/herman-ween-fredriksen-30582a269/"
     },
     {
         "id": 5,
@@ -38,7 +43,8 @@
         "name": "Hossein Sharifi",
         "email": "hossein.sharifi@springbrettet.org",
         "studie": "UiB - Programvareutvikling",
-        "imageName": "hossein"
+        "imageName": "hossein",
+        "linkedin" : "https://www.linkedin.com/in/hossein-sharifi-a3b4431aa/"
     },
     {
         "id": 6,
@@ -46,7 +52,8 @@
         "name": "Marthe Schiørn",
         "email": "marthe.schiorn@springbrettet.org",
         "studie": "UiB - Rettsvitenskap",
-        "imageName": "marthe"
+        "imageName": "marthe",
+        "linkedin" : "https://www.linkedin.com/in/marthe-schi%C3%B8rn-9932a7275/"
     },
     {
         "id": 7,
@@ -54,7 +61,8 @@
         "name": "Myriam Ask Lazrek",
         "email": "myriam.lazrek@springbrettet.org",
         "studie": "UiB - Europastudium med Sampol og Samfunnsøkonomi",
-        "imageName": "myriam"
+        "imageName": "myriam",
+        "linkedin" : "https://www.linkedin.com/in/myriam-lazrek-15584a231/"
     },
     {
         "id": 8,
@@ -62,7 +70,8 @@
         "name": "Henrik Bråthen Kristoff",
         "email": "henrik.kristoff@springbrettet.org",
         "studie": "BI - Markedsføringsledelse",
-        "imageName": "kristoff"
+        "imageName": "kristoff",
+        "linkedin" : "https://www.instagram.com/henrik_kristoff/"
     },
     {
         "id": 9,
@@ -70,7 +79,8 @@
         "name": "Thea Soltveit Taranger",
         "email": "thea.taranger@springbrettet.org",
         "studie": "UiB - Psykologi",
-        "imageName": "thea"
+        "imageName": "thea",
+        "linkedin" : "https://www.instagram.com/theasoltveittaranger/"
     }
     
 ]
