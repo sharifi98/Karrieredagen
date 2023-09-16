@@ -65,7 +65,7 @@ struct KarrieredagenInformationView: View {
                                             member.image
                                                 .resizable()
                                                 .scaledToFit()
-                                                .frame(height: 100)
+                                                .frame(height: 200)
                                                 .clipShape(Circle())
                                                 .overlay(
                                                     Circle()

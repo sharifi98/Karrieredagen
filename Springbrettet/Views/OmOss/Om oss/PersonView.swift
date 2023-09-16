@@ -32,6 +32,7 @@ struct PersonView: View {
                         .font(.custom("AvenirNext-Bold", size: 15))
                     Text(person.studie)
                         .font(.custom("AvenirNext-Bold", size: 15))
+                        .multilineTextAlignment(.center)
                         .foregroundColor(.secondary)
                     Link(person.email, destination: URL(string: "mailto:\(person.email)")!)
                         .font(.custom("AvenirNext-Bold", size: 15))

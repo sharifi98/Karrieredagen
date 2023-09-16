@@ -13,7 +13,7 @@ struct HosseinSharifiView: View {
             ZStack {
                 Background2()
                 VStack(alignment: .center) {
-                    Image("hossein3")
+                    Image("hossein")
                         .resizable()
                         .scaledToFit()
                         .frame(width: 200)
