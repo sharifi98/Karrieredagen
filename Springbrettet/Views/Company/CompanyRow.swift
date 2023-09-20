@@ -21,10 +21,6 @@ struct CompanyRow: View {
             VStack {
                 Text(company.name)
                     .frame(maxWidth: .infinity, alignment: .leading)
-                Text("Stand \(company.standNumber)")
-                    .font(.caption)
-                    .foregroundColor(.gray)
-                    .frame(maxWidth: .infinity, alignment: .leading)
                 
             }
             

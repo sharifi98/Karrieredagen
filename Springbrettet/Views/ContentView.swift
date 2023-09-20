@@ -2,6 +2,9 @@ import SwiftUI
 
 
 struct ContentView: View {
+    
+    @State private var showWelcomeSheet = false
+    
     init() {
         UITabBar.appearance().backgroundColor = UIColor.black.withAlphaComponent(0.9)
         if #available(iOS 15, *) {
@@ -25,6 +28,17 @@ struct ContentView: View {
                 }
         }
         .accentColor(Color.orange)
+        .onAppear {
+            if UserDefaults.standard.object(forKey: "appOpenedBefore") == nil {
+                showWelcomeSheet = true
+            }
+        }
+        .sheet(isPresented: $showWelcomeSheet) {
+            WelcomeSheet(onDismiss: {
+                UserDefaults.standard.set(true, forKey: "appOpenedBefore")
+                showWelcomeSheet = false
+            })
+        }
     }
 }
 

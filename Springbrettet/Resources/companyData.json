@@ -2,7 +2,6 @@
    {
       "id":1,
       "name":"ABB",
-      "standNumber":1,
       "isFavorite":false,
       "industry":"Ingeniør",
       "description":"ABB er en svensk-sveitsisk internasjonal bedrift som hovedsakelig opererer innen robotikk, kraft, tungt elektrisk utstyr og automatiseringsteknologi.",
@@ -15,7 +14,6 @@
    {
       "id":2,
       "name":"Adecco",
-      "standNumber":2,
       "isFavorite":false,
       "industry":"HR / Rekruttering ",
       "description":"Adecco er et sveitsisk-fransk selskap med base i Zürich, Sveits. Det er verdens nest største leverandør av menneskelige ressurser og midlertidig bemanning, og er et Fortune Global 500-selskap.",
@@ -28,7 +26,6 @@
    {
       "id":3,
       "name":"Aker Solutions",
-      "standNumber":3,
       "isFavorite":false,
       "industry":"Ingeniør",
       "description":"Aker Solutions hjelper verden med å møte sine energibehov ved å utvikle produkter, systemer og tjenester som kreves for å låse opp energi. Målet deres er å maksimere utvinning og effektivitet av olje- og gassressurser samtidig som de bruker sin ekspertise til å utvikle bærekraftige løsninger for fremtiden.",
@@ -41,7 +38,6 @@
    {
       "id":4,
       "name":"Avfall Norge",
-      "standNumber":4,
       "isFavorite":false,
       "industry":"Gjenvinning",
       "description":"Avfall Norge organiserer den norske avfalls- og gjenvinningsindustrien og dens interessenter. De representerer mer enn 200 forskjellige offentlige og private selskaper som jobber med avfallshåndtering, gjenvinning og resirkulerte materialer enten direkte eller som konsulenter, rådgivere eller leverandører.",
@@ -54,7 +50,6 @@
    {
       "id":5,
       "name":"Bane NOR",
-      "standNumber":5,
       "isFavorite":false,
       "industry":"IT, Ingeniør, Transport, Energi, Jus, Bygg, Geologi med fler",
       "description":"Bane NOR SF er den norske statlige etaten som er ansvarlig for å eie, vedlikeholde, drive og utvikle det norske jernbanenettet, inkludert sporet og stasjonene",
@@ -67,7 +62,6 @@
    {
       "id":6,
       "name":"Eika Forsikring",
-      "standNumber":6,
       "isFavorite":false,
       "industry":"Finans/Økonomi (Bank og Forsikring)",
       "description":"Eika Forsikring er en del av Eika Gruppen, som leverer konkurransedyktige forsikringsprodukter og -tjenester til bankene i alliansen. De bidrar også med fagkunnskap innen områder som sikkerhet, styring og kontroll, bærekraft, antihvitvask, personvern, bedriftsmarkedet og betalingsløsninger.",
@@ -80,7 +74,6 @@
    {
       "id":7,
       "name":"Handelshøyskolen BI",
-      "standNumber":7,
       "isFavorite":false,
       "industry":"Utdanning",
       "description":"Handelshøyskolen BI (BI Norwegian Business School) er en privat høyskole i Norge. Den ble grunnlagt som en privat, kommersiell og ikke-akkreditert kveldsskole i 1943, og tilbød kortere kurs i næringslivs- og kontorrelaterte emner for handelsfolk.",
@@ -93,7 +86,6 @@
    {
       "id":8,
       "name":"NCC",
-      "standNumber":8,
       "isFavorite":false,
       "industry":"Bygg og anlegg, entreprenør",
       "description":"NCC er et bygg- og anleggsselskap med ekspertise til å håndtere og lede komplekse byggeprosesser fra start til slutt. De er involvert i en rekke prosjekter, inkludert bygging av skoler, barnehager, helsebygg, veier, jernbane, tunneler, kontorer, og mer. NCC er også engasjert i bærekraft og biologisk mangfold, med et fokus på utvikling av fremtidens beste og mest bærekraftige løsninger.",
@@ -106,7 +98,6 @@
    {
       "id":9,
       "name":"Å Energi (Agder Energi)",
-      "standNumber":9,
       "isFavorite":false,
       "industry":"Energibransjen - it og ingeniører",
       "description":"Å Energi (tidligere Agder Energi) er en norsk energigruppe som driver med vannkraftproduksjon, elektrisitetsdistribusjon, elektrisitetshandel og tjenester for kunder i næringslivet og forbrukermarkedet.",
@@ -119,7 +110,6 @@
    {
       "id":10,
       "name":"ABG Sundal Collier",
-      "standNumber":10,
       "isFavorite":false,
       "industry":"Finans",
       "description":"ABGSC gir distribusjon av nordiske verdipapirer til lokale og internasjonale investorer. Selskapet ble grunnlagt i 1984 og har hovedkontor i Oslo, Norge. Gruppen har for øyeblikket omtrent 250 partnere og ansatte som jobber fra kontorer i Oslo, Stockholm, København, London, New York City og Frankfurt.",
@@ -132,7 +122,6 @@
    {
       "id":11,
       "name":"Aider Accounting",
-      "standNumber":11,
       "isFavorite":false,
       "industry":"HR, økonomi, tech, bærekraft og lønn. Konsulenttjenester",
       "description":"Aider er et kompetansehus som tilbyr tjenester innen regnskap, rådgivning og teknologi, med et fokus på automatisering og smarte systemløsninger. De har som mål å redefinere regnskapsbransjen og jobber for å gjøre komplekse prosesser enklere for sine kunder. Aider tilbyr også rådgivning innen HR og bærekraft, og har en ambisjon om å ligge i forkant av utviklingen i bransjen.",
@@ -145,7 +134,6 @@
    {
       "id":12,
       "name":"DNB",
-      "standNumber":12,
       "isFavorite":false,
       "industry":"Finans/Økonomi",
       "description":"DNB er Norges største finansielle tjenestegruppe og en av de største i Norden når det gjelder markedsverdi. De tilbyr en rekke finansielle produkter og tjenester, inkludert lån, forsikring, sparing, kredittkort og ulike bank- og finansieringstjenester. DNB har også spesialiserte tilbud for unge boligkjøpere, gründere, og tilbyr digitale løsninger som mobilbanking. Selskapet har en internasjonal tilstedeværelse med kontorer i Luxembourg, Sverige, og Danmark.",
@@ -158,7 +146,6 @@
    {
       "id":13,
       "name":"DOF Subsea AS",
-      "standNumber":13,
       "isFavorite":false,
       "industry":"Olje og gass, økonomi,geologi og geofysikk, offshore, havteknologi, data og informatikk, marinteknikk, produksjon, ",
       "description":"DOF Subsea er et undervannsoperatørselskap som leverer undervannsløsninger til offshore energiindustrien.",
@@ -171,7 +158,6 @@
    {
       "id":14,
       "name":"Forsvaret",
-      "standNumber":14,
       "isFavorite":false,
       "industry":"HR/Rekruttering",
       "description":"Forsvaret er de norske væpnede styrker ansvarlig for Norges militære forsvar.",
@@ -184,7 +170,6 @@
    {
       "id":15,
       "name":"KCA Deutag Drilling Norge",
-      "standNumber":15,
       "isFavorite":false,
       "industry":"Ingeniør Energi, olje og gass ",
       "description":"KCA Deutag er et internasjonalt bore- og ingeniørselskap som tilbyr operasjoner til havs og på land over hele verden, med spesialisering innen bore-, riggdesign- og driftstjenester. Med over et århundres erfaring og en bred global tilstedeværelse, er selskapet engasjert i kontinuerlig vekst og innovasjon innen energisektoren.",
@@ -197,7 +182,6 @@
    {
       "id":16,
       "name":"Lerøy Seafood",
-      "standNumber":16,
       "isFavorite":false,
       "industry":"IT,HR, Salg, Logistikk, Økonomi",
       "description":"Lerøy Seafood Group ASA er et sjømatproduksjons- og distribusjonsselskap basert i Bergen, Norge. Selskapet startet virksomheten på 1800-tallet da fiskeren Ole Mikkel Lerøen begynte å selge fisk og annen sjømat på fiskemarkedet i Bergen. I 1939 ble det primære datterselskapet Hallvar Lærøy AS grunnlagt.",
@@ -210,7 +194,6 @@
    {
       "id":17,
       "name":"Odfjell Technology",
-      "standNumber":17,
       "isFavorite":false,
       "industry":"IT, Ingeniør, HR, Rekruttering, Finans/Økonomi, Kommunikasjon, HMS, Compliance, Supply Chain, Business Improvement m.fl",
       "description":"Odfjell Technology er en integrert leverandør av offshoreoperasjoner, brønntjenesteteknologi og ingeniørløsninger med global tilstedeværelse.",
@@ -223,7 +206,6 @@
    {
       "id":18,
       "name":"Politiet",
-      "standNumber":18,
       "isFavorite":false,
       "industry":"Offentlig forvaltning",
       "description":"Politiet er den norske polititjenesten ansvarlig for håndhevelse av lov innenfor Norge.",
@@ -236,7 +218,6 @@
    {
       "id":19,
       "name":"Stacc",
-      "standNumber":19,
       "isFavorite":false,
       "industry":"Fintech",
       "description":"Stacc er et norsk fintech-selskap med mer enn 30 års erfaring med å levere digitale løsninger og konsulenttjenester til banker, eiendomsfinansieringsleverandører, forsikringsselskaper, pensjonsfond, familiekontorer og offentlig sektor i Norden. Stacc kombinerer finansiell teknologi med design og strategisk kunnskap.",
@@ -249,7 +230,6 @@
    {
       "id":20,
       "name":"Statsbygg",
-      "standNumber":20,
       "isFavorite":false,
       "industry":"Bygg, eiendom, offentlig",
       "description":"Statsbygg gir eiendomsforvaltning, byggeplanlegging og -ledelse, rådgivning og utviklingstjenester.",
@@ -262,7 +242,6 @@
    {
       "id":21,
       "name":"THREE60 Energy",
-      "standNumber":21,
       "isFavorite":false,
       "industry":"Energi, konsulenttjenester, IT",
       "description":"THREE60 Energy Norway er et norsk høyteknologisk ingeniør- og undersjøisk konsulentselskap bestående av et team av profesjonelle som gir prosjektbaserte ingeniørkonsulent- og ledelsestjenester. Deres hovedkompetanse ligger innenfor Undersjøisk Boring & Brønn og Undersjøiske & Fasiliteter.",
@@ -275,7 +254,6 @@
    {
       "id":22,
       "name":"Totalenergies",
-      "standNumber":22,
       "isFavorite":false,
       "industry":"Energi, Finans/økonomi, HR, Ingeniør",
       "description":"TotalEnergies Norge er en ledende aktør innen olje- og gassutforskning og -produksjon, med betydelige interesser i flere produksjonslisenser og et forskningssenter i Stavanger fokusert på CO2-fangst og -lagring. De engasjerer seg også i utviklingen av et CO2-lagringsprosjekt, og tilbyr løsninger til sine B2B-kunder gjennom datterselskaper Saft og Hutchinson.",
@@ -288,7 +266,6 @@
    {
       "id":23,
       "name":"Handelsbanken",
-      "standNumber":23,
       "isFavorite":false,
       "industry":"Økonomi/finans",
       "description":"Handelsbanken er en av Europas sikreste banker, ifølge Global Finance, som tilbyr kundene sine et bredt spekter av tjenester, inkludert sparing, budsjettstøtte, og personlig økonomisk rådgivning. De legger stor vekt på kundeservice og sikkerhet, med sterke tiltak for å bekjempe svindel og et engasjement for å hjelpe kundene å navigere gjennom økonomiske utfordringer.",
@@ -301,7 +278,6 @@
    {
       "id":24,
       "name":"Aibel",
-      "standNumber":24,
       "isFavorite":false,
       "industry":"Olje/Gass, Energi bransje",
       "description":"Aibel er et servicefirma innen olje-, gass- og offshore vindindustriene. Selskapet gir ingeniørkonstruksjon modifikasjoner og vedlikehold gjennom en prosjekts livssyklus.",
@@ -314,7 +290,6 @@
    {
       "id":25,
       "name":"Bouvet",
-      "standNumber":25,
       "isFavorite":false,
       "industry":"IT",
       "description":"Bouvet er en ledende skandinavisk konsulent som leverer tjenester innen teknologi kommunikasjon og bedriftsledelse. Det har over 2 000 ansatte i 17 norske og svenske byer.",
@@ -327,7 +302,6 @@
    {
       "id":26,
       "name":"Capgemini",
-      "standNumber":26,
       "isFavorite":false,
       "industry":"IT, Konsulenttjenester",
       "description":"Capgemini er et globalt konsulentselskap med kontorer over hele verden. ",
@@ -340,7 +314,6 @@
    {
       "id":27,
       "name":"Exsitec",
-      "standNumber":27,
       "isFavorite":false,
       "industry":"IT-konsulenthus",
       "description":"Exsitec er et ledende IT-rådgivingsselskap innen økonomi-, logistikk-, HRM - og CRM-systemer",
@@ -353,7 +326,6 @@
    {
       "id":28,
       "name":"Gjensidige",
-      "standNumber":28,
       "isFavorite":false,
       "industry":"IT, HR, Finans/Økonomi, Forsikring, Margedsføring, Kommunikasjon",
       "description":"Gjensidige Group er et nordisk skadeforsikringsselskap notert på Oslo Børs. Det tilbyr pensjon og sparing.",
@@ -366,7 +338,6 @@
    {
       "id":29,
       "name":"Lyse AS",
-      "standNumber":29,
       "isFavorite":false,
       "industry":"Energi og telekom",
       "description":"Lyse produserer og leverer strøm til hele Norge. Vi tilbyr også TV og internett fra Altibox.",
@@ -379,7 +350,6 @@
    {
       "id":30,
       "name":"Nordea",
-      "standNumber":30,
       "isFavorite":false,
       "industry":"Bank/Finans, IT",
       "description":"Nordea Bank Abp, vanligvis referert til som Nordea, er en nordisk finansiell tjenestegruppe som opererer i Nord-Europa med hovedkontor i Helsinki, Finland. Navnet er en blanding av ordene “Nordic” og “idea”.",
@@ -392,7 +362,6 @@
    {
       "id":31,
       "name":"Sammen Karriere",
-      "standNumber":31,
       "isFavorite":false,
       "industry":"Studentsamskipnaden på Vestland",
       "description":"Sammen Karriere er en tjeneste som tilbyr studenter karriereveiledning, intervjutrening, CV- og søknadshjelp, og andre ressurser for å forberede dem for arbeidsmarkedet. De tilbyr også spesialiserte kurs og workshops, inkludert et LinkedIn-kurs og skriveverksteder for CV og jobbsøknader, samt gir innsikt i arbeidsdagen gjennom deres Externship-program.",
@@ -405,7 +374,6 @@
    {
       "id":32,
       "name":"TechnipFMC",
-      "standNumber":32,
       "isFavorite":false,
       "industry":"Energisektoren",
       "description":"TechnipFMC er en global leder innen olje- og gassindustrien, med over 50 års erfaring i offshore virksomhet i Norge, og er en pioner innen utvikling av havbunnssystemer for produksjon av olje og gass. Med 2600 ansatte i Norge alene, bidrar de til lokal sysselsetting og investerer i prosjekter for næringsutvikling, samtidig som de spiller en nøkkelrolle i store prosjekter som Gullfaks, Hywind, Johan Sverdrup, Ormen Lange og Snorre.",
@@ -418,7 +386,6 @@
    {
       "id":33,
       "name":"VIEW Ledger",
-      "standNumber":33,
       "isFavorite":false,
       "industry":"Regnskap, økonomi, lønn/HR",
       "description":"VIEW Ledger AB er et selskap som opererer i bemannings- og rekrutteringsbransjen. Det sysselsetter 51–100 mennesker og har $10M–$25M i inntekter. Selskapet har hovedkontor i Stockholm, Stockholm, Sverige.",
@@ -431,7 +398,6 @@
    {
       "id":34,
       "name":"Accenture",
-      "standNumber":34,
       "isFavorite":false,
       "industry":"Konsulenttjenester",
       "description":"Accenture er et profesjonelt tjenesteselskap basert i Dublin, Irland, som spesialiserer seg på IT-tjenester og rådgivning.",
@@ -444,7 +410,6 @@
    {
       "id":35,
       "name":"Bergen Engines",
-      "standNumber":35,
       "isFavorite":false,
       "industry":"IT, Ingeniør, HR, Finans/Økonomi, Markedsføring og kommunikasjon, Salg, Logistikk, maskinering, montering (produksjonsarbeid)",
       "description":"Bergen Engines AS bygger ikoniske mellomhastighets væskebrente og gassbrente stempelmotorer for marine og landbaserte applikasjoner. Motorene deres kan bli funnet i drift i noen av de mest krevende og fiendtlige miljøene på jorden, både på land og til sjøs.",
@@ -457,7 +422,6 @@
    {
       "id":36,
       "name":"Bergen kommune",
-      "standNumber":36,
       "isFavorite":false,
       "industry":"Offentlig sektor (helse, undervisning, teknisk sektor, kultur, administrasjon, økonomi, juss, teknologi)",
       "description":"Bergen kommune er den lokale regjeringen for byen Bergen i Norge.",
@@ -470,7 +434,6 @@
    {
       "id":37,
       "name":"Clara Adventure Labs",
-      "standNumber":37,
       "isFavorite":false,
       "industry":"Ingeniør, forsker",
       "description":"Clara Adventure Labs er et venture-lab for banebrytende innovasjoner innen industriell teknologi og materialer, støttet av Aker.",
@@ -483,7 +446,6 @@
    {
       "id":38,
       "name":"Eviny (BKK)",
-      "standNumber":38,
       "isFavorite":false,
       "industry":"Fornybar energi",
       "description":"Eviny er et fornybart selskap som jobber for å gjøre det mulig å bruke ren, fornybar energi overalt. I 2021 ble kraftselskapet som nordmenn kjenner som BKK delt i to: BKK og Eviny.",
@@ -496,7 +458,6 @@
    {
       "id":39,
       "name":"KPMG",
-      "standNumber":39,
       "isFavorite":false,
       "industry":"Konsulenttjenester",
       "description":"KPMG er en av verdens største profesjonelle tjenesteselskaper og en av de fire store revisorene, sammen med Deloitte, EY og PwC. Hovedkontoret ligger i Amstelveen, Nederland.\n",
@@ -509,7 +470,6 @@
    {
       "id":40,
       "name":"Multiconsult",
-      "standNumber":40,
       "isFavorite":false,
       "industry":"Ingeniør, Konsulenttjenester",
       "description":"Multiconsult er en av de ledende firmaene innen rådgivende ingeniører og designere i Norge og Skandinavia.",
@@ -522,7 +482,6 @@
    {
       "id":41,
       "name":"Netcompany",
-      "standNumber":41,
       "isFavorite":false,
       "industry":"IT, konsulenttjenester",
       "description":"Netcompany er en dansk børsnotert IT-konsulent med hovedkontor i København, Danmark. Siden grunnleggelsen i 2000 har selskapet vokst, både nasjonalt og internasjonalt, til et selskap med 10 kontorer i 6 forskjellige land.",
@@ -535,7 +494,6 @@
    {
       "id":42,
       "name":"Norconsult",
-      "standNumber":42,
       "isFavorite":false,
       "industry":"Alle",
       "description":"Norconsult er et norsk konsulentfirma.",
@@ -548,7 +506,6 @@
    {
       "id":43,
       "name":"Olavstoppen",
-      "standNumber":43,
       "isFavorite":false,
       "industry":"IT og Design",
       "description":"Olavstoppen (OT) er et heleid datterselskap av Bouvet. Olavstoppen består av designere og utviklere som skaper produkter med positiv innvirkning på mennesker og samfunn.",
@@ -561,7 +518,6 @@
    {
       "id":44,
       "name":"Riksrevisjonen",
-      "standNumber":44,
       "isFavorite":false,
       "industry":"Revisjon",
       "description":"Riksrevisjonen er Riksrevisjonen i Norge.",
@@ -574,7 +530,6 @@
    {
       "id":45,
       "name":"Wood",
-      "standNumber":45,
       "isFavorite":false,
       "industry":"Ingeniør",
       "description":"Wood er en av verdens ledende konsulent- og ingeniørselskaper som opererer innen energi- og materialmarkeder.",
@@ -587,7 +542,6 @@
    {
       "id":46,
       "name":"Departementene",
-      "standNumber":46,
       "isFavorite":false,
       "industry":"Offentlig sektor",
       "description":"Departementene de norske regjeringsdepartementene.",
@@ -600,7 +554,6 @@
    {
       "id":47,
       "name":"Framtidsfylket",
-      "standNumber":47,
       "isFavorite":false,
       "industry":"Trainee-program. Tilsetting i ulike bedrifter, ulike bransjar i Vestland, men deltakar i programmet via Framtidsfylket",
       "description":"",
@@ -613,7 +566,6 @@
    {
       "id":48,
       "name":"Kongsberg Gruppen",
-      "standNumber":48,
       "isFavorite":false,
       "industry":"IT, Ingeniør, Finans,Økonomi",
       "description":"Kongsberg Gruppen er en internasjonal teknologigruppe som leverer høyteknologiske systemer og løsninger til kunder innen handelsmarine, forsvar, luftfart, offshore olje og gassindustrier samt fornybare og nytteindustrier.",
@@ -626,7 +578,6 @@
    {
       "id":49,
       "name":"Posten Norge As",
-      "standNumber":49,
       "isFavorite":false,
       "industry":"Logistikk",
       "description":"Posten Norge AS, handlet som Posten Norge eller bare Posten, er en norsk posttjeneste eid av det norske Samferdselsdepartementet. Det gir posttjenester som å sende brev og pakker nasjonalt og internasjonalt.",
@@ -639,7 +590,6 @@
    {
       "id":50,
       "name":"Sjøfartsdirektoratet",
-      "standNumber":50,
       "isFavorite":false,
       "industry":"Juss, Nautiker, Ingeniør, IT, Maritim",
       "description":"Sjøfartsdirektoratet er Sjøfartsdirektoratet i Norge.",
@@ -652,7 +602,6 @@
    {
       "id":51,
       "name":"Skatteetaten",
-      "standNumber":51,
       "isFavorite":false,
       "industry":"IT, HR ,Rekruttering, Økonomi, Juss",
       "description":"Skatteetaten er Skatteetaten i Norge. Det er ansvarlig for å sikre at skattene blir fastsatt og innkrevd på riktig måte, samt å opprettholde Folkeregisteret.",
@@ -665,7 +614,6 @@
    {
       "id":52,
       "name":"Statens vegvesen",
-      "standNumber":52,
       "isFavorite":false,
       "industry":"Byggingeniør, rettsvitenskap, økonomi og IT",
       "description":"Statens vegvesen er en norsk statlig etat ansvarlig for nasjonale og fylkeskommunale offentlige veier i Norge. Dette inkluderer planlegging, bygging og drift av nasjonale og fylkeskommunale veier, føreropplæring og lisensiering, kjøretøyinspeksjon og subsidier til bilferger.",
@@ -678,7 +626,6 @@
    {
       "id":53,
       "name":"Statforvalterens fellestjenester",
-      "standNumber":53,
       "isFavorite":false,
       "industry":"IT, anskaffelser, dokumentforvaltning, offentlig sektor ",
       "description":"Statforvalterens fellestjenester refererer til fylkesmannens felles tjenester.",
@@ -691,7 +638,6 @@
    {
       "id":54,
       "name":"Toll og Avgiftsetaten",
-      "standNumber":54,
       "isFavorite":false,
       "industry":"IT, HR, Finans og jus.",
       "description":"Toll og Avgiftsetaten, nå kjent som Tolletaten (den norske tollvesenet), er en norsk statlig etat under Finansdepartementet ansvarlig for å sikre overholdelse av lover og forskrifter om grenseoverskridende bevegelse av varer.",
@@ -704,7 +650,6 @@
    {
       "id":55,
       "name":"Tryg",
-      "standNumber":55,
       "isFavorite":false,
       "industry":"Finans",
       "description":"Tryg er et forsikringsselskap basert i Danmark.",
@@ -717,7 +662,6 @@
    {
       "id":56,
       "name":"TV 2",
-      "standNumber":56,
       "isFavorite":false,
       "industry":"Media",
       "description":"TV 2 er en norsk gratis TV-kanal. Hovedkontoret ligger i Bergen. TV 2 begynte å sende 5. september 1992. Det er ett av Norges største medieselskaper.",
@@ -730,7 +674,6 @@
    {
       "id":57,
       "name":"Wintershall DEA",
-      "standNumber":57,
       "isFavorite":false,
       "industry":"Oil, Gas and Carbon Management",
       "description":"Wintershall DEa er Europas ledende uavhengige gass- og oljeselskap med full livssyklus evner for leting, utvikling og produksjonsaktiviteter. Det fokuserer på regioner som Nord-Europa, Nord-Afrika, Midtøsten og Latin-Amerika.",
@@ -743,7 +686,6 @@
    {
       "id":58,
       "name":"FN-sambandet",
-      "standNumber":58,
       "isFavorite":false,
       "industry":"Frivillig organisasjon",
       "description":"FN-sambandet, også kjent som FN-sambandet i Norge (FN-sambandet Norge), er en uavhengig medlemsorganisasjon som jobber for å informere om FNs arbeid for fred, utvikling, menneskerettigheter, demokrati, nedrustning, internasjonal lov, humanitært arbeid, likestilling, klimaendring/miljøvern.",
@@ -756,7 +698,6 @@
    {
       "id":59,
       "name":"Equinor",
-      "standNumber":59,
       "isFavorite":false,
       "industry":"Ingeniør",
       "description":"Equinor, tidligere kjent som Statoil til mai 2018, er et norsk multinasjonalt energiselskap med hovedkontor i Stavanger. Det opererer hovedsakelig i Norge, men har også operasjoner i andre land.",
@@ -769,7 +710,6 @@
    {
       "id":60,
       "name":"Intility",
-      "standNumber":60,
       "isFavorite":false,
       "industry":"IT/Teknologi",
       "description":"Intility er et norsk IT-selskap som leverer IT-driftstjenester. Selskapet ble etablert i 2000. Intility har hovedkontor på Schweigaards gate 39 på Grønland (Oslo). Selskapet har også avdelingskontorer i Trondheim, Bergen og Stockholm. Per juni 2021 hadde selskapet over 400 ansatte.",
@@ -782,7 +722,6 @@
    {
       "id":61,
       "name":"Mowi",
-      "standNumber":61,
       "isFavorite":false,
       "industry":"Sjømatnæringen",
       "description":"Mowi ASA, tidligere kjent som Marine Harvest ASA (til 1. januar 2019), (Pan Fish før 6. februar 2007), er et norsk sjømatselskap med virksomhet i flere land rundt om i verden. Selskapet sysselsetter 11 500 mennesker over hele verden og det representeres i 25 land. I 2022 hadde det en omsetning på EUR 4,9 milliarder.",
@@ -795,7 +734,6 @@
    {
       "id":62,
       "name":"NAV Region Bergen",
-      "standNumber":62,
       "isFavorite":false,
       "industry":"Offentlig",
       "description":"NAV er Norges offentlige etat for arbeid og velferd, som tilbyr tjenester og støtte innen områder som arbeid, helse og sykdom, familie og barn, pensjon, sosiale tjenester, og hjelpemidler og tilrettelegging. Med et vidt spekter av tjenester, bidrar NAV til arbeidsformidling, administrasjon av pensjoner, utbetaling av økonomisk støtte, og veiledning for å hjelpe borgere i ulike livssituasjoner.",
@@ -808,7 +746,6 @@
    {
       "id":63,
       "name":"Oceaneering",
-      "standNumber":63,
       "isFavorite":false,
       "industry":"Ingeniør",
       "description":"Oceaneering er en global leverandør av konstruerte produkter og tjenester med hovedkontor i Houston, Texas. Det opprettholder regionale kontorer i Amerika, Asia, Afrika, Europa og Midtøsten.",
@@ -821,7 +758,6 @@
    {
       "id":64,
       "name":"Omega 365",
-      "standNumber":64,
       "isFavorite":false,
       "industry":"IT, Ingeniør, HR/Rekruttering, Konsulenttjenester",
       "description":"Omega 365 er en global tjenesteleverandør som spesialiserer seg på prosjektledelse, tekniske tjenester og bemanningsløsninger, primært innen teknologi, olje og gass, og energisektorene. De tilbyr et bredt spekter av tjenester, inkludert dokumenthåndtering, fullføring, kostnadsstyring, kontraktsstyring, kvalitetsstyring, risikostyring, og mer, og legger vekt på å integrere disse løsningene for å spare tid og penger for klientene.",
@@ -834,7 +770,6 @@
    {
       "id":65,
       "name":"pwc",
-      "standNumber":65,
       "isFavorite":false,
       "industry":"Advokat, revisjon, consulting",
       "description":"PwC er en av verdens største profesjonelle tjenesteselskaper og en av de fire store revisorene, sammen med Deloitte, EY og KPMG. Hovedkontoret ligger i London, Storbritannia.",
@@ -847,7 +782,6 @@
    {
       "id":66,
       "name":"Safetec",
-      "standNumber":66,
       "isFavorite":false,
       "industry":"Ingeniørfag, samfunnsvitenskap, psykologi, sikring og beredskap, ",
       "description":"Safetec er en ledende, uavhengig konsulentvirksomhet som tilbyr spesialiserte tjenester innen risikostyring, miljørådgivning og ekspertise på ytelsesforbedring av eiendeler. Med et sterkt fokus på bærekraft, tilbyr Safetec en rekke tjenester, inkludert ledelse, organisasjon og sikkerhet, revisjon og ekspertise, beredskap, sikkerhet, teknisk og operasjonell sikkerhet, risikoanalyse og konsekvensanalyse.",
@@ -860,7 +794,6 @@
    {
       "id":67,
       "name":"Standard norge AS",
-      "standNumber":67,
       "isFavorite":false,
       "industry":"Unkown",
       "description":"Standard Norge er den ledende aktøren innen nasjonal og internasjonal standardisering i Norge. Sammen med kundene utvikler de løsninger som øker effektiviteten, konkurranseevnen og reduserer risikoen i bedrifter og samfunn.",
@@ -869,5 +802,54 @@
          "longitude":10.63840399491289,
          "latitude":59.91514981181777
       }
+   },
+   {
+      "id":68,
+      "name":"Amesto",
+      "isFavorite":false,
+      "industry":"Økonomi/Finans",
+      "description":"Amesto AccountHouse er et regnskapsfirma som tilbyr tjenester innen regnskap, lønn og HR. De har kontorer i Norge, Sverige og Danmark. Amesto AccountHouse har fagkompetanse til å løse komplekse oppdrag innen regnskap, lønn og HR. De har autoriserte regnskapsførere og rådgivere som er effektive og fleksible. De tilbyr også økonomisk eiendomsforvaltning og bærekraftsrapportering. Amesto AccountHouse er en del av norske Amesto Group.",
+      "imageName":"amesto",
+      "coordinates":{
+         "longitude":10.63840399491289,
+         "latitude":59.91514981181777
+      }
+   },
+   {
+      "id":69,
+      "name":"Bergen Næringsråd",
+      "isFavorite":false,
+      "industry":"Offentlig sektor",
+      "description":"Bergen Næringsråd er en partipolitisk nøytral organisasjon og den største næringsorganisasjonen i Bergen med nesten 3000 medlemmer. De jobber for å legge til rette for næringsutvikling i Bergen kommune. Organisasjonen tilbyr en rekke tjenester og aktiviteter for sine medlemmer, inkludert nettverksbygging, kompetanseutvikling, politisk påvirkning og rådgivning1. De arrangerer også konferanser og seminarer om aktuelle næringslivstemaer.",
+      "imageName":"bergenn",
+      "coordinates":{
+         "longitude":10.63840399491289,
+         "latitude":59.91514981181777
+      }
+   },
+   {
+      "id":70,
+      "name":"Schlumberger",
+      "isFavorite":false,
+      "industry":"Teknologi, Energi",
+      "description":"Schlumberger er et globalt teknologiselskap som driver med energiinnovasjon og er opptatt av å skape en balansert planet. De fokuserer på å akselerere avkarbonisering gjennom innovasjon og vitenskap på global skala. Schlumberger utvikler og implementerer teknologi som muliggjør netto nullutslipp for kundene og planeten. De jobber med å redusere utslippene fra industrien og tilbyr løsninger for karbonfangst og lagring, metanutslippsreduksjon, energieffektivitet og mer. Schlumberger er også engasjert i olje- og gassindustrien, geotermisk energi, dataanalyse og andre områder.",
+      "imageName":"slb",
+      "coordinates":{
+         "longitude":11.068326817651934,
+         "latitude":59.946681705304016
+      }
+   },
+   {
+      "id":71,
+      "name":"Halliburton",
+      "isFavorite":false,
+      "industry":"Teknologi, Energi",
+      "description":"Halliburton er et amerikansk multinasjonalt selskap som er ansvarlig for de fleste fracking-operasjonene i verden1. I 2009 var det verdens nest største oljeserviceselskap1. Selskapet har omtrent 55 000 ansatte og opererer i mer enn 70 land1. Halliburton tilbyr et bredt spekter av produkter og tjenester for energibransjen2. Hvis du ønsker å lære mer om Halliburton, kan du besøke deres offisielle nettside2.",
+      "imageName":"halliburton",
+      "coordinates":{
+         "longitude":11.068326817651934,
+         "latitude":59.946681705304016
+      }
    }
+   
 ]

@@ -45,8 +45,6 @@ struct CompanyDetail: View {
                     }
                     
                     HStack {
-                        Text("Stand \(company.standNumber)")
-                        Spacer()
                         Text(company.industry)
                     }
                     .font(.subheadline)

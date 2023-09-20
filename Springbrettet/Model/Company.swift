@@ -12,7 +12,6 @@ import CoreLocation
 struct Company: Hashable, Codable, Identifiable {
     var id: Int
     var name: String
-    var standNumber: Int
     var industry: String
     var description: String
     var isFavorite: Bool

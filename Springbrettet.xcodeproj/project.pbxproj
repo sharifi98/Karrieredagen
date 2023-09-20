@@ -41,6 +41,8 @@
 		0396B08D2A25F024008E6CAC /* CompanyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0396B08C2A25F024008E6CAC /* CompanyList.swift */; };
 		0396B08F2A25F136008E6CAC /* CompanyDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0396B08E2A25F136008E6CAC /* CompanyDetail.swift */; };
 		039EB7FB2A8F6D34005EE9E5 /* HRCVView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039EB7FA2A8F6D34005EE9E5 /* HRCVView.swift */; };
+		03A976942ABAFF4E001A822C /* SponsorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A976932ABAFF4E001A822C /* SponsorView.swift */; };
+		03A976962ABB092E001A822C /* WelcomeSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A976952ABB092E001A822C /* WelcomeSheet.swift */; };
 		03C6425C2A8A3D2B001FF571 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C6425B2A8A3D2B001FF571 /* FavoriteButton.swift */; };
 		03C642612A8B7EC4001FF571 /* GrieghallenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C642602A8B7EC4001FF571 /* GrieghallenView.swift */; };
 		03D5C9452A82A9DC007D5508 /* Studenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D5C9442A82A9DC007D5508 /* Studenter.swift */; };
@@ -89,6 +91,8 @@
 		0396B08C2A25F024008E6CAC /* CompanyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyList.swift; sourceTree = "<group>"; };
 		0396B08E2A25F136008E6CAC /* CompanyDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyDetail.swift; sourceTree = "<group>"; };
 		039EB7FA2A8F6D34005EE9E5 /* HRCVView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRCVView.swift; sourceTree = "<group>"; };
+		03A976932ABAFF4E001A822C /* SponsorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsorView.swift; sourceTree = "<group>"; };
+		03A976952ABB092E001A822C /* WelcomeSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeSheet.swift; sourceTree = "<group>"; };
 		03C6425B2A8A3D2B001FF571 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		03C642602A8B7EC4001FF571 /* GrieghallenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrieghallenView.swift; sourceTree = "<group>"; };
 		03D5C9442A82A9DC007D5508 /* Studenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Studenter.swift; sourceTree = "<group>"; };
@@ -131,6 +135,7 @@
 				0396B07F2A25D9B8008E6CAC /* SquareImage.swift */,
 				03C6425B2A8A3D2B001FF571 /* FavoriteButton.swift */,
 				0396B0812A25DAE4008E6CAC /* MapView.swift */,
+				03A976932ABAFF4E001A822C /* SponsorView.swift */,
 			);
 			path = Company;
 			sourceTree = "<group>";
@@ -210,6 +215,7 @@
 			children = (
 				0396B0702A250193008E6CAC /* ContentView.swift */,
 				037010162A49AADB007388E7 /* HomeView.swift */,
+				03A976952ABB092E001A822C /* WelcomeSheet.swift */,
 				03C6425F2A8B7A08001FF571 /* Springbrettets prosjekter */,
 				031399982A2623570003427A /* Schedule */,
 				031399952A2621FD0003427A /* Company */,
@@ -363,10 +369,12 @@
 				031C6BEC2A46EE8800332564 /* KarrieredagenInformationView.swift in Sources */,
 				03728C1C2A8F7E4500B80581 /* HvaErSpringbrettet.swift in Sources */,
 				03E47FEE2A558F4C005BCDAA /* SpringbrettfondetView.swift in Sources */,
+				03A976962ABB092E001A822C /* WelcomeSheet.swift in Sources */,
 				0313999C2A2625670003427A /* Event.swift in Sources */,
 				0396B0822A25DAE4008E6CAC /* MapView.swift in Sources */,
 				0396B0802A25D9B8008E6CAC /* SquareImage.swift in Sources */,
 				036285642A7ADDD0007E165B /* PersonView.swift in Sources */,
+				03A976942ABAFF4E001A822C /* SponsorView.swift in Sources */,
 				0396B0842A25DE2B008E6CAC /* Company.swift in Sources */,
 				03E44CB52A76D33600A57B1E /* CVEconomicsView.swift in Sources */,
 				031C6BE42A46DC7900332564 /* OmOssView.swift in Sources */,

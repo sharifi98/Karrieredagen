@@ -92,6 +92,15 @@ struct HomeView: View {
                         .font(.headline)
                         .listRowBackground(Color("KDOrange"))
                     
+                    NavigationLink(destination: SponsorView()) {
+                        Label {
+                            Text("Karrieredagens sponsorer")
+                        } icon: {
+                            Image(systemName: "trophy.fill")
+                                .foregroundStyle(Color("KDOrange"))
+                        }
+                    }
+                    
                     NavigationLink(destination: CompanyList()) {
                         Label {
                             Text("Se bedriftene")
@@ -293,7 +302,7 @@ struct HomeView: View {
 
 struct FeedBackView: View {
     var body: some View {
-        WebView(request: URLRequest(url: URL(string: "https://docs.google.com/forms/d/1IFTBhLFb-sJoX3DxiBgVaUpGO8O4gqmeX8yR71EhgLM/edit")!))
+        WebView(request: URLRequest(url: URL(string: "https://docs.google.com/forms/d/1l-rudvgcFhys5A-a-FWjxz3VVlhSD4cIIfOEqk-2RSU/edit")!))
     }
 }
 

@@ -9,15 +9,15 @@ import SwiftUI
 
 struct GrieghallenView: View {
     
-    var floors = ["1. Etasje", "2. Etasje"]
-    @State private var selectedFloor = "1. Etasje"
+    var floors = ["Kart", "Standnummer"]
+    @State private var selectedFloor = "Kart"
     
     var body: some View {
         ZStack {
             VStack {
                 Picker("Velg etasje", selection: $selectedFloor) {
                     ForEach(floors, id: \.self) {
-                        Text("\($0)")
+                        Text("\($0)") 
                     }
                 }
                 .pickerStyle(.segmented)
@@ -34,10 +34,10 @@ struct GrieghallenView: View {
     // Helper function to get image name based on selected floor
     func imageName(for floor: String) -> String {
         switch floor {
-        case "1. Etasje":
-            return "1floor"
-        case "2. Etasje":
-            return "2floor"
+        case "Standnummer":
+            return "Standnummer"
+        case "Kart":
+            return "kart"
         default:
             return "" // Default case which should never be hit
         }
