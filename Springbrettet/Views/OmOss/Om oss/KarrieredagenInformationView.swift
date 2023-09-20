@@ -89,6 +89,12 @@ struct KarrieredagenInformationView: View {
                         }
                         
                     
+                        Image("teamkd")
+                            .resizable()
+                            .frame(width: 350, height: 230)
+                            .clipShape(Rectangle())
+                            .cornerRadius(20)
+                            .padding()
                         
                     }
                 }
