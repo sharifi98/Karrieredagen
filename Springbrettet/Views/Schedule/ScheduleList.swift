@@ -24,7 +24,6 @@ struct ScheduleList: View {
                     .overlay(Rectangle().foregroundColor(.clear))
                     .sheet(item: $selectedEvent) { eventDetail in
                         EventDetailView(event: eventDetail)
-                            .presentationDetents([.medium, .large])
                     }
                     .navigationBarWithTransparentBackground()
                     .toolbar {

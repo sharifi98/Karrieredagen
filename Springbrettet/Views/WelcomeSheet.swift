@@ -36,7 +36,7 @@ struct WelcomeSheet: View {
                     .padding(.vertical, 5)
 
                 
-                Text("I denne appen så finner du informasjon om Springbrettet, våres prosjekter og ikkje minst vår årlige karrieredage")
+                Text("I denne appen så finner du informasjon om Springbrettet, våres prosjekter og ikkje minst vår årlige karrieredag!")
                     .multilineTextAlignment(.center)
                 
                 Spacer()

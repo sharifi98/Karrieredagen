@@ -15,9 +15,9 @@ struct PersonView: View {
             Background()
             VStack {
                 
-                Image(person.imageName) // Assuming your Person struct has a imageName property
-                    .resizable() // Add this line to let image resize itself
-                    .aspectRatio(contentMode: .fit) // Preserve the aspect ratio of original image
+                Image(person.imageName)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
                     .frame(width: 300)
                     .clipped()
                     .clipShape(Rectangle())

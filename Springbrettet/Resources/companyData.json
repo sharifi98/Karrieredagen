@@ -313,14 +313,14 @@
    },
    {
       "id":27,
-      "name":"Exsitec",
+      "name":"Elkem",
       "isFavorite":false,
-      "industry":"IT-konsulenthus",
-      "description":"Exsitec er et ledende IT-rådgivingsselskap innen økonomi-, logistikk-, HRM - og CRM-systemer",
-      "imageName":"exsitec",
+      "industry":"Metallindustri",
+      "description":"Elkem er et av verdens ledende selskaper innen miljøansvarlig produksjon av silikon, silisium og karbonbaserte materialer.",
+      "imageName":"elkem",
       "coordinates":{
-         "longitude":10.47782894602882,
-         "latitude":59.85232299820476
+         "longitude":10.673856100000494,
+         "latitude":59.921061364809084
       }
    },
    {
@@ -850,6 +850,17 @@
          "longitude":11.068326817651934,
          "latitude":59.946681705304016
       }
+   },
+   {
+      "id":72,
+      "name":"Itera",
+      "isFavorite":false,
+      "industry":"Teknologi",
+      "description":"Itera leverer digitale løsninger og tjenester til innovative virksomheter i dataintensive markedssegmenter. Kjernekompetansen er teknologi, strategisk rådgivning og design, og løsningene utvikles i tverrfaglige, distribuerte team på tvers av landegrensene.",
+      "imageName":"itera",
+      "coordinates":{
+         "longitude":5.321041030295336,
+         "latitude":60.39420069043292
+      }
    }
-   
 ]

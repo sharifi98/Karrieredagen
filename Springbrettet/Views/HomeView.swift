@@ -261,7 +261,7 @@ struct HomeView: View {
                             Spacer()
                             Text("Springbrettet")
                                 .foregroundColor(Color("KDOrange"))
-                                .font(.custom("AvenirNext-Bold", size: 40))
+                                .font(.custom("AvenirNext-Bold", size: 35))
                                 .padding()
                             Spacer()
                         }
