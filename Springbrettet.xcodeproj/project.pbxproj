@@ -41,6 +41,84 @@
 		0396B08B2A25EA18008E6CAC /* CompanyRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0396B08A2A25EA18008E6CAC /* CompanyRow.swift */; };
 		0396B08D2A25F024008E6CAC /* CompanyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0396B08C2A25F024008E6CAC /* CompanyList.swift */; };
 		0396B08F2A25F136008E6CAC /* CompanyDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0396B08E2A25F136008E6CAC /* CompanyDetail.swift */; };
+		039E03892B2130DA001B0717 /* ComposeArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039E033B2B2130CE001B0717 /* ComposeArea.swift */; };
+		039E038A2B2130DA001B0717 /* ChuggEllerSannhetVolume3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039E033C2B2130CE001B0717 /* ChuggEllerSannhetVolume3.swift */; };
+		039E038B2B2130DA001B0717 /* MessageBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039E033D2B2130CE001B0717 /* MessageBubble.swift */; };
+		039E038C2B2130DA001B0717 /* 100 Spørsmål JSON in Resources */ = {isa = PBXBuildFile; fileRef = 039E033E2B2130CE001B0717 /* 100 Spørsmål JSON */; };
+		039E038D2B2130DA001B0717 /* JegHarAldriVolume5.json in Resources */ = {isa = PBXBuildFile; fileRef = 039E033F2B2130CE001B0717 /* JegHarAldriVolume5.json */; };
+		039E038E2B2130DA001B0717 /* livinonaprayer.json in Resources */ = {isa = PBXBuildFile; fileRef = 039E03402B2130CF001B0717 /* livinonaprayer.json */; };
+		039E038F2B2130DA001B0717 /* startnachet.json in Resources */ = {isa = PBXBuildFile; fileRef = 039E03412B2130CF001B0717 /* startnachet.json */; };
+		039E03902B2130DA001B0717 /* ChuggEllerSannhetVolume2.json in Resources */ = {isa = PBXBuildFile; fileRef = 039E03422B2130CF001B0717 /* ChuggEllerSannhetVolume2.json */; };
+		039E03912B2130DA001B0717 /* ChuggEllerSannhetVolume3.json in Resources */ = {isa = PBXBuildFile; fileRef = 039E03432B2130CF001B0717 /* ChuggEllerSannhetVolume3.json */; };
+		039E03922B2130DA001B0717 /* 5050.json in Resources */ = {isa = PBXBuildFile; fileRef = 039E03442B2130CF001B0717 /* 5050.json */; };
+		039E03932B2130DA001B0717 /* MedDrikkeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039E03452B2130CF001B0717 /* MedDrikkeView.swift */; };
+		039E03942B2130DA001B0717 /* fairytale.json in Resources */ = {isa = PBXBuildFile; fileRef = 039E03462B2130CF001B0717 /* fairytale.json */; };
+		039E03952B2130DA001B0717 /* sexonfire.json in Resources */ = {isa = PBXBuildFile; fileRef = 039E03472B2130CF001B0717 /* sexonfire.json */; };
+		039E03962B2130DA001B0717 /* JegHarAldriS3XEdition.json in Resources */ = {isa = PBXBuildFile; fileRef = 039E03482B2130D0001B0717 /* JegHarAldriS3XEdition.json */; };
+		039E03972B2130DA001B0717 /* ChuggEllerSannhetListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039E03492B2130D0001B0717 /* ChuggEllerSannhetListView.swift */; };
+		039E03982B2130DA001B0717 /* Chugg eller sannhet in Resources */ = {isa = PBXBuildFile; fileRef = 039E034A2B2130D0001B0717 /* Chugg eller sannhet */; };
+		039E03992B2130DA001B0717 /* dancingqueen.json in Resources */ = {isa = PBXBuildFile; fileRef = 039E034B2B2130D0001B0717 /* dancingqueen.json */; };
+		039E039A2B2130DA001B0717 /* sorry.json in Resources */ = {isa = PBXBuildFile; fileRef = 039E034C2B2130D0001B0717 /* sorry.json */; };
+		039E039B2B2130DA001B0717 /* SpotifyAlbum in Resources */ = {isa = PBXBuildFile; fileRef = 039E034D2B2130D0001B0717 /* SpotifyAlbum */; };
+		039E039C2B2130DA001B0717 /* Volume3.json in Resources */ = {isa = PBXBuildFile; fileRef = 039E034E2B2130D0001B0717 /* Volume3.json */; };
+		039E039D2B2130DA001B0717 /* cornfieldchase.json in Resources */ = {isa = PBXBuildFile; fileRef = 039E034F2B2130D0001B0717 /* cornfieldchase.json */; };
+		039E039E2B2130DA001B0717 /* Volume4.json in Resources */ = {isa = PBXBuildFile; fileRef = 039E03502B2130D1001B0717 /* Volume4.json */; };
+		039E039F2B2130DA001B0717 /* 100Spørsmål in Resources */ = {isa = PBXBuildFile; fileRef = 039E03512B2130D1001B0717 /* 100Spørsmål */; };
+		039E03A02B2130DA001B0717 /* KaraokeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039E03522B2130D1001B0717 /* KaraokeListView.swift */; };
+		039E03A12B2130DA001B0717 /* CustomToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039E03532B2130D1001B0717 /* CustomToggleStyle.swift */; };
+		039E03A22B2130DA001B0717 /* Level4.json in Resources */ = {isa = PBXBuildFile; fileRef = 039E03542B2130D1001B0717 /* Level4.json */; };
+		039E03A32B2130DA001B0717 /* newwayhome.json in Resources */ = {isa = PBXBuildFile; fileRef = 039E03552B2130D1001B0717 /* newwayhome.json */; };
+		039E03A42B2130DA001B0717 /* Vorsj in Resources */ = {isa = PBXBuildFile; fileRef = 039E03562B2130D2001B0717 /* Vorsj */; };
+		039E03A52B2130DA001B0717 /* JSON Quiz in Resources */ = {isa = PBXBuildFile; fileRef = 039E03572B2130D2001B0717 /* JSON Quiz */; };
+		039E03A62B2130DA001B0717 /* Level1.json in Resources */ = {isa = PBXBuildFile; fileRef = 039E03582B2130D2001B0717 /* Level1.json */; };
+		039E03A72B2130DA001B0717 /* QuizQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039E03592B2130D2001B0717 /* QuizQuestion.swift */; };
+		039E03A82B2130DA001B0717 /* KaraokeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039E035A2B2130D2001B0717 /* KaraokeView.swift */; };
+		039E03A92B2130DA001B0717 /* Level2.json in Resources */ = {isa = PBXBuildFile; fileRef = 039E035B2B2130D2001B0717 /* Level2.json */; };
+		039E03AA2B2130DA001B0717 /* JegHarAldriVolume1.json in Resources */ = {isa = PBXBuildFile; fileRef = 039E035C2B2130D2001B0717 /* JegHarAldriVolume1.json */; };
+		039E03AB2B2130DA001B0717 /* QuizListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039E035D2B2130D3001B0717 /* QuizListView.swift */; };
+		039E03AC2B2130DA001B0717 /* JegHarAldriListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039E035E2B2130D3001B0717 /* JegHarAldriListView.swift */; };
+		039E03AD2B2130DA001B0717 /* Karaoke in Resources */ = {isa = PBXBuildFile; fileRef = 039E035F2B2130D3001B0717 /* Karaoke */; };
+		039E03AE2B2130DA001B0717 /* takeonme.json in Resources */ = {isa = PBXBuildFile; fileRef = 039E03602B2130D3001B0717 /* takeonme.json */; };
+		039E03AF2B2130DA001B0717 /* Spotify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039E03612B2130D3001B0717 /* Spotify.swift */; };
+		039E03B02B2130DA001B0717 /* ChuggEllerSannhetVolume.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039E03622B2130D3001B0717 /* ChuggEllerSannhetVolume.swift */; };
+		039E03B12B2130DA001B0717 /* JegHarAldriVolume2.json in Resources */ = {isa = PBXBuildFile; fileRef = 039E03632B2130D3001B0717 /* JegHarAldriVolume2.json */; };
+		039E03B22B2130DA001B0717 /* Parleken.json in Resources */ = {isa = PBXBuildFile; fileRef = 039E03642B2130D3001B0717 /* Parleken.json */; };
+		039E03B32B2130DA001B0717 /* rosahelikopter.json in Resources */ = {isa = PBXBuildFile; fileRef = 039E03652B2130D3001B0717 /* rosahelikopter.json */; };
+		039E03B42B2130DA001B0717 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039E03662B2130D4001B0717 /* QuizView.swift */; };
+		039E03B52B2130DA001B0717 /* Karaoke JSON in Resources */ = {isa = PBXBuildFile; fileRef = 039E03672B2130D4001B0717 /* Karaoke JSON */; };
+		039E03B62B2130DA001B0717 /* JegHarAldriVolume3.json in Resources */ = {isa = PBXBuildFile; fileRef = 039E03682B2130D4001B0717 /* JegHarAldriVolume3.json */; };
+		039E03B72B2130DA001B0717 /* StartNachet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039E03692B2130D4001B0717 /* StartNachet.swift */; };
+		039E03B82B2130DA001B0717 /* vivalavida.json in Resources */ = {isa = PBXBuildFile; fileRef = 039E036A2B2130D4001B0717 /* vivalavida.json */; };
+		039E03B92B2130DA001B0717 /* Volume2.json in Resources */ = {isa = PBXBuildFile; fileRef = 039E036B2B2130D4001B0717 /* Volume2.json */; };
+		039E03BA2B2130DA001B0717 /* Volume1.json in Resources */ = {isa = PBXBuildFile; fileRef = 039E036C2B2130D4001B0717 /* Volume1.json */; };
+		039E03BB2B2130DA001B0717 /* ChuggEllerSannhetVolume2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039E036D2B2130D4001B0717 /* ChuggEllerSannhetVolume2.swift */; };
+		039E03BC2B2130DA001B0717 /* Volume5BI.json in Resources */ = {isa = PBXBuildFile; fileRef = 039E036E2B2130D5001B0717 /* Volume5BI.json */; };
+		039E03BD2B2130DA001B0717 /* Volume6.json in Resources */ = {isa = PBXBuildFile; fileRef = 039E036F2B2130D5001B0717 /* Volume6.json */; };
+		039E03BE2B2130DA001B0717 /* iwantitthatway.json in Resources */ = {isa = PBXBuildFile; fileRef = 039E03702B2130D6001B0717 /* iwantitthatway.json */; };
+		039E03BF2B2130DA001B0717 /* ContentViewVS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039E03712B2130D7001B0717 /* ContentViewVS.swift */; };
+		039E03C02B2130DA001B0717 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039E03722B2130D7001B0717 /* HeaderView.swift */; };
+		039E03C12B2130DA001B0717 /* JegHarAldriVolume4.json in Resources */ = {isa = PBXBuildFile; fileRef = 039E03732B2130D7001B0717 /* JegHarAldriVolume4.json */; };
+		039E03C22B2130DA001B0717 /* Messages in Resources */ = {isa = PBXBuildFile; fileRef = 039E03742B2130D7001B0717 /* Messages */; };
+		039E03C32B2130DA001B0717 /* foreveralone.json in Resources */ = {isa = PBXBuildFile; fileRef = 039E03752B2130D7001B0717 /* foreveralone.json */; };
+		039E03C42B2130DA001B0717 /* JegHarAldri.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039E03762B2130D7001B0717 /* JegHarAldri.swift */; };
+		039E03C52B2130DA001B0717 /* ChuggEllerSannhetVolume1.json in Resources */ = {isa = PBXBuildFile; fileRef = 039E03772B2130D8001B0717 /* ChuggEllerSannhetVolume1.json */; };
+		039E03C62B2130DA001B0717 /* Volume7.json in Resources */ = {isa = PBXBuildFile; fileRef = 039E03782B2130D8001B0717 /* Volume7.json */; };
+		039E03C72B2130DA001B0717 /* Volume41.json in Resources */ = {isa = PBXBuildFile; fileRef = 039E03792B2130D8001B0717 /* Volume41.json */; };
+		039E03C82B2130DA001B0717 /* HundredQuestionsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039E037A2B2130D8001B0717 /* HundredQuestionsListView.swift */; };
+		039E03C92B2130DA001B0717 /* bestsongever.json in Resources */ = {isa = PBXBuildFile; fileRef = 039E037B2B2130D8001B0717 /* bestsongever.json */; };
+		039E03CA2B2130DA001B0717 /* Level3.json in Resources */ = {isa = PBXBuildFile; fileRef = 039E037C2B2130D8001B0717 /* Level3.json */; };
+		039E03CB2B2130DA001B0717 /* layallyourloveonme.json in Resources */ = {isa = PBXBuildFile; fileRef = 039E037D2B2130D8001B0717 /* layallyourloveonme.json */; };
+		039E03CC2B2130DA001B0717 /* JSON Chugg eller sannhet in Resources */ = {isa = PBXBuildFile; fileRef = 039E037E2B2130D8001B0717 /* JSON Chugg eller sannhet */; };
+		039E03CD2B2130DA001B0717 /* WelcomeSheetVS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039E037F2B2130D8001B0717 /* WelcomeSheetVS.swift */; };
+		039E03CE2B2130DA001B0717 /* ModelDataVS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039E03802B2130D9001B0717 /* ModelDataVS.swift */; };
+		039E03CF2B2130DA001B0717 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039E03812B2130D9001B0717 /* Question.swift */; };
+		039E03D02B2130DA001B0717 /* Kompliment.json in Resources */ = {isa = PBXBuildFile; fileRef = 039E03822B2130D9001B0717 /* Kompliment.json */; };
+		039E03D12B2130DA001B0717 /* ChatsTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039E03832B2130D9001B0717 /* ChatsTabBarView.swift */; };
+		039E03D22B2130DA001B0717 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039E03842B2130D9001B0717 /* Song.swift */; };
+		039E03D32B2130DA001B0717 /* HundredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039E03852B2130D9001B0717 /* HundredView.swift */; };
+		039E03D42B2130DA001B0717 /* Jeg har aldri in Resources */ = {isa = PBXBuildFile; fileRef = 039E03862B2130D9001B0717 /* Jeg har aldri */; };
+		039E03D52B2130DA001B0717 /* QuestionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039E03872B2130D9001B0717 /* QuestionCardView.swift */; };
+		039E03D62B2130DA001B0717 /* UtenDrikkeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039E03882B2130DA001B0717 /* UtenDrikkeView.swift */; };
 		039EB7FB2A8F6D34005EE9E5 /* HRCVView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039EB7FA2A8F6D34005EE9E5 /* HRCVView.swift */; };
 		03A976942ABAFF4E001A822C /* SponsorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A976932ABAFF4E001A822C /* SponsorView.swift */; };
 		03A976962ABB092E001A822C /* WelcomeSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A976952ABB092E001A822C /* WelcomeSheet.swift */; };
@@ -92,6 +170,84 @@
 		0396B08A2A25EA18008E6CAC /* CompanyRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyRow.swift; sourceTree = "<group>"; };
 		0396B08C2A25F024008E6CAC /* CompanyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyList.swift; sourceTree = "<group>"; };
 		0396B08E2A25F136008E6CAC /* CompanyDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyDetail.swift; sourceTree = "<group>"; };
+		039E033B2B2130CE001B0717 /* ComposeArea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeArea.swift; sourceTree = "<group>"; };
+		039E033C2B2130CE001B0717 /* ChuggEllerSannhetVolume3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChuggEllerSannhetVolume3.swift; sourceTree = "<group>"; };
+		039E033D2B2130CE001B0717 /* MessageBubble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageBubble.swift; sourceTree = "<group>"; };
+		039E033E2B2130CE001B0717 /* 100 Spørsmål JSON */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "100 Spørsmål JSON"; sourceTree = "<group>"; };
+		039E033F2B2130CE001B0717 /* JegHarAldriVolume5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = JegHarAldriVolume5.json; sourceTree = "<group>"; };
+		039E03402B2130CF001B0717 /* livinonaprayer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = livinonaprayer.json; sourceTree = "<group>"; };
+		039E03412B2130CF001B0717 /* startnachet.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = startnachet.json; sourceTree = "<group>"; };
+		039E03422B2130CF001B0717 /* ChuggEllerSannhetVolume2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ChuggEllerSannhetVolume2.json; sourceTree = "<group>"; };
+		039E03432B2130CF001B0717 /* ChuggEllerSannhetVolume3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ChuggEllerSannhetVolume3.json; sourceTree = "<group>"; };
+		039E03442B2130CF001B0717 /* 5050.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 5050.json; sourceTree = "<group>"; };
+		039E03452B2130CF001B0717 /* MedDrikkeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedDrikkeView.swift; sourceTree = "<group>"; };
+		039E03462B2130CF001B0717 /* fairytale.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fairytale.json; sourceTree = "<group>"; };
+		039E03472B2130CF001B0717 /* sexonfire.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sexonfire.json; sourceTree = "<group>"; };
+		039E03482B2130D0001B0717 /* JegHarAldriS3XEdition.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = JegHarAldriS3XEdition.json; sourceTree = "<group>"; };
+		039E03492B2130D0001B0717 /* ChuggEllerSannhetListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChuggEllerSannhetListView.swift; sourceTree = "<group>"; };
+		039E034A2B2130D0001B0717 /* Chugg eller sannhet */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Chugg eller sannhet"; sourceTree = "<group>"; };
+		039E034B2B2130D0001B0717 /* dancingqueen.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dancingqueen.json; sourceTree = "<group>"; };
+		039E034C2B2130D0001B0717 /* sorry.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sorry.json; sourceTree = "<group>"; };
+		039E034D2B2130D0001B0717 /* SpotifyAlbum */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SpotifyAlbum; sourceTree = "<group>"; };
+		039E034E2B2130D0001B0717 /* Volume3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Volume3.json; sourceTree = "<group>"; };
+		039E034F2B2130D0001B0717 /* cornfieldchase.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cornfieldchase.json; sourceTree = "<group>"; };
+		039E03502B2130D1001B0717 /* Volume4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Volume4.json; sourceTree = "<group>"; };
+		039E03512B2130D1001B0717 /* 100Spørsmål */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "100Spørsmål"; sourceTree = "<group>"; };
+		039E03522B2130D1001B0717 /* KaraokeListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KaraokeListView.swift; sourceTree = "<group>"; };
+		039E03532B2130D1001B0717 /* CustomToggleStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomToggleStyle.swift; sourceTree = "<group>"; };
+		039E03542B2130D1001B0717 /* Level4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level4.json; sourceTree = "<group>"; };
+		039E03552B2130D1001B0717 /* newwayhome.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = newwayhome.json; sourceTree = "<group>"; };
+		039E03562B2130D2001B0717 /* Vorsj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Vorsj; sourceTree = "<group>"; };
+		039E03572B2130D2001B0717 /* JSON Quiz */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "JSON Quiz"; sourceTree = "<group>"; };
+		039E03582B2130D2001B0717 /* Level1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level1.json; sourceTree = "<group>"; };
+		039E03592B2130D2001B0717 /* QuizQuestion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizQuestion.swift; sourceTree = "<group>"; };
+		039E035A2B2130D2001B0717 /* KaraokeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KaraokeView.swift; sourceTree = "<group>"; };
+		039E035B2B2130D2001B0717 /* Level2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level2.json; sourceTree = "<group>"; };
+		039E035C2B2130D2001B0717 /* JegHarAldriVolume1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = JegHarAldriVolume1.json; sourceTree = "<group>"; };
+		039E035D2B2130D3001B0717 /* QuizListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizListView.swift; sourceTree = "<group>"; };
+		039E035E2B2130D3001B0717 /* JegHarAldriListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JegHarAldriListView.swift; sourceTree = "<group>"; };
+		039E035F2B2130D3001B0717 /* Karaoke */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Karaoke; sourceTree = "<group>"; };
+		039E03602B2130D3001B0717 /* takeonme.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = takeonme.json; sourceTree = "<group>"; };
+		039E03612B2130D3001B0717 /* Spotify.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spotify.swift; sourceTree = "<group>"; };
+		039E03622B2130D3001B0717 /* ChuggEllerSannhetVolume.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChuggEllerSannhetVolume.swift; sourceTree = "<group>"; };
+		039E03632B2130D3001B0717 /* JegHarAldriVolume2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = JegHarAldriVolume2.json; sourceTree = "<group>"; };
+		039E03642B2130D3001B0717 /* Parleken.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Parleken.json; sourceTree = "<group>"; };
+		039E03652B2130D3001B0717 /* rosahelikopter.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = rosahelikopter.json; sourceTree = "<group>"; };
+		039E03662B2130D4001B0717 /* QuizView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
+		039E03672B2130D4001B0717 /* Karaoke JSON */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Karaoke JSON"; sourceTree = "<group>"; };
+		039E03682B2130D4001B0717 /* JegHarAldriVolume3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = JegHarAldriVolume3.json; sourceTree = "<group>"; };
+		039E03692B2130D4001B0717 /* StartNachet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartNachet.swift; sourceTree = "<group>"; };
+		039E036A2B2130D4001B0717 /* vivalavida.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = vivalavida.json; sourceTree = "<group>"; };
+		039E036B2B2130D4001B0717 /* Volume2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Volume2.json; sourceTree = "<group>"; };
+		039E036C2B2130D4001B0717 /* Volume1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Volume1.json; sourceTree = "<group>"; };
+		039E036D2B2130D4001B0717 /* ChuggEllerSannhetVolume2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChuggEllerSannhetVolume2.swift; sourceTree = "<group>"; };
+		039E036E2B2130D5001B0717 /* Volume5BI.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Volume5BI.json; sourceTree = "<group>"; };
+		039E036F2B2130D5001B0717 /* Volume6.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Volume6.json; sourceTree = "<group>"; };
+		039E03702B2130D6001B0717 /* iwantitthatway.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = iwantitthatway.json; sourceTree = "<group>"; };
+		039E03712B2130D7001B0717 /* ContentViewVS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewVS.swift; sourceTree = "<group>"; };
+		039E03722B2130D7001B0717 /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		039E03732B2130D7001B0717 /* JegHarAldriVolume4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = JegHarAldriVolume4.json; sourceTree = "<group>"; };
+		039E03742B2130D7001B0717 /* Messages */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Messages; sourceTree = "<group>"; };
+		039E03752B2130D7001B0717 /* foreveralone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = foreveralone.json; sourceTree = "<group>"; };
+		039E03762B2130D7001B0717 /* JegHarAldri.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JegHarAldri.swift; sourceTree = "<group>"; };
+		039E03772B2130D8001B0717 /* ChuggEllerSannhetVolume1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ChuggEllerSannhetVolume1.json; sourceTree = "<group>"; };
+		039E03782B2130D8001B0717 /* Volume7.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Volume7.json; sourceTree = "<group>"; };
+		039E03792B2130D8001B0717 /* Volume41.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Volume41.json; sourceTree = "<group>"; };
+		039E037A2B2130D8001B0717 /* HundredQuestionsListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HundredQuestionsListView.swift; sourceTree = "<group>"; };
+		039E037B2B2130D8001B0717 /* bestsongever.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bestsongever.json; sourceTree = "<group>"; };
+		039E037C2B2130D8001B0717 /* Level3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level3.json; sourceTree = "<group>"; };
+		039E037D2B2130D8001B0717 /* layallyourloveonme.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = layallyourloveonme.json; sourceTree = "<group>"; };
+		039E037E2B2130D8001B0717 /* JSON Chugg eller sannhet */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "JSON Chugg eller sannhet"; sourceTree = "<group>"; };
+		039E037F2B2130D8001B0717 /* WelcomeSheetVS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeSheetVS.swift; sourceTree = "<group>"; };
+		039E03802B2130D9001B0717 /* ModelDataVS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelDataVS.swift; sourceTree = "<group>"; };
+		039E03812B2130D9001B0717 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		039E03822B2130D9001B0717 /* Kompliment.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Kompliment.json; sourceTree = "<group>"; };
+		039E03832B2130D9001B0717 /* ChatsTabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsTabBarView.swift; sourceTree = "<group>"; };
+		039E03842B2130D9001B0717 /* Song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		039E03852B2130D9001B0717 /* HundredView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HundredView.swift; sourceTree = "<group>"; };
+		039E03862B2130D9001B0717 /* Jeg har aldri */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Jeg har aldri"; sourceTree = "<group>"; };
+		039E03872B2130D9001B0717 /* QuestionCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionCardView.swift; sourceTree = "<group>"; };
+		039E03882B2130DA001B0717 /* UtenDrikkeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtenDrikkeView.swift; sourceTree = "<group>"; };
 		039EB7FA2A8F6D34005EE9E5 /* HRCVView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRCVView.swift; sourceTree = "<group>"; };
 		03A976932ABAFF4E001A822C /* SponsorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsorView.swift; sourceTree = "<group>"; };
 		03A976952ABB092E001A822C /* WelcomeSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeSheet.swift; sourceTree = "<group>"; };
@@ -152,6 +308,91 @@
 			path = Schedule;
 			sourceTree = "<group>";
 		};
+		032ADEDE2B212BE10096BB03 /* VSP */ = {
+			isa = PBXGroup;
+			children = (
+				039E033E2B2130CE001B0717 /* 100 Spørsmål JSON */,
+				039E03512B2130D1001B0717 /* 100Spørsmål */,
+				039E03442B2130CF001B0717 /* 5050.json */,
+				039E037B2B2130D8001B0717 /* bestsongever.json */,
+				039E03832B2130D9001B0717 /* ChatsTabBarView.swift */,
+				039E034A2B2130D0001B0717 /* Chugg eller sannhet */,
+				039E03492B2130D0001B0717 /* ChuggEllerSannhetListView.swift */,
+				039E03622B2130D3001B0717 /* ChuggEllerSannhetVolume.swift */,
+				039E03772B2130D8001B0717 /* ChuggEllerSannhetVolume1.json */,
+				039E03422B2130CF001B0717 /* ChuggEllerSannhetVolume2.json */,
+				039E036D2B2130D4001B0717 /* ChuggEllerSannhetVolume2.swift */,
+				039E03432B2130CF001B0717 /* ChuggEllerSannhetVolume3.json */,
+				039E033C2B2130CE001B0717 /* ChuggEllerSannhetVolume3.swift */,
+				039E033B2B2130CE001B0717 /* ComposeArea.swift */,
+				039E03712B2130D7001B0717 /* ContentViewVS.swift */,
+				039E034F2B2130D0001B0717 /* cornfieldchase.json */,
+				039E03532B2130D1001B0717 /* CustomToggleStyle.swift */,
+				039E034B2B2130D0001B0717 /* dancingqueen.json */,
+				039E03462B2130CF001B0717 /* fairytale.json */,
+				039E03752B2130D7001B0717 /* foreveralone.json */,
+				039E03722B2130D7001B0717 /* HeaderView.swift */,
+				039E037A2B2130D8001B0717 /* HundredQuestionsListView.swift */,
+				039E03852B2130D9001B0717 /* HundredView.swift */,
+				039E03702B2130D6001B0717 /* iwantitthatway.json */,
+				039E03862B2130D9001B0717 /* Jeg har aldri */,
+				039E03762B2130D7001B0717 /* JegHarAldri.swift */,
+				039E035E2B2130D3001B0717 /* JegHarAldriListView.swift */,
+				039E03482B2130D0001B0717 /* JegHarAldriS3XEdition.json */,
+				039E035C2B2130D2001B0717 /* JegHarAldriVolume1.json */,
+				039E03632B2130D3001B0717 /* JegHarAldriVolume2.json */,
+				039E03682B2130D4001B0717 /* JegHarAldriVolume3.json */,
+				039E03732B2130D7001B0717 /* JegHarAldriVolume4.json */,
+				039E033F2B2130CE001B0717 /* JegHarAldriVolume5.json */,
+				039E037E2B2130D8001B0717 /* JSON Chugg eller sannhet */,
+				039E03572B2130D2001B0717 /* JSON Quiz */,
+				039E035F2B2130D3001B0717 /* Karaoke */,
+				039E03672B2130D4001B0717 /* Karaoke JSON */,
+				039E03522B2130D1001B0717 /* KaraokeListView.swift */,
+				039E035A2B2130D2001B0717 /* KaraokeView.swift */,
+				039E03822B2130D9001B0717 /* Kompliment.json */,
+				039E037D2B2130D8001B0717 /* layallyourloveonme.json */,
+				039E03582B2130D2001B0717 /* Level1.json */,
+				039E035B2B2130D2001B0717 /* Level2.json */,
+				039E037C2B2130D8001B0717 /* Level3.json */,
+				039E03542B2130D1001B0717 /* Level4.json */,
+				039E03402B2130CF001B0717 /* livinonaprayer.json */,
+				039E03452B2130CF001B0717 /* MedDrikkeView.swift */,
+				039E033D2B2130CE001B0717 /* MessageBubble.swift */,
+				039E03742B2130D7001B0717 /* Messages */,
+				039E03802B2130D9001B0717 /* ModelDataVS.swift */,
+				039E03552B2130D1001B0717 /* newwayhome.json */,
+				039E03642B2130D3001B0717 /* Parleken.json */,
+				039E03812B2130D9001B0717 /* Question.swift */,
+				039E03872B2130D9001B0717 /* QuestionCardView.swift */,
+				039E035D2B2130D3001B0717 /* QuizListView.swift */,
+				039E03592B2130D2001B0717 /* QuizQuestion.swift */,
+				039E03662B2130D4001B0717 /* QuizView.swift */,
+				039E03652B2130D3001B0717 /* rosahelikopter.json */,
+				039E03472B2130CF001B0717 /* sexonfire.json */,
+				039E03842B2130D9001B0717 /* Song.swift */,
+				039E034C2B2130D0001B0717 /* sorry.json */,
+				039E03612B2130D3001B0717 /* Spotify.swift */,
+				039E034D2B2130D0001B0717 /* SpotifyAlbum */,
+				039E03412B2130CF001B0717 /* startnachet.json */,
+				039E03692B2130D4001B0717 /* StartNachet.swift */,
+				039E03602B2130D3001B0717 /* takeonme.json */,
+				039E03882B2130DA001B0717 /* UtenDrikkeView.swift */,
+				039E036A2B2130D4001B0717 /* vivalavida.json */,
+				039E036C2B2130D4001B0717 /* Volume1.json */,
+				039E036B2B2130D4001B0717 /* Volume2.json */,
+				039E034E2B2130D0001B0717 /* Volume3.json */,
+				039E03502B2130D1001B0717 /* Volume4.json */,
+				039E036E2B2130D5001B0717 /* Volume5BI.json */,
+				039E036F2B2130D5001B0717 /* Volume6.json */,
+				039E03782B2130D8001B0717 /* Volume7.json */,
+				039E03792B2130D8001B0717 /* Volume41.json */,
+				039E03562B2130D2001B0717 /* Vorsj */,
+				039E037F2B2130D8001B0717 /* WelcomeSheetVS.swift */,
+			);
+			path = VSP;
+			sourceTree = "<group>";
+		};
 		033F06C92A758BC0007B6D8D /* CV */ = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +439,7 @@
 				0396B0872A25E0CC008E6CAC /* Views */,
 				0396B0882A25E107008E6CAC /* Model */,
 				0396B0892A25E112008E6CAC /* Resources */,
+				032ADEDE2B212BE10096BB03 /* VSP */,
 				0396B0722A250194008E6CAC /* Assets.xcassets */,
 				0345B2732A29D15B00110EC4 /* Info.plist */,
 				0396B0742A250194008E6CAC /* Preview Content */,
@@ -342,12 +584,62 @@
 			buildActionMask = 2147483647;
 			files = (
 				031399972A2623350003427A /* scheduleData.json in Resources */,
+				039E03CC2B2130DA001B0717 /* JSON Chugg eller sannhet in Resources */,
+				039E03992B2130DA001B0717 /* dancingqueen.json in Resources */,
+				039E03B62B2130DA001B0717 /* JegHarAldriVolume3.json in Resources */,
+				039E03B32B2130DA001B0717 /* rosahelikopter.json in Resources */,
+				039E038D2B2130DA001B0717 /* JegHarAldriVolume5.json in Resources */,
+				039E038F2B2130DA001B0717 /* startnachet.json in Resources */,
+				039E03C12B2130DA001B0717 /* JegHarAldriVolume4.json in Resources */,
+				039E03922B2130DA001B0717 /* 5050.json in Resources */,
+				039E03AA2B2130DA001B0717 /* JegHarAldriVolume1.json in Resources */,
+				039E039A2B2130DA001B0717 /* sorry.json in Resources */,
+				039E03B92B2130DA001B0717 /* Volume2.json in Resources */,
+				039E03C62B2130DA001B0717 /* Volume7.json in Resources */,
+				039E03CA2B2130DA001B0717 /* Level3.json in Resources */,
+				039E03AE2B2130DA001B0717 /* takeonme.json in Resources */,
+				039E038C2B2130DA001B0717 /* 100 Spørsmål JSON in Resources */,
+				039E03942B2130DA001B0717 /* fairytale.json in Resources */,
+				039E03CB2B2130DA001B0717 /* layallyourloveonme.json in Resources */,
+				039E03BA2B2130DA001B0717 /* Volume1.json in Resources */,
 				0396B0762A250194008E6CAC /* Preview Assets.xcassets in Resources */,
+				039E03B52B2130DA001B0717 /* Karaoke JSON in Resources */,
+				039E03D42B2130DA001B0717 /* Jeg har aldri in Resources */,
+				039E03C32B2130DA001B0717 /* foreveralone.json in Resources */,
 				0396B0732A250194008E6CAC /* Assets.xcassets in Resources */,
+				039E03C92B2130DA001B0717 /* bestsongever.json in Resources */,
+				039E03BE2B2130DA001B0717 /* iwantitthatway.json in Resources */,
+				039E03902B2130DA001B0717 /* ChuggEllerSannhetVolume2.json in Resources */,
+				039E03952B2130DA001B0717 /* sexonfire.json in Resources */,
+				039E03A32B2130DA001B0717 /* newwayhome.json in Resources */,
+				039E039F2B2130DA001B0717 /* 100Spørsmål in Resources */,
 				03EFFE142A7AD3CC005B223C /* springbrettereData.json in Resources */,
+				039E03B12B2130DA001B0717 /* JegHarAldriVolume2.json in Resources */,
+				039E03BC2B2130DA001B0717 /* Volume5BI.json in Resources */,
+				039E03C22B2130DA001B0717 /* Messages in Resources */,
+				039E03A92B2130DA001B0717 /* Level2.json in Resources */,
+				039E039C2B2130DA001B0717 /* Volume3.json in Resources */,
+				039E03912B2130DA001B0717 /* ChuggEllerSannhetVolume3.json in Resources */,
+				039E03982B2130DA001B0717 /* Chugg eller sannhet in Resources */,
+				039E03A62B2130DA001B0717 /* Level1.json in Resources */,
+				039E03AD2B2130DA001B0717 /* Karaoke in Resources */,
+				039E03D02B2130DA001B0717 /* Kompliment.json in Resources */,
+				039E03BD2B2130DA001B0717 /* Volume6.json in Resources */,
+				039E039E2B2130DA001B0717 /* Volume4.json in Resources */,
+				039E03C52B2130DA001B0717 /* ChuggEllerSannhetVolume1.json in Resources */,
+				039E038E2B2130DA001B0717 /* livinonaprayer.json in Resources */,
+				039E03A22B2130DA001B0717 /* Level4.json in Resources */,
+				039E03C72B2130DA001B0717 /* Volume41.json in Resources */,
+				039E03B22B2130DA001B0717 /* Parleken.json in Resources */,
+				039E03A42B2130DA001B0717 /* Vorsj in Resources */,
 				03D995222A75393E00B8F6A8 /* KDaftermovie_cropped.gif in Resources */,
+				039E03962B2130DA001B0717 /* JegHarAldriS3XEdition.json in Resources */,
+				039E03A52B2130DA001B0717 /* JSON Quiz in Resources */,
 				03728C1E2A8FA38B00B80581 /* lederData.json in Resources */,
+				039E039D2B2130DA001B0717 /* cornfieldchase.json in Resources */,
 				0396B07E2A25059D008E6CAC /* companyData.json in Resources */,
+				039E03B82B2130DA001B0717 /* vivalavida.json in Resources */,
+				039E039B2B2130DA001B0717 /* SpotifyAlbum in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,41 +653,69 @@
 				0396B0712A250193008E6CAC /* ContentView.swift in Sources */,
 				03728C202A8FA3BE00B80581 /* Leder.swift in Sources */,
 				035359F22A79A704003AB9B3 /* Person.swift in Sources */,
+				039E03AF2B2130DA001B0717 /* Spotify.swift in Sources */,
 				03C6425C2A8A3D2B001FF571 /* FavoriteButton.swift in Sources */,
 				0361E1532A75630800AC4ABF /* CVTipsView.swift in Sources */,
 				031C6BF02A47090F00332564 /* GifImage.swift in Sources */,
+				039E03B72B2130DA001B0717 /* StartNachet.swift in Sources */,
+				039E03B02B2130DA001B0717 /* ChuggEllerSannhetVolume.swift in Sources */,
+				039E03CE2B2130DA001B0717 /* ModelDataVS.swift in Sources */,
 				036B44F42A6093BB0059EB50 /* DiTView.swift in Sources */,
 				03C642612A8B7EC4001FF571 /* GrieghallenView.swift in Sources */,
+				039E03972B2130DA001B0717 /* ChuggEllerSannhetListView.swift in Sources */,
+				039E03CF2B2130DA001B0717 /* Question.swift in Sources */,
 				03728C222A8FA6E300B80581 /* PersonView2.swift in Sources */,
 				0337135D2AA9E3E00018CA2E /* HosseinSharifiView.swift in Sources */,
 				03E44CB32A76D16A00A57B1E /* CVITView.swift in Sources */,
+				039E03A02B2130DA001B0717 /* KaraokeListView.swift in Sources */,
+				039E03AB2B2130DA001B0717 /* QuizListView.swift in Sources */,
 				039341602AFE3C6F00F8D800 /* HomeView2.swift in Sources */,
+				039E038A2B2130DA001B0717 /* ChuggEllerSannhetVolume3.swift in Sources */,
 				031C6BEC2A46EE8800332564 /* KarrieredagenInformationView.swift in Sources */,
 				03728C1C2A8F7E4500B80581 /* HvaErSpringbrettet.swift in Sources */,
 				03E47FEE2A558F4C005BCDAA /* SpringbrettfondetView.swift in Sources */,
+				039E03B42B2130DA001B0717 /* QuizView.swift in Sources */,
 				03A976962ABB092E001A822C /* WelcomeSheet.swift in Sources */,
 				0313999C2A2625670003427A /* Event.swift in Sources */,
+				039E03C02B2130DA001B0717 /* HeaderView.swift in Sources */,
 				0396B0822A25DAE4008E6CAC /* MapView.swift in Sources */,
+				039E03A82B2130DA001B0717 /* KaraokeView.swift in Sources */,
 				0396B0802A25D9B8008E6CAC /* SquareImage.swift in Sources */,
 				036285642A7ADDD0007E165B /* PersonView.swift in Sources */,
+				039E03D52B2130DA001B0717 /* QuestionCardView.swift in Sources */,
+				039E03BF2B2130DA001B0717 /* ContentViewVS.swift in Sources */,
 				03A976942ABAFF4E001A822C /* SponsorView.swift in Sources */,
 				0396B0842A25DE2B008E6CAC /* Company.swift in Sources */,
 				03E44CB52A76D33600A57B1E /* CVEconomicsView.swift in Sources */,
+				039E03A72B2130DA001B0717 /* QuizQuestion.swift in Sources */,
 				031C6BE42A46DC7900332564 /* OmOssView.swift in Sources */,
+				039E03D32B2130DA001B0717 /* HundredView.swift in Sources */,
+				039E03D12B2130DA001B0717 /* ChatsTabBarView.swift in Sources */,
 				0358A3AA2A5AF44D00B68428 /* KarrierestudioView.swift in Sources */,
 				0313999E2A262E130003427A /* ScheduleRow.swift in Sources */,
+				039E03D62B2130DA001B0717 /* UtenDrikkeView.swift in Sources */,
 				035BC20A2AAB776D00A9FE10 /* BackgroundSB.swift in Sources */,
+				039E03C42B2130DA001B0717 /* JegHarAldri.swift in Sources */,
+				039E03C82B2130DA001B0717 /* HundredQuestionsListView.swift in Sources */,
 				0396B06F2A250193008E6CAC /* KarrieredagenApp.swift in Sources */,
 				0396B0862A25E068008E6CAC /* ModelData.swift in Sources */,
 				0396B08B2A25EA18008E6CAC /* CompanyRow.swift in Sources */,
+				039E038B2B2130DA001B0717 /* MessageBubble.swift in Sources */,
 				039EB7FB2A8F6D34005EE9E5 /* HRCVView.swift in Sources */,
+				039E03BB2B2130DA001B0717 /* ChuggEllerSannhetVolume2.swift in Sources */,
 				0396B08D2A25F024008E6CAC /* CompanyList.swift in Sources */,
 				03D5C9452A82A9DC007D5508 /* Studenter.swift in Sources */,
 				030447B22A48855700966396 /* CustomNavigationBar.swift in Sources */,
+				039E03932B2130DA001B0717 /* MedDrikkeView.swift in Sources */,
 				03E44CB72A76F87100A57B1E /* CVJussView.swift in Sources */,
+				039E03892B2130DA001B0717 /* ComposeArea.swift in Sources */,
+				039E03CD2B2130DA001B0717 /* WelcomeSheetVS.swift in Sources */,
 				03ECA4592A29C23A007E0829 /* EventDetailView.swift in Sources */,
 				037010172A49AADB007388E7 /* HomeView.swift in Sources */,
 				0396B08F2A25F136008E6CAC /* CompanyDetail.swift in Sources */,
+				039E03D22B2130DA001B0717 /* Song.swift in Sources */,
+				039E03A12B2130DA001B0717 /* CustomToggleStyle.swift in Sources */,
+				039E03AC2B2130DA001B0717 /* JegHarAldriListView.swift in Sources */,
 				031399A02A2635380003427A /* ScheduleList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

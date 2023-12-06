@@ -12,7 +12,7 @@ struct WelcomeSheet: View {
 
     var body: some View {
         ZStack {
-            Background2()
+            BackgroundSB2()
             VStack(spacing: 20) {
                 Spacer()
                 

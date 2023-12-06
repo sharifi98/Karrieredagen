@@ -290,24 +290,26 @@ struct HomeView: View {
                 
                 ToolbarItemGroup(placement: .topBarLeading) {
                     HStack(alignment: .center) {
-                        Image("SB")
-                            .resizable()
-                            .scaledToFit()
-                            .padding(.bottom, 10.0)
+                        NavigationLink(destination: EmptyView()){ // enter VS view here
+                            Image("SB")
+                                .resizable()
+                                .scaledToFit()
+                        }
                     }
                 }
                 
                 
                 
+                
                 ToolbarItem(placement: .topBarTrailing) {
                     Button {
-                        
                     } label: {
                         Image(systemName: "line.horizontal.3")
                             .foregroundStyle(Color("KDOrange"))
                             .font(.system(size: 20))
                     }
                 }
+                
             }
             .overlay(Rectangle().foregroundColor(.clear))
             .sheet(item: $selectedEvent) { eventDetail in
