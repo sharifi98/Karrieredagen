@@ -9,7 +9,7 @@ struct EventDetailView: View {
         
         
         ZStack {
-            Background2()
+            BackgroundSB2()
             VStack(alignment: .center, spacing: 10) {
                 
                 eventImageView

@@ -11,7 +11,7 @@ struct HosseinSharifiView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                Background2()
+                BackgroundSB2()
                 VStack(alignment: .center) {
                     Image("hossein")
                         .resizable()
