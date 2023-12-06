@@ -31,7 +31,7 @@ struct HvaErSpringbrettet: View {
     
     var body: some View {
         ZStack {
-            Background()
+            BackgroundSB()
             ScrollView {
                 ScrollView(.horizontal, showsIndicators: false) {
                     LazyHStack(alignment: .top, spacing: 10) {

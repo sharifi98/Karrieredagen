@@ -12,7 +12,7 @@ struct PersonView: View {
     
     var body: some View {
         ZStack {
-            Background()
+            BackgroundSB()
             VStack {
                 
                 Image(person.imageName)

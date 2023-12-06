@@ -13,7 +13,7 @@ struct SpringbrettfondetView: View {
     var body: some View {
         
         ZStack {
-            Background()
+            BackgroundSB()
             ScrollView {
                 VStack(spacing: 20) { // Added spacing between VStacks
                     

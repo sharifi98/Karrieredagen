@@ -6,7 +6,7 @@ import SDWebImageSwiftUI
 struct HomeView: View {
     @State private var selectedEvent: Event?
     @State private var selectedView: String = "CompanyList"
-    let grieghallencord = CLLocationCoordinate2D(latitude: 60.38880103170712, longitude: 5.328235989579929)
+    //let grieghallencord = CLLocationCoordinate2D(latitude: 60.38880103170712, longitude: 5.328235989579929)
     
     let imageNames = [
         "DSC06717",
@@ -132,6 +132,7 @@ struct HomeView: View {
                     
                     
                     
+                    
                     NavigationLink(destination: CVTipsView()) {
                         Label {
                             Text("Tips til jobbsøknad")
@@ -142,6 +143,7 @@ struct HomeView: View {
                     }
                 }
                 
+                /*
                 Section {
                     VStack {
                         
@@ -166,6 +168,8 @@ struct HomeView: View {
                     .padding()
                 }
                 .listRowBackground(Color("KDBlue"))
+                
+                */
                 
                 Section {
                     
@@ -273,12 +277,35 @@ struct HomeView: View {
             .listStyle(.insetGrouped)
             .navigationBarWithTransparentBackground()
             .toolbar {
-                ToolbarItemGroup(placement: .navigationBarLeading) {
+                
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button {
+                        
+                    } label: {
+                        Image(systemName: "envelope.fill")
+                            .foregroundStyle(Color("KDOrange"))
+                    }
+                }
+                
+                
+                ToolbarItemGroup(placement: .topBarLeading) {
                     HStack(alignment: .center) {
                         Image("SB")
                             .resizable()
                             .scaledToFit()
                             .padding(.bottom, 10.0)
+                    }
+                }
+                
+                
+                
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button {
+                        
+                    } label: {
+                        Image(systemName: "line.horizontal.3")
+                            .foregroundStyle(Color("KDOrange"))
+                            .font(.system(size: 20))
                     }
                 }
             }

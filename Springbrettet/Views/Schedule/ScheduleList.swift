@@ -7,7 +7,7 @@ struct ScheduleList: View {
         NavigationView {
             
             ZStack {
-                Background()
+                BackgroundSB()
                 ScrollView {
                         
                         VStack(spacing: 10) {

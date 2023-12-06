@@ -12,7 +12,7 @@ struct DiTView: View {
         
         NavigationView {
             ZStack {
-                Background()
+                BackgroundSB()
                 ScrollView {
                     Image("DIT2")
                         .resizable()

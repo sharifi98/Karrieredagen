@@ -12,7 +12,7 @@ struct Karrierestudio: View {
         NavigationView {
             
             ZStack {
-                Background()
+                BackgroundSB()
                 ScrollView {
                     ZStack {
                         Image("Karrierestudio")

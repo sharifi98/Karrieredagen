@@ -9,7 +9,7 @@ struct KarrieredagenInformationView: View {
         NavigationView {
             
             ZStack {
-                Background()
+                BackgroundSB()
                 ScrollView {
                     VStack {
                         
