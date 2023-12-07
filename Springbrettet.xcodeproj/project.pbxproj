@@ -193,6 +193,7 @@
 		0396B06D2A250193008E6CAC /* Springbrettet */ = {
 			isa = PBXGroup;
 			children = (
+				03D5E1882B214D2E000EB765 /* VORSJ */,
 				03D995212A75393E00B8F6A8 /* KDaftermovie_cropped.gif */,
 				0396B06E2A250193008E6CAC /* KarrieredagenApp.swift */,
 				0396B0872A25E0CC008E6CAC /* Views */,
@@ -275,6 +276,13 @@
 				036B44F32A6093BB0059EB50 /* DiTView.swift */,
 			);
 			path = "Springbrettets prosjekter";
+			sourceTree = "<group>";
+		};
+		03D5E1882B214D2E000EB765 /* VORSJ */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VORSJ;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
