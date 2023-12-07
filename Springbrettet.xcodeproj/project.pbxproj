@@ -152,13 +152,6 @@
 			path = Schedule;
 			sourceTree = "<group>";
 		};
-		032ADEDE2B212BE10096BB03 /* VSP */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = VSP;
-			sourceTree = "<group>";
-		};
 		033F06C92A758BC0007B6D8D /* CV */ = {
 			isa = PBXGroup;
 			children = (
@@ -205,7 +198,6 @@
 				0396B0872A25E0CC008E6CAC /* Views */,
 				0396B0882A25E107008E6CAC /* Model */,
 				0396B0892A25E112008E6CAC /* Resources */,
-				032ADEDE2B212BE10096BB03 /* VSP */,
 				0396B0722A250194008E6CAC /* Assets.xcassets */,
 				0345B2732A29D15B00110EC4 /* Info.plist */,
 				0396B0742A250194008E6CAC /* Preview Content */,
