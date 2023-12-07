@@ -365,7 +365,7 @@ struct PasswordInputView: View {
     
     var body: some View {
         VStack(spacing: 20) {
-            Text("Skriv Inn Passord").foregroundStyle(.red)
+            Text("Spør en i Springbrettet om passordet").foregroundStyle(.red)
             TextField("Passord", text: $passwordInput)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()

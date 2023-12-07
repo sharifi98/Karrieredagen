@@ -13,7 +13,7 @@ struct VorsjContentView: View {
         case ViewUtenDrikke
     }
     
-    @State private var showWelcomeSheet = false
+    @State private var vorsjShowWelcomeSheet = false
     @State private var selectedView : ViewChoice = .viewMedDrikke
     
     var body: some View {
@@ -38,14 +38,14 @@ struct VorsjContentView: View {
             
         }
         .onAppear {
-            if UserDefaults.standard.object(forKey: "appOpenedBefore") == nil {
-                showWelcomeSheet = true
+            if UserDefaults.standard.object(forKey: "VSappOpenedBefore") == nil {
+                vorsjShowWelcomeSheet = true
             }
         }
-        .sheet(isPresented: $showWelcomeSheet) {
-            WelcomeSheet(onDismiss: {
-                UserDefaults.standard.set(true, forKey: "appOpenedBefore")
-                showWelcomeSheet = false
+        .sheet(isPresented: $vorsjShowWelcomeSheet) {
+            VorsjWelcomeSheet(onDismiss: {
+                UserDefaults.standard.set(true, forKey: "VSappOpenedBefore")
+                vorsjShowWelcomeSheet = false
             })
         }
         
