@@ -6,7 +6,14 @@ import SDWebImageSwiftUI
 struct HomeView: View {
     @State private var selectedEvent: Event?
     @State private var selectedView: String = "CompanyList"
+    
+    @State private var showPasswordAlert = false
+    @State private var passwordInput = ""
+    @State private var showVorsjContentView = false
+    
     //let grieghallencord = CLLocationCoordinate2D(latitude: 60.38880103170712, longitude: 5.328235989579929)
+    
+    
     
     let imageNames = [
         "DSC06717",
@@ -144,32 +151,32 @@ struct HomeView: View {
                 }
                 
                 /*
-                Section {
-                    VStack {
-                        
-                        Text("Karrieredagen gir studenter mulighet til å møte arbeidsgivere, utforske yrkesmuligheter, bygge nettverk og få veiledning fra eksperter.")
-                            .font(.custom("AvenirNext-Regular", size: 15))
-                            .multilineTextAlignment(.center)
-                        
-                        
-                        MapView(coordinate: grieghallencord)
-                            .frame(width: 300, height: 300/1.618)
-                            .clipShape(RoundedRectangle(cornerRadius: 20))
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 20)
-                                    .stroke(Color("KDBlue"), lineWidth: 4)
-                            )
-                            .shadow(radius: 7)
-                            .background(Color.white.clipShape(RoundedRectangle(cornerRadius: 20)))
-                        Text("Arrangementet finner sted i Grieghallen i Bergen.")
-                            .font(.custom("AvenirNext-Regular", size: 15))
-                            .multilineTextAlignment(.center)
-                    }
-                    .padding()
-                }
-                .listRowBackground(Color("KDBlue"))
-                
-                */
+                 Section {
+                 VStack {
+                 
+                 Text("Karrieredagen gir studenter mulighet til å møte arbeidsgivere, utforske yrkesmuligheter, bygge nettverk og få veiledning fra eksperter.")
+                 .font(.custom("AvenirNext-Regular", size: 15))
+                 .multilineTextAlignment(.center)
+                 
+                 
+                 MapView(coordinate: grieghallencord)
+                 .frame(width: 300, height: 300/1.618)
+                 .clipShape(RoundedRectangle(cornerRadius: 20))
+                 .overlay(
+                 RoundedRectangle(cornerRadius: 20)
+                 .stroke(Color("KDBlue"), lineWidth: 4)
+                 )
+                 .shadow(radius: 7)
+                 .background(Color.white.clipShape(RoundedRectangle(cornerRadius: 20)))
+                 Text("Arrangementet finner sted i Grieghallen i Bergen.")
+                 .font(.custom("AvenirNext-Regular", size: 15))
+                 .multilineTextAlignment(.center)
+                 }
+                 .padding()
+                 }
+                 .listRowBackground(Color("KDBlue"))
+                 
+                 */
                 
                 Section {
                     
@@ -278,39 +285,31 @@ struct HomeView: View {
             .navigationBarWithTransparentBackground()
             .toolbar {
                 
-                ToolbarItem(placement: .navigationBarLeading) {
-                    Button {
-                        
-                    } label: {
-                        Image(systemName: "envelope.fill")
-                            .foregroundStyle(Color("KDOrange"))
-                    }
-                }
                 
-                
-                ToolbarItemGroup(placement: .topBarLeading) {
+                ToolbarItemGroup(placement: .automatic) {
                     HStack(alignment: .center) {
-                        NavigationLink(destination: VorsjContentView()){ // enter VS view here
+                        Button {
+                            self.showPasswordAlert = true
+                        } label: {
                             Image("SB")
                                 .resizable()
                                 .scaledToFit()
                         }
+                        
+                        NavigationLink("", destination: VorsjContentView().toolbar(.hidden, for: .tabBar), isActive: $showVorsjContentView)
                     }
                 }
                 
-                
-                
-                
-                ToolbarItem(placement: .topBarTrailing) {
-                    Button {
-                    } label: {
-                        Image(systemName: "line.horizontal.3")
-                            .foregroundStyle(Color("KDOrange"))
-                            .font(.system(size: 20))
-                    }
-                }
                 
             }
+            .overlay(
+                Group {
+                    if showPasswordAlert {
+                        PasswordInputView(isPresented: $showPasswordAlert, passwordInput: $passwordInput, navigateToVorsjContentView: $showVorsjContentView)
+                    }
+                },
+                alignment: .center
+            )
             .overlay(Rectangle().foregroundColor(.clear))
             .sheet(item: $selectedEvent) { eventDetail in
                 EventDetailView(event: eventDetail)
@@ -356,5 +355,37 @@ struct WebView: UIViewRepresentable {
 struct KDView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
+    }
+}
+
+struct PasswordInputView: View {
+    @Binding var isPresented: Bool
+    @Binding var passwordInput: String
+    @Binding var navigateToVorsjContentView: Bool
+    
+    var body: some View {
+        VStack(spacing: 20) {
+            Text("Skriv Inn Passord").foregroundStyle(.red)
+            TextField("Passord", text: $passwordInput)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .padding()
+            Button("OK") {
+                if passwordInput == "Stupebrettet" {
+                    navigateToVorsjContentView = true
+                }
+                isPresented = false
+                passwordInput = ""
+            }
+            .buttonStyle(DefaultButtonStyle())
+            Button("Cancel") {
+                isPresented = false
+                passwordInput = ""
+            }
+            .buttonStyle(DefaultButtonStyle())
+        }
+        .padding()
+        .background(Color("KDBlue"))
+        .cornerRadius(10)
+        .shadow(radius: 10)
     }
 }
