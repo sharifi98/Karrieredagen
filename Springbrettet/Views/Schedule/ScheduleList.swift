@@ -4,7 +4,7 @@ struct ScheduleList: View {
     @State private var selectedEvent: Event?
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             
             ZStack {
                 BackgroundSB()

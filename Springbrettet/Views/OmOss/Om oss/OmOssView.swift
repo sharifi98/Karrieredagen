@@ -9,7 +9,7 @@ struct OmOssView: View {
 
     var body: some View {
 
-        NavigationView {
+        NavigationStack {
 
             List {
                 

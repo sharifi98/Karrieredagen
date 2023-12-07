@@ -32,7 +32,7 @@ struct HomeView: View {
     @State private var showKarrieredagenInformationView = false
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             List {
                 VStack {
                     
@@ -290,7 +290,7 @@ struct HomeView: View {
                 
                 ToolbarItemGroup(placement: .topBarLeading) {
                     HStack(alignment: .center) {
-                        NavigationLink(destination: EmptyView()){ // enter VS view here
+                        NavigationLink(destination: VorsjContentView()){ // enter VS view here
                             Image("SB")
                                 .resizable()
                                 .scaledToFit()

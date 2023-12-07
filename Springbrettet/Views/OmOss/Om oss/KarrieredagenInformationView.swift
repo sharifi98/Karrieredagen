@@ -6,7 +6,7 @@ struct KarrieredagenInformationView: View {
     @State private var showPersonView = false
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             
             ZStack {
                 BackgroundSB()

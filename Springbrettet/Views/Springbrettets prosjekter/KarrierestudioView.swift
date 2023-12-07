@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Karrierestudio: View {
     var body: some View {
-        NavigationView {
+        NavigationStack {
             
             ZStack {
                 BackgroundSB()

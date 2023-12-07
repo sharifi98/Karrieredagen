@@ -10,7 +10,7 @@ import SwiftUI
 struct DiTView: View {
     var body: some View {
         
-        NavigationView {
+        NavigationStack {
             ZStack {
                 BackgroundSB()
                 ScrollView {

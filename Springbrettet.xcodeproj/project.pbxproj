@@ -48,6 +48,73 @@
 		03C642612A8B7EC4001FF571 /* GrieghallenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C642602A8B7EC4001FF571 /* GrieghallenView.swift */; };
 		03D5C9452A82A9DC007D5508 /* Studenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D5C9442A82A9DC007D5508 /* Studenter.swift */; };
 		03D995222A75393E00B8F6A8 /* KDaftermovie_cropped.gif in Resources */ = {isa = PBXBuildFile; fileRef = 03D995212A75393E00B8F6A8 /* KDaftermovie_cropped.gif */; };
+		03E29EEB2B224C8200753FAA /* VorsjContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E29EEA2B224C8200753FAA /* VorsjContentView.swift */; };
+		03E29EED2B224CC800753FAA /* VorsjWelcomeSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E29EEC2B224CC800753FAA /* VorsjWelcomeSheet.swift */; };
+		03E29EEF2B224D5200753FAA /* UtenDrikkeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E29EEE2B224D5200753FAA /* UtenDrikkeView.swift */; };
+		03E29EF12B224D7400753FAA /* MedDrikkeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E29EF02B224D7400753FAA /* MedDrikkeView.swift */; };
+		03E29EF52B224DB100753FAA /* HundredQuestionsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E29EF42B224DB100753FAA /* HundredQuestionsListView.swift */; };
+		03E29EF72B224DDB00753FAA /* HundredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E29EF62B224DDB00753FAA /* HundredView.swift */; };
+		03E29EF92B224DEE00753FAA /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E29EF82B224DEE00753FAA /* HeaderView.swift */; };
+		03E29EFB2B224E4500753FAA /* QuestionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E29EFA2B224E4500753FAA /* QuestionCardView.swift */; };
+		03E29EFE2B224E6C00753FAA /* ComposeArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E29EFD2B224E6C00753FAA /* ComposeArea.swift */; };
+		03E29F002B224E8100753FAA /* ChatsTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E29EFF2B224E8100753FAA /* ChatsTabBarView.swift */; };
+		03E29F042B224E9E00753FAA /* MessageBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E29F032B224E9E00753FAA /* MessageBubble.swift */; };
+		03E29F112B224ED700753FAA /* 5050.json in Resources */ = {isa = PBXBuildFile; fileRef = 03E29F062B224ED600753FAA /* 5050.json */; };
+		03E29F122B224ED700753FAA /* Volume4.json in Resources */ = {isa = PBXBuildFile; fileRef = 03E29F072B224ED600753FAA /* Volume4.json */; };
+		03E29F132B224ED700753FAA /* Volume2.json in Resources */ = {isa = PBXBuildFile; fileRef = 03E29F082B224ED600753FAA /* Volume2.json */; };
+		03E29F142B224ED700753FAA /* Volume5BI.json in Resources */ = {isa = PBXBuildFile; fileRef = 03E29F092B224ED600753FAA /* Volume5BI.json */; };
+		03E29F162B224ED700753FAA /* Kompliment.json in Resources */ = {isa = PBXBuildFile; fileRef = 03E29F0B2B224ED700753FAA /* Kompliment.json */; };
+		03E29F172B224ED700753FAA /* Volume3.json in Resources */ = {isa = PBXBuildFile; fileRef = 03E29F0C2B224ED700753FAA /* Volume3.json */; };
+		03E29F192B224ED700753FAA /* Volume7.json in Resources */ = {isa = PBXBuildFile; fileRef = 03E29F0E2B224ED700753FAA /* Volume7.json */; };
+		03E29F1A2B224ED700753FAA /* Volume1.json in Resources */ = {isa = PBXBuildFile; fileRef = 03E29F0F2B224ED700753FAA /* Volume1.json */; };
+		03E29F1B2B224ED700753FAA /* Volume41.json in Resources */ = {isa = PBXBuildFile; fileRef = 03E29F102B224ED700753FAA /* Volume41.json */; };
+		03E29F1E2B224EE000753FAA /* Volume6.json in Resources */ = {isa = PBXBuildFile; fileRef = 03E29F1C2B224EE000753FAA /* Volume6.json */; };
+		03E29F1F2B224EE000753FAA /* Parleken.json in Resources */ = {isa = PBXBuildFile; fileRef = 03E29F1D2B224EE000753FAA /* Parleken.json */; };
+		03E29F222B224F3B00753FAA /* QuizListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E29F212B224F3B00753FAA /* QuizListView.swift */; };
+		03E29F242B224F4500753FAA /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E29F232B224F4500753FAA /* QuizView.swift */; };
+		03E29F2A2B224F7C00753FAA /* Level4.json in Resources */ = {isa = PBXBuildFile; fileRef = 03E29F262B224F7C00753FAA /* Level4.json */; };
+		03E29F2B2B224F7C00753FAA /* Level2.json in Resources */ = {isa = PBXBuildFile; fileRef = 03E29F272B224F7C00753FAA /* Level2.json */; };
+		03E29F2C2B224F7C00753FAA /* Level1.json in Resources */ = {isa = PBXBuildFile; fileRef = 03E29F282B224F7C00753FAA /* Level1.json */; };
+		03E29F2D2B224F7C00753FAA /* Level3.json in Resources */ = {isa = PBXBuildFile; fileRef = 03E29F292B224F7C00753FAA /* Level3.json */; };
+		03E29F302B22505700753FAA /* ChuggEllerSannhetListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E29F2F2B22505700753FAA /* ChuggEllerSannhetListView.swift */; };
+		03E29F322B22506500753FAA /* ChuggEllerSannhetVolume.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E29F312B22506500753FAA /* ChuggEllerSannhetVolume.swift */; };
+		03E29F342B22507100753FAA /* ChuggEllerSannhetVolume2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E29F332B22507100753FAA /* ChuggEllerSannhetVolume2.swift */; };
+		03E29F362B22507E00753FAA /* ChuggEllerSannhetVolume3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E29F352B22507E00753FAA /* ChuggEllerSannhetVolume3.swift */; };
+		03E29F382B22508E00753FAA /* CustomToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E29F372B22508E00753FAA /* CustomToggleStyle.swift */; };
+		03E29F3D2B2250BD00753FAA /* ChuggEllerSannhetVolume2.json in Resources */ = {isa = PBXBuildFile; fileRef = 03E29F3A2B2250BD00753FAA /* ChuggEllerSannhetVolume2.json */; };
+		03E29F3E2B2250BD00753FAA /* ChuggEllerSannhetVolume1.json in Resources */ = {isa = PBXBuildFile; fileRef = 03E29F3B2B2250BD00753FAA /* ChuggEllerSannhetVolume1.json */; };
+		03E29F3F2B2250BD00753FAA /* ChuggEllerSannhetVolume3.json in Resources */ = {isa = PBXBuildFile; fileRef = 03E29F3C2B2250BD00753FAA /* ChuggEllerSannhetVolume3.json */; };
+		03E29F422B22513200753FAA /* KaraokeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E29F412B22513200753FAA /* KaraokeListView.swift */; };
+		03E29F442B22514000753FAA /* KaraokeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E29F432B22514000753FAA /* KaraokeView.swift */; };
+		03E29F462B22515100753FAA /* Spotify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E29F452B22515100753FAA /* Spotify.swift */; };
+		03E29F562B22517700753FAA /* cornfieldchase.json in Resources */ = {isa = PBXBuildFile; fileRef = 03E29F482B22517600753FAA /* cornfieldchase.json */; };
+		03E29F572B22517700753FAA /* takeonme.json in Resources */ = {isa = PBXBuildFile; fileRef = 03E29F492B22517600753FAA /* takeonme.json */; };
+		03E29F582B22517700753FAA /* layallyourloveonme.json in Resources */ = {isa = PBXBuildFile; fileRef = 03E29F4A2B22517600753FAA /* layallyourloveonme.json */; };
+		03E29F592B22517700753FAA /* livinonaprayer.json in Resources */ = {isa = PBXBuildFile; fileRef = 03E29F4B2B22517600753FAA /* livinonaprayer.json */; };
+		03E29F5A2B22517700753FAA /* sexonfire.json in Resources */ = {isa = PBXBuildFile; fileRef = 03E29F4C2B22517600753FAA /* sexonfire.json */; };
+		03E29F5B2B22517700753FAA /* bestsongever.json in Resources */ = {isa = PBXBuildFile; fileRef = 03E29F4D2B22517600753FAA /* bestsongever.json */; };
+		03E29F5C2B22517700753FAA /* vivalavida.json in Resources */ = {isa = PBXBuildFile; fileRef = 03E29F4E2B22517600753FAA /* vivalavida.json */; };
+		03E29F5D2B22517700753FAA /* newwayhome.json in Resources */ = {isa = PBXBuildFile; fileRef = 03E29F4F2B22517600753FAA /* newwayhome.json */; };
+		03E29F5E2B22517700753FAA /* rosahelikopter.json in Resources */ = {isa = PBXBuildFile; fileRef = 03E29F502B22517600753FAA /* rosahelikopter.json */; };
+		03E29F5F2B22517700753FAA /* fairytale.json in Resources */ = {isa = PBXBuildFile; fileRef = 03E29F512B22517600753FAA /* fairytale.json */; };
+		03E29F602B22517700753FAA /* dancingqueen.json in Resources */ = {isa = PBXBuildFile; fileRef = 03E29F522B22517600753FAA /* dancingqueen.json */; };
+		03E29F612B22517700753FAA /* foreveralone.json in Resources */ = {isa = PBXBuildFile; fileRef = 03E29F532B22517700753FAA /* foreveralone.json */; };
+		03E29F622B22517700753FAA /* iwantitthatway.json in Resources */ = {isa = PBXBuildFile; fileRef = 03E29F542B22517700753FAA /* iwantitthatway.json */; };
+		03E29F632B22517700753FAA /* sorry.json in Resources */ = {isa = PBXBuildFile; fileRef = 03E29F552B22517700753FAA /* sorry.json */; };
+		03E29F662B2251A000753FAA /* ModelDataVS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E29F652B2251A000753FAA /* ModelDataVS.swift */; };
+		03E29F682B2251B100753FAA /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E29F672B2251B100753FAA /* Question.swift */; };
+		03E29F6A2B2251B900753FAA /* QuizQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E29F692B2251B900753FAA /* QuizQuestion.swift */; };
+		03E29F6C2B2251C200753FAA /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E29F6B2B2251C200753FAA /* Song.swift */; };
+		03E29F7A2B22531400753FAA /* JegHarAldriVolume2.json in Resources */ = {isa = PBXBuildFile; fileRef = 03E29F722B22531300753FAA /* JegHarAldriVolume2.json */; };
+		03E29F7B2B22531400753FAA /* JegHarAldriVolume4.json in Resources */ = {isa = PBXBuildFile; fileRef = 03E29F732B22531400753FAA /* JegHarAldriVolume4.json */; };
+		03E29F7C2B22531400753FAA /* JegHarAldriS3XEdition.json in Resources */ = {isa = PBXBuildFile; fileRef = 03E29F742B22531400753FAA /* JegHarAldriS3XEdition.json */; };
+		03E29F7D2B22531400753FAA /* JegHarAldriVolume3.json in Resources */ = {isa = PBXBuildFile; fileRef = 03E29F752B22531400753FAA /* JegHarAldriVolume3.json */; };
+		03E29F7E2B22531400753FAA /* JegHarAldriListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E29F762B22531400753FAA /* JegHarAldriListView.swift */; };
+		03E29F7F2B22531400753FAA /* JegHarAldriVolume5.json in Resources */ = {isa = PBXBuildFile; fileRef = 03E29F772B22531400753FAA /* JegHarAldriVolume5.json */; };
+		03E29F802B22531400753FAA /* JegHarAldriVolume1.json in Resources */ = {isa = PBXBuildFile; fileRef = 03E29F782B22531400753FAA /* JegHarAldriVolume1.json */; };
+		03E29F812B22531400753FAA /* JegHarAldri.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E29F792B22531400753FAA /* JegHarAldri.swift */; };
+		03E29F842B22539E00753FAA /* StartNachet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E29F832B22539E00753FAA /* StartNachet.swift */; };
+		03E29F862B2253B000753FAA /* startnachet.json in Resources */ = {isa = PBXBuildFile; fileRef = 03E29F852B2253B000753FAA /* startnachet.json */; };
 		03E44CB32A76D16A00A57B1E /* CVITView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E44CB22A76D16A00A57B1E /* CVITView.swift */; };
 		03E44CB52A76D33600A57B1E /* CVEconomicsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E44CB42A76D33600A57B1E /* CVEconomicsView.swift */; };
 		03E44CB72A76F87100A57B1E /* CVJussView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E44CB62A76F87100A57B1E /* CVJussView.swift */; };
@@ -99,6 +166,73 @@
 		03C642602A8B7EC4001FF571 /* GrieghallenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrieghallenView.swift; sourceTree = "<group>"; };
 		03D5C9442A82A9DC007D5508 /* Studenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Studenter.swift; sourceTree = "<group>"; };
 		03D995212A75393E00B8F6A8 /* KDaftermovie_cropped.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = KDaftermovie_cropped.gif; sourceTree = "<group>"; };
+		03E29EEA2B224C8200753FAA /* VorsjContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VorsjContentView.swift; sourceTree = "<group>"; };
+		03E29EEC2B224CC800753FAA /* VorsjWelcomeSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VorsjWelcomeSheet.swift; sourceTree = "<group>"; };
+		03E29EEE2B224D5200753FAA /* UtenDrikkeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtenDrikkeView.swift; sourceTree = "<group>"; };
+		03E29EF02B224D7400753FAA /* MedDrikkeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedDrikkeView.swift; sourceTree = "<group>"; };
+		03E29EF42B224DB100753FAA /* HundredQuestionsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HundredQuestionsListView.swift; sourceTree = "<group>"; };
+		03E29EF62B224DDB00753FAA /* HundredView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HundredView.swift; sourceTree = "<group>"; };
+		03E29EF82B224DEE00753FAA /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		03E29EFA2B224E4500753FAA /* QuestionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCardView.swift; sourceTree = "<group>"; };
+		03E29EFD2B224E6C00753FAA /* ComposeArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeArea.swift; sourceTree = "<group>"; };
+		03E29EFF2B224E8100753FAA /* ChatsTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsTabBarView.swift; sourceTree = "<group>"; };
+		03E29F032B224E9E00753FAA /* MessageBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubble.swift; sourceTree = "<group>"; };
+		03E29F062B224ED600753FAA /* 5050.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 5050.json; sourceTree = "<group>"; };
+		03E29F072B224ED600753FAA /* Volume4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Volume4.json; sourceTree = "<group>"; };
+		03E29F082B224ED600753FAA /* Volume2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Volume2.json; sourceTree = "<group>"; };
+		03E29F092B224ED600753FAA /* Volume5BI.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Volume5BI.json; sourceTree = "<group>"; };
+		03E29F0B2B224ED700753FAA /* Kompliment.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Kompliment.json; sourceTree = "<group>"; };
+		03E29F0C2B224ED700753FAA /* Volume3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Volume3.json; sourceTree = "<group>"; };
+		03E29F0E2B224ED700753FAA /* Volume7.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Volume7.json; sourceTree = "<group>"; };
+		03E29F0F2B224ED700753FAA /* Volume1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Volume1.json; sourceTree = "<group>"; };
+		03E29F102B224ED700753FAA /* Volume41.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Volume41.json; sourceTree = "<group>"; };
+		03E29F1C2B224EE000753FAA /* Volume6.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Volume6.json; path = "../../../../../Vorsj/Vorsj/100Spørsmål/100Spørsmål JSON/Volume6.json"; sourceTree = "<group>"; };
+		03E29F1D2B224EE000753FAA /* Parleken.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Parleken.json; path = "../../../../../Vorsj/Vorsj/100Spørsmål/100Spørsmål JSON/Parleken.json"; sourceTree = "<group>"; };
+		03E29F212B224F3B00753FAA /* QuizListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizListView.swift; sourceTree = "<group>"; };
+		03E29F232B224F4500753FAA /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
+		03E29F262B224F7C00753FAA /* Level4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level4.json; sourceTree = "<group>"; };
+		03E29F272B224F7C00753FAA /* Level2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level2.json; sourceTree = "<group>"; };
+		03E29F282B224F7C00753FAA /* Level1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level1.json; sourceTree = "<group>"; };
+		03E29F292B224F7C00753FAA /* Level3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level3.json; sourceTree = "<group>"; };
+		03E29F2F2B22505700753FAA /* ChuggEllerSannhetListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuggEllerSannhetListView.swift; sourceTree = "<group>"; };
+		03E29F312B22506500753FAA /* ChuggEllerSannhetVolume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuggEllerSannhetVolume.swift; sourceTree = "<group>"; };
+		03E29F332B22507100753FAA /* ChuggEllerSannhetVolume2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuggEllerSannhetVolume2.swift; sourceTree = "<group>"; };
+		03E29F352B22507E00753FAA /* ChuggEllerSannhetVolume3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuggEllerSannhetVolume3.swift; sourceTree = "<group>"; };
+		03E29F372B22508E00753FAA /* CustomToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomToggleStyle.swift; sourceTree = "<group>"; };
+		03E29F3A2B2250BD00753FAA /* ChuggEllerSannhetVolume2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ChuggEllerSannhetVolume2.json; sourceTree = "<group>"; };
+		03E29F3B2B2250BD00753FAA /* ChuggEllerSannhetVolume1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ChuggEllerSannhetVolume1.json; sourceTree = "<group>"; };
+		03E29F3C2B2250BD00753FAA /* ChuggEllerSannhetVolume3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ChuggEllerSannhetVolume3.json; sourceTree = "<group>"; };
+		03E29F412B22513200753FAA /* KaraokeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaraokeListView.swift; sourceTree = "<group>"; };
+		03E29F432B22514000753FAA /* KaraokeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaraokeView.swift; sourceTree = "<group>"; };
+		03E29F452B22515100753FAA /* Spotify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spotify.swift; sourceTree = "<group>"; };
+		03E29F482B22517600753FAA /* cornfieldchase.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cornfieldchase.json; sourceTree = "<group>"; };
+		03E29F492B22517600753FAA /* takeonme.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = takeonme.json; sourceTree = "<group>"; };
+		03E29F4A2B22517600753FAA /* layallyourloveonme.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = layallyourloveonme.json; sourceTree = "<group>"; };
+		03E29F4B2B22517600753FAA /* livinonaprayer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = livinonaprayer.json; sourceTree = "<group>"; };
+		03E29F4C2B22517600753FAA /* sexonfire.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sexonfire.json; sourceTree = "<group>"; };
+		03E29F4D2B22517600753FAA /* bestsongever.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bestsongever.json; sourceTree = "<group>"; };
+		03E29F4E2B22517600753FAA /* vivalavida.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = vivalavida.json; sourceTree = "<group>"; };
+		03E29F4F2B22517600753FAA /* newwayhome.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = newwayhome.json; sourceTree = "<group>"; };
+		03E29F502B22517600753FAA /* rosahelikopter.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = rosahelikopter.json; sourceTree = "<group>"; };
+		03E29F512B22517600753FAA /* fairytale.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fairytale.json; sourceTree = "<group>"; };
+		03E29F522B22517600753FAA /* dancingqueen.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dancingqueen.json; sourceTree = "<group>"; };
+		03E29F532B22517700753FAA /* foreveralone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = foreveralone.json; sourceTree = "<group>"; };
+		03E29F542B22517700753FAA /* iwantitthatway.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = iwantitthatway.json; sourceTree = "<group>"; };
+		03E29F552B22517700753FAA /* sorry.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sorry.json; sourceTree = "<group>"; };
+		03E29F652B2251A000753FAA /* ModelDataVS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDataVS.swift; sourceTree = "<group>"; };
+		03E29F672B2251B100753FAA /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		03E29F692B2251B900753FAA /* QuizQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizQuestion.swift; sourceTree = "<group>"; };
+		03E29F6B2B2251C200753FAA /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		03E29F722B22531300753FAA /* JegHarAldriVolume2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = JegHarAldriVolume2.json; sourceTree = "<group>"; };
+		03E29F732B22531400753FAA /* JegHarAldriVolume4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = JegHarAldriVolume4.json; sourceTree = "<group>"; };
+		03E29F742B22531400753FAA /* JegHarAldriS3XEdition.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = JegHarAldriS3XEdition.json; sourceTree = "<group>"; };
+		03E29F752B22531400753FAA /* JegHarAldriVolume3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = JegHarAldriVolume3.json; sourceTree = "<group>"; };
+		03E29F762B22531400753FAA /* JegHarAldriListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JegHarAldriListView.swift; path = "../../../../Vorsj/Vorsj/Jeg har aldri/JegHarAldriListView.swift"; sourceTree = "<group>"; };
+		03E29F772B22531400753FAA /* JegHarAldriVolume5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = JegHarAldriVolume5.json; sourceTree = "<group>"; };
+		03E29F782B22531400753FAA /* JegHarAldriVolume1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = JegHarAldriVolume1.json; sourceTree = "<group>"; };
+		03E29F792B22531400753FAA /* JegHarAldri.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JegHarAldri.swift; path = "../../../../Vorsj/Vorsj/Jeg har aldri/JegHarAldri.swift"; sourceTree = "<group>"; };
+		03E29F832B22539E00753FAA /* StartNachet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartNachet.swift; sourceTree = "<group>"; };
+		03E29F852B2253B000753FAA /* startnachet.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = startnachet.json; sourceTree = "<group>"; };
 		03E44CB22A76D16A00A57B1E /* CVITView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVITView.swift; sourceTree = "<group>"; };
 		03E44CB42A76D33600A57B1E /* CVEconomicsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVEconomicsView.swift; sourceTree = "<group>"; };
 		03E44CB62A76F87100A57B1E /* CVJussView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVJussView.swift; sourceTree = "<group>"; };
@@ -193,12 +327,12 @@
 		0396B06D2A250193008E6CAC /* Springbrettet */ = {
 			isa = PBXGroup;
 			children = (
-				03D5E1882B214D2E000EB765 /* VORSJ */,
 				03D995212A75393E00B8F6A8 /* KDaftermovie_cropped.gif */,
 				0396B06E2A250193008E6CAC /* KarrieredagenApp.swift */,
 				0396B0872A25E0CC008E6CAC /* Views */,
 				0396B0882A25E107008E6CAC /* Model */,
 				0396B0892A25E112008E6CAC /* Resources */,
+				03E29EE92B224C6C00753FAA /* VorsjSpill */,
 				0396B0722A250194008E6CAC /* Assets.xcassets */,
 				0345B2732A29D15B00110EC4 /* Info.plist */,
 				0396B0742A250194008E6CAC /* Preview Content */,
@@ -278,11 +412,185 @@
 			path = "Springbrettets prosjekter";
 			sourceTree = "<group>";
 		};
-		03D5E1882B214D2E000EB765 /* VORSJ */ = {
+		03E29EE92B224C6C00753FAA /* VorsjSpill */ = {
 			isa = PBXGroup;
 			children = (
+				03E29EF22B224D8900753FAA /* Main Views */,
+				03E29EFC2B224E6000753FAA /* Messages */,
+				03E29EF32B224D9600753FAA /* 100 Spørsmål */,
+				03E29F2E2B22503500753FAA /* Chugg eller sannhet */,
+				03E29F6D2B2252D500753FAA /* Jeg har aldri */,
+				03E29F402B22511C00753FAA /* Karaoke */,
+				03E29F822B22538A00753FAA /* NARCH */,
+				03E29F202B224F3000753FAA /* Quiz */,
+				03E29F642B22518800753FAA /* Models */,
 			);
-			path = VORSJ;
+			path = VorsjSpill;
+			sourceTree = "<group>";
+		};
+		03E29EF22B224D8900753FAA /* Main Views */ = {
+			isa = PBXGroup;
+			children = (
+				03E29EEA2B224C8200753FAA /* VorsjContentView.swift */,
+				03E29EEC2B224CC800753FAA /* VorsjWelcomeSheet.swift */,
+				03E29EEE2B224D5200753FAA /* UtenDrikkeView.swift */,
+				03E29EF02B224D7400753FAA /* MedDrikkeView.swift */,
+			);
+			path = "Main Views";
+			sourceTree = "<group>";
+		};
+		03E29EF32B224D9600753FAA /* 100 Spørsmål */ = {
+			isa = PBXGroup;
+			children = (
+				03E29EF42B224DB100753FAA /* HundredQuestionsListView.swift */,
+				03E29EF62B224DDB00753FAA /* HundredView.swift */,
+				03E29EF82B224DEE00753FAA /* HeaderView.swift */,
+				03E29EFA2B224E4500753FAA /* QuestionCardView.swift */,
+				03E29F052B224EBC00753FAA /* JSON 100 Spørsmål */,
+			);
+			name = "100 Spørsmål";
+			path = "100 Spørsmål";
+			sourceTree = "<group>";
+		};
+		03E29EFC2B224E6000753FAA /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				03E29EFD2B224E6C00753FAA /* ComposeArea.swift */,
+				03E29EFF2B224E8100753FAA /* ChatsTabBarView.swift */,
+				03E29F032B224E9E00753FAA /* MessageBubble.swift */,
+			);
+			name = Messages;
+			path = "Main Views";
+			sourceTree = "<group>";
+		};
+		03E29F052B224EBC00753FAA /* JSON 100 Spørsmål */ = {
+			isa = PBXGroup;
+			children = (
+				03E29F062B224ED600753FAA /* 5050.json */,
+				03E29F0B2B224ED700753FAA /* Kompliment.json */,
+				03E29F102B224ED700753FAA /* Volume41.json */,
+				03E29F0E2B224ED700753FAA /* Volume7.json */,
+				03E29F0F2B224ED700753FAA /* Volume1.json */,
+				03E29F082B224ED600753FAA /* Volume2.json */,
+				03E29F0C2B224ED700753FAA /* Volume3.json */,
+				03E29F072B224ED600753FAA /* Volume4.json */,
+				03E29F1C2B224EE000753FAA /* Volume6.json */,
+				03E29F092B224ED600753FAA /* Volume5BI.json */,
+				03E29F1D2B224EE000753FAA /* Parleken.json */,
+			);
+			name = "JSON 100 Spørsmål";
+			path = "JSON 100 Spørsmål";
+			sourceTree = "<group>";
+		};
+		03E29F202B224F3000753FAA /* Quiz */ = {
+			isa = PBXGroup;
+			children = (
+				03E29F212B224F3B00753FAA /* QuizListView.swift */,
+				03E29F232B224F4500753FAA /* QuizView.swift */,
+				03E29F252B224F6700753FAA /* JSON Quiz */,
+			);
+			path = Quiz;
+			sourceTree = "<group>";
+		};
+		03E29F252B224F6700753FAA /* JSON Quiz */ = {
+			isa = PBXGroup;
+			children = (
+				03E29F282B224F7C00753FAA /* Level1.json */,
+				03E29F272B224F7C00753FAA /* Level2.json */,
+				03E29F292B224F7C00753FAA /* Level3.json */,
+				03E29F262B224F7C00753FAA /* Level4.json */,
+			);
+			path = "JSON Quiz";
+			sourceTree = "<group>";
+		};
+		03E29F2E2B22503500753FAA /* Chugg eller sannhet */ = {
+			isa = PBXGroup;
+			children = (
+				03E29F2F2B22505700753FAA /* ChuggEllerSannhetListView.swift */,
+				03E29F312B22506500753FAA /* ChuggEllerSannhetVolume.swift */,
+				03E29F332B22507100753FAA /* ChuggEllerSannhetVolume2.swift */,
+				03E29F352B22507E00753FAA /* ChuggEllerSannhetVolume3.swift */,
+				03E29F372B22508E00753FAA /* CustomToggleStyle.swift */,
+				03E29F392B2250AE00753FAA /* JSON Chugg eller sannhet */,
+			);
+			path = "Chugg eller sannhet";
+			sourceTree = "<group>";
+		};
+		03E29F392B2250AE00753FAA /* JSON Chugg eller sannhet */ = {
+			isa = PBXGroup;
+			children = (
+				03E29F3B2B2250BD00753FAA /* ChuggEllerSannhetVolume1.json */,
+				03E29F3A2B2250BD00753FAA /* ChuggEllerSannhetVolume2.json */,
+				03E29F3C2B2250BD00753FAA /* ChuggEllerSannhetVolume3.json */,
+			);
+			path = "JSON Chugg eller sannhet";
+			sourceTree = "<group>";
+		};
+		03E29F402B22511C00753FAA /* Karaoke */ = {
+			isa = PBXGroup;
+			children = (
+				03E29F412B22513200753FAA /* KaraokeListView.swift */,
+				03E29F432B22514000753FAA /* KaraokeView.swift */,
+				03E29F452B22515100753FAA /* Spotify.swift */,
+				03E29F472B22515E00753FAA /* JSON Karaoke */,
+			);
+			path = Karaoke;
+			sourceTree = "<group>";
+		};
+		03E29F472B22515E00753FAA /* JSON Karaoke */ = {
+			isa = PBXGroup;
+			children = (
+				03E29F4D2B22517600753FAA /* bestsongever.json */,
+				03E29F482B22517600753FAA /* cornfieldchase.json */,
+				03E29F522B22517600753FAA /* dancingqueen.json */,
+				03E29F512B22517600753FAA /* fairytale.json */,
+				03E29F532B22517700753FAA /* foreveralone.json */,
+				03E29F542B22517700753FAA /* iwantitthatway.json */,
+				03E29F4A2B22517600753FAA /* layallyourloveonme.json */,
+				03E29F4B2B22517600753FAA /* livinonaprayer.json */,
+				03E29F4F2B22517600753FAA /* newwayhome.json */,
+				03E29F502B22517600753FAA /* rosahelikopter.json */,
+				03E29F4C2B22517600753FAA /* sexonfire.json */,
+				03E29F552B22517700753FAA /* sorry.json */,
+				03E29F492B22517600753FAA /* takeonme.json */,
+				03E29F4E2B22517600753FAA /* vivalavida.json */,
+			);
+			path = "JSON Karaoke";
+			sourceTree = "<group>";
+		};
+		03E29F642B22518800753FAA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				03E29F652B2251A000753FAA /* ModelDataVS.swift */,
+				03E29F672B2251B100753FAA /* Question.swift */,
+				03E29F692B2251B900753FAA /* QuizQuestion.swift */,
+				03E29F6B2B2251C200753FAA /* Song.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		03E29F6D2B2252D500753FAA /* Jeg har aldri */ = {
+			isa = PBXGroup;
+			children = (
+				03E29F792B22531400753FAA /* JegHarAldri.swift */,
+				03E29F762B22531400753FAA /* JegHarAldriListView.swift */,
+				03E29F742B22531400753FAA /* JegHarAldriS3XEdition.json */,
+				03E29F782B22531400753FAA /* JegHarAldriVolume1.json */,
+				03E29F722B22531300753FAA /* JegHarAldriVolume2.json */,
+				03E29F752B22531400753FAA /* JegHarAldriVolume3.json */,
+				03E29F732B22531400753FAA /* JegHarAldriVolume4.json */,
+				03E29F772B22531400753FAA /* JegHarAldriVolume5.json */,
+			);
+			path = "Jeg har aldri";
+			sourceTree = "<group>";
+		};
+		03E29F822B22538A00753FAA /* NARCH */ = {
+			isa = PBXGroup;
+			children = (
+				03E29F832B22539E00753FAA /* StartNachet.swift */,
+				03E29F852B2253B000753FAA /* startnachet.json */,
+			);
+			path = NARCH;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -349,13 +657,52 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03E29F1E2B224EE000753FAA /* Volume6.json in Resources */,
+				03E29F7F2B22531400753FAA /* JegHarAldriVolume5.json in Resources */,
+				03E29F602B22517700753FAA /* dancingqueen.json in Resources */,
 				031399972A2623350003427A /* scheduleData.json in Resources */,
+				03E29F5E2B22517700753FAA /* rosahelikopter.json in Resources */,
+				03E29F172B224ED700753FAA /* Volume3.json in Resources */,
+				03E29F7C2B22531400753FAA /* JegHarAldriS3XEdition.json in Resources */,
+				03E29F192B224ED700753FAA /* Volume7.json in Resources */,
+				03E29F592B22517700753FAA /* livinonaprayer.json in Resources */,
+				03E29F7B2B22531400753FAA /* JegHarAldriVolume4.json in Resources */,
+				03E29F612B22517700753FAA /* foreveralone.json in Resources */,
 				0396B0762A250194008E6CAC /* Preview Assets.xcassets in Resources */,
+				03E29F2D2B224F7C00753FAA /* Level3.json in Resources */,
 				0396B0732A250194008E6CAC /* Assets.xcassets in Resources */,
+				03E29F5A2B22517700753FAA /* sexonfire.json in Resources */,
+				03E29F2B2B224F7C00753FAA /* Level2.json in Resources */,
+				03E29F5D2B22517700753FAA /* newwayhome.json in Resources */,
+				03E29F112B224ED700753FAA /* 5050.json in Resources */,
+				03E29F632B22517700753FAA /* sorry.json in Resources */,
+				03E29F3F2B2250BD00753FAA /* ChuggEllerSannhetVolume3.json in Resources */,
+				03E29F7D2B22531400753FAA /* JegHarAldriVolume3.json in Resources */,
+				03E29F862B2253B000753FAA /* startnachet.json in Resources */,
+				03E29F122B224ED700753FAA /* Volume4.json in Resources */,
+				03E29F562B22517700753FAA /* cornfieldchase.json in Resources */,
 				03EFFE142A7AD3CC005B223C /* springbrettereData.json in Resources */,
+				03E29F1B2B224ED700753FAA /* Volume41.json in Resources */,
+				03E29F132B224ED700753FAA /* Volume2.json in Resources */,
+				03E29F7A2B22531400753FAA /* JegHarAldriVolume2.json in Resources */,
+				03E29F142B224ED700753FAA /* Volume5BI.json in Resources */,
+				03E29F572B22517700753FAA /* takeonme.json in Resources */,
+				03E29F3D2B2250BD00753FAA /* ChuggEllerSannhetVolume2.json in Resources */,
+				03E29F802B22531400753FAA /* JegHarAldriVolume1.json in Resources */,
+				03E29F2C2B224F7C00753FAA /* Level1.json in Resources */,
 				03D995222A75393E00B8F6A8 /* KDaftermovie_cropped.gif in Resources */,
+				03E29F3E2B2250BD00753FAA /* ChuggEllerSannhetVolume1.json in Resources */,
+				03E29F2A2B224F7C00753FAA /* Level4.json in Resources */,
 				03728C1E2A8FA38B00B80581 /* lederData.json in Resources */,
+				03E29F5F2B22517700753FAA /* fairytale.json in Resources */,
 				0396B07E2A25059D008E6CAC /* companyData.json in Resources */,
+				03E29F1A2B224ED700753FAA /* Volume1.json in Resources */,
+				03E29F162B224ED700753FAA /* Kompliment.json in Resources */,
+				03E29F5C2B22517700753FAA /* vivalavida.json in Resources */,
+				03E29F5B2B22517700753FAA /* bestsongever.json in Resources */,
+				03E29F622B22517700753FAA /* iwantitthatway.json in Resources */,
+				03E29F582B22517700753FAA /* layallyourloveonme.json in Resources */,
+				03E29F1F2B224EE000753FAA /* Parleken.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,30 +714,50 @@
 			buildActionMask = 2147483647;
 			files = (
 				0396B0712A250193008E6CAC /* ContentView.swift in Sources */,
+				03E29EF52B224DB100753FAA /* HundredQuestionsListView.swift in Sources */,
 				03728C202A8FA3BE00B80581 /* Leder.swift in Sources */,
+				03E29EF72B224DDB00753FAA /* HundredView.swift in Sources */,
+				03E29F7E2B22531400753FAA /* JegHarAldriListView.swift in Sources */,
 				035359F22A79A704003AB9B3 /* Person.swift in Sources */,
+				03E29F442B22514000753FAA /* KaraokeView.swift in Sources */,
+				03E29F462B22515100753FAA /* Spotify.swift in Sources */,
 				03C6425C2A8A3D2B001FF571 /* FavoriteButton.swift in Sources */,
+				03E29EFB2B224E4500753FAA /* QuestionCardView.swift in Sources */,
+				03E29F6A2B2251B900753FAA /* QuizQuestion.swift in Sources */,
 				0361E1532A75630800AC4ABF /* CVTipsView.swift in Sources */,
 				031C6BF02A47090F00332564 /* GifImage.swift in Sources */,
 				036B44F42A6093BB0059EB50 /* DiTView.swift in Sources */,
 				03C642612A8B7EC4001FF571 /* GrieghallenView.swift in Sources */,
+				03E29F682B2251B100753FAA /* Question.swift in Sources */,
 				03728C222A8FA6E300B80581 /* PersonView2.swift in Sources */,
 				0337135D2AA9E3E00018CA2E /* HosseinSharifiView.swift in Sources */,
 				03E44CB32A76D16A00A57B1E /* CVITView.swift in Sources */,
+				03E29EEB2B224C8200753FAA /* VorsjContentView.swift in Sources */,
 				039341602AFE3C6F00F8D800 /* HomeView2.swift in Sources */,
 				031C6BEC2A46EE8800332564 /* KarrieredagenInformationView.swift in Sources */,
+				03E29F242B224F4500753FAA /* QuizView.swift in Sources */,
 				03728C1C2A8F7E4500B80581 /* HvaErSpringbrettet.swift in Sources */,
 				03E47FEE2A558F4C005BCDAA /* SpringbrettfondetView.swift in Sources */,
 				03A976962ABB092E001A822C /* WelcomeSheet.swift in Sources */,
 				0313999C2A2625670003427A /* Event.swift in Sources */,
+				03E29EED2B224CC800753FAA /* VorsjWelcomeSheet.swift in Sources */,
+				03E29EF92B224DEE00753FAA /* HeaderView.swift in Sources */,
 				0396B0822A25DAE4008E6CAC /* MapView.swift in Sources */,
 				0396B0802A25D9B8008E6CAC /* SquareImage.swift in Sources */,
 				036285642A7ADDD0007E165B /* PersonView.swift in Sources */,
 				03A976942ABAFF4E001A822C /* SponsorView.swift in Sources */,
+				03E29F042B224E9E00753FAA /* MessageBubble.swift in Sources */,
+				03E29F382B22508E00753FAA /* CustomToggleStyle.swift in Sources */,
+				03E29EFE2B224E6C00753FAA /* ComposeArea.swift in Sources */,
+				03E29F812B22531400753FAA /* JegHarAldri.swift in Sources */,
 				0396B0842A25DE2B008E6CAC /* Company.swift in Sources */,
+				03E29F362B22507E00753FAA /* ChuggEllerSannhetVolume3.swift in Sources */,
 				03E44CB52A76D33600A57B1E /* CVEconomicsView.swift in Sources */,
+				03E29F662B2251A000753FAA /* ModelDataVS.swift in Sources */,
 				031C6BE42A46DC7900332564 /* OmOssView.swift in Sources */,
+				03E29F002B224E8100753FAA /* ChatsTabBarView.swift in Sources */,
 				0358A3AA2A5AF44D00B68428 /* KarrierestudioView.swift in Sources */,
+				03E29F422B22513200753FAA /* KaraokeListView.swift in Sources */,
 				0313999E2A262E130003427A /* ScheduleRow.swift in Sources */,
 				035BC20A2AAB776D00A9FE10 /* BackgroundSB.swift in Sources */,
 				0396B06F2A250193008E6CAC /* KarrieredagenApp.swift in Sources */,
@@ -398,12 +765,20 @@
 				0396B08B2A25EA18008E6CAC /* CompanyRow.swift in Sources */,
 				039EB7FB2A8F6D34005EE9E5 /* HRCVView.swift in Sources */,
 				0396B08D2A25F024008E6CAC /* CompanyList.swift in Sources */,
+				03E29F342B22507100753FAA /* ChuggEllerSannhetVolume2.swift in Sources */,
 				03D5C9452A82A9DC007D5508 /* Studenter.swift in Sources */,
+				03E29F842B22539E00753FAA /* StartNachet.swift in Sources */,
 				030447B22A48855700966396 /* CustomNavigationBar.swift in Sources */,
+				03E29F222B224F3B00753FAA /* QuizListView.swift in Sources */,
+				03E29EF12B224D7400753FAA /* MedDrikkeView.swift in Sources */,
 				03E44CB72A76F87100A57B1E /* CVJussView.swift in Sources */,
+				03E29F322B22506500753FAA /* ChuggEllerSannhetVolume.swift in Sources */,
 				03ECA4592A29C23A007E0829 /* EventDetailView.swift in Sources */,
 				037010172A49AADB007388E7 /* HomeView.swift in Sources */,
 				0396B08F2A25F136008E6CAC /* CompanyDetail.swift in Sources */,
+				03E29F6C2B2251C200753FAA /* Song.swift in Sources */,
+				03E29EEF2B224D5200753FAA /* UtenDrikkeView.swift in Sources */,
+				03E29F302B22505700753FAA /* ChuggEllerSannhetListView.swift in Sources */,
 				031399A02A2635380003427A /* ScheduleList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

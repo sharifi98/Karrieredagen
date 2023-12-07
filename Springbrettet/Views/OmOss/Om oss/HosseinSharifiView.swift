@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HosseinSharifiView: View {
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
                 BackgroundSB2()
                 VStack(alignment: .center) {
