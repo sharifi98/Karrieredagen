@@ -133,7 +133,7 @@ struct OmOssView: View {
                                     .aspectRatio(contentMode: .fill)
                                 Spacer()
                         }
-                        Text("Versjon 1.1.3")
+                        Text("\(AppData.version)")
                             .foregroundColor(.secondary)
                         Text("Laget av Hossein Sharifi")
                     }
