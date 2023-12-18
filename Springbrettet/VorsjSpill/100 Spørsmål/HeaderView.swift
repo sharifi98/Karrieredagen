@@ -14,7 +14,7 @@ struct  HeaderView: View {
     
     var body: some View {
         NavigationStack {
-            Text("Søker etter \(searchText)?")
+            Text("")
                 .searchable(text: $searchText)
                 .navigationTitle("Vorsj-spill")
                 .navigationBarTitleDisplayMode(.inline)

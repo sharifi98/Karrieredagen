@@ -8,5 +8,5 @@
 import Foundation
 
 struct AppData {
-    static let version = "2.0"
+    static let version = "2.01"
 }

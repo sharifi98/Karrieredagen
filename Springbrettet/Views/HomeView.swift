@@ -305,7 +305,9 @@ struct HomeView: View {
             .overlay(
                 Group {
                     if showPasswordAlert {
-                        PasswordInputView(isPresented: $showPasswordAlert, passwordInput: $passwordInput, navigateToVorsjContentView: $showVorsjContentView)
+                        PasswordInputView(isPresented: $showPasswordAlert, 
+                                          passwordInput: $passwordInput,
+                                          navigateToVorsjContentView: $showVorsjContentView)
                     }
                 },
                 alignment: .center
@@ -370,7 +372,7 @@ struct PasswordInputView: View {
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
             Button("OK") {
-                if passwordInput == "Stupebrettet" {
+                if passwordInput == "SB" {
                     navigateToVorsjContentView = true
                 }
                 isPresented = false

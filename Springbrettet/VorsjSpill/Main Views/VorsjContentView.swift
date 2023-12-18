@@ -9,7 +9,7 @@ import SwiftUI
 
 struct VorsjContentView: View {
     enum ViewChoice {
-        case viewMedDrikke
+        case viewMedDrikke 
         case ViewUtenDrikke
     }
     
