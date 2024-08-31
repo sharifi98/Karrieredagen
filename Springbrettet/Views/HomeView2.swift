@@ -60,7 +60,7 @@ struct HomeView2: View {
                                         .font(.custom("AvenirNext-Bold", size: 40))
                                         .foregroundColor(Color("KDOrange"))
                                     
-                                    Text("26.09.2023")
+                                    Text("24.09.2024")
                                         .font(.custom("AvenirNext-Bold", size: 30))
                                         .foregroundColor(.white)
                                         .underline()
