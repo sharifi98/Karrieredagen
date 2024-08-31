@@ -6,11 +6,8 @@ import SDWebImageSwiftUI
 struct HomeView: View {
     @State private var selectedEvent: Event?
     @State private var selectedView: String = "CompanyList"
-    
-    @State private var showPasswordAlert = false
-    @State private var passwordInput = ""
-    @State private var showVorsjContentView = false
-    
+
+
     //let grieghallencord = CLLocationCoordinate2D(latitude: 60.38880103170712, longitude: 5.328235989579929)
     
     
@@ -83,9 +80,9 @@ struct HomeView: View {
                             .padding()
                             .multilineTextAlignment(.center)
                         
-                        Text("Trykk her for mer informasjon") // Add this line
-                            .font(.custom("AvenirNext-Bold", size: 18)) // Customize the font style and size
-                            .foregroundColor(Color("KDOrange")) // Customize the text color
+                        Text("Trykk her for mer informasjon")
+                            .font(.custom("AvenirNext-Bold", size: 18))
+                            .foregroundColor(Color("KDOrange"))
                     }
                 }
                 .listRowBackground(Color("KDBlue"))
@@ -284,34 +281,18 @@ struct HomeView: View {
             .listStyle(.insetGrouped)
             .navigationBarWithTransparentBackground()
             .toolbar {
-                
-                
-                ToolbarItemGroup(placement: .automatic) {
-                    HStack(alignment: .center) {
-                        Button {
-                            self.showPasswordAlert = true
-                        } label: {
+                ToolbarItemGroup(placement: .principal) {
+                    HStack {
+                        NavigationLink(destination: VorsjContentView()) {
                             Image("SB")
                                 .resizable()
                                 .scaledToFit()
+                                .frame(height: 35)
                         }
-                        
-                        NavigationLink("", destination: VorsjContentView().toolbar(.hidden, for: .tabBar), isActive: $showVorsjContentView)
                     }
+                    .frame(maxWidth: .infinity, alignment: .center)
                 }
-                
-                
             }
-            .overlay(
-                Group {
-                    if showPasswordAlert {
-                        PasswordInputView(isPresented: $showPasswordAlert, 
-                                          passwordInput: $passwordInput,
-                                          navigateToVorsjContentView: $showVorsjContentView)
-                    }
-                },
-                alignment: .center
-            )
             .overlay(Rectangle().foregroundColor(.clear))
             .sheet(item: $selectedEvent) { eventDetail in
                 EventDetailView(event: eventDetail)
@@ -357,37 +338,5 @@ struct WebView: UIViewRepresentable {
 struct KDView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
-    }
-}
-
-struct PasswordInputView: View {
-    @Binding var isPresented: Bool
-    @Binding var passwordInput: String
-    @Binding var navigateToVorsjContentView: Bool
-    
-    var body: some View {
-        VStack(spacing: 20) {
-            Text("Spør en i Springbrettet om passordet").foregroundStyle(.red)
-            TextField("Passord", text: $passwordInput)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding()
-            Button("OK") {
-                if passwordInput == "SB" {
-                    navigateToVorsjContentView = true
-                }
-                isPresented = false
-                passwordInput = ""
-            }
-            .buttonStyle(DefaultButtonStyle())
-            Button("Cancel") {
-                isPresented = false
-                passwordInput = ""
-            }
-            .buttonStyle(DefaultButtonStyle())
-        }
-        .padding()
-        .background(Color("KDBlue"))
-        .cornerRadius(10)
-        .shadow(radius: 10)
     }
 }
