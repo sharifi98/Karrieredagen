@@ -5,8 +5,6 @@ import SDWebImageSwiftUI
 
 struct HomeView: View {
     @State private var selectedEvent: Event?
-    @State private var selectedView: String = "CompanyList"
-
 
     //let grieghallencord = CLLocationCoordinate2D(latitude: 60.38880103170712, longitude: 5.328235989579929)
     

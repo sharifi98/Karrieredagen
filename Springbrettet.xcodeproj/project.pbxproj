@@ -51,8 +51,6 @@
 		03D995222A75393E00B8F6A8 /* KDaftermovie_cropped.gif in Resources */ = {isa = PBXBuildFile; fileRef = 03D995212A75393E00B8F6A8 /* KDaftermovie_cropped.gif */; };
 		03E29EEB2B224C8200753FAA /* VorsjContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E29EEA2B224C8200753FAA /* VorsjContentView.swift */; };
 		03E29EED2B224CC800753FAA /* VorsjWelcomeSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E29EEC2B224CC800753FAA /* VorsjWelcomeSheet.swift */; };
-		03E29EEF2B224D5200753FAA /* UtenDrikkeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E29EEE2B224D5200753FAA /* UtenDrikkeView.swift */; };
-		03E29EF12B224D7400753FAA /* MedDrikkeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E29EF02B224D7400753FAA /* MedDrikkeView.swift */; };
 		03E29EF52B224DB100753FAA /* HundredQuestionsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E29EF42B224DB100753FAA /* HundredQuestionsListView.swift */; };
 		03E29EF72B224DDB00753FAA /* HundredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E29EF62B224DDB00753FAA /* HundredView.swift */; };
 		03E29EF92B224DEE00753FAA /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E29EF82B224DEE00753FAA /* HeaderView.swift */; };
@@ -170,8 +168,6 @@
 		03D995212A75393E00B8F6A8 /* KDaftermovie_cropped.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = KDaftermovie_cropped.gif; sourceTree = "<group>"; };
 		03E29EEA2B224C8200753FAA /* VorsjContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VorsjContentView.swift; sourceTree = "<group>"; };
 		03E29EEC2B224CC800753FAA /* VorsjWelcomeSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VorsjWelcomeSheet.swift; sourceTree = "<group>"; };
-		03E29EEE2B224D5200753FAA /* UtenDrikkeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtenDrikkeView.swift; sourceTree = "<group>"; };
-		03E29EF02B224D7400753FAA /* MedDrikkeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedDrikkeView.swift; sourceTree = "<group>"; };
 		03E29EF42B224DB100753FAA /* HundredQuestionsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HundredQuestionsListView.swift; sourceTree = "<group>"; };
 		03E29EF62B224DDB00753FAA /* HundredView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HundredView.swift; sourceTree = "<group>"; };
 		03E29EF82B224DEE00753FAA /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
@@ -444,8 +440,6 @@
 			children = (
 				03E29EEA2B224C8200753FAA /* VorsjContentView.swift */,
 				03E29EEC2B224CC800753FAA /* VorsjWelcomeSheet.swift */,
-				03E29EEE2B224D5200753FAA /* UtenDrikkeView.swift */,
-				03E29EF02B224D7400753FAA /* MedDrikkeView.swift */,
 			);
 			path = "Main Views";
 			sourceTree = "<group>";
@@ -782,14 +776,12 @@
 				03E29F842B22539E00753FAA /* StartNachet.swift in Sources */,
 				030447B22A48855700966396 /* CustomNavigationBar.swift in Sources */,
 				03E29F222B224F3B00753FAA /* QuizListView.swift in Sources */,
-				03E29EF12B224D7400753FAA /* MedDrikkeView.swift in Sources */,
 				03E44CB72A76F87100A57B1E /* CVJussView.swift in Sources */,
 				03E29F322B22506500753FAA /* ChuggEllerSannhetVolume.swift in Sources */,
 				03ECA4592A29C23A007E0829 /* EventDetailView.swift in Sources */,
 				037010172A49AADB007388E7 /* HomeView.swift in Sources */,
 				0396B08F2A25F136008E6CAC /* CompanyDetail.swift in Sources */,
 				03E29F6C2B2251C200753FAA /* Song.swift in Sources */,
-				03E29EEF2B224D5200753FAA /* UtenDrikkeView.swift in Sources */,
 				03E29F302B22505700753FAA /* ChuggEllerSannhetListView.swift in Sources */,
 				031399A02A2635380003427A /* ScheduleList.swift in Sources */,
 			);
