@@ -44,7 +44,7 @@ struct HomeView: View {
                         ZStack {
                             WebImage(url: Bundle.main.url(forResource: "kd24", withExtension: "gif"))
                                 .resizable()
-                                .frame(width: 500, height: 300)
+                                .frame(width: 400, height: 300)
                                 .clipped()
                                 .cornerRadius(10)
                                 .shadow(radius: 20)

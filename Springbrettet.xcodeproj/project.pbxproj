@@ -23,13 +23,11 @@
 		0358A3AA2A5AF44D00B68428 /* KarrierestudioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0358A3A92A5AF44D00B68428 /* KarrierestudioView.swift */; };
 		035BC20A2AAB776D00A9FE10 /* BackgroundSB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035BC2092AAB776D00A9FE10 /* BackgroundSB.swift */; };
 		0361E1532A75630800AC4ABF /* CVTipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0361E1522A75630800AC4ABF /* CVTipsView.swift */; };
-		036285642A7ADDD0007E165B /* PersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036285632A7ADDD0007E165B /* PersonView.swift */; };
 		036B44F42A6093BB0059EB50 /* DiTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036B44F32A6093BB0059EB50 /* DiTView.swift */; };
 		037010172A49AADB007388E7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037010162A49AADB007388E7 /* HomeView.swift */; };
 		03728C1C2A8F7E4500B80581 /* HvaErSpringbrettet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03728C1B2A8F7E4500B80581 /* HvaErSpringbrettet.swift */; };
 		03728C1E2A8FA38B00B80581 /* lederData.json in Resources */ = {isa = PBXBuildFile; fileRef = 03728C1D2A8FA38B00B80581 /* lederData.json */; };
 		03728C202A8FA3BE00B80581 /* Leder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03728C1F2A8FA3BE00B80581 /* Leder.swift */; };
-		03728C222A8FA6E300B80581 /* PersonView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03728C212A8FA6E300B80581 /* PersonView2.swift */; };
 		039341602AFE3C6F00F8D800 /* HomeView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0393415F2AFE3C6F00F8D800 /* HomeView2.swift */; };
 		0396B06F2A250193008E6CAC /* KarrieredagenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0396B06E2A250193008E6CAC /* KarrieredagenApp.swift */; };
 		0396B0712A250193008E6CAC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0396B0702A250193008E6CAC /* ContentView.swift */; };
@@ -140,13 +138,11 @@
 		0358A3A92A5AF44D00B68428 /* KarrierestudioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KarrierestudioView.swift; sourceTree = "<group>"; };
 		035BC2092AAB776D00A9FE10 /* BackgroundSB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundSB.swift; sourceTree = "<group>"; };
 		0361E1522A75630800AC4ABF /* CVTipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVTipsView.swift; sourceTree = "<group>"; };
-		036285632A7ADDD0007E165B /* PersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonView.swift; sourceTree = "<group>"; };
 		036B44F32A6093BB0059EB50 /* DiTView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiTView.swift; sourceTree = "<group>"; };
 		037010162A49AADB007388E7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		03728C1B2A8F7E4500B80581 /* HvaErSpringbrettet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HvaErSpringbrettet.swift; sourceTree = "<group>"; };
 		03728C1D2A8FA38B00B80581 /* lederData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lederData.json; sourceTree = "<group>"; };
 		03728C1F2A8FA3BE00B80581 /* Leder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leder.swift; sourceTree = "<group>"; };
-		03728C212A8FA6E300B80581 /* PersonView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonView2.swift; sourceTree = "<group>"; };
 		0393415F2AFE3C6F00F8D800 /* HomeView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView2.swift; sourceTree = "<group>"; };
 		0396B06B2A250193008E6CAC /* Springbrettet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Springbrettet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0396B06E2A250193008E6CAC /* KarrieredagenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KarrieredagenApp.swift; sourceTree = "<group>"; };
@@ -405,8 +401,6 @@
 				031C6BE32A46DC7900332564 /* OmOssView.swift */,
 				0337135C2AA9E3E00018CA2E /* HosseinSharifiView.swift */,
 				031C6BEB2A46EE8800332564 /* KarrieredagenInformationView.swift */,
-				036285632A7ADDD0007E165B /* PersonView.swift */,
-				03728C212A8FA6E300B80581 /* PersonView2.swift */,
 				03728C1B2A8F7E4500B80581 /* HvaErSpringbrettet.swift */,
 			);
 			path = "Om oss";
@@ -738,7 +732,6 @@
 				036B44F42A6093BB0059EB50 /* DiTView.swift in Sources */,
 				03C642612A8B7EC4001FF571 /* GrieghallenView.swift in Sources */,
 				03E29F682B2251B100753FAA /* Question.swift in Sources */,
-				03728C222A8FA6E300B80581 /* PersonView2.swift in Sources */,
 				0337135D2AA9E3E00018CA2E /* HosseinSharifiView.swift in Sources */,
 				03E44CB32A76D16A00A57B1E /* CVITView.swift in Sources */,
 				03E29EEB2B224C8200753FAA /* VorsjContentView.swift in Sources */,
@@ -753,7 +746,6 @@
 				03E29EF92B224DEE00753FAA /* HeaderView.swift in Sources */,
 				0396B0822A25DAE4008E6CAC /* MapView.swift in Sources */,
 				0396B0802A25D9B8008E6CAC /* SquareImage.swift in Sources */,
-				036285642A7ADDD0007E165B /* PersonView.swift in Sources */,
 				03A976942ABAFF4E001A822C /* SponsorView.swift in Sources */,
 				03E29F042B224E9E00753FAA /* MessageBubble.swift in Sources */,
 				03E29F382B22508E00753FAA /* CustomToggleStyle.swift in Sources */,
