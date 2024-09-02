@@ -42,14 +42,14 @@ struct HomeView: View {
                         self.showKarrieredagenInformationView.toggle()
                     } label: {
                         ZStack {
-                            WebImage(url: Bundle.main.url(forResource: "KDaftermovie_cropped", withExtension: "gif"))
+                            WebImage(url: Bundle.main.url(forResource: "kd24", withExtension: "gif"))
                                 .resizable()
                                 .frame(width: 500, height: 300)
                                 .clipped()
                                 .cornerRadius(10)
                                 .shadow(radius: 20)
                                 .opacity(0.5)
-                            
+
                             VStack {
                                 Text("Karrieredagen")
                                     .font(.custom("AvenirNext-Bold", size: 40))

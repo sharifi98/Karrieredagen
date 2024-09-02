@@ -12,6 +12,7 @@
 		0313999C2A2625670003427A /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0313999B2A2625670003427A /* Event.swift */; };
 		0313999E2A262E130003427A /* ScheduleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0313999D2A262E130003427A /* ScheduleRow.swift */; };
 		031399A02A2635380003427A /* ScheduleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0313999F2A2635380003427A /* ScheduleList.swift */; };
+		031BEA532C8597B500F0B39A /* kd24.gif in Resources */ = {isa = PBXBuildFile; fileRef = 031BEA522C8597B500F0B39A /* kd24.gif */; };
 		031C6BE42A46DC7900332564 /* OmOssView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031C6BE32A46DC7900332564 /* OmOssView.swift */; };
 		031C6BEC2A46EE8800332564 /* KarrieredagenInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031C6BEB2A46EE8800332564 /* KarrieredagenInformationView.swift */; };
 		031C6BF02A47090F00332564 /* GifImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031C6BEF2A47090F00332564 /* GifImage.swift */; };
@@ -128,6 +129,7 @@
 		0313999B2A2625670003427A /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		0313999D2A262E130003427A /* ScheduleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleRow.swift; sourceTree = "<group>"; };
 		0313999F2A2635380003427A /* ScheduleList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleList.swift; sourceTree = "<group>"; };
+		031BEA522C8597B500F0B39A /* kd24.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = kd24.gif; sourceTree = "<group>"; };
 		031C6BE32A46DC7900332564 /* OmOssView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmOssView.swift; sourceTree = "<group>"; };
 		031C6BEB2A46EE8800332564 /* KarrieredagenInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KarrieredagenInformationView.swift; sourceTree = "<group>"; };
 		031C6BEF2A47090F00332564 /* GifImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifImage.swift; sourceTree = "<group>"; };
@@ -334,6 +336,7 @@
 			isa = PBXGroup;
 			children = (
 				03D995212A75393E00B8F6A8 /* KDaftermovie_cropped.gif */,
+				031BEA522C8597B500F0B39A /* kd24.gif */,
 				0396B06E2A250193008E6CAC /* KarrieredagenApp.swift */,
 				0396B0872A25E0CC008E6CAC /* Views */,
 				033D15992B2A4BD00021B825 /* Misc */,
@@ -663,6 +666,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03E29F1E2B224EE000753FAA /* Volume6.json in Resources */,
+				031BEA532C8597B500F0B39A /* kd24.gif in Resources */,
 				03E29F7F2B22531400753FAA /* JegHarAldriVolume5.json in Resources */,
 				03E29F602B22517700753FAA /* dancingqueen.json in Resources */,
 				031399972A2623350003427A /* scheduleData.json in Resources */,
