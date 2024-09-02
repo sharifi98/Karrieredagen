@@ -49,15 +49,15 @@ struct InfoTextView: View {
             VStack(spacing: 20) {
                 InfoTextItem(
                     icon: "lightbulb",
-                    text: "Inspirasjon"
+                    text: "Bli inspirert"
                 )
                 InfoTextItem(
                     icon: "link",
-                    text: "Nettverksbygging"
+                    text: "Utvid ditt nettverk"
                 )
                 InfoTextItem(
                     icon: "chart.line.uptrend.xyaxis",
-                    text: "Personlig vekst"
+                    text: "Voks sammen med andre"
                 )
             }
 
