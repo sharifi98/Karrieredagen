@@ -115,5 +115,61 @@
     {
         "id": 29,
         "question": "Hvem ville vært den exen man skulle ønske kom hvis man var med på ex?"
+    },
+    {
+        "id": 30,
+        "question": "Hvem har du lyst å bli bedre kjent med?"
+    },
+    {
+        "id": 31,
+        "question": "Hvem burde være stolt over seg selv?"
+    },
+    {
+        "id": 32,
+        "question": "Hvem ville du tatt råd fra?"
+    },
+    {
+        "id": 33,
+        "question": "Hvem har best fremtid foran seg?"
+    },
+    {
+        "id": 34,
+        "question": "Hvem er det beste forbilde?"
+    },
+    {
+        "id": 35,
+        "question": "Hvem vil du helst kysse?"
+    },
+    {
+        "id": 36,
+        "question": "Hvem har finest rumpe?"
+    },
+    {
+        "id": 37,
+        "question": "Hvem hadde du fått finest barn med?"
+    },
+    {
+        "id": 38,
+        "question": "Hvem skulle du ønske hadde oppdratt deg?"
+    },
+    {
+        "id": 39,
+        "question": "Hvem er den søteste i rommet?"
+    },
+    {
+        "id": 40,
+        "question": "Hvem er mest inkluderende?"
+    },
+    {
+        "id": 41,
+        "question": "Hvem er mest imøtekommende?"
+    },
+    {
+        "id": 42,
+        "question": "Hvem hadde tatt seg best ut som det motsatte kjønn?"
+    },
+    {
+        "id": 43,
+        "question": "Hvem skulle du ønske du kunne være for en dag?"
     }
 ]
