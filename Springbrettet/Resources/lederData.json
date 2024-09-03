@@ -2,64 +2,57 @@
     {
         "id": 1,
         "role": "Leder for Springbrettet",
-        "name": "Thomas Normann",
-        "email": "Thomas.Normann@springbrettet.org",
-        "imageName": "thomas"
+        "name": "Magnus Hofsli",
+        "email": "magnus.hofsli-aune@springbrettet.org",
+        "imageName": "magnus"
     },
     {
         "id": 2,
         "role": "Nestleder for Springbrettet",
-        "name": "Amanda Brusletto",
-        "email": "Amanda.Brusletto@springbrettet.org",
-        "imageName": "amanda"
+        "name": "Lone Leira",
+        "email": "lone.leira@springbrettet.org",
+        "imageName": "lone"
     },
     {
         "id": 3,
         "role": "Leder for karrieredagsgruppen",
-        "name": "Eirin Syvertsen",
-        "email": "Eirin.Syvertsen@springbrettet.org",
-        "imageName": "eirin"
+        "name": "Marthe Schiørn",
+        "email": "marthe.schiorn@springbrettet.org",
+        "imageName": "marthe"
     },
     {
         "id": 4,
         "role": "Leder for kommunikasjonsgruppen",
-        "name": "Vera Eydal Thømming",
-        "email": "Vera.Eydal@springbrettet.org",
-        "imageName": "vera"
+        "name": "Marthe Færden",
+        "email": "marthe.faerden@springbrettet.org",
+        "imageName": "marthebby"
     },
     {
         "id": 5,
-        "role": "Leder for prosjektgruppen",
-        "name": "Eline Sand",
-        "email": "Eline.Sand@springbrettet.org",
-        "imageName": "eline"
-    },
-    {
-        "id": 6,
         "role": "Leder for arrangementgruppen",
-        "name": "Johannes Elgaaen",
-        "email": "Johannes.Elgaaen@springbrettet.org",
-        "imageName": "johannes"
+        "name": "Ingrid Øverli",
+        "email": "ingrid.overli@springbrettet.org",
+        "imageName": "ingrid"
     },
     {
         "id": 7,
         "role": "Leder for interngruppen",
-        "name": "Frigg Sommervoll",
-        "email": "frigg.sommervoll@springbrettet.org",
-        "imageName": "frigg"
+        "name": "Kasper Kristiansen",
+        "email": "kasper.kristiansen@springbrettet.org",
+        "imageName": "kasper"
     },
     {
         "id": 8,
         "role": "HR - ansvarlig",
-        "name": "Emily Jonassen Granberg ",
-        "email": "emily.jonassen@springbrettet.org",
-        "imageName": "emily"
+        "name": "Amalie Dale",
+        "email": "amalie.dale@springbrettet.org",
+        "imageName": "dale"
     },
     {
         "id": 9,
         "role": "Økonomiansvarlig",
-        "name": "Herman Fredriksen",
-        "email": "Herman.Fredriksen@springbrettet.org",
-        "imageName": "herman"
+        "name": "Lars Næsheim",
+        "email": "lars.naesheim@springbrettet.org",
+        "imageName": "lars"
     }
 ]

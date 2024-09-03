@@ -74,7 +74,7 @@ struct OmOssView: View {
             
                 // TODO
                 // Add springbrett leader members
-                
+
                 Section {
                     
                     Text("Styret i Springbrettet")
@@ -91,8 +91,8 @@ struct OmOssView: View {
                                             
                                             member.image
                                                 .resizable()
-                                                .scaledToFit()
-                                                .frame(width: 150, height: 200)
+                                                .scaledToFill()
+                                                .frame(width: 150, height: 150)
                                                 .clipShape(Circle())
                                                 .overlay(
                                                     Circle()
