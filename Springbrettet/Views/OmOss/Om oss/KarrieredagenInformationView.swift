@@ -41,8 +41,21 @@ struct HeaderView2: View {
 struct InfoTextView: View {
     var body: some View {
         VStack(spacing: 24) {
-            Text("Vestlandets største møteplass for studenter og bedrifter")
-                .font(.custom("AvenirNext-DemiBold", size: 18))
+
+            Text("Vestlandets største")
+                .font(.custom("AvenirNext-DemiBold", size: 25))
+                .foregroundColor(Color("KDOrange"))
+                .multilineTextAlignment(.center)
+                .padding(.bottom, -20)
+
+            Text("møteplass for studenter og bedrifter")
+                .font(.custom("AvenirNext-DemiBold", size: 20))
+                .foregroundColor(.white)
+                .multilineTextAlignment(.center)
+                .padding(.bottom, 8)
+
+            Text("Karrieredagen er en mulighet for studenter til å inspireres av de utallige arbeidsmulighetene som finnes i jobbmarkedet, samtidig som det er en flott anledning for bedrifter til å komme et skritt nærmere fremtidige arbeidstagere!")
+                .font(.custom("AvenirNext-DemiBold", size: 16))
                 .foregroundColor(.white)
                 .multilineTextAlignment(.center)
 
@@ -66,6 +79,7 @@ struct InfoTextView: View {
                 .foregroundColor(.white.opacity(0.9))
                 .multilineTextAlignment(.center)
                 .padding(.top, 8)
+
         }
         .padding()
         .background(
@@ -76,7 +90,6 @@ struct InfoTextView: View {
         .padding()
     }
 }
-
 struct InfoTextItem: View {
     let icon: String
     let text: String
