@@ -2,85 +2,100 @@
     {
         "id": 1,
         "role": "Leder for Karrieredagsgruppen",
-        "name": "Eirin Syvertsen",
-        "email": "Eirin.Syvertsen@springbrettet.org",
-        "studie": "UiB - Energi",
-        "imageName": "eirin",
-        "linkedin" : "https://www.linkedin.com/in/eirin-marie-saure-syvertsen-20930621b/"
-        
+        "name": "Marthe Schiørn",
+        "email": "marthe.schiorn@springbrettet.org",
+        "studie": "UiB - Rettsvitskap",
+        "imageName": "marthe",
+        "linkedin": "https://www.linkedin.com/in/marthe-schi%C3%B8rn-9932a7275/"
     },
     {
         "id": 2,
-        "role": "Nestleder",
-        "name": "Maria Norheim Morken",
-        "email": "maria.morken@springbrettet.org",
-        "studie": "UiB - Samfunnsøkonomi",
-        "imageName": "morken",
-        "linkedin" : "https://www.linkedin.com/in/maria-norheim-morken-5b42a4241/"
+        "role": "Nestleder Karrieredagsgruppen",
+        "name": "Martine Eggen",
+        "email": "martine.eggen@springbrettet.org",
+        "studie": "UiB - Medisin",
+        "imageName": "martine",
+        "linkedin": "https://www.linkedin.com/in/martine-eggen-745267259/"
     },
     {
         "id": 3,
-        "role": "Logistikksjef",
-        "name": "Kristin Hjermann",
-        "email": "kristin.hjermann@springbrettet.org",
-        "studie": "BI - Organisasjonspsykologi, HR og ledelse",
-        "imageName": "kristin",
-        "linkedin" : "https://www.linkedin.com/in/kristin-hjermann-41324a1bb/"
-        
+        "role": "Logistikkansvarlig, Økonomiansvarlig",
+        "name": "Lars Næsheim",
+        "email": "lars.naesheim@springbrettet.org",
+        "studie": "HVL - Økonomi og Administrasjon",
+        "imageName": "lars",
+        "linkedin": "https://www.linkedin.com/in/lars-solem-n%C3%A6sheim-a9a793306/"
     },
     {
         "id": 4,
-        "role": "Bookingsjef",
-        "name": "Herman Ween Fredriksen",
-        "email": "herman.fredriksen@springbrettet.org",
-        "studie": "BI - Økonomi og administrasjon",
-        "imageName": "herman",
-        "linkedin" : "https://www.linkedin.com/in/herman-ween-fredriksen-30582a269/"
+        "role": "Sponsansvarlig",
+        "name": "Marie Hillesund",
+        "email": "marie.hillesund@springbrettet.org",
+        "studie": "UiB - Rettsvitenskap",
+        "imageName": "hillesund",
+        "linkedin": "https://www.linkedin.com/in/marie-hillesund-2659bb205/"
     },
     {
         "id": 5,
-        "role": "Booking",
-        "name": "Hossein Sharifi",
-        "email": "hossein.sharifi@springbrettet.org",
-        "studie": "UiB - Programvareutvikling",
-        "imageName": "hossein",
-        "linkedin" : "https://www.linkedin.com/in/hossein-sharifi-a3b4431aa/"
+        "role": "Bookkingsjef",
+        "name": "Karoline Tveit",
+        "email": "karoline.tveit@springbrettet.org",
+        "studie": "NHH - Økonomi",
+        "imageName": "karoline",
+        "linkedin": "https://www.linkedin.com/in/karoline-aamelfot-tveit-3b471023a/"
     },
     {
         "id": 6,
-        "role": "Booking",
-        "name": "Marthe Schiørn",
-        "email": "marthe.schiorn@springbrettet.org",
-        "studie": "UiB - Rettsvitenskap",
-        "imageName": "marthe",
-        "linkedin" : "https://www.linkedin.com/in/marthe-schi%C3%B8rn-9932a7275/"
+        "role": "Bookingansvarlig",
+        "name": "Sara Heldal Lygre",
+        "email": "sara.lygre@springbrettet.org",
+        "studie": "NHH - Økonomi",
+        "imageName": "sara",
+        "linkedin": "https://www.linkedin.com/in/sara-heldal-lygre-725367261/"
     },
     {
         "id": 7,
-        "role": "Booking",
-        "name": "Myriam Ask Lazrek",
-        "email": "myriam.lazrek@springbrettet.org",
-        "studie": "UiB - Europastudium med Sampol og Samfunnsøkonomi",
-        "imageName": "myriam",
-        "linkedin" : "https://www.linkedin.com/in/myriam-lazrek-15584a231/"
+        "role": "Bookingansvarlig",
+        "name": "Nea Lærdal",
+        "email": "nea.laerdal@springbrettet.org",
+        "studie": "BI - International Management",
+        "imageName": "nea",
+        "linkedin": "https://www.linkedin.com/in/nea-sarah-l%C3%A6rdal-46164b2b2/"
     },
     {
         "id": 8,
-        "role": "Booking",
-        "name": "Henrik Bråthen Kristoff",
-        "email": "henrik.kristoff@springbrettet.org",
-        "studie": "BI - Markedsføringsledelse",
-        "imageName": "kristoff",
-        "linkedin" : "https://www.linkedin.com/in/henrik-kristoff-a65088291/"
+        "role": "Bookingansvarlig",
+        "name": "Ole Pedersen",
+        "email": "ole.pedersen@springbrettet.org",
+        "studie": "BI - Økonomi og administrasjon",
+        "imageName": "ole",
+        "linkedin": "https://www.linkedin.com/in/ole-%C3%B8stervold-pedersen-11904b2b5/"
     },
     {
         "id": 9,
-        "role": "Booking",
-        "name": "Thea Soltveit Taranger",
-        "email": "thea.taranger@springbrettet.org",
-        "studie": "UiB - Psykologi",
-        "imageName": "thea",
-        "linkedin" : "https://www.instagram.com/theasoltveittaranger/"
+        "role": "Bookingansvarlig",
+        "name": "Martine Guttormsen",
+        "email": "martine.guttormsen@springbrettet.org",
+        "studie": "UiB - Samfunnsøkonomi",
+        "imageName": "guttormsen",
+        "linkedin": "https://www.linkedin.com/in/martine-guttormsen-17a0b9254/"
+    },
+    {
+        "id": 10,
+        "role": "Bookingansvarlig",
+        "name": "Maria Enes",
+        "email": "maria.enes@springbrettet.org",
+        "studie": "UiB - Energi",
+        "imageName": "enes",
+        "linkedin": "https://www.linkedin.com/in/maria-enes-428b28291/"
+    },
+    {
+        "id": 11,
+        "role": "Bookingansvarlig",
+        "name": "Mikal Nordøy Albrechtsen",
+        "email": "mikal.albrechtsen@springbrettet.org",
+        "studie": "Politi",
+        "imageName": "mikal",
+        "linkedin": "https://www.linkedin.com/in/mikal-albrechtsen-b626a92ba/"
     }
-    
 ]
