@@ -5,47 +5,40 @@ struct ScheduleList: View {
 
     var body: some View {
         NavigationStack {
-            
             ZStack {
                 BackgroundSB()
                 ScrollView {
-                        
-                        VStack(spacing: 10) {
-                            ForEach(events) { event in
-                                eventRow(for: event)
-                            }
-                        }
-                        .padding(.horizontal)
-                        
-                        Spacer()
-                            .frame(height: 90)
-
-                    }
-                    .overlay(Rectangle().foregroundColor(.clear))
-                    .sheet(item: $selectedEvent) { eventDetail in
-                        EventDetailView(event: eventDetail)
-                    }
-                    .navigationBarWithTransparentBackground()
-                    .toolbar {
-                        ToolbarItem(placement: .navigationBarLeading) {
-                            Text("Timeplan")
-                                .font(.custom("AvenirNext-Bold", size: 36))
-                                .foregroundColor(Color("KDOrange"))
-                                .padding(.bottom, 30)
+                    VStack(spacing: 15) {
+                        ForEach(events) { event in
+                            eventRow(for: event)
                         }
                     }
-                .padding()
+                    .padding(.horizontal)
+                    .padding(.bottom, 90)
+                }
+                .overlay(Rectangle().foregroundColor(.clear))
+            }
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .principal) {
+                    Text("Timeplan")
+                        .font(.kdHeading(36))
+                        .foregroundColor(.kdOrange)
+                }
             }
         }
+        .sheet(item: $selectedEvent) { event in
+            EventDetailView(event: event)
+        }
     }
-    
+
     func eventRow(for event: Event) -> some View {
         Button(action: {
             selectedEvent = event
         }) {
             ScheduleRow(event: event)
         }
-        .foregroundColor(Color("KDOrange"))
+        .buttonStyle(PlainButtonStyle())
     }
 }
 

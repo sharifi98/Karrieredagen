@@ -64,6 +64,7 @@ struct CompanyDetail: View {
         }
         .navigationTitle(company.name)
         .navigationBarTitleDisplayMode(.inline)
+        .transition(.move(edge: .trailing))
     }
     
 }

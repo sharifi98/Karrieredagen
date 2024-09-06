@@ -3,170 +3,164 @@ import EventKit
 
 struct EventDetailView: View {
     var event: Event
+    @Environment(\.dismiss) private var dismiss
+    @State private var showingCalendarAlert = false
 
     var body: some View {
-        
-        
-        
         ZStack {
             BackgroundSB2()
-            VStack(alignment: .center, spacing: 10) {
-                
-                eventImageView
-                
-                Divider()
+            ScrollView {
+                VStack(alignment: .center, spacing: 20) {
+                    eventImageView
 
-                Text(event.name)
-                    .font(.custom("AvenirNext-Bold", size: 24))
-                    .foregroundColor(Color("KDOrange"))
+                    VStack(spacing: 10) {
+                        Text(event.name)
+                            .font(.kdHeading(24))
+                            .foregroundColor(.kdOrange)
 
+                        eventTiming
 
-                eventTiming
-                    .font(.custom("AvenirNext-Regular", size: 20))
-                    .foregroundColor(.white)
+                        Text(event.location)
+                            .font(.kdBody(18))
 
-                Text(event.location)
-                    .font(.custom("AvenirNext-Regular", size: 20))
-                    .foregroundColor(.white)
+                        Text(event.description)
+                            .font(.kdBody(16))
+                            .multilineTextAlignment(.center)
+                            .padding(.vertical)
 
-                
-                Text(event.description)
-                    .foregroundColor(.white)
-                    .multilineTextAlignment(.center)
-                
+                        speakersGroup
 
-                dismissalButton
-                    .padding()
+                        companiesGroup
+                    }
+                    .foregroundColor(.kdText)
+
+                    VStack(spacing: 15) {
+                        addToCalendarButton
+                        dismissButton
+                    }
+                    .padding(.top)
+                }
+                .padding()
             }
-            .padding()
+        }
+        .alert("Added to Calendar", isPresented: $showingCalendarAlert) {
+            Button("OK", role: .cancel) { }
         }
     }
-    
+
     var eventImageView: some View {
         event.image
             .resizable()
             .scaledToFit()
-    }
-    
-    var eventDate: some View {
-        Text(event.date)
+            .cornerRadius(10)
+            .shadow(radius: 5)
     }
 
     var eventTiming: some View {
-        Text("\(event.start_time) - \(event.end_time)")
+        Text("\(event.date), \(event.start_time) - \(event.end_time)")
+            .font(.kdBody(18))
     }
-    
+
     var speakersGroup: some View {
-        Group {
+        VStack(alignment: .leading, spacing: 5) {
             Text("Foredragsholder:")
-                .font(.custom("AvenirNext-Bold", size: 20))
-                .foregroundColor(Color("KDOrange"))
+                .font(.kdHeading(20))
+                .foregroundColor(.kdOrange)
             if let speakers = event.speakers {
                 ForEach(speakers, id: \.self) { speaker in
                     Text(speaker)
-                        .font(.custom("AvenirNext-Regular", size: 18))
+                        .font(.kdBody(16))
                 }
             } else {
                 Text("No speakers listed.")
-                    .font(.custom("AvenirNext-Regular", size: 18))
-                    .foregroundColor(.white)
+                    .font(.kdBody(16))
+                    .foregroundColor(.kdSecondary)
             }
         }
     }
-    
+
     var companiesGroup: some View {
-        Group {
+        VStack(alignment: .leading, spacing: 5) {
             Text("Bedrift:")
-                .font(.custom("AvenirNext-Bold", size: 20))
-                .foregroundColor(Color("KDOrange"))
+                .font(.kdHeading(20))
+                .foregroundColor(.kdOrange)
             if let companies = event.companies {
                 ForEach(companies, id: \.self) { company in
                     Text(company)
-                        .font(.custom("AvenirNext-Regular", size: 18))
-                        .foregroundColor(.white)
+                        .font(.kdBody(16))
                 }
             } else {
                 Text("No companies listed.")
-                    .font(.custom("AvenirNext-Regular", size: 18))
-                    .foregroundColor(.white)
+                    .font(.kdBody(16))
+                    .foregroundColor(.kdSecondary)
             }
         }
     }
-    
+
     var addToCalendarButton: some View {
         Button(action: {
             addToCalendar(event: event)
         }) {
-            HStack {
-                Image(systemName: "calendar")
-                Text("Legg til i kalender")
-            }
+            Label("Legg til i kalender", systemImage: "calendar")
+                .font(.kdBody(16))
+                .padding()
+                .frame(maxWidth: .infinity)
+                .background(Color.white)
+                .foregroundColor(.black)
+                .cornerRadius(10)
         }
-        .padding()
-        .background(.white)
-        .foregroundColor(.black)
-        .cornerRadius(10)
     }
-    
+
+    var dismissButton: some View {
+        Button(action: {
+            dismiss()
+        }) {
+            Text("Tilbake")
+                .font(.kdBody(16))
+                .padding()
+                .frame(maxWidth: .infinity)
+                .background(Color.kdOrange)
+                .foregroundColor(.white)
+                .cornerRadius(10)
+        }
+    }
+
     func addToCalendar(event: Event) {
         let eventStore = EKEventStore()
-        
-        switch EKEventStore.authorizationStatus(for: .event) {
-        case .authorized:
-            insertEvent(store: eventStore, event: event)
-        case .denied:
-            print("Access denied")
-        case .notDetermined:
-            eventStore.requestAccess(to: .event, completion: { (granted: Bool, error: Error?) -> Void in
-                if granted {
-                    insertEvent(store: eventStore, event: event)
-                } else {
-                    print("Access denied")
-                }
-            })
-        default:
-            print("Case Default")
+
+        eventStore.requestAccess(to: .event) { granted, error in
+            if granted {
+                insertEvent(store: eventStore, event: event)
+            } else {
+                print("Calendar access denied")
+            }
         }
     }
 
     func insertEvent(store: EKEventStore, event: Event) {
         let ekEvent = EKEvent(eventStore: store)
-        
         ekEvent.title = event.name
-        
-        // Combine the event's date, start_time, and end_time to form full Date objects
+
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "dd-MM-yyyy HH:mm"
-        
+
         if let startDate = dateFormatter.date(from: "\(event.date) \(event.start_time)"),
            let endDate = dateFormatter.date(from: "\(event.date) \(event.end_time)") {
             ekEvent.startDate = startDate
             ekEvent.endDate = endDate
+            ekEvent.notes = event.description
+            ekEvent.calendar = store.defaultCalendarForNewEvents
+
+            do {
+                try store.save(ekEvent, span: .thisEvent)
+                DispatchQueue.main.async {
+                    showingCalendarAlert = true
+                }
+            } catch {
+                print("Error saving event: \(error.localizedDescription)")
+            }
         } else {
             print("Error: Could not convert date and time to Date object")
-            return
-        }
-        
-        ekEvent.notes = event.description
-        ekEvent.calendar = store.defaultCalendarForNewEvents
-        
-        do {
-            try store.save(ekEvent, span: .thisEvent)
-        } catch let error as NSError {
-            print("Error: \(error)")
-        }
-    }
-
-    
-    var dismissalButton: some View {
-        HStack(alignment: .center) {
-            Spacer()
-            
-            VStack {
-                addToCalendarButton
-                DismissScheduleDetailSheetButton()
-            }
-            Spacer()
         }
     }
 }

@@ -53,8 +53,8 @@ struct HomeView: View {
                             VStack {
                                 Text("Karrieredagen")
                                     .font(.custom("AvenirNext-Bold", size: 40))
-                                    .foregroundColor(Color("KDOrange"))
-                                
+                                    .foregroundColor(Color.kdOrange)
+
                                 Text("24.09.2024")
                                     .font(.custom("AvenirNext-Bold", size: 30))
                                     .foregroundColor(.white)

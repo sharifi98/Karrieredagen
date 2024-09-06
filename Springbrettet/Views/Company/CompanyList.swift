@@ -23,25 +23,59 @@ struct CompanyList: View {
 
     
     var body: some View {
-        List {
-            
-            Toggle(isOn: $showFavoritesOnly) {
-                Text("Favoritter")
+        VStack(spacing: 0) {
+            VStack {
+                SearchBar(text: $searchText)
+                    .padding()
+                Toggle(isOn: $showFavoritesOnly) {
+                    Text("Favorites Only")
+                        .font(.kdBody(16))
+                }
+                .padding(5)
             }
-            
-            ForEach(filteredCompanies) { company in
-                NavigationLink {
-                    CompanyDetail(company: company)
-                } label: {
-                    CompanyRow(company: company)
+            .background(Color(red: 0.1, green: 0.1, blue: 0.1))
+
+            List {
+                ForEach(filteredCompanies) { company in
+                    NavigationLink(destination: CompanyDetail(company: company)) {
+                        CompanyRow(company: company)
+                    }
+                    .listRowBackground(Color.kdBackground)
+                }
+            }
+            .listStyle(PlainListStyle())
+        }
+        .navigationTitle("Companies")
+        .background(Color.kdBackground.edgesIgnoringSafeArea(.all))
+        .animation(.spring(), value: filteredCompanies)
+    }
+}
+
+struct SearchBar: View {
+    @Binding var text: String
+
+    var body: some View {
+        HStack {
+            Image(systemName: "magnifyingglass")
+                .foregroundColor(.kdSecondary)
+
+            TextField("Search companies", text: $text)
+                .foregroundColor(.kdText)
+
+            if !text.isEmpty {
+                Button(action: { text = "" }) {
+                    Image(systemName: "xmark.circle.fill")
+                        .foregroundColor(.kdSecondary)
                 }
             }
         }
-        .listStyle(GroupedListStyle())
-        .navigationTitle("Bedrifter")
-        .searchable(text: $searchText, prompt: "Søk etter bedrift")
-        .foregroundColor(Color("KDOrange"))
-        
+        .padding(8)
+        .background(Color.kdBackground)
+        .cornerRadius(10)
+        .overlay(
+            RoundedRectangle(cornerRadius: 10)
+                .stroke(Color.Orange, lineWidth: 1)
+        )
     }
 }
 

@@ -20,6 +20,7 @@
 		0337135D2AA9E3E00018CA2E /* HosseinSharifiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0337135C2AA9E3E00018CA2E /* HosseinSharifiView.swift */; };
 		033D159B2B2A4BF90021B825 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033D159A2B2A4BF90021B825 /* AppData.swift */; };
 		035359F22A79A704003AB9B3 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035359F12A79A704003AB9B3 /* Person.swift */; };
+		0356B3002C8B18ED00F4236D /* ColorsAndFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0356B2FF2C8B18ED00F4236D /* ColorsAndFonts.swift */; };
 		0358A3AA2A5AF44D00B68428 /* KarrierestudioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0358A3A92A5AF44D00B68428 /* KarrierestudioView.swift */; };
 		035BC20A2AAB776D00A9FE10 /* BackgroundSB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035BC2092AAB776D00A9FE10 /* BackgroundSB.swift */; };
 		0361E1532A75630800AC4ABF /* CVTipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0361E1522A75630800AC4ABF /* CVTipsView.swift */; };
@@ -136,6 +137,7 @@
 		033D159A2B2A4BF90021B825 /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
 		0345B2732A29D15B00110EC4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		035359F12A79A704003AB9B3 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		0356B2FF2C8B18ED00F4236D /* ColorsAndFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsAndFonts.swift; sourceTree = "<group>"; };
 		0358A3A92A5AF44D00B68428 /* KarrierestudioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KarrierestudioView.swift; sourceTree = "<group>"; };
 		035BC2092AAB776D00A9FE10 /* BackgroundSB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundSB.swift; sourceTree = "<group>"; };
 		0361E1522A75630800AC4ABF /* CVTipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVTipsView.swift; sourceTree = "<group>"; };
@@ -255,6 +257,7 @@
 			isa = PBXGroup;
 			children = (
 				030447B12A48855700966396 /* CustomNavigationBar.swift */,
+				0356B2FF2C8B18ED00F4236D /* ColorsAndFonts.swift */,
 				035BC2092AAB776D00A9FE10 /* BackgroundSB.swift */,
 			);
 			path = Modifiers;
@@ -769,6 +772,7 @@
 				0396B06F2A250193008E6CAC /* KarrieredagenApp.swift in Sources */,
 				0396B0862A25E068008E6CAC /* ModelData.swift in Sources */,
 				0396B08B2A25EA18008E6CAC /* CompanyRow.swift in Sources */,
+				0356B3002C8B18ED00F4236D /* ColorsAndFonts.swift in Sources */,
 				039EB7FB2A8F6D34005EE9E5 /* HRCVView.swift in Sources */,
 				0396B08D2A25F024008E6CAC /* CompanyList.swift in Sources */,
 				03E29F342B22507100753FAA /* ChuggEllerSannhetVolume2.swift in Sources */,
