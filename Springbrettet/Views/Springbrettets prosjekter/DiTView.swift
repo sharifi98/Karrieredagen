@@ -40,7 +40,7 @@ struct DiTView: View {
     }
 
     var missionSection: some View {
-        InfoCard(title: "Vårt Oppdrag") {
+        InfoCard(title: "Vårt oppdrag") {
             Text("Damer i Toppen er en prosjektgruppe under studentorganisasjonen Springbrettet. Vårt mål er å spre kunnskap om kjønnsubalansen på toppen av næringslivet og å inspirere og engasjere jenter til å tørre å bryte gjennom glasstaket.")
                 .font(.kdBody(16))
                 .foregroundColor(.kdText)
@@ -49,7 +49,7 @@ struct DiTView: View {
     }
 
     var visionSection: some View {
-        InfoCard(title: "Vår Visjon") {
+        InfoCard(title: "Vår visjon") {
             Text("Vi jobber for å skape en fremtid der kvinner har like muligheter til å nå toppen av næringslivet som menn. Bli med oss i kampen for likestilling og bli en del av Damer i Toppen!")
                 .font(.kdBody(16))
                 .foregroundColor(.kdText)
