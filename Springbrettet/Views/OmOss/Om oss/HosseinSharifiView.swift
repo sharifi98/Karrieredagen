@@ -29,7 +29,7 @@ struct HosseinSharifiView: View {
                         Text("Hossein Sharifi")
                             .font(.title)
                             .bold()
-                        Text("iOS-Utvikler & Bookingansvarlig")
+                        Text("iOS-Utvikler & Interngruppen")
                             .italic()
                     }
                     .foregroundStyle(.white)
