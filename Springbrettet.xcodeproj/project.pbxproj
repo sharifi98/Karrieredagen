@@ -49,7 +49,6 @@
 		03C6425C2A8A3D2B001FF571 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C6425B2A8A3D2B001FF571 /* FavoriteButton.swift */; };
 		03C642612A8B7EC4001FF571 /* GrieghallenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C642602A8B7EC4001FF571 /* GrieghallenView.swift */; };
 		03D5C9452A82A9DC007D5508 /* Studenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D5C9442A82A9DC007D5508 /* Studenter.swift */; };
-		03D995222A75393E00B8F6A8 /* KDaftermovie_cropped.gif in Resources */ = {isa = PBXBuildFile; fileRef = 03D995212A75393E00B8F6A8 /* KDaftermovie_cropped.gif */; };
 		03E29EEB2B224C8200753FAA /* VorsjContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E29EEA2B224C8200753FAA /* VorsjContentView.swift */; };
 		03E29EED2B224CC800753FAA /* VorsjWelcomeSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E29EEC2B224CC800753FAA /* VorsjWelcomeSheet.swift */; };
 		03E29EF52B224DB100753FAA /* HundredQuestionsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E29EF42B224DB100753FAA /* HundredQuestionsListView.swift */; };
@@ -167,7 +166,6 @@
 		03C6425B2A8A3D2B001FF571 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		03C642602A8B7EC4001FF571 /* GrieghallenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrieghallenView.swift; sourceTree = "<group>"; };
 		03D5C9442A82A9DC007D5508 /* Studenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Studenter.swift; sourceTree = "<group>"; };
-		03D995212A75393E00B8F6A8 /* KDaftermovie_cropped.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = KDaftermovie_cropped.gif; sourceTree = "<group>"; };
 		03E29EEA2B224C8200753FAA /* VorsjContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VorsjContentView.swift; sourceTree = "<group>"; };
 		03E29EEC2B224CC800753FAA /* VorsjWelcomeSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VorsjWelcomeSheet.swift; sourceTree = "<group>"; };
 		03E29EF42B224DB100753FAA /* HundredQuestionsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HundredQuestionsListView.swift; sourceTree = "<group>"; };
@@ -336,7 +334,6 @@
 		0396B06D2A250193008E6CAC /* Springbrettet */ = {
 			isa = PBXGroup;
 			children = (
-				03D995212A75393E00B8F6A8 /* KDaftermovie_cropped.gif */,
 				031BEA522C8597B500F0B39A /* kd24.gif */,
 				0396B06E2A250193008E6CAC /* KarrieredagenApp.swift */,
 				0396B0872A25E0CC008E6CAC /* Views */,
@@ -699,7 +696,6 @@
 				03E29F3D2B2250BD00753FAA /* ChuggEllerSannhetVolume2.json in Resources */,
 				03E29F802B22531400753FAA /* JegHarAldriVolume1.json in Resources */,
 				03E29F2C2B224F7C00753FAA /* Level1.json in Resources */,
-				03D995222A75393E00B8F6A8 /* KDaftermovie_cropped.gif in Resources */,
 				03E29F3E2B2250BD00753FAA /* ChuggEllerSannhetVolume1.json in Resources */,
 				03E29F2A2B224F7C00753FAA /* Level4.json in Resources */,
 				03728C1E2A8FA38B00B80581 /* lederData.json in Resources */,
@@ -937,7 +933,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.01;
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = co.hosseinsharifi.Karrieredagen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -975,7 +971,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.01;
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = co.hosseinsharifi.Karrieredagen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
