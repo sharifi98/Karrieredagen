@@ -117,7 +117,7 @@ struct TeamMembersView: View {
 
     var body: some View {
         VStack {
-            Text("Gruppen bak Karrieredagen 2023")
+            Text("Gruppen bak Karrieredagen 2024")
                 .font(.headline)
                 .foregroundColor(.white)
                 .padding(.bottom, 10)
