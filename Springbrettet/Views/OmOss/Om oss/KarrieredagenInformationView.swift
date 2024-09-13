@@ -10,7 +10,7 @@ struct KarrieredagenInformationView: View {
         NavigationStack {
             ZStack {
                 BackgroundSB()
-                    .ignoresSafeArea() // Ensures background covers entire screen
+                    .ignoresSafeArea()
                 ScrollView {
                     VStack(spacing: 30) {
                         HeaderView2()
@@ -289,8 +289,8 @@ struct LinkedInButton: View {
             }
         }) {
             HStack {
-                Image(systemName: "link")
-                Text("View on LinkedIn")
+                Image("linkedin")
+                Text("LinkedIn")
             }
             .font(.headline)
             .foregroundColor(.blue)
@@ -308,7 +308,7 @@ struct LinkedInButton: View {
 struct KarrieredagenInformationView_Previews: PreviewProvider {
     static var previews: some View {
         KarrieredagenInformationView()
-            .environment(\.colorScheme, .dark) // Preview in dark mode
+            .environment(\.colorScheme, .dark)
     }
 }
 

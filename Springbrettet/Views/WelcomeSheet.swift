@@ -13,11 +13,11 @@ struct WelcomeSheet: View {
     var body: some View {
         ZStack {
             BackgroundSB2()
-                .ignoresSafeArea() // Ensure background covers the entire screen
+                .ignoresSafeArea()
             VStack(spacing: 30) {
                 Spacer()
 
-                // Image Section
+
                 Image("gp")
                     .resizable()
                     .scaledToFit()
@@ -25,7 +25,6 @@ struct WelcomeSheet: View {
                     .cornerRadius(20)
                     .shadow(radius: 10)
 
-                // Welcome Text
                 Text("Velkommen til")
                     .font(.title2.weight(.semibold))
                     .multilineTextAlignment(.center)
@@ -37,7 +36,6 @@ struct WelcomeSheet: View {
                     .multilineTextAlignment(.center)
                     .padding(.horizontal)
 
-                // Description Text
                 Text("""
                 I denne appen finner du informasjon om Springbrettet, våre prosjekter og ikke minst vår årlige karrieredag!
                 """)
@@ -48,7 +46,6 @@ struct WelcomeSheet: View {
 
                 Spacer()
 
-                // Dismiss Button
                 Button(action: {
                     onDismiss()
                 }) {
@@ -73,9 +70,9 @@ struct WelcomeSheet_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             WelcomeSheet(onDismiss: {})
-                .environment(\.colorScheme, .light) // Preview in light mode
+                .environment(\.colorScheme, .light)
             WelcomeSheet(onDismiss: {})
-                .environment(\.colorScheme, .dark)  // Preview in dark mode
+                .environment(\.colorScheme, .dark)
         }
     }
 }
