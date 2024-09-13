@@ -21,9 +21,11 @@ struct VorsjContentView: View {
                 }
                 .pickerStyle(SegmentedPickerStyle())
                 .padding()
+
                 selectedContentView
             }
             .navigationTitle("Vorsj-spill")
+            .toolbar(.hidden, for: .tabBar)
         }
         .onAppear(perform: checkFirstLaunch)
         .sheet(isPresented: $showWelcomeSheet) {
@@ -53,6 +55,7 @@ struct VorsjContentView: View {
     }
 }
 
+
 // MARK: - Shared Models and Components
 
 struct Item: Identifiable {
@@ -71,7 +74,7 @@ struct ItemRowView: View {
             item.image
                 .resizable()
                 .scaledToFill()
-                .frame(width: 60, height: 60)
+                .frame(width: 50, height: 50)
                 .clipShape(Circle())
                 .overlay(
                     Circle().stroke(Color.blue, lineWidth: 2)
@@ -88,7 +91,6 @@ struct ItemRowView: View {
             }
             Spacer()
         }
-        .padding(.vertical, 8)
     }
 }
 
@@ -102,7 +104,8 @@ struct MedDrikkeView: View {
         Item(title: "Chugg eller sannhet", subtitle: "Volume 1-3", destinationView: AnyView(ChuggEllerSannhetListView()), image: Image("chugg")),
         Item(title: "Jeg har aldri", subtitle: "Volume 1-9", destinationView: AnyView(JegHarAldriListView()), image: Image("mats")),
         Item(title: "Karaoke", subtitle: "Sett en av sangene på, følg teksten og syng når det gjeld...", destinationView: AnyView(KaraokeListView()), image: Image("pimp")),
-        Item(title: "Start Nachet", subtitle: "Få i gang nachet!", destinationView: AnyView(StartNachet(filename: "startnachet.json", title: "Start Nachet")), image: Image("anders"))
+        Item(title: "Start Nachet", subtitle: "Få i gang nachet!", destinationView: AnyView(StartNachet(filename: "startnachet.json", title: "Start Nachet")), image: Image("anders")),
+        Item(title: "Hotseat", subtitle: "", destinationView: AnyView(Hotseat()), image: Image("morkenhotseat"))
     ]
 
     var body: some View {

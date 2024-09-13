@@ -47,6 +47,7 @@
 		03A976942ABAFF4E001A822C /* SponsorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A976932ABAFF4E001A822C /* SponsorView.swift */; };
 		03A976962ABB092E001A822C /* WelcomeSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A976952ABB092E001A822C /* WelcomeSheet.swift */; };
 		03C093512C942AC500BD5563 /* Volume9.json in Resources */ = {isa = PBXBuildFile; fileRef = 03C093502C942AC500BD5563 /* Volume9.json */; };
+		03C093542C944F0F00BD5563 /* Hotseat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C093532C944F0F00BD5563 /* Hotseat.swift */; };
 		03C6425C2A8A3D2B001FF571 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C6425B2A8A3D2B001FF571 /* FavoriteButton.swift */; };
 		03C642612A8B7EC4001FF571 /* GrieghallenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C642602A8B7EC4001FF571 /* GrieghallenView.swift */; };
 		03D5C9452A82A9DC007D5508 /* Studenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D5C9442A82A9DC007D5508 /* Studenter.swift */; };
@@ -165,6 +166,7 @@
 		03A976932ABAFF4E001A822C /* SponsorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsorView.swift; sourceTree = "<group>"; };
 		03A976952ABB092E001A822C /* WelcomeSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeSheet.swift; sourceTree = "<group>"; };
 		03C093502C942AC500BD5563 /* Volume9.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Volume9.json; sourceTree = "<group>"; };
+		03C093532C944F0F00BD5563 /* Hotseat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hotseat.swift; sourceTree = "<group>"; };
 		03C6425B2A8A3D2B001FF571 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		03C642602A8B7EC4001FF571 /* GrieghallenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrieghallenView.swift; sourceTree = "<group>"; };
 		03D5C9442A82A9DC007D5508 /* Studenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Studenter.swift; sourceTree = "<group>"; };
@@ -399,6 +401,14 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		03C093522C944EF800BD5563 /* Hotseat */ = {
+			isa = PBXGroup;
+			children = (
+				03C093532C944F0F00BD5563 /* Hotseat.swift */,
+			);
+			path = Hotseat;
+			sourceTree = "<group>";
+		};
 		03C6425E2A8B79DC001FF571 /* Om oss */ = {
 			isa = PBXGroup;
 			children = (
@@ -431,6 +441,7 @@
 				03E29F6D2B2252D500753FAA /* Jeg har aldri */,
 				03E29F402B22511C00753FAA /* Karaoke */,
 				03E29F822B22538A00753FAA /* NARCH */,
+				03C093522C944EF800BD5563 /* Hotseat */,
 				03E29F202B224F3000753FAA /* Quiz */,
 				03E29F642B22518800753FAA /* Models */,
 			);
@@ -756,6 +767,7 @@
 				03A976942ABAFF4E001A822C /* SponsorView.swift in Sources */,
 				03E29F042B224E9E00753FAA /* MessageBubble.swift in Sources */,
 				03E29F382B22508E00753FAA /* CustomToggleStyle.swift in Sources */,
+				03C093542C944F0F00BD5563 /* Hotseat.swift in Sources */,
 				03E29EFE2B224E6C00753FAA /* ComposeArea.swift in Sources */,
 				03E29F812B22531400753FAA /* JegHarAldri.swift in Sources */,
 				0396B0842A25DE2B008E6CAC /* Company.swift in Sources */,
@@ -937,7 +949,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.1;
+				MARKETING_VERSION = 2.2;
 				PRODUCT_BUNDLE_IDENTIFIER = co.hosseinsharifi.Karrieredagen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -975,7 +987,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.1;
+				MARKETING_VERSION = 2.2;
 				PRODUCT_BUNDLE_IDENTIFIER = co.hosseinsharifi.Karrieredagen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

@@ -29,10 +29,8 @@ struct HundredView: View {
     var body: some View {
         NavigationView {
             VStack(spacing: 0) {
-                // Mode Picker
                 modePicker
 
-                // Display the selected mode
                 if selectedMode == .chat {
                     chatView
                 } else {
@@ -86,7 +84,7 @@ struct HundredView: View {
     private var questionsView: some View {
         ForEach(Array(questions.enumerated()), id: \.element.id) { index, question in
             let messageType: MessageBubble.MessageType = index % 2 == 0 ? .incoming : .outgoing
-            MessageBubble(text: question.question, type: messageType)
+            MessageBubble(text: "\(question.id). \(question.question)", type: messageType)
                 .id(question.id)
         }
     }
@@ -98,43 +96,16 @@ struct HundredView: View {
             ForEach(0..<questions.count, id: \.self) { index in
                 VStack {
                     Spacer()
-                    Text(questions[index].question)
-                        .font(.title)
-                        .multilineTextAlignment(.center)
+                    MessageBubble(text: "\(questions[index].id). \(questions[index].question)", type: .incoming)
                         .padding()
                     Spacer()
-                    actionButtons
+
                 }
                 .tag(index)
                 .padding()
             }
         }
         .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
-    }
-
-    private var actionButtons: some View {
-        HStack(spacing: 50) {
-            Button(action: {
-                // Handle dislike action
-                swipeLeft()
-            }) {
-                Image(systemName: "arrowshape.left")
-                    .resizable()
-                    .frame(width: 60, height: 60)
-                    .foregroundColor(.blue)
-            }
-
-            Button(action: {
-                // Handle like action
-                swipeRight()
-            }) {
-                Image(systemName: "arrowshape.right")
-                    .resizable()
-                    .frame(width: 60, height: 60)
-                    .foregroundColor(.blue)
-            }
-        }
-        .padding(.bottom, 20)
     }
 
     // MARK: - Swipe Actions
