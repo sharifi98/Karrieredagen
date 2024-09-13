@@ -1,6 +1,7 @@
 import SwiftUI
 
 // MARK: - Main Content View
+
 struct VorsjContentView: View {
     enum ViewChoice: String, CaseIterable {
         case medDrikke = "Med drikke"
@@ -12,24 +13,22 @@ struct VorsjContentView: View {
 
     var body: some View {
         NavigationStack {
-            VStack {
-                viewPicker
+            VStack(spacing: 0) {
+                Picker("Velg type lek", selection: $selectedView) {
+                    ForEach(ViewChoice.allCases, id: \.self) { choice in
+                        Text(choice.rawValue).tag(choice)
+                    }
+                }
+                .pickerStyle(SegmentedPickerStyle())
+                .padding()
                 selectedContentView
             }
+            .navigationTitle("Vorsj-spill")
         }
         .onAppear(perform: checkFirstLaunch)
         .sheet(isPresented: $showWelcomeSheet) {
             VorsjWelcomeSheet(onDismiss: dismissWelcomeSheet)
         }
-    }
-
-    private var viewPicker: some View {
-        Picker("Velg type lek", selection: $selectedView) {
-            ForEach(ViewChoice.allCases, id: \.self) { choice in
-                Text(choice.rawValue).tag(choice)
-            }
-        }
-        .pickerStyle(.segmented)
     }
 
     @ViewBuilder
@@ -55,6 +54,7 @@ struct VorsjContentView: View {
 }
 
 // MARK: - Shared Models and Components
+
 struct Item: Identifiable {
     let id = UUID()
     let title: String
@@ -63,29 +63,37 @@ struct Item: Identifiable {
     let image: Image
 }
 
-
 struct ItemRowView: View {
     let item: Item
 
     var body: some View {
-        HStack {
+        HStack(spacing: 16) {
             item.image
                 .resizable()
                 .scaledToFill()
-                .frame(width: 50, height: 50)
+                .frame(width: 60, height: 60)
                 .clipShape(Circle())
-            VStack(alignment: .leading) {
+                .overlay(
+                    Circle().stroke(Color.blue, lineWidth: 2)
+                )
+                .shadow(radius: 3)
+
+            VStack(alignment: .leading, spacing: 4) {
                 Text(item.title)
                     .font(.headline)
+                    .foregroundColor(.primary)
                 Text(item.subtitle)
+                    .font(.subheadline)
                     .foregroundColor(.secondary)
             }
-            .padding(.horizontal)
+            Spacer()
         }
+        .padding(.vertical, 8)
     }
 }
 
 // MARK: - Med Drikke View
+
 struct MedDrikkeView: View {
     @State private var searchText = ""
 
@@ -93,44 +101,9 @@ struct MedDrikkeView: View {
         Item(title: "100 spørsmål", subtitle: "Snusboks leken, Volume 1-7 og mer", destinationView: AnyView(HundredQuestionsListView()), image: Image("trym")),
         Item(title: "Chugg eller sannhet", subtitle: "Volume 1-3", destinationView: AnyView(ChuggEllerSannhetListView()), image: Image("chugg")),
         Item(title: "Jeg har aldri", subtitle: "Volume 1-9", destinationView: AnyView(JegHarAldriListView()), image: Image("mats")),
-        Item(title: "Karaoke", subtitle: "Sett en av sangene på, følg teksten og syng når det gjeld..", destinationView: AnyView(KaraokeListView()), image: Image("pimp")),
+        Item(title: "Karaoke", subtitle: "Sett en av sangene på, følg teksten og syng når det gjeld...", destinationView: AnyView(KaraokeListView()), image: Image("pimp")),
         Item(title: "Start Nachet", subtitle: "Få i gang nachet!", destinationView: AnyView(StartNachet(filename: "startnachet.json", title: "Start Nachet")), image: Image("anders"))
     ]
-
-    var body: some View {
-        VStack {
-            HeaderView(searchText: $searchText)
-            FilteredItemList(items: items, searchText: searchText)
-        }
-    }
-}
-
-// MARK: - Uten Drikke View
-struct UtenDrikkeView: View {
-    @State private var searchText = ""
-
-    let items = [
-        Item(title: "Quiz", subtitle: "Quiz 1-10", destinationView: AnyView(QuizListView()), image: Image("trym"))
-    ]
-
-    var body: some View {
-        VStack {
-            HeaderView(searchText: $searchText)
-            FilteredItemList(items: items, searchText: searchText)
-        }
-    }
-}
-
-// MARK: - Filtered Item List
-struct FilteredItemList: View {
-    let items: [Item]
-    let searchText: String
-
-    var filteredItems: [Item] {
-        items.filter { item in
-            searchText.isEmpty || item.title.lowercased().contains(searchText.lowercased())
-        }
-    }
 
     var body: some View {
         List {
@@ -140,10 +113,49 @@ struct FilteredItemList: View {
                 }
             }
         }
-        .listStyle(.plain)
+        .listStyle(PlainListStyle())
+        .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always))
+    }
+
+    var filteredItems: [Item] {
+        items.filter { item in
+            searchText.isEmpty || item.title.lowercased().contains(searchText.lowercased())
+        }
     }
 }
 
-#Preview {
-    VorsjContentView()
+// MARK: - Uten Drikke View
+
+struct UtenDrikkeView: View {
+    @State private var searchText = ""
+
+    let items = [
+        Item(title: "Quiz", subtitle: "Quiz 1-10", destinationView: AnyView(QuizListView()), image: Image("trym"))
+    ]
+
+    var body: some View {
+        List {
+            ForEach(filteredItems) { item in
+                NavigationLink(destination: item.destinationView) {
+                    ItemRowView(item: item)
+                }
+            }
+        }
+        .listStyle(PlainListStyle())
+        .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always))
+    }
+
+    var filteredItems: [Item] {
+        items.filter { item in
+            searchText.isEmpty || item.title.lowercased().contains(searchText.lowercased())
+        }
+    }
+}
+
+// MARK: - Preview
+
+struct VorsjContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        VorsjContentView()
+    }
 }

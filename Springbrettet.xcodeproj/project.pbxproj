@@ -46,6 +46,7 @@
 		039EB7FB2A8F6D34005EE9E5 /* HRCVView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039EB7FA2A8F6D34005EE9E5 /* HRCVView.swift */; };
 		03A976942ABAFF4E001A822C /* SponsorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A976932ABAFF4E001A822C /* SponsorView.swift */; };
 		03A976962ABB092E001A822C /* WelcomeSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A976952ABB092E001A822C /* WelcomeSheet.swift */; };
+		03C093512C942AC500BD5563 /* Volume9.json in Resources */ = {isa = PBXBuildFile; fileRef = 03C093502C942AC500BD5563 /* Volume9.json */; };
 		03C6425C2A8A3D2B001FF571 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C6425B2A8A3D2B001FF571 /* FavoriteButton.swift */; };
 		03C642612A8B7EC4001FF571 /* GrieghallenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C642602A8B7EC4001FF571 /* GrieghallenView.swift */; };
 		03D5C9452A82A9DC007D5508 /* Studenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D5C9442A82A9DC007D5508 /* Studenter.swift */; };
@@ -163,6 +164,7 @@
 		039EB7FA2A8F6D34005EE9E5 /* HRCVView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRCVView.swift; sourceTree = "<group>"; };
 		03A976932ABAFF4E001A822C /* SponsorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsorView.swift; sourceTree = "<group>"; };
 		03A976952ABB092E001A822C /* WelcomeSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeSheet.swift; sourceTree = "<group>"; };
+		03C093502C942AC500BD5563 /* Volume9.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Volume9.json; sourceTree = "<group>"; };
 		03C6425B2A8A3D2B001FF571 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		03C642602A8B7EC4001FF571 /* GrieghallenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrieghallenView.swift; sourceTree = "<group>"; };
 		03D5C9442A82A9DC007D5508 /* Studenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Studenter.swift; sourceTree = "<group>"; };
@@ -482,6 +484,7 @@
 				03E29F1C2B224EE000753FAA /* Volume6.json */,
 				03E29F092B224ED600753FAA /* Volume5BI.json */,
 				03E29F1D2B224EE000753FAA /* Parleken.json */,
+				03C093502C942AC500BD5563 /* Volume9.json */,
 			);
 			name = "JSON 100 Spørsmål";
 			path = "JSON 100 Spørsmål";
@@ -669,6 +672,7 @@
 				031399972A2623350003427A /* scheduleData.json in Resources */,
 				03E29F5E2B22517700753FAA /* rosahelikopter.json in Resources */,
 				03E29F172B224ED700753FAA /* Volume3.json in Resources */,
+				03C093512C942AC500BD5563 /* Volume9.json in Resources */,
 				03E29F7C2B22531400753FAA /* JegHarAldriS3XEdition.json in Resources */,
 				03E29F192B224ED700753FAA /* Volume7.json in Resources */,
 				03E29F592B22517700753FAA /* livinonaprayer.json in Resources */,

@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct HundredQuestionsListView: View {
-    let buttonsData = [
+    let buttonsData: [(filename: String, title: String, emoji: String)] = [
         ("5050.json", "50/50", "%"),
+        ("Kompliment.json", "Kompliment", "💕"),
         ("Volume1.json", "Volume 1", "⭐️"),
         ("Volume2.json", "Volume 2", "💫"),
         ("Volume3.json", "Volume 3", "🎊"),
@@ -18,69 +19,57 @@ struct HundredQuestionsListView: View {
         ("Volume5BI.json", "Volume 5 (BI)", "🎓"),
         ("Volume6.json", "Volume 69 (Sambucas)", "🥃"),
         ("Volume7.json", "Volume 7", "👽"),
-        ("Kompliment.json", "Kompliment", "💕"),
+        ("Volume9.json", "Volume 8 (Beef edition)", "🥩"),
+
+
     ]
 
-    
+    @State private var animateList = false
 
-    @State private var listItemOffset: CGFloat = 50
-    @State private var listItemOpacity: Double = 0
+    var body: some View {
+        NavigationStack {
+            List {
+                ForEach(buttonsData.indices, id: \.self) { index in
+                    let item = buttonsData[index]
 
-        var body: some View {
-            NavigationStack {
-                ScrollView {
-                    LazyVStack(spacing: 20) {
-                        ForEach(0..<buttonsData.count, id: \.self) { index in
-                            let (filename, title, emoji) = buttonsData[index]
-                            
-                            NavigationLink(destination: HundredView(filename: filename, title: title)) {
-                                HStack {
-                                    Text(emoji)
-                                        .font(.largeTitle)
-                                        .padding(.leading, 20)
-                                    Text(title)
-                                        .fontWeight(.semibold)
-                                        .padding(.trailing, 20)
-                                    Spacer()
-                                }
-                                .padding(.vertical, 10)
+                    NavigationLink(destination: HundredView(filename: item.filename, title: item.title)) {
+                        HStack(spacing: 16) {
+                            Text(item.emoji)
+                                .font(.largeTitle)
+                                .frame(width: 50, height: 50)
                                 .background(Color.blue.opacity(0.1))
-                                .cornerRadius(10)
-                                .shadow(color: Color.black.opacity(0.2), radius: 5, x: 0, y: 5)
-                            }
-                            .buttonStyle(PlainButtonStyle())
-                            .opacity(listItemOpacity)
-                            .offset(y: listItemOffset)
-                            .onAppear {
-                                withAnimation(Animation.spring().delay(0.05 * Double(index))) {
-                                    listItemOpacity = 1
-                                    listItemOffset = 0
-                                }
-                            }
-                        }
-                    }
-                    .padding()
-                }
-                .navigationBarTitle("100 Spørsmål", displayMode: .inline)
-                .toolbar {
-                    ToolbarItem(placement: .principal) {
-                        HStack {
-                            Image("trym")
-                                .resizable()
-                                .scaledToFill()
-                                .frame(width: 30, height: 30)
                                 .clipShape(Circle())
-                            Text("100 Spørsmål")
+
+                            Text(item.title)
+                                .font(.headline)
+
+                            Spacer()
+
                             Image(systemName: "chevron.right")
-                                .font(.system(size: 10))
+                                .foregroundColor(.gray)
                         }
+                        .opacity(animateList ? 1 : 0)
+                        .offset(y: animateList ? 0 : 20)
+                        .animation(
+                            .easeOut(duration: 0.5)
+                                .delay(0.05 * Double(index)),
+                            value: animateList
+                        )
                     }
                 }
-                ComposeArea()
             }
+            .listStyle(.plain)
+            .onAppear {
+                animateList = true
+            }
+            .navigationTitle("100 Spørsmål")
+            .navigationBarTitleDisplayMode(.inline)
         }
+    }
 }
 
-#Preview {
-    HundredQuestionsListView()
+struct HundredQuestionsListView_Previews: PreviewProvider {
+    static var previews: some View {
+        HundredQuestionsListView()
+    }
 }
