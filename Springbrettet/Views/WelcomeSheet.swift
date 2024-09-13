@@ -13,42 +13,55 @@ struct WelcomeSheet: View {
     var body: some View {
         ZStack {
             BackgroundSB2()
-            VStack(spacing: 20) {
+                .ignoresSafeArea() // Ensure background covers the entire screen
+            VStack(spacing: 30) {
                 Spacer()
-                
+
+                // Image Section
                 Image("gp")
                     .resizable()
-                    .frame(width: 350, height: 225)
-                    .clipped()
-                    .clipShape(Rectangle())
+                    .scaledToFit()
+                    .frame(maxWidth: 350)
                     .cornerRadius(20)
-                
-                Text("Velkommen til")
-                    .font(.title)
-                    .multilineTextAlignment(.center)
-                
-                
-                Text("Springbrett-appen")
-                    .font(.largeTitle)
-                    .fontWeight(.black)
-                    .foregroundStyle(Color("KDOrange"))
-                    .padding(.horizontal, 10)
-                    .padding(.vertical, 5)
+                    .shadow(radius: 10)
 
-                
-                Text("I denne appen så finner du informasjon om Springbrettet, våres prosjekter og ikkje minst vår årlige karrieredag!")
+                // Welcome Text
+                Text("Velkommen til")
+                    .font(.title2.weight(.semibold))
                     .multilineTextAlignment(.center)
-                
+                    .foregroundColor(.primary)
+
+                Text("Springbrett-appen")
+                    .font(.largeTitle.bold())
+                    .foregroundColor(Color("KDOrange"))
+                    .multilineTextAlignment(.center)
+                    .padding(.horizontal)
+
+                // Description Text
+                Text("""
+                I denne appen finner du informasjon om Springbrettet, våre prosjekter og ikke minst vår årlige karrieredag!
+                """)
+                    .font(.body)
+                    .foregroundColor(.secondary)
+                    .multilineTextAlignment(.center)
+                    .padding(.horizontal)
+
                 Spacer()
-                
-                Button("Ta meg til appen!") {
+
+                // Dismiss Button
+                Button(action: {
                     onDismiss()
+                }) {
+                    Text("Ta meg til appen!")
+                        .font(.headline)
+                        .foregroundColor(.white)
+                        .padding()
+                        .frame(maxWidth: .infinity)
+                        .background(Color("KDOrange"))
+                        .cornerRadius(10)
+                        .padding(.horizontal)
                 }
-                .padding()
-                .background(Color("KDOrange"))
-                .foregroundColor(.white)
-                .cornerRadius(10)
-                
+
                 Spacer()
             }
             .padding()
@@ -56,10 +69,13 @@ struct WelcomeSheet: View {
     }
 }
 
-
-
 struct WelcomeSheet_Previews: PreviewProvider {
     static var previews: some View {
-        WelcomeSheet(onDismiss: {})
+        Group {
+            WelcomeSheet(onDismiss: {})
+                .environment(\.colorScheme, .light) // Preview in light mode
+            WelcomeSheet(onDismiss: {})
+                .environment(\.colorScheme, .dark)  // Preview in dark mode
+        }
     }
 }
