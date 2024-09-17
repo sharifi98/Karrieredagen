@@ -1,63 +1,49 @@
 [
     {
-        "id" : 1,
-        "name": "Dørene åpner",
-        "date": "26-09-2023",
+        "id": 1,
+        "name": "Standområde med 75 bedrifter",
+        "date": "24-09-2024",
         "start_time": "10:00",
         "end_time": "15:00",
         "location": "Grieghallen",
-        "imageName": "grieghallenaud",
-        "duration": 0,
-        "description": "Dørene åpner"
+        "imageName": "stand1",
+        "duration": 300,
+        "description": "KD-messen er åpen fra klokken 10.00 til 15.00. Fordelt på 2 etasjer i Grieghallen har vi med oss 75 bedrifter som er ivrige etter å møte nye studenter. Her har du muligheten til å møte noen av Norges mest attraktive arbeidsgivere fra mange ulike bransjer, og orientere deg om fremtidige karrieremuligheter."
     },
     {
-        "id" : 2,
-        "name": "Aker Solutions",
-        "date": "26-09-2023",
-        "start_time": "10:45",
+        "id": 2,
+        "name": "Livepod med Nicolai Tangen",
+        "date": "24-09-2024",
+        "start_time": "10:30",
         "end_time": "11:30",
-        "companies": [
-            "Aker Solutions"
-        ],
-        "location": "Hovedscenen",
-        "imageName": "akersolutions",
-        "duration": 45,
-        "description": "Aker Solutions leverer integrerte løsninger, produkter og tjenester til den globale energibransjen. Vi muliggjør lavkarbon olje- og gassproduksjon, og utvikler fornybare løsninger for å møte fremtidens energibehov. Ved å kombinere innovative digitale løsninger og forutsigbar prosjektgjennomføring, akselererer vi overgangen til en bærekraftig energiproduksjon. Aker Solutions har rundt 16 000 ansatte i mer enn 20 land."
+        "location": "Grieghallen, Peer Gynt-salen",
+        "imageName": "tangen",
+        "speakers": ["Nicolai Tangen"],
+        "duration": 60,
+        "description": "Hvordan leder man et av verdens største investeringsfond, og hvilke hemmeligheter skjuler seg bak suksessen til en toppleder i finansverdenen? Nicolai Tangen, CEO for Norges Bank Investment Management (Oljefondet), vil gi deg svarene i sin livepod kl. 10:30!"
     },
     {
         "id": 3,
-        "name": "Thomas Giertsen",
-        "date": "26-09-2023",
+        "name": "Bedriftspresentasjon med Lerøy",
+        "date": "24-09-2024",
         "start_time": "12:15",
         "end_time": "13:00",
-        "location": "Klokkeklang",
-        "imageName": "thomasgjertsen",
-        "speakers": [
-            "Thomas Gjertsen"
-        ],
-        "duration": 60,
-        "description": "Thomas Gjertsen utforsker hvorfor talentfulle og hardtarbeidende mennesker noen ganger mislykkes. Med inspirasjon fra psykologen Daniel Kahneman, gir han innsikt i beslutningstaking og hvordan man kan øke sjansene for suksess. Han deler også fra sine egne erfaringer som en kjent humorist og gründer, og vektlegger viktigheten av refleksjon og tankefull beslutningstaking."
+        "location": "Grieghallen, Klokkeklang",
+        "imageName": "leroyseafood",
+        "companies": ["Lerøy Seafood Group"],
+        "duration": 45,
+        "description": "Som en av sjømatnæringens mest attraktive arbeidsgivere tilbyr Lerøy spennende karrieremuligheter for studenter og nyutdannede, inkludert et unikt traineeprogram som gir inngående innsikt i selskapets virksomhet. Møt på bedriftspresentasjonen for å lære mer om Lerøy, deres muligheter for studenter, og hvordan du kan bidra til å forme fremtidens sjømatnæring."
     },
     {
-        "id" : 4,
-        "name": "DNB",
-        "date": "26-09-2023",
+        "id": 4,
+        "name": "Foredrag med NHO: Dette er studentene næringslivet vil ha!",
+        "date": "24-09-2024",
         "start_time": "13:30",
-        "end_time": "14:15",
-        "location": "Hovedscenen",
-        "imageName": "dnb",
-        "duration": 60,
-        "description": "DNB vil dele informasjon om seg selv, deres mål, og potensielle fremtidige muligheter."
-    },
-    {
-        "id" : 5,
-        "name": "Dørene stenger",
-        "date": "26-09-2023",
-        "start_time": "14:30",
-        "end_time": "15:00",
-        "location": "Grieghallen",
-        "imageName": "grieghallenaud",
-        "duration": 60,
-        "description": "Dørene stenger"
+        "end_time": "14:00",
+        "location": "Grieghallen, Klokkeklang",
+        "imageName": "nho",
+        "speakers": ["Representanter fra NHO"],
+        "duration": 30,
+        "description": "6 av 10 bedrifter forteller at de mangler folk med den kompetansen de trenger. Men hva slags studenter er det de ser etter? Få med deg innlegget til politisk rådgiver Sondre Olsen fra NHO (Næringslivets Hovedorganisasjon) som vil fortelle deg hva slags kompetanse bedriftene trenger, og hva slags forventninger de har til deg som ansatt!"
     }
 ]
