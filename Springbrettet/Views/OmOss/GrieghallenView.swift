@@ -9,24 +9,23 @@ import SwiftUI
 
 struct GrieghallenView: View {
     
-    var floors = ["Kart", "Standnummer"]
-    @State private var selectedFloor = "Kart"
+    var floors = ["Første etasje", "Andre etasje"]
+    @State private var selectedFloor = "Første etasje"
     
     var body: some View {
         ZStack {
             VStack {
+                    .foregroundStyle(.blue)
                 Picker("Velg etasje", selection: $selectedFloor) {
                     ForEach(floors, id: \.self) {
                         Text("\($0)") 
                     }
                 }
                 .pickerStyle(.segmented)
-                
-                // Image view based on the selected floor
                 Image(imageName(for: selectedFloor))
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 600, height: 600)  // you can adjust this as needed
+                    .frame(width: 400, height: 400)
             }
         }
     }
@@ -34,10 +33,10 @@ struct GrieghallenView: View {
     // Helper function to get image name based on selected floor
     func imageName(for floor: String) -> String {
         switch floor {
-        case "Standnummer":
-            return "Standnummer"
-        case "Kart":
-            return "kart"
+        case "Første etasje":
+            return "1etasje"
+        case "Andre etasje":
+            return "2etasje"
         default:
             return "" // Default case which should never be hit
         }
