@@ -15,7 +15,6 @@ struct GrieghallenView: View {
     var body: some View {
         ZStack {
             VStack {
-                    .foregroundStyle(.blue)
                 Picker("Velg etasje", selection: $selectedFloor) {
                     ForEach(floors, id: \.self) {
                         Text("\($0)") 
