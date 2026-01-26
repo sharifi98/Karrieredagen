@@ -28,7 +28,7 @@ struct CompanyList: View {
                 SearchBar(text: $searchText)
                     .padding()
                 Toggle(isOn: $showFavoritesOnly) {
-                    Text("Favorites Only")
+                    Text("Hvis kun favoritter")
                         .font(.kdBody(16))
                 }
                 .padding(5)

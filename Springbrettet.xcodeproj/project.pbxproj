@@ -50,6 +50,7 @@
 		03C093542C944F0F00BD5563 /* Hotseat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C093532C944F0F00BD5563 /* Hotseat.swift */; };
 		03C6425C2A8A3D2B001FF571 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C6425B2A8A3D2B001FF571 /* FavoriteButton.swift */; };
 		03C642612A8B7EC4001FF571 /* GrieghallenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C642602A8B7EC4001FF571 /* GrieghallenView.swift */; };
+		03CCFB872DDD206200BA30E2 /* AV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CCFB862DDD206200BA30E2 /* AV.swift */; };
 		03D5C9452A82A9DC007D5508 /* Studenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D5C9442A82A9DC007D5508 /* Studenter.swift */; };
 		03E29EEB2B224C8200753FAA /* VorsjContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E29EEA2B224C8200753FAA /* VorsjContentView.swift */; };
 		03E29EED2B224CC800753FAA /* VorsjWelcomeSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E29EEC2B224CC800753FAA /* VorsjWelcomeSheet.swift */; };
@@ -169,6 +170,7 @@
 		03C093532C944F0F00BD5563 /* Hotseat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hotseat.swift; sourceTree = "<group>"; };
 		03C6425B2A8A3D2B001FF571 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		03C642602A8B7EC4001FF571 /* GrieghallenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrieghallenView.swift; sourceTree = "<group>"; };
+		03CCFB862DDD206200BA30E2 /* AV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AV.swift; sourceTree = "<group>"; };
 		03D5C9442A82A9DC007D5508 /* Studenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Studenter.swift; sourceTree = "<group>"; };
 		03E29EEA2B224C8200753FAA /* VorsjContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VorsjContentView.swift; sourceTree = "<group>"; };
 		03E29EEC2B224CC800753FAA /* VorsjWelcomeSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VorsjWelcomeSheet.swift; sourceTree = "<group>"; };
@@ -365,6 +367,7 @@
 			children = (
 				0396B0702A250193008E6CAC /* ContentView.swift */,
 				037010162A49AADB007388E7 /* HomeView.swift */,
+				03CCFB862DDD206200BA30E2 /* AV.swift */,
 				0393415F2AFE3C6F00F8D800 /* HomeView2.swift */,
 				03A976952ABB092E001A822C /* WelcomeSheet.swift */,
 				03C6425F2A8B7A08001FF571 /* Springbrettets prosjekter */,
@@ -763,6 +766,7 @@
 				03E29EED2B224CC800753FAA /* VorsjWelcomeSheet.swift in Sources */,
 				03E29EF92B224DEE00753FAA /* HeaderView.swift in Sources */,
 				0396B0822A25DAE4008E6CAC /* MapView.swift in Sources */,
+				03CCFB872DDD206200BA30E2 /* AV.swift in Sources */,
 				0396B0802A25D9B8008E6CAC /* SquareImage.swift in Sources */,
 				03A976942ABAFF4E001A822C /* SponsorView.swift in Sources */,
 				03E29F042B224E9E00753FAA /* MessageBubble.swift in Sources */,
@@ -949,13 +953,14 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.2;
+				MARKETING_VERSION = 2.4;
 				PRODUCT_BUNDLE_IDENTIFIER = co.hosseinsharifi.Karrieredagen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -987,13 +992,14 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.2;
+				MARKETING_VERSION = 2.4;
 				PRODUCT_BUNDLE_IDENTIFIER = co.hosseinsharifi.Karrieredagen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
