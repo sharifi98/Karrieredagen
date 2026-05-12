@@ -26,17 +26,10 @@ struct ScheduleRow: View {
 }
 
 struct ScheduleRow_Previews: PreviewProvider {
-
     static var previews: some View {
-
-        ScheduleRow(event: events[3])
-
+        ScheduleRow(event: ContentStore().events[3])
             .previewLayout(.sizeThatFits)
-
             .padding()
-
             .background(Color.black)
-
     }
-
 }

@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct ScheduleList: View {
+    @EnvironmentObject var store: ContentStore
     @State private var selectedEvent: Event?
 
     var body: some View {
@@ -9,7 +10,7 @@ struct ScheduleList: View {
                 BackgroundSB()
                 ScrollView {
                     VStack(spacing: 15) {
-                        ForEach(events) { event in
+                        ForEach(store.events) { event in
                             eventRow(for: event)
                         }
                     }
@@ -47,5 +48,6 @@ struct ScheduleList: View {
 struct ScheduleList_Previews: PreviewProvider {
     static var previews: some View {
         ScheduleList()
+            .environmentObject(ContentStore())
     }
 }

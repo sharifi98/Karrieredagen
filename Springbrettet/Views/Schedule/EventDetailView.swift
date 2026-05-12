@@ -167,7 +167,7 @@ struct EventDetailView: View {
 
 struct EventDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        EventDetailView(event: events[2])
+        EventDetailView(event: ContentStore().events[2])
     }
 }
 

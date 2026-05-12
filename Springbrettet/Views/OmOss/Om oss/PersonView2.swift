@@ -35,8 +35,7 @@ struct PersonView2: View {
 }
 
 struct PersonView2_Previews: PreviewProvider {
-    static let leders: [Leder] = load("lederData.json")
     static var previews: some View {
-        PersonView2(leder: leders[4])
+        PersonView2(leder: ContentStore().leaders[4])
     }
 }

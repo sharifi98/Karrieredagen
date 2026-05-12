@@ -119,6 +119,7 @@ struct InfoTextItem: View {
 // MARK: - TeamMembersView
 
 struct TeamMembersView: View {
+    @EnvironmentObject var store: ContentStore
     @Binding var animateMembers: Bool
 
     var body: some View {
@@ -130,7 +131,7 @@ struct TeamMembersView: View {
 
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 20) {
-                    ForEach(springbrettereData, id: \.id) { member in
+                    ForEach(store.springbrettere, id: \.id) { member in
                         NavigationLink(destination: PersonView(person: member)) {
                             MemberCard(member: member)
                                 .scaleEffect(animateMembers ? 1 : 0.8)
@@ -308,14 +309,14 @@ struct LinkedInButton: View {
 struct KarrieredagenInformationView_Previews: PreviewProvider {
     static var previews: some View {
         KarrieredagenInformationView()
+            .environmentObject(ContentStore())
             .environment(\.colorScheme, .dark)
     }
 }
 
 struct PersonView_Previews: PreviewProvider {
-    static let persons: [Person] = load("springbrettereData.json")
     static var previews: some View {
-        PersonView(person: persons[0])
+        PersonView(person: ContentStore().springbrettere[0])
             .environment(\.colorScheme, .dark)
     }
 }

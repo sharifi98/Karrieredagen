@@ -8,14 +8,12 @@
 import SwiftUI
 
 struct CompanyList: View {
-    @EnvironmentObject var modelData: ModelData
+    @EnvironmentObject var store: ContentStore
     @State private var searchText = ""
     @State private var showFavoritesOnly = false
-    
-    
 
     var filteredCompanies: [Company] {
-        modelData.companies.filter { company in
+        store.companies.filter { company in
             (!showFavoritesOnly || company.isFavorite) &&
             (searchText.isEmpty || company.name.localizedStandardContains(searchText))
         }
@@ -83,7 +81,7 @@ struct SearchBar: View {
 struct CompanyList_Previews: PreviewProvider {
     static var previews: some View {
         CompanyList()
-            .environmentObject(ModelData())
+            .environmentObject(ContentStore())
     }
 }
 

@@ -9,15 +9,14 @@ import SwiftUI
 
 @main
 struct KarrieredagenApp: App {
-    
-    @StateObject private var modelData = ModelData()
-    
+
+    @StateObject private var store = ContentStore()
+
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .preferredColorScheme(.dark)
-                .environmentObject(modelData)
-                
+                .environmentObject(store)
         }
     }
 }

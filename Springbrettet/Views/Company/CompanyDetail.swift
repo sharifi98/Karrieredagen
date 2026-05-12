@@ -13,35 +13,35 @@ import SDWebImageSwiftUI
 
 
 struct CompanyDetail: View {
-    
-    @EnvironmentObject var modelData: ModelData
-    
+
+    @EnvironmentObject var store: ContentStore
+
     var company: Company
-    
-    var companyIndex: Int {
-        modelData.companies.firstIndex(where: {$0.id == company.id})!
+
+    private var favoriteBinding: Binding<Bool> {
+        Binding(
+            get: { store.companies.first { $0.id == company.id }?.isFavorite ?? false },
+            set: { _ in store.toggleFavorite(companyID: company.id) }
+        )
     }
-    
-    
-    
-    
+
     var body: some View {
-        
+
         ScrollView {
             VStack(spacing: 0) {
                 MapView(coordinate: company.locationCoordinate)
                     .frame(height: 300)
-                
+
                 SquareImage(image: company.image)
                     .offset(y: -130)
                     .padding(.bottom, -130)
-                
+
                 VStack(alignment: .leading, spacing: 16) {
                     HStack {
                         Text(company.name)
                             .font(.title)
                             .foregroundColor(Color("KDOrange"))
-                        FavoriteButton(isSet: $modelData.companies[companyIndex].isFavorite)
+                        FavoriteButton(isSet: favoriteBinding)
                     }
                     
                     HStack {
@@ -71,12 +71,10 @@ struct CompanyDetail: View {
 
 
 struct CompanyDetail_Previews: PreviewProvider {
-    static let modelData = ModelData()
-    
+    static let store = ContentStore()
+
     static var previews: some View {
-        CompanyDetail(company: ModelData().companies[0])
-            .environmentObject(modelData)
-        
+        CompanyDetail(company: store.companies[0])
+            .environmentObject(store)
     }
-    
 }

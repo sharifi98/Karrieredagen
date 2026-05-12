@@ -39,16 +39,10 @@ struct CompanyRow: View {
 }
 
 struct CompanyRow_Previews: PreviewProvider {
-    
-    static var companies = ModelData().companies
-    
+    static var companies = ContentStore().companies
+
     static var previews: some View {
-        Group {
-            CompanyRow(company: companies[0])
-            
-        }
-        
-        .previewLayout(.fixed(width: 300, height: 70))
-        
+        CompanyRow(company: companies[0])
+            .previewLayout(.fixed(width: 300, height: 70))
     }
 }

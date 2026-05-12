@@ -2,6 +2,7 @@ import SwiftUI
 
 
 struct OmOssView: View {
+    @EnvironmentObject var store: ContentStore
 
     let images1 = ["Screenshot 2023-07-05 at 15-56-54 Springbrettfondet — Springbrettet", "Screenshot 2023-07-05 at 15-57-16 Springbrettfondet — Springbrettet"]
 
@@ -83,7 +84,7 @@ struct OmOssView: View {
                     ZStack {
                         ScrollView(.horizontal, showsIndicators: false) {
                             HStack {
-                                ForEach(lederData, id: \.id) { member in
+                                ForEach(store.leaders, id: \.id) { member in
                                     
                                     NavigationLink(destination: PersonView2(leder: member)) {
                                         VStack {
@@ -168,5 +169,6 @@ struct OmOssView: View {
 struct OmOssView_Previews: PreviewProvider {
     static var previews: some View {
         OmOssView()
+            .environmentObject(ContentStore())
     }
 }
