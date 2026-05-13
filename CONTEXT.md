@@ -21,3 +21,15 @@ for the long-tail game content in VorsjSpill (question decks, song lists) that
 is accessed via `ContentStore.corpus(_ filename:)`. Distinguished from the
 four primary main-app corpora (companies, events, leaders, springbrettere)
 which have typed accessors on ContentStore.
+
+## CVTemplate
+A value type that holds the data for one career-path CV: a `title` string and
+a `sections` array of `(heading, body)` pairs. Rendered by `CVTemplateView`.
+Adding a new career path means adding a new `CVTemplate` data record — no
+layout code changes required.
+
+## EventCalendarExporter
+An adapter that exports an `Event` to the device calendar. Owns the
+`EKEventStore` lifecycle, permission request, `DateFormatter`, and
+`EKEvent` construction. Exposed as `func export(_ event: Event) async throws`.
+Located in `Springbrettet/Services/EventCalendarExporter.swift`.

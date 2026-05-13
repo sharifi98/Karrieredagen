@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct PersonView2: View {
-    let leder: Leder
+    let leder: Person
 
     var body: some View {
         List {

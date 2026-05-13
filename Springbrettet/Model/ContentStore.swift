@@ -3,7 +3,7 @@ import Foundation
 final class ContentStore: ObservableObject {
     @Published private(set) var companies: [Company]
     let events: [Event]
-    let leaders: [Leder]
+    let leaders: [Person]
     let springbrettere: [Person]
 
     private let bundle: Bundle

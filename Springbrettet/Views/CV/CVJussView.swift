@@ -8,76 +8,20 @@
 import SwiftUI
 
 struct CVJussView: View {
+    private static let template = CVTemplate(
+        title: "CV - Rettsvitenskap",
+        sections: [
+            (heading: "Personlige Detaljer:", body: "Navn: Laura Lov\nAdresse: Juridisk Jentevei 30, 9012 Jus, Norge\nTelefon: 87654321\nEpost: laura.lov@example.com\nLinkedIn: linkedin.com/in/laura-lov"),
+            (heading: "Utdannelse:", body: "Bachelor i Rettsvitenskap, Universitetet i Oslo, 2020 - 2023"),
+            (heading: "Arbeidserfaring:", body: "Sommerintern, Lov og Rett AS, juni 2022 - august 2022\nUtførte juridisk forskning for pågående rettssaker\nBidro i utformingen av juridiske dokumenter og korrespondanse"),
+            (heading: "Ferdigheter:", body: "Juridisk forskning og skriving\nGrunnleggende prosessrett\nForhandling og megling"),
+            (heading: "Sertifiseringer:", body: "Sertifisert i juridisk forskning og skriving"),
+            (heading: "Referanser:", body: "Kan gis ved forespørsel"),
+        ]
+    )
+
     var body: some View {
-        List {
-            VStack(alignment: .leading) {
-                
-                Text("CV - Rettsvitenskap")
-                    .font(.system(size: 24))
-                    .foregroundColor(Color("KDOrange"))
-                
-                Group {
-                    Text("Personlige Detaljer:")
-                            .font(.headline)
-                            .foregroundColor(Color("KDOrange"))
-                        .padding(.vertical)
-                
-                    Text("Navn: Laura Lov\nAdresse: Juridisk Jentevei 30, 9012 Jus, Norge\nTelefon: 87654321\nEpost: laura.lov@example.com\nLinkedIn: linkedin.com/in/laura-lov")
-                        .font(.body)
-                        .foregroundColor(.secondary)
-                
-                
-             
-                    Text("Utdannelse:")
-                        .font(.headline)
-                        .foregroundColor(Color("KDOrange"))
-                        .padding(.vertical)
-                    Text("Bachelor i Rettsvitenskap, Universitetet i Oslo, 2020 - 2023")
-                        .font(.body)
-                        .foregroundColor(.secondary)
-             
-                }
-             
-                    Text("Arbeidserfaring:")
-                        .font(.headline)
-                        .foregroundColor(Color("KDOrange"))
-                        .padding(.vertical)
-                    Text("Sommerintern, Lov og Rett AS, juni 2022 - august 2022\nUtførte juridisk forskning for pågående rettssaker\nBidro i utformingen av juridiske dokumenter og korrespondanse")
-                        .font(.body)
-                        .foregroundColor(.secondary)
-             
-                
-             
-                    Text("Ferdigheter:")
-                        .font(.headline)
-                        .foregroundColor(Color("KDOrange"))
-                        .padding(.vertical)
-                    Text("Juridisk forskning og skriving\nGrunnleggende prosessrett\nForhandling og megling")
-                        .font(.body)
-                        .foregroundColor(.secondary)
-             
-             
-                    Text("Sertifiseringer:")
-                        .font(.headline)
-                        .foregroundColor(Color("KDOrange"))
-                        .padding(.vertical)
-                    Text("Sertifisert i juridisk forskning og skriving")
-                        .font(.body)
-                        .foregroundColor(.secondary)
-             
-                    Text("Referanser:")
-                        .font(.headline)
-                        .foregroundColor(Color("KDOrange"))
-                        .padding(.vertical)
-                    Text("Kan gis ved forespørsel")
-                        .font(.body)
-                        .foregroundColor(.secondary)
-
-            }
-
-            .padding()
-        }
-        .listStyle(.grouped)
+        CVTemplateView(template: Self.template)
     }
 }
 

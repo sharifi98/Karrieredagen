@@ -1,12 +1,2 @@
-//
-//  AppData.swift
-//  Springbrettet
-//
-//  Created by Hossein Sharifi on 13/12/2023.
-//
-
+// Removed — version string inlined at call site
 import Foundation
-
-struct AppData {
-    static let version = "2.01"
-}

@@ -215,8 +215,8 @@ struct PersonView: View {
                 VStack(spacing: 20) {
                     PersonImageView(imageName: person.imageName)
                     PersonInfoView(person: person)
-                    if !person.linkedin.isEmpty {
-                        LinkedInButton(url: person.linkedin)
+                    if let linkedin = person.linkedin, !linkedin.isEmpty {
+                        LinkedInButton(url: linkedin)
                     }
                 }
                 .padding()
@@ -253,7 +253,7 @@ struct PersonInfoView: View {
                 .font(.headline)
                 .foregroundColor(.white)
 
-            Text(person.studie)
+            Text(person.studie ?? "")
                 .font(.subheadline)
                 .foregroundColor(.white.opacity(0.7))
                 .multilineTextAlignment(.center)

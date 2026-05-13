@@ -13,9 +13,9 @@ struct Person: Hashable, Codable, Identifiable {
     var role: String
     var name: String
     var email: String
-    var studie: String
+    var studie: String?
     var imageName: String
-    var linkedin: String
+    var linkedin: String?
     
     var image: Image {
         Image(imageName)

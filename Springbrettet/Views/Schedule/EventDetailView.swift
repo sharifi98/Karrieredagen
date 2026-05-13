@@ -1,5 +1,4 @@
 import SwiftUI
-import EventKit
 
 struct EventDetailView: View {
     var event: Event
@@ -99,7 +98,14 @@ struct EventDetailView: View {
 
     var addToCalendarButton: some View {
         Button(action: {
-            addToCalendar(event: event)
+            Task {
+                do {
+                    try await EventCalendarExporter().export(event)
+                    await MainActor.run { showingCalendarAlert = true }
+                } catch {
+                    print("Calendar export failed: \(error)")
+                }
+            }
         }) {
             Label("Legg til i kalender", systemImage: "calendar")
                 .font(.kdBody(16))
@@ -125,44 +131,6 @@ struct EventDetailView: View {
         }
     }
 
-    func addToCalendar(event: Event) {
-        let eventStore = EKEventStore()
-
-        eventStore.requestAccess(to: .event) { granted, error in
-            if granted {
-                insertEvent(store: eventStore, event: event)
-            } else {
-                print("Calendar access denied")
-            }
-        }
-    }
-
-    func insertEvent(store: EKEventStore, event: Event) {
-        let ekEvent = EKEvent(eventStore: store)
-        ekEvent.title = event.name
-
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "dd-MM-yyyy HH:mm"
-
-        if let startDate = dateFormatter.date(from: "\(event.date) \(event.start_time)"),
-           let endDate = dateFormatter.date(from: "\(event.date) \(event.end_time)") {
-            ekEvent.startDate = startDate
-            ekEvent.endDate = endDate
-            ekEvent.notes = event.description
-            ekEvent.calendar = store.defaultCalendarForNewEvents
-
-            do {
-                try store.save(ekEvent, span: .thisEvent)
-                DispatchQueue.main.async {
-                    showingCalendarAlert = true
-                }
-            } catch {
-                print("Error saving event: \(error.localizedDescription)")
-            }
-        } else {
-            print("Error: Could not convert date and time to Date object")
-        }
-    }
 }
 
 struct EventDetailView_Previews: PreviewProvider {

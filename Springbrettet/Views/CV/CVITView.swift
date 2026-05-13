@@ -7,77 +7,55 @@
 
 import SwiftUI
 
-struct CVITView: View {
+struct CVTemplate {
+    let title: String
+    let sections: [(heading: String, body: String)]
+}
+
+struct CVTemplateView: View {
+    let template: CVTemplate
+
     var body: some View {
         List {
             VStack(alignment: .leading) {
-                Text("CV - IT")
+                Text(template.title)
                     .font(.system(size: 24))
                     .foregroundColor(Color("KDOrange"))
-                
-                Group {
-                    Text("Personlige Detaljer:")
-                        .font(.headline)
-                        .foregroundColor(Color("KDOrange"))
-                        .padding(.vertical)
-                    Text("Navn: Ivar Informatikk\nAdresse: Dataveien 10, 1234 Programmering, Norge\nTelefon: 12345678\nEpost: ivar.informatikk@example.com\nLinkedIn: linkedin.com/in/ivar-informatikk")
-                        .font(.body)
-                        .foregroundColor(.secondary)
-                }
 
-                Group {
-                    Text("Utdannelse:")
-                        .font(.headline)
-                        .foregroundColor(Color("KDOrange"))
-                        .padding(.vertical)
-                    Text("Bachelor i Informatikk, Universitetet i Oslo, 2020 - 2023")
-                        .font(.body)
-                        .foregroundColor(.secondary)
-                }
-
-                Group {
-                    Text("Arbeidserfaring:")
-                        .font(.headline)
-                        .foregroundColor(Color("KDOrange"))
-                        .padding(.vertical)
-                    Text("Sommerintern, TechCorp AS, juni 2022 - august 2022\nUtviklet en mobilapp for intern bruk som forbedret produktiviteten med 20%\nJobbet i et agilt team og brukte Scrum-metodikk")
-                        .font(.body)
-                        .foregroundColor(.secondary)
-                }
-
-                Group {
-                    Text("Ferdigheter:")
-                        .font(.headline)
-                        .foregroundColor(Color("KDOrange"))
-                        .padding(.vertical)
-                    Text("Programmeringsspråk: Java, Python, C#\nProsjektledelse og Scrum\nMobilapputvikling")
-                        .font(.body)
-                        .foregroundColor(.secondary)
-                }
-
-                Group {
-                    Text("Sertifiseringer:")
-                        .font(.headline)
-                        .foregroundColor(Color("KDOrange"))
-                        .padding(.vertical)
-                    Text("Oracle Certified Professional, Java SE 8 Programmer")
-                        .font(.body)
-                        .foregroundColor(.secondary)
-                }
-
-                Group {
-                    Text("Referanser:")
-                        .font(.headline)
-                        .foregroundColor(Color("KDOrange"))
-                        .padding(.vertical)
-                    Text("Kan gis ved forespørsel")
-                        .font(.body)
-                        .foregroundColor(.secondary)
+                ForEach(template.sections.indices, id: \.self) { i in
+                    let section = template.sections[i]
+                    Group {
+                        Text(section.heading)
+                            .font(.headline)
+                            .foregroundColor(Color("KDOrange"))
+                            .padding(.vertical)
+                        Text(section.body)
+                            .font(.body)
+                            .foregroundColor(.secondary)
+                    }
                 }
             }
             .padding()
         }
         .listStyle(.grouped)
+    }
+}
+
+struct CVITView: View {
+    private static let template = CVTemplate(
+        title: "CV - IT",
+        sections: [
+            (heading: "Personlige Detaljer:", body: "Navn: Ivar Informatikk\nAdresse: Dataveien 10, 1234 Programmering, Norge\nTelefon: 12345678\nEpost: ivar.informatikk@example.com\nLinkedIn: linkedin.com/in/ivar-informatikk"),
+            (heading: "Utdannelse:", body: "Bachelor i Informatikk, Universitetet i Oslo, 2020 - 2023"),
+            (heading: "Arbeidserfaring:", body: "Sommerintern, TechCorp AS, juni 2022 - august 2022\nUtviklet en mobilapp for intern bruk som forbedret produktiviteten med 20%\nJobbet i et agilt team og brukte Scrum-metodikk"),
+            (heading: "Ferdigheter:", body: "Programmeringsspråk: Java, Python, C#\nProsjektledelse og Scrum\nMobilapputvikling"),
+            (heading: "Sertifiseringer:", body: "Oracle Certified Professional, Java SE 8 Programmer"),
+            (heading: "Referanser:", body: "Kan gis ved forespørsel"),
+        ]
+    )
+
+    var body: some View {
+        CVTemplateView(template: Self.template)
     }
 }
 

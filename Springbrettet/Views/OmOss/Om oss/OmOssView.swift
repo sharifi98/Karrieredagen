@@ -134,7 +134,7 @@ struct OmOssView: View {
                                     .aspectRatio(contentMode: .fill)
                                 Spacer()
                         }
-                        Text("\(AppData.version)")
+                        Text("2.01")
                             .foregroundColor(.secondary)
                         Text("Laget av Hossein Sharifi")
                     }

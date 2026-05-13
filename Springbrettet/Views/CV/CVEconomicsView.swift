@@ -8,80 +8,20 @@
 import SwiftUI
 
 struct CVEconomicsView: View {
-    var body: some View {
-        List {
-            VStack(alignment: .leading) {
-                
-                
-                Text("CV - Økonomi")
-                    .font(.system(size: 24))
-                    .foregroundColor(Color("KDOrange"))
-                
-                Group {
-                    Text("Personlige Detaljer:")
-                        .font(.headline)
-                        .foregroundColor(Color("KDOrange"))
-                        .padding(.vertical)
-                    Text("Navn: Emil Økonomi\nAdresse: Finansveien 20, 5678 Økonomi, Norge\nTelefon: 87654321\nEpost: emil.oekonomi@example.com\nLinkedIn: linkedin.com/in/emil-økonomi")
-                        .font(.body)
-                        .foregroundColor(.secondary)
-                }
-                
+    private static let template = CVTemplate(
+        title: "CV - Økonomi",
+        sections: [
+            (heading: "Personlige Detaljer:", body: "Navn: Emil Økonomi\nAdresse: Finansveien 20, 5678 Økonomi, Norge\nTelefon: 87654321\nEpost: emil.oekonomi@example.com\nLinkedIn: linkedin.com/in/emil-økonomi"),
+            (heading: "Utdannelse:", body: "Bachelor i Økonomi og Administrasjon, Handelshøyskolen BI, 2020 - 2023"),
+            (heading: "Arbeidserfaring:", body: "Sommerintern, FinansGruppen AS, juni 2022 - august 2022\nUtformet en ny økonomisk rapporteringsmodell som forbedret effektiviteten med 15%\nJobbet i et team med fokus på Lean Six Sigma-prinsipper"),
+            (heading: "Ferdigheter:", body: "Økonomisk analyse og modellering\nRegnskap\nMarkedsføringsstrategi"),
+            (heading: "Sertifiseringer:", body: "Sertifisert i Lean Six Sigma Green Belt"),
+            (heading: "Referanser:", body: "Kan gis ved forespørsel"),
+        ]
+    )
 
-                Group {
-                    Text("Utdannelse:")
-                        .font(.headline)
-                        .foregroundColor(Color("KDOrange"))
-                        .padding(.vertical)
-                    Text("Bachelor i Økonomi og Administrasjon, Handelshøyskolen BI, 2020 - 2023")
-                        .font(.body)
-                        .foregroundColor(.secondary)
-                }
-                
-                
-                Group {
-                    Text("Arbeidserfaring:")
-                        .font(.headline)
-                        .foregroundColor(Color("KDOrange"))
-                        .padding(.vertical)
-                    Text("Sommerintern, FinansGruppen AS, juni 2022 - august 2022\nUtformet en ny økonomisk rapporteringsmodell som forbedret effektiviteten med 15%\nJobbet i et team med fokus på Lean Six Sigma-prinsipper")
-                        .font(.body)
-                        .foregroundColor(.secondary)
-                }
-                
-                Group {
-                    Text("Ferdigheter:")
-                        .font(.headline)
-                        .foregroundColor(Color("KDOrange"))
-                        .padding(.vertical)
-                    Text("Økonomisk analyse og modellering\nRegnskap\nMarkedsføringsstrategi")
-                        .font(.body)
-                        .foregroundColor(.secondary)
-                }
-                
-                Group {
-                    Text("Sertifiseringer:")
-                        .font(.headline)
-                        .foregroundColor(Color("KDOrange"))
-                        .padding(.vertical)
-                    Text("Sertifisert i Lean Six Sigma Green Belt")
-                        .font(.body)
-                        .foregroundColor(.secondary)
-                }
-                
-                Group {
-                    Text("Referanser:")
-                        .font(.headline)
-                        .foregroundColor(Color("KDOrange"))
-                        .padding(.vertical)
-                    Text("Kan gis ved forespørsel")
-                        .font(.body)
-                        .foregroundColor(.secondary)
-                }
-            }
-            .padding()
-        }
-        .listStyle(.grouped)
+    var body: some View {
+        CVTemplateView(template: Self.template)
     }
 }
 

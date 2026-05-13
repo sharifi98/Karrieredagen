@@ -14,8 +14,6 @@ struct QuizListView: View {
                        ("Level2.json", "Nivå 2: Er du smartere enn en paradise hotel deltaker?", "🏩"),
                        ("Level3.json", "Nivå 3: Er du Smartere enn en 5. klassing?", "👶🏼"),
                        ("Level4.json", "Nivå 4: Superkviss på NRK super", "📺"),
-                       ("Level4.json", "Nivå 5: Er du smartere enn amerikanerene?", "📺"),
-                       ("Level4.json", "Nivå 6: Huskestue på TV2", ""),
     ]
     
     @State private var listItemOffset: CGFloat = 50
