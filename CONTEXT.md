@@ -28,6 +28,13 @@ a `sections` array of `(heading, body)` pairs. Rendered by `CVTemplateView`.
 Adding a new career path means adding a new `CVTemplate` data record — no
 layout code changes required.
 
+## GameCatalog
+The parameterised game launcher. `GameCatalogView(entries: [CatalogEntry])`
+renders a searchable list of games. `CatalogEntry` takes a `@ViewBuilder`
+destination closure — `AnyView` is an internal implementation detail, not
+visible at call sites. `VorsjContentView` owns two entry lists:
+`medDrikkeEntries` and `utenDrikkeEntries`.
+
 ## PromptDeck
 The shared renderer for `[Question]`-based VorsjSpill games. `PromptDeckView`
 accepts a pre-decoded `corpus: [Question]`, a `title`, and a `DeckMode`. The

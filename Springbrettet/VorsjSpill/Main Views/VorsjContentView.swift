@@ -37,10 +37,41 @@ struct VorsjContentView: View {
     private var selectedContentView: some View {
         switch selectedView {
         case .medDrikke:
-            MedDrikkeView()
+            GameCatalogView(entries: medDrikkeEntries)
         case .utenDrikke:
-            UtenDrikkeView()
+            GameCatalogView(entries: utenDrikkeEntries)
         }
+    }
+
+    private var medDrikkeEntries: [CatalogEntry] {
+        [
+            CatalogEntry(title: "100 spørsmål", subtitle: "Snusboks leken, Volume 1-7 og mer", image: Image("trym")) {
+                HundredQuestionsListView()
+            },
+            CatalogEntry(title: "Chugg eller sannhet", subtitle: "Volume 1-3", image: Image("chugg")) {
+                ChuggEllerSannhetListView()
+            },
+            CatalogEntry(title: "Jeg har aldri", subtitle: "Volume 1-9", image: Image("mats")) {
+                JegHarAldriListView()
+            },
+            CatalogEntry(title: "Karaoke", subtitle: "Sett en av sangene på, følg teksten og syng når det gjeld...", image: Image("pimp")) {
+                KaraokeListView()
+            },
+            CatalogEntry(title: "Start Nachet", subtitle: "Få i gang nachet!", image: Image("anders")) {
+                StartNachet(filename: "startnachet.json", title: "Start Nachet")
+            },
+            CatalogEntry(title: "Hotseat", subtitle: "", image: Image("morkenhotseat")) {
+                Hotseat()
+            },
+        ]
+    }
+
+    private var utenDrikkeEntries: [CatalogEntry] {
+        [
+            CatalogEntry(title: "Quiz", subtitle: "Quiz 1-10", image: Image("trym")) {
+                QuizListView()
+            },
+        ]
     }
 
     private func checkFirstLaunch() {
@@ -55,37 +86,48 @@ struct VorsjContentView: View {
     }
 }
 
+// MARK: - CatalogEntry
 
-// MARK: - Shared Models and Components
-
-struct Item: Identifiable {
+struct CatalogEntry: Identifiable {
     let id = UUID()
     let title: String
     let subtitle: String
-    let destinationView: AnyView
     let image: Image
+    let destination: AnyView
+
+    init<V: View>(
+        title: String,
+        subtitle: String,
+        image: Image,
+        @ViewBuilder destination: () -> V
+    ) {
+        self.title = title
+        self.subtitle = subtitle
+        self.image = image
+        self.destination = AnyView(destination())
+    }
 }
 
-struct ItemRowView: View {
-    let item: Item
+// MARK: - CatalogRowView
+
+struct CatalogRowView: View {
+    let entry: CatalogEntry
 
     var body: some View {
         HStack(spacing: 16) {
-            item.image
+            entry.image
                 .resizable()
                 .scaledToFill()
                 .frame(width: 50, height: 50)
                 .clipShape(Circle())
-                .overlay(
-                    Circle().stroke(Color.blue, lineWidth: 2)
-                )
+                .overlay(Circle().stroke(Color.blue, lineWidth: 2))
                 .shadow(radius: 3)
 
             VStack(alignment: .leading, spacing: 4) {
-                Text(item.title)
+                Text(entry.title)
                     .font(.headline)
                     .foregroundColor(.primary)
-                Text(item.subtitle)
+                Text(entry.subtitle)
                     .font(.subheadline)
                     .foregroundColor(.secondary)
             }
@@ -94,64 +136,28 @@ struct ItemRowView: View {
     }
 }
 
-// MARK: - Med Drikke View
+// MARK: - GameCatalogView
 
-struct MedDrikkeView: View {
+struct GameCatalogView: View {
+    let entries: [CatalogEntry]
     @State private var searchText = ""
 
-    let items = [
-        Item(title: "100 spørsmål", subtitle: "Snusboks leken, Volume 1-7 og mer", destinationView: AnyView(HundredQuestionsListView()), image: Image("trym")),
-        Item(title: "Chugg eller sannhet", subtitle: "Volume 1-3", destinationView: AnyView(ChuggEllerSannhetListView()), image: Image("chugg")),
-        Item(title: "Jeg har aldri", subtitle: "Volume 1-9", destinationView: AnyView(JegHarAldriListView()), image: Image("mats")),
-        Item(title: "Karaoke", subtitle: "Sett en av sangene på, følg teksten og syng når det gjeld...", destinationView: AnyView(KaraokeListView()), image: Image("pimp")),
-        Item(title: "Start Nachet", subtitle: "Få i gang nachet!", destinationView: AnyView(StartNachet(filename: "startnachet.json", title: "Start Nachet")), image: Image("anders")),
-        Item(title: "Hotseat", subtitle: "", destinationView: AnyView(Hotseat()), image: Image("morkenhotseat"))
-    ]
+    private var filteredEntries: [CatalogEntry] {
+        searchText.isEmpty ? entries : entries.filter {
+            $0.title.lowercased().contains(searchText.lowercased())
+        }
+    }
 
     var body: some View {
         List {
-            ForEach(filteredItems) { item in
-                NavigationLink(destination: item.destinationView) {
-                    ItemRowView(item: item)
+            ForEach(filteredEntries) { entry in
+                NavigationLink(destination: entry.destination) {
+                    CatalogRowView(entry: entry)
                 }
             }
         }
         .listStyle(PlainListStyle())
         .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always))
-    }
-
-    var filteredItems: [Item] {
-        items.filter { item in
-            searchText.isEmpty || item.title.lowercased().contains(searchText.lowercased())
-        }
-    }
-}
-
-// MARK: - Uten Drikke View
-
-struct UtenDrikkeView: View {
-    @State private var searchText = ""
-
-    let items = [
-        Item(title: "Quiz", subtitle: "Quiz 1-10", destinationView: AnyView(QuizListView()), image: Image("trym"))
-    ]
-
-    var body: some View {
-        List {
-            ForEach(filteredItems) { item in
-                NavigationLink(destination: item.destinationView) {
-                    ItemRowView(item: item)
-                }
-            }
-        }
-        .listStyle(PlainListStyle())
-        .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always))
-    }
-
-    var filteredItems: [Item] {
-        items.filter { item in
-            searchText.isEmpty || item.title.lowercased().contains(searchText.lowercased())
-        }
     }
 }
 
