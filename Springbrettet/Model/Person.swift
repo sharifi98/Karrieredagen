@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import SwiftUI
 
 struct Person: Hashable, Codable, Identifiable {
     var id: Int
@@ -16,10 +15,6 @@ struct Person: Hashable, Codable, Identifiable {
     var studie: String?
     var imageName: String
     var linkedin: String?
-    
-    var image: Image {
-        Image(imageName)
-    }
 }
 
 

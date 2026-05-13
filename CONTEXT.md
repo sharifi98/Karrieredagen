@@ -52,3 +52,18 @@ An adapter that exports an `Event` to the device calendar. Owns the
 `EKEventStore` lifecycle, permission request, `DateFormatter`, and
 `EKEvent` construction. Exposed as `func export(_ event: Event) async throws`.
 Located in `Springbrettet/Services/EventCalendarExporter.swift`.
+
+## Presentation layer
+`Springbrettet/Presentation/` holds Swift extension files (`Company+UI.swift`,
+`Event+UI.swift`, `Person+UI.swift`) that add SwiftUI projections (`image: Image`,
+`locationCoordinate: CLLocationCoordinate2D`) to the pure-`Codable` model types.
+Model files (`Company.swift`, `Event.swift`, `Person.swift`) import only
+`Foundation`; any file that needs `.image` or `.locationCoordinate` automatically
+picks up the extension because `Presentation/` is part of the same module.
+
+## Design token seam
+`Springbrettet/Views/Modifiers/ColorsAndFonts.swift` is the single source of
+truth for color and font tokens. Views use `Color.kdOrange`, `Font.kdHeading(_:)`,
+`Font.kdBody(_:)`, `Font.kdBodyMedium(_:)`. Raw `Color("KDOrange")` and
+`Font.custom("AvenirNext-…", size:)` calls outside that file are a smell — the
+seam is enforced (Wave 3b complete).

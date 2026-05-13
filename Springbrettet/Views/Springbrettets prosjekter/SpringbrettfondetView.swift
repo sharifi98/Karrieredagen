@@ -165,7 +165,7 @@ struct LinkButton: View {
     let title: String
     let icon: String
     let url: String
-    var color: Color = .kdOrange
+    var color: Color = .black
 
     var body: some View {
         Link(destination: URL(string: url)!) {

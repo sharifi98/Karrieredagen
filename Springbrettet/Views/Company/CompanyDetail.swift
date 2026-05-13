@@ -40,7 +40,7 @@ struct CompanyDetail: View {
                     HStack {
                         Text(company.name)
                             .font(.title)
-                            .foregroundColor(Color("KDOrange"))
+                            .foregroundColor(.kdOrange)
                         FavoriteButton(isSet: favoriteBinding)
                     }
                     
@@ -54,7 +54,7 @@ struct CompanyDetail: View {
                                         
                     Text("Info")
                         .font(.title)
-                        .foregroundColor(Color("KDOrange"))
+                        .foregroundColor(.kdOrange)
                     Text(company.description)
                     
                 }

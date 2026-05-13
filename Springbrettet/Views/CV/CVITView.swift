@@ -20,14 +20,14 @@ struct CVTemplateView: View {
             VStack(alignment: .leading) {
                 Text(template.title)
                     .font(.system(size: 24))
-                    .foregroundColor(Color("KDOrange"))
+                    .foregroundColor(Color.kdOrange)
 
                 ForEach(template.sections.indices, id: \.self) { i in
                     let section = template.sections[i]
                     Group {
                         Text(section.heading)
                             .font(.headline)
-                            .foregroundColor(Color("KDOrange"))
+                            .foregroundColor(Color.kdOrange)
                             .padding(.vertical)
                         Text(section.body)
                             .font(.body)

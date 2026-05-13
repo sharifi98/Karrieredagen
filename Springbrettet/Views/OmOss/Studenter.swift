@@ -37,10 +37,10 @@ struct Studenter: View {
             List { // Add some spacing between Text views
                 Section {
                     Text("Ta kontakt")
-                        .font(.custom("AvenirNext-Bold", size: 30))
-                        .foregroundColor(Color("KDOrange"))
+                        .font(.kdHeading(30))
+                        .foregroundColor(.kdOrange)
                     Text("Vil du vite mer om oss i Springbrettet? Sjekk oss gjerne ut på sosiale medier, og ikke nøl med å henvende deg på mail eller Facebook for spørsmål!\n\nInteressert i å bli medlem i Springbrettet? Vi rekrutterer i starten av hvert semester. Følg med på facebook og hjemmesiden vår for mer informasjon!")
-                        .font(.custom("AvenirNext-Regular", size: 20))
+                        .font(.kdBody(20))
                     // Replace "TextColor" with the appropriate color name if needed
                         .padding() // Add some padding around the text
                     

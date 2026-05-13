@@ -20,18 +20,18 @@ struct OmOssView: View {
                     Text("Springbrettet")
                         .foregroundColor(.white)
                         .font(.headline)
-                        .listRowBackground(Color("KDOrange"))
+                        .listRowBackground(.kdOrange)
                     
                     NavigationLink(destination: HvaErSpringbrettet()) {
                         Label("Hva er Springbrettet?", systemImage: "info.circle")
-                            .foregroundColor(Color("KDOrange"))
+                            .foregroundColor(.kdOrange)
                     }
                     
                     /*
                      
                     NavigationLink(destination: KarrieredagenInformationView()) {
                         Label("Karrieredagen", systemImage: "network")
-                            .foregroundColor(Color("KDOrange"))
+                            .foregroundColor(.kdOrange)
                     }
                      
                     */
@@ -79,7 +79,7 @@ struct OmOssView: View {
                 Section {
                     
                     Text("Styret i Springbrettet")
-                        .listRowBackground(LinearGradient(gradient: Gradient(colors: [Color("KDOrange"), Color.red]), startPoint: .top, endPoint: .bottom))
+                        .listRowBackground(LinearGradient(gradient: Gradient(colors: [.kdOrange, Color.red]), startPoint: .top, endPoint: .bottom))
                         
                     ZStack {
                         ScrollView(.horizontal, showsIndicators: false) {
@@ -97,7 +97,7 @@ struct OmOssView: View {
                                                 .clipShape(Circle())
                                                 .overlay(
                                                     Circle()
-                                                        .stroke(Color("KDOrange"), lineWidth: 3)
+                                                        .stroke(Color.kdOrange, lineWidth: 3)
                                                 )
                                             
                                             VStack {
@@ -152,7 +152,7 @@ struct OmOssView: View {
                 ToolbarItem(placement: .navigationBarLeading) {
                     Text("Om oss")
                         .font(.title)
-                        .foregroundColor(Color("KDOrange"))
+                        .foregroundColor(.kdOrange)
                 }
             }
         }

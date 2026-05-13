@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import SwiftUI
 
 struct Event: Hashable, Codable, Identifiable {
     var id: Int
@@ -19,9 +18,6 @@ struct Event: Hashable, Codable, Identifiable {
     var companies: [String]?
     var duration: Int
     var description: String
-    
-    private var imageName: String
-    var image: Image {
-        Image(imageName)
-    }
+
+    var imageName: String
 }
