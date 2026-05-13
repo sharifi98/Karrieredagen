@@ -1,15 +1,16 @@
 import SwiftUI
 
 struct KaraokeView: View {
-    let songs: [Song]
     var filename: String
     var title: String
     var url: String
+    @EnvironmentObject var store: ContentStore
+
+    private var songs: [Song] { store.corpus(filename) }
 
     init(filename: String, title: String, url: String) {
         self.filename = filename
         self.title = title
-        self.songs = loadGame(self.filename)
         self.url = url
     }
 
@@ -91,5 +92,6 @@ struct SongCard: View {
 struct KaraokeView_Previews: PreviewProvider {
     static var previews: some View {
         KaraokeView(filename: "vivalavida.json", title: "Livin on a Prayer - Bon Jovi", url: "https://open.spotify.com/track/37ZJ0p5Jm13JPevGcx4SkF?si=3ee9c7113cc04e61")
+            .environmentObject(ContentStore())
     }
 }

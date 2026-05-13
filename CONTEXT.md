@@ -28,6 +28,18 @@ a `sections` array of `(heading, body)` pairs. Rendered by `CVTemplateView`.
 Adding a new career path means adding a new `CVTemplate` data record — no
 layout code changes required.
 
+## PromptDeck
+The shared renderer for `[Question]`-based VorsjSpill games. `PromptDeckView`
+accepts a pre-decoded `corpus: [Question]`, a `title`, and a `DeckMode`. The
+`DeckMode` is either `.chatSwipe` (user toggles between chat bubbles and swipe
+cards — used by HundredView) or `.chat` (chat-only — used by StartNachet).
+Game views keep their `(filename:title:)` interface; the corpus is fetched from
+`@EnvironmentObject var store: ContentStore` via `store.corpus(filename)`.
+
+## DeckMode
+An enum on `PromptDeckView` with two cases: `.chatSwipe` and `.chat`. Governs
+whether the mode picker is shown and which rendering mode is active.
+
 ## EventCalendarExporter
 An adapter that exports an `Event` to the device calendar. Owns the
 `EKEventStore` lifecycle, permission request, `DateFormatter`, and

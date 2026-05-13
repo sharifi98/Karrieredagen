@@ -7,33 +7,28 @@
 import SwiftUI
 
 struct QuizView: View {
-    
-    
+
     var filename: String
     var title: String
-    let questions: [QuizQuestion]
-    
+    @EnvironmentObject var store: ContentStore
+
+    private var questions: [QuizQuestion] { store.corpus(filename) }
+
     init(filename: String, title: String) {
         self.filename = filename
         self.title = title
-        self.questions = loadGame(filename)
-        self.selectedOption = selectedOption
     }
-    
-    
-    
-    //var questions: [QuizQuestion] = loadGame("Level1.json")
+
     @State private var selectedOption: String?
-    
+
     let candyBlue = Color(red: 0.3, green: 0.9, blue: 1.0, opacity: 0.8)
 
-     
     var body: some View {
         ScrollView {
-            
+
             Text(title)
                 .font(.title)
-            
+
             VStack(alignment: .center, spacing: 20) {
                 ForEach(questions) { question in
                     VStack(alignment: .center, spacing: 10) {
@@ -102,5 +97,6 @@ extension Array {
 struct QuizView_Previews: PreviewProvider {
     static var previews: some View {
         QuizView(filename: "Level1.json", title: "Vil du bli tusinær?")
+            .environmentObject(ContentStore())
     }
 }

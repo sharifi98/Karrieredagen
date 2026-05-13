@@ -42,6 +42,7 @@
 		0396B0862A25E068008E6CAC /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0396B0852A25E068008E6CAC /* ModelData.swift */; };
 		03FF00012A25E068008E6CAC /* ContentStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FF00002A25E068008E6CAC /* ContentStore.swift */; };
 		03FF00032A25E068008E6CAC /* EventCalendarExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FF00042A25E068008E6CAC /* EventCalendarExporter.swift */; };
+		03FF00062A25E068008E6CAC /* PromptDeckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FF00072A25E068008E6CAC /* PromptDeckView.swift */; };
 		0396B08B2A25EA18008E6CAC /* CompanyRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0396B08A2A25EA18008E6CAC /* CompanyRow.swift */; };
 		0396B08D2A25F024008E6CAC /* CompanyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0396B08C2A25F024008E6CAC /* CompanyList.swift */; };
 		0396B08F2A25F136008E6CAC /* CompanyDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0396B08E2A25F136008E6CAC /* CompanyDetail.swift */; };
@@ -163,6 +164,7 @@
 		0396B0852A25E068008E6CAC /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		03FF00002A25E068008E6CAC /* ContentStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentStore.swift; sourceTree = "<group>"; };
 		03FF00042A25E068008E6CAC /* EventCalendarExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCalendarExporter.swift; sourceTree = "<group>"; };
+		03FF00072A25E068008E6CAC /* PromptDeckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptDeckView.swift; sourceTree = "<group>"; };
 		0396B08A2A25EA18008E6CAC /* CompanyRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyRow.swift; sourceTree = "<group>"; };
 		0396B08C2A25F024008E6CAC /* CompanyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyList.swift; sourceTree = "<group>"; };
 		0396B08E2A25F136008E6CAC /* CompanyDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyDetail.swift; sourceTree = "<group>"; };
@@ -468,6 +470,7 @@
 			children = (
 				03E29EEA2B224C8200753FAA /* VorsjContentView.swift */,
 				03E29EEC2B224CC800753FAA /* VorsjWelcomeSheet.swift */,
+				03FF00072A25E068008E6CAC /* PromptDeckView.swift */,
 			);
 			path = "Main Views";
 			sourceTree = "<group>";
@@ -811,6 +814,7 @@
 				03E29F322B22506500753FAA /* ChuggEllerSannhetVolume.swift in Sources */,
 				03ECA4592A29C23A007E0829 /* EventDetailView.swift in Sources */,
 				03FF00032A25E068008E6CAC /* EventCalendarExporter.swift in Sources */,
+				03FF00062A25E068008E6CAC /* PromptDeckView.swift in Sources */,
 				037010172A49AADB007388E7 /* HomeView.swift in Sources */,
 				0396B08F2A25F136008E6CAC /* CompanyDetail.swift in Sources */,
 				03E29F6C2B2251C200753FAA /* Song.swift in Sources */,

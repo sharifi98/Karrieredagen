@@ -55,20 +55,3 @@ final class ContentStore: ObservableObject {
         }
     }
 }
-
-// Backward-compatible loader for VorsjSpill game views that decode in init.
-// Migrating these views to ContentStore.corpus() is deferred to the PromptDeck
-// deepening pass (candidate 3 in the architecture backlog).
-func loadGame<T: Decodable>(_ filename: String) -> T {
-    guard let url = Bundle.main.url(forResource: filename, withExtension: nil) else {
-        fatalError("Couldn't find \(filename) in bundle.")
-    }
-    guard let data = try? Data(contentsOf: url) else {
-        fatalError("Couldn't load \(filename) from bundle.")
-    }
-    do {
-        return try JSONDecoder().decode(T.self, from: data)
-    } catch {
-        fatalError("Couldn't parse \(filename) as \(T.self):\n\(error)")
-    }
-}

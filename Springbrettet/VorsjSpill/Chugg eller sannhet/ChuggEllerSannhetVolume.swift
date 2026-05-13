@@ -8,19 +8,18 @@
 import SwiftUI
 
 struct ChuggEllerSannhetVolume: View {
-    @State var questions: [Question]
-    
-    var filename: String
-    var title: String
-    var volumeColor: Color
-    
+    let filename: String
+    let title: String
+    let volumeColor: Color
+    @EnvironmentObject var store: ContentStore
+    @State private var questions: [Question] = []
+
     init(filename: String, title: String, volumeColor: Color = .yellow) {
         self.filename = filename
         self.title = title
         self.volumeColor = volumeColor
-        _questions = State(initialValue: loadGame(filename))
     }
-    
+
     var body: some View {
         List {
             Section(header: VStack(alignment: .leading) {
@@ -34,44 +33,46 @@ struct ChuggEllerSannhetVolume: View {
                     Text(title)
                         .font(.headline)
                 }
-            }
-            ) {
+            }) {
                 Text("Si et tall fra 1-105\n\nHuk av på boksen når tallet har blitt tatt hvis du vil holde styr\n\nSier noen samme tall, må de chugge\n\nGjør man ikke utfordringen drikker man 5 slurker og utfordringen står åpne for andre\n\nGjør man utfordringen drikker ALLE 2 slurker \n\nTipset blir nemlig å huske tallene som blir sagt for å unngå å chugge.")
             }
-            
-            
+
             Section {
-                ForEach(0..<questions.count, id: \.self) { index in
+                ForEach(questions.indices, id: \.self) { index in
                     Toggle(isOn: Binding(
-                        get: { self.questions[index].isChecked ?? false },
-                        set: { self.questions[index].isChecked = $0 }
+                        get: { questions[index].isChecked ?? false },
+                        set: { questions[index].isChecked = $0 }
                     )) {
                         HStack {
-                            Text("\(index+1)")
+                            Text("\(index + 1)")
                                 .font(.headline)
                                 .foregroundColor(.yellow)
                                 .padding()
-                            Text("\(questions[index].question)")
+                            Text(questions[index].question)
                                 .bold()
                         }
                     }
                     .toggleStyle(CustomToggleStyle())
                 }
             }
-            .listRowBackground(Rectangle()
-                                .background(Color.clear)
-                                .foregroundColor(.gray)
-                                .opacity(0.3))
-            
-            
+            .listRowBackground(
+                Rectangle()
+                    .background(Color.clear)
+                    .foregroundColor(.gray)
+                    .opacity(0.3)
+            )
         }
-        
-        
+        .onAppear {
+            if questions.isEmpty {
+                questions = store.corpus(filename)
+            }
+        }
     }
 }
 
 struct ChuggEllerSannhetVolume_Previews: PreviewProvider {
     static var previews: some View {
         ChuggEllerSannhetVolume(filename: "ChuggEllerSannhetVolume1.json", title: "Chugg eller sannhet", volumeColor: .blue)
+            .environmentObject(ContentStore())
     }
 }
