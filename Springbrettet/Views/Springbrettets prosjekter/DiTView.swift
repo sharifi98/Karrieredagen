@@ -13,7 +13,7 @@ struct DiTView: View {
                         socialMediaSection
                     }
                     .padding(.horizontal)
-                    .padding(.vertical, 30)
+                    .padding(.vertical, .spacingLarge)
                 }
             }
             .navigationBarTitleDisplayMode(.inline)
@@ -33,7 +33,7 @@ struct DiTView: View {
                 .resizable()
                 .scaledToFit()
                 .frame(height: 200)
-                .cornerRadius(20)
+                .cornerRadius(.radiusLarge)
                 .shadow(color: Color.black.opacity(0.2), radius: 10, x: 0, y: 5)
 
         }
@@ -95,7 +95,7 @@ struct InfoCard<Content: View>: View {
         }
         .padding()
         .background(
-            RoundedRectangle(cornerRadius: 20)
+            RoundedRectangle(cornerRadius: .radiusLarge)
                 .fill(Color.kdBackground.opacity(0.8))
         )
         .shadow(color: Color.black.opacity(0.1), radius: 10, x: 0, y: 5)
@@ -122,7 +122,7 @@ struct SocialMediaButton: View {
             .frame(maxWidth: .infinity)
             .padding()
             .background(color)
-            .cornerRadius(15)
+            .cornerRadius(.radiusMedium)
         }
         .shadow(color: color.opacity(0.3), radius: 10, x: 0, y: 5)
     }

@@ -22,7 +22,7 @@ struct WelcomeSheet: View {
                     .resizable()
                     .scaledToFit()
                     .frame(maxWidth: 350)
-                    .cornerRadius(20)
+                    .cornerRadius(.radiusLarge)
                     .shadow(radius: 10)
 
                 Text("Velkommen til")
@@ -32,7 +32,7 @@ struct WelcomeSheet: View {
 
                 Text("Springbrett-appen")
                     .font(.largeTitle.bold())
-                    .foregroundColor(Color("KDOrange"))
+                    .foregroundColor(.kdOrange)
                     .multilineTextAlignment(.center)
                     .padding(.horizontal)
 
@@ -54,8 +54,8 @@ struct WelcomeSheet: View {
                         .foregroundColor(.white)
                         .padding()
                         .frame(maxWidth: .infinity)
-                        .background(Color("KDOrange"))
-                        .cornerRadius(10)
+                        .background(.kdOrange)
+                        .cornerRadius(.radiusSmall)
                         .padding(.horizontal)
                 }
 

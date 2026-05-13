@@ -4,20 +4,22 @@ struct EventDetailView: View {
     var event: Event
     @Environment(\.dismiss) private var dismiss
     @State private var showingCalendarAlert = false
+    @State private var exportError: String?
+    @State private var showingExportError = false
 
     var body: some View {
         ZStack {
             BackgroundSB2()
             ScrollView {
                 VStack(alignment: .center, spacing: 20) {
-                    eventImageView
+                    EventImageSection(event: event)
 
                     VStack(spacing: 10) {
                         Text(event.name)
                             .font(.kdHeading(24))
                             .foregroundColor(.kdOrange)
 
-                        eventTiming
+                        EventTimingView(event: event)
 
                         Text(event.location)
                             .font(.kdBody(18))
@@ -27,15 +29,22 @@ struct EventDetailView: View {
                             .multilineTextAlignment(.center)
                             .padding(.vertical)
 
-                        speakersGroup
+                        SpeakersSection(event: event)
 
-                        companiesGroup
+                        CompaniesSection(event: event)
                     }
                     .foregroundColor(.kdText)
 
                     VStack(spacing: 15) {
-                        addToCalendarButton
-                        dismissButton
+                        AddToCalendarButton(
+                            event: event,
+                            onSuccess: { showingCalendarAlert = true },
+                            onError: { message in
+                                exportError = message
+                                showingExportError = true
+                            }
+                        )
+                        DismissButton(dismiss: dismiss)
                     }
                     .padding(.top)
                 }
@@ -45,22 +54,41 @@ struct EventDetailView: View {
         .alert("Added to Calendar", isPresented: $showingCalendarAlert) {
             Button("OK", role: .cancel) { }
         }
+        .alert("Could not add to Calendar", isPresented: $showingExportError) {
+            Button("OK", role: .cancel) { }
+        } message: {
+            Text(exportError ?? "An unknown error occurred.")
+        }
     }
+}
 
-    var eventImageView: some View {
+// MARK: - Sub-views
+
+private struct EventImageSection: View {
+    let event: Event
+
+    var body: some View {
         event.image
             .resizable()
             .scaledToFit()
-            .cornerRadius(10)
+            .cornerRadius(.radiusSmall)
             .shadow(radius: 5)
     }
+}
 
-    var eventTiming: some View {
+private struct EventTimingView: View {
+    let event: Event
+
+    var body: some View {
         Text("\(event.date), \(event.start_time) - \(event.end_time)")
             .font(.kdBody(18))
     }
+}
 
-    var speakersGroup: some View {
+private struct SpeakersSection: View {
+    let event: Event
+
+    var body: some View {
         VStack(alignment: .leading, spacing: 5) {
             Text("Foredragsholder:")
                 .font(.kdHeading(20))
@@ -77,8 +105,12 @@ struct EventDetailView: View {
             }
         }
     }
+}
 
-    var companiesGroup: some View {
+private struct CompaniesSection: View {
+    let event: Event
+
+    var body: some View {
         VStack(alignment: .leading, spacing: 5) {
             Text("Bedrift:")
                 .font(.kdHeading(20))
@@ -95,15 +127,25 @@ struct EventDetailView: View {
             }
         }
     }
+}
 
-    var addToCalendarButton: some View {
+private struct AddToCalendarButton: View {
+    let event: Event
+    let onSuccess: () -> Void
+    let onError: (String) -> Void
+
+    var body: some View {
         Button(action: {
             Task {
                 do {
                     try await EventCalendarExporter().export(event)
-                    await MainActor.run { showingCalendarAlert = true }
+                    await MainActor.run { onSuccess() }
+                } catch EventCalendarExporter.ExportError.accessDenied {
+                    await MainActor.run { onError("Calendar access was denied. Please enable it in Settings.") }
+                } catch EventCalendarExporter.ExportError.dateConversionFailed {
+                    await MainActor.run { onError("The event date or time could not be parsed.") }
                 } catch {
-                    print("Calendar export failed: \(error)")
+                    await MainActor.run { onError(error.localizedDescription) }
                 }
             }
         }) {
@@ -113,31 +155,36 @@ struct EventDetailView: View {
                 .frame(maxWidth: .infinity)
                 .background(Color.white)
                 .foregroundColor(.black)
-                .cornerRadius(10)
+                .cornerRadius(.radiusSmall)
         }
     }
+}
 
-    var dismissButton: some View {
-        Button(action: {
-            dismiss()
-        }) {
+private struct DismissButton: View {
+    let dismiss: DismissAction
+
+    var body: some View {
+        Button(action: { dismiss() }) {
             Text("Tilbake")
                 .font(.kdBody(16))
                 .padding()
                 .frame(maxWidth: .infinity)
                 .background(Color.kdOrange)
                 .foregroundColor(.white)
-                .cornerRadius(10)
+                .cornerRadius(.radiusSmall)
         }
     }
-
 }
+
+// MARK: - Preview
 
 struct EventDetailView_Previews: PreviewProvider {
     static var previews: some View {
         EventDetailView(event: ContentStore().events[2])
     }
 }
+
+// MARK: - Shared dismiss button (legacy, kept for other call sites)
 
 struct DismissScheduleDetailSheetButton: View {
     @Environment(\.dismiss) var dismiss
@@ -147,7 +194,7 @@ struct DismissScheduleDetailSheetButton: View {
             dismiss()
         } label: {
             Text("Tilbake")
-                .font(.custom("AvenirNext-Bold", size: 18))
+                .font(.kdHeading(18))
                 .foregroundColor(.white)
         }
         .dismissButtonStyle()
@@ -157,9 +204,9 @@ struct DismissScheduleDetailSheetButton: View {
 extension View {
     func dismissButtonStyle() -> some View {
         self
-            .padding(10)
+            .padding(.spacingBase)
             .foregroundColor(.white)
-            .background(Color("KDOrange"))
-            .cornerRadius(10)
+            .background(Color.kdOrange)
+            .cornerRadius(.radiusSmall)
     }
 }

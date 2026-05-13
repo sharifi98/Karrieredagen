@@ -20,7 +20,7 @@ struct SpringbrettfondetView: View {
                     supportedInitiativesSection
                 }
                 .padding(.horizontal)
-                .padding(.vertical, 30)
+                .padding(.vertical, .spacingLarge)
             }
         }
         .navigationBarTitleDisplayMode(.inline)
@@ -28,7 +28,7 @@ struct SpringbrettfondetView: View {
             ToolbarItem(placement: .principal) {
                 Text("Springbrettfondet")
                     .font(.kdHeading(24))
-                    .foregroundColor(.Orange)
+                    .foregroundColor(.kdOrange)
             }
         }
     }
@@ -72,7 +72,7 @@ struct SpringbrettfondetView: View {
                 }
                 .padding()
                 .background(Color.kdBackground.opacity(0.6))
-                .cornerRadius(10)
+                .cornerRadius(.radiusSmall)
 
                 LinkButton(title: "Søknadsskjema", icon: "pencil", url: "https://forms.gle/7knVYGPF7Ehh3RCUA", color: .green)
             }
@@ -119,7 +119,7 @@ struct InfoSection<Content: View>: View {
         }
         .padding()
         .background(
-            RoundedRectangle(cornerRadius: 20)
+            RoundedRectangle(cornerRadius: .radiusLarge)
                 .fill(Color.kdBackground.opacity(0.8))
         )
         .shadow(color: Color.black.opacity(0.1), radius: 10, x: 0, y: 5)
@@ -175,10 +175,10 @@ struct LinkButton: View {
             }
             .font(.kdBody(16))
             .foregroundColor(.white)
-            .padding(.vertical, 10)
-            .padding(.horizontal, 20)
+            .padding(.vertical, .spacingBase)
+            .padding(.horizontal, .spacingMedium)
             .background(color)
-            .cornerRadius(10)
+            .cornerRadius(.radiusSmall)
         }
     }
 }
@@ -203,17 +203,17 @@ struct ExampleInitiativeView: View {
                     Image(imageName)
                         .resizable()
                         .scaledToFit()
-                        .clipShape(RoundedRectangle(cornerRadius: 20))
+                        .clipShape(RoundedRectangle(cornerRadius: .radiusLarge))
                         .shadow(color: Color.black.opacity(0.2), radius: 5, x: 0, y: 2)
                 }
             }
             .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))
             .frame(height: 275)
-            .cornerRadius(20)
+            .cornerRadius(.radiusLarge)
         }
         .padding()
         .background(
-            RoundedRectangle(cornerRadius: 20)
+            RoundedRectangle(cornerRadius: .radiusLarge)
                 .fill(Color.kdBackground.opacity(0.8))
         )
         .shadow(color: Color.black.opacity(0.1), radius: 10, x: 0, y: 5)

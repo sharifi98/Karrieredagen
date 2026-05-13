@@ -49,7 +49,7 @@ struct CVTipsView: View {
         VStack(alignment: .leading, spacing: 10) {
             Text("Springbrettet til din drømmejobb")
                 .font(.title2)
-                .foregroundColor(Color("KDOrange"))
+                .foregroundColor(.kdOrange)
             Text("Tips og Eksempler")
                 .font(.headline)
                 .foregroundColor(.secondary)
@@ -59,7 +59,7 @@ struct CVTipsView: View {
         }
         .padding()
         .background(Color(.systemBackground))
-        .cornerRadius(10)
+        .cornerRadius(.radiusSmall)
         .shadow(radius: 5)
         .padding(.horizontal)
     }
@@ -87,9 +87,9 @@ struct CVTipsView: View {
                     .font(.caption)
             }
             .frame(width: 80, height: 80)
-            .background(Color("KDOrange"))
+            .background(.kdOrange)
             .foregroundColor(.white)
-            .cornerRadius(10)
+            .cornerRadius(.radiusSmall)
         }
     }
 
@@ -122,7 +122,7 @@ struct TipView: View {
                 HStack {
                     Text(tip.0)
                         .font(.headline)
-                        .foregroundColor(Color("KDOrange"))
+                        .foregroundColor(.kdOrange)
                     Spacer()
                     Image(systemName: isExpanded ? "chevron.up" : "chevron.down")
                         .foregroundColor(.gray)
@@ -137,7 +137,7 @@ struct TipView: View {
         }
         .padding()
         .background(Color(.systemBackground))
-        .cornerRadius(10)
+        .cornerRadius(.radiusSmall)
         .shadow(color: Color.black.opacity(0.1), radius: 5, x: 0, y: 2)
     }
 }

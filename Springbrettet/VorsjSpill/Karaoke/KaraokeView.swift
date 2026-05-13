@@ -48,10 +48,10 @@ struct KaraokeView: View {
                 Image(systemName: "play.fill")
                     .foregroundColor(.black)
             }
-            .padding(.horizontal, 20)
-            .padding(.vertical, 10)
+            .padding(.horizontal, .spacingMedium)
+            .padding(.vertical, .spacingBase)
             .background(Color.green)
-            .cornerRadius(20)
+            .cornerRadius(.radiusLarge)
         }
         .padding(.vertical, 20)
     }
@@ -66,24 +66,24 @@ struct SongCard: View {
             Text("\(song.hvem)")
                 .font(.system(size: 16, weight: .semibold))
                 .foregroundColor(.white)
-                .padding(.horizontal, 10)
+                .padding(.horizontal, .spacingBase)
                 .padding(.vertical, 5)
                 .background(Color.gray.opacity(0.3))
-                .cornerRadius(10)
+                .cornerRadius(.radiusSmall)
 
             Text(song.sangtekst)
                 .font(.system(size: 18, weight: .medium))
                 .foregroundColor(.white)
                 .lineSpacing(8)
-                .padding(.horizontal, 10)
+                .padding(.horizontal, .spacingBase)
                 .padding(.vertical, 15)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding()
         .background(Color.gray.opacity(0.1))
-        .cornerRadius(8)
+        .cornerRadius(.radiusXSmall)
         .overlay(
-            RoundedRectangle(cornerRadius: 8)
+            RoundedRectangle(cornerRadius: .radiusXSmall)
                 .stroke(Color.gray.opacity(0.3), lineWidth: 1)
         )
     }

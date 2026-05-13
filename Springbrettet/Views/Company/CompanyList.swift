@@ -67,11 +67,11 @@ struct SearchBar: View {
                 }
             }
         }
-        .padding(8)
+        .padding(.spacingSmall)
         .background(Color.kdBackground)
-        .cornerRadius(10)
+        .cornerRadius(.radiusSmall)
         .overlay(
-            RoundedRectangle(cornerRadius: 10)
+            RoundedRectangle(cornerRadius: .radiusSmall)
                 .stroke(Color.Orange, lineWidth: 1)
         )
     }

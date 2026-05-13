@@ -55,20 +55,20 @@ struct SheetView: View {
                          subject: "Vorsj-Spill",
                          body: "...")
             }
-            .font(.custom("AvenirNext-Bold", size: 15))
+            .font(.kdHeading(15))
             .frame(width: 150, height: 25)
             .padding()
             .background(Color.blue)
             .foregroundColor(.white)
-            .cornerRadius(8)
+            .cornerRadius(.radiusXSmall)
             
             Link("@hosseinrsharifi", destination: URL(string: "https://www.instagram.com/hosseinrsharifi/")!)
-                .font(.custom("AvenirNext-Bold", size: 15))
+                .font(.kdHeading(15))
                 .frame(width: 150, height: 25)
                 .padding()
                 .background(Color.pink)
                 .foregroundColor(.white)
-                .cornerRadius(8)
+                .cornerRadius(.radiusXSmall)
             
         }
         .presentationDetents([.medium, .large])

@@ -181,7 +181,7 @@ struct Cover: View{
                 .frame(maxWidth: 300)
                 .multilineTextAlignment(.center)  // This line aligns the text to the center
         }
-        .padding(10)
+        .padding(.spacingBase)
     }
 }
 
@@ -286,7 +286,7 @@ struct Track: View {
                     .padding(.horizontal, 4)
                     .padding(.vertical, 2)
                     .background(Color.red)
-                    .cornerRadius(8)
+                    .cornerRadius(.radiusXSmall)
                     .foregroundColor(.white)
             }
         }

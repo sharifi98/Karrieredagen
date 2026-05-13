@@ -1,5 +1,4 @@
 import SwiftUI
-import SDWebImageSwiftUI
 
 // MARK: - KarrieredagenInformationView
 
@@ -39,7 +38,7 @@ struct HeaderView2: View {
     var body: some View {
         Text("Karrieredagen")
             .font(.largeTitle.bold())
-            .foregroundColor(Color("KDOrange"))
+            .foregroundColor(.kdOrange)
             .padding()
             .shadow(radius: 5)
     }
@@ -52,7 +51,7 @@ struct InfoTextView: View {
         VStack(spacing: 24) {
             Text("Vestlandets største")
                 .font(.title2.weight(.semibold))
-                .foregroundColor(Color("KDOrange"))
+                .foregroundColor(.kdOrange)
                 .multilineTextAlignment(.center)
 
             Text("Møteplass for studenter og bedrifter")
@@ -89,7 +88,7 @@ struct InfoTextView: View {
         }
         .padding()
         .background(
-            RoundedRectangle(cornerRadius: 20)
+            RoundedRectangle(cornerRadius: .radiusLarge)
                 .fill(Color.black.opacity(0.3))
                 .blur(radius: 0.5)
         )
@@ -104,7 +103,7 @@ struct InfoTextItem: View {
     var body: some View {
         HStack(alignment: .center, spacing: 16) {
             Image(systemName: icon)
-                .foregroundColor(Color("KDOrange"))
+                .foregroundColor(.kdOrange)
                 .font(.title2)
                 .frame(width: 32, height: 32)
 
@@ -133,7 +132,7 @@ struct TeamMembersView: View {
                 HStack(spacing: 20) {
                     ForEach(store.springbrettere, id: \.id) { member in
                         NavigationLink(destination: PersonView(person: member)) {
-                            MemberCard(member: member)
+                            PersonCard(person: member, mode: .compactHorizontal)
                                 .scaleEffect(animateMembers ? 1 : 0.8)
                                 .animation(
                                     .spring(response: 0.5, dampingFraction: 0.6)
@@ -143,47 +142,10 @@ struct TeamMembersView: View {
                         }
                     }
                 }
-                .padding(.horizontal, 20)
+                .padding(.horizontal, .spacingMedium)
             }
         }
         .padding(.top)
-    }
-}
-
-// MARK: - MemberCard
-
-struct MemberCard: View {
-    let member: Person
-
-    var body: some View {
-        VStack {
-            member.image
-                .resizable()
-                .scaledToFill()
-                .frame(width: 140, height: 140)
-                .clipShape(Circle())
-                .overlay(
-                    Circle()
-                        .stroke(Color("KDOrange"), lineWidth: 3)
-                )
-                .shadow(radius: 5)
-
-            Text(member.name)
-                .font(.headline)
-                .foregroundColor(.white)
-                .multilineTextAlignment(.center)
-
-            Text(member.role)
-                .font(.subheadline)
-                .foregroundColor(.white.opacity(0.7))
-                .multilineTextAlignment(.center)
-        }
-        .frame(width: 160)
-        .padding()
-        .background(
-            RoundedRectangle(cornerRadius: 15)
-                .fill(Color.black.opacity(0.2))
-        )
     }
 }
 
@@ -195,7 +157,7 @@ struct TeamImageView: View {
             .resizable()
             .aspectRatio(contentMode: .fit)
             .frame(maxWidth: 350)
-            .clipShape(RoundedRectangle(cornerRadius: 20))
+            .clipShape(RoundedRectangle(cornerRadius: .radiusLarge))
             .shadow(radius: 10)
             .padding()
     }
@@ -205,102 +167,17 @@ struct TeamImageView: View {
 
 struct PersonView: View {
     let person: Person
-    @Environment(\.openURL) var openURL
 
     var body: some View {
         ZStack {
             BackgroundSB()
                 .ignoresSafeArea()
             ScrollView {
-                VStack(spacing: 20) {
-                    PersonImageView(imageName: person.imageName)
-                    PersonInfoView(person: person)
-                    if let linkedin = person.linkedin, !linkedin.isEmpty {
-                        LinkedInButton(url: linkedin)
-                    }
-                }
-                .padding()
+                PersonCard(person: person, mode: .detail)
             }
         }
         .navigationTitle(person.name)
         .navigationBarTitleDisplayMode(.inline)
-    }
-}
-
-struct PersonImageView: View {
-    let imageName: String
-
-    var body: some View {
-        Image(imageName)
-            .resizable()
-            .scaledToFit()
-            .frame(height: 300)
-            .clipShape(RoundedRectangle(cornerRadius: 20))
-            .shadow(radius: 10)
-    }
-}
-
-struct PersonInfoView: View {
-    let person: Person
-
-    var body: some View {
-        VStack(spacing: 10) {
-            Text(person.name)
-                .font(.title2.bold())
-                .foregroundColor(Color("KDOrange"))
-
-            Text(person.role)
-                .font(.headline)
-                .foregroundColor(.white)
-
-            Text(person.studie ?? "")
-                .font(.subheadline)
-                .foregroundColor(.white.opacity(0.7))
-                .multilineTextAlignment(.center)
-
-            if !person.email.isEmpty {
-                Button(action: {
-                    if let url = URL(string: "mailto:\(person.email)") {
-                        UIApplication.shared.open(url)
-                    }
-                }) {
-                    Text(person.email)
-                        .font(.body)
-                        .foregroundColor(.blue)
-                        .underline()
-                }
-            }
-        }
-        .padding()
-        .background(
-            RoundedRectangle(cornerRadius: 15)
-                .fill(Color.black.opacity(0.2))
-        )
-    }
-}
-
-struct LinkedInButton: View {
-    let url: String
-    @Environment(\.openURL) var openURL
-
-    var body: some View {
-        Button(action: {
-            if let url = URL(string: url) {
-                openURL(url)
-            }
-        }) {
-            HStack {
-                Image("linkedin")
-                Text("LinkedIn")
-            }
-            .font(.headline)
-            .foregroundColor(.blue)
-            .padding()
-            .background(
-                RoundedRectangle(cornerRadius: 10)
-                    .stroke(Color.blue, lineWidth: 1)
-            )
-        }
     }
 }
 

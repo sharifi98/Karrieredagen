@@ -20,7 +20,7 @@ struct Karrierestudio: View {
                         followSection
                     }
                     .padding(.horizontal)
-                    .padding(.vertical, 30)
+                    .padding(.vertical, .spacingLarge)
                 }
             }
             .navigationBarTitleDisplayMode(.inline)
@@ -48,7 +48,7 @@ struct Karrierestudio: View {
                         endPoint: .bottom
                     )
                 )
-                .cornerRadius(20)
+                .cornerRadius(.radiusLarge)
 
             Text("Karrierestudio")
                 .font(.kdHeading(46))
@@ -70,7 +70,7 @@ struct Karrierestudio: View {
         }
         .padding()
         .background(
-            RoundedRectangle(cornerRadius: 20)
+            RoundedRectangle(cornerRadius: .radiusLarge)
                 .fill(Color.kdBackground.opacity(0.8))
         )
         .shadow(color: Color.black.opacity(0.1), radius: 10, x: 0, y: 5)

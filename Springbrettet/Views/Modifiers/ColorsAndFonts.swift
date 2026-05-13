@@ -13,6 +13,7 @@ extension Color {
     static let kdBackground = Color(hex: "0E1E2B")
     static let kdText = Color.white
     static let kdSecondary = Color(hex: "8C939A")
+    static let kdOrange = Color("KDOrange")
 
     init(hex: String) {
         let hex = hex.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
@@ -42,10 +43,31 @@ extension Color {
 
 extension Font {
     static func kdHeading(_ size: CGFloat) -> Font {
-        Font.custom("Montserrat-Bold", size: size)
+        Font.custom("AvenirNext-Bold", size: size)
     }
 
     static func kdBody(_ size: CGFloat) -> Font {
-        Font.custom("OpenSans-Regular", size: size)
+        Font.custom("AvenirNext-Regular", size: size)
     }
+
+    static func kdBodyMedium(_ size: CGFloat) -> Font {
+        Font.custom("AvenirNext-Medium", size: size)
+    }
+}
+
+extension CGFloat {
+    // Corner radius scale
+    static let radiusXSmall: CGFloat = 8
+    static let radiusSmall: CGFloat = 10
+    static let radiusMedium: CGFloat = 15
+    static let radiusLarge: CGFloat = 20
+
+    // Spacing scale
+    static let spacingSmall: CGFloat = 8
+    static let spacingBase: CGFloat = 10
+    static let spacingMedium: CGFloat = 20
+    static let spacingLarge: CGFloat = 30
+
+    // Common sizes
+    static let sizeAvatar: CGFloat = 50
 }

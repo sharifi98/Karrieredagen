@@ -118,7 +118,7 @@ struct CatalogRowView: View {
             entry.image
                 .resizable()
                 .scaledToFill()
-                .frame(width: 50, height: 50)
+                .frame(width: .sizeAvatar, height: .sizeAvatar)
                 .clipShape(Circle())
                 .overlay(Circle().stroke(Color.blue, lineWidth: 2))
                 .shadow(radius: 3)

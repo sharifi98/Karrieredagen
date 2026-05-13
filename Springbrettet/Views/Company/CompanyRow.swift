@@ -15,7 +15,7 @@ struct CompanyRow: View {
             company.image
                 .resizable()
                 .clipShape(RoundedRectangle(cornerRadius: 2))
-                .frame(width: 50, height: 50)
+                .frame(width: .sizeAvatar, height: .sizeAvatar)
 
             VStack(alignment: .leading, spacing: 4) {
                 Text(company.name)
@@ -34,7 +34,7 @@ struct CompanyRow: View {
                     .foregroundColor(.yellow)
             }
         }
-        .padding(.vertical, 8)
+        .padding(.vertical, .spacingSmall)
     }
 }
 

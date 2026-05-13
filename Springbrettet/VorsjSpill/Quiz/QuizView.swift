@@ -54,7 +54,7 @@ struct QuizView: View {
                                     .frame(width: 300, height: 50, alignment: .leading)
                                     .background(backgroundColor(for: question.options[index], correctAnswer: question.correctAnswer))
                                     .foregroundColor(.white)
-                                    .cornerRadius(8)
+                                    .cornerRadius(.radiusXSmall)
                                 }
                             }
                         }
@@ -63,7 +63,7 @@ struct QuizView: View {
                     .frame(width: 350, height: 350, alignment: .center)
                     .background(Color(red: 231/255, green: 90/255, blue: 124/255))
                     .clipShape(Rectangle())
-                    .cornerRadius(10)
+                    .cornerRadius(.radiusSmall)
                 }
             }
             .padding()

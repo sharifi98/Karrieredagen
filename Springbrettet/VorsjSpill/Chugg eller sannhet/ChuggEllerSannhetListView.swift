@@ -1,10 +1,3 @@
-//
-//  ChuggEllerSannhetListView.swift
-//  Vorsj
-//
-//  Created by Hossein Sharifi on 16/08/2023.
-//
-
 import SwiftUI
 
 struct ChuggEllerSannhetListView: View {
@@ -13,28 +6,28 @@ struct ChuggEllerSannhetListView: View {
         ("ChuggEllerSannhetVolume2.json", "Volume 2", "2", Color.green),
         ("ChuggEllerSannhetVolume3.json", "Volume 3", "3", Color.blue)
     ]
-    
-    @State private var listItemOffset: CGFloat = 50
-    @State private var listItemOpacity: Double = 0
-    
+
     var body: some View {
         NavigationStack {
-            ScrollView {
-                ForEach(buttonsData, id: \.0) { data in
+            GameListView(
+                items: buttonsData,
+                title: "Chugg eller sannhet",
+                animation: .easeOut,
+                container: .scrollView,
+                row: { data, _ in
                     NavigationLink(
-                        destination: ChuggEllerSannhetVolume(filename: data.0, title: "Vol \(data.2)"
-                        )
+                        destination: ChuggEllerSannhetVolume(filename: data.0, title: "Vol \(data.2)")
                     ) {
                         ListItem(data: data)
                     }
                     .frame(width: 350)
-                    .padding(.vertical, 10)
+                    .padding(.vertical, .spacingBase)
                     .background(Color.white.opacity(0.1))
-                    .cornerRadius(10)
+                    .cornerRadius(.radiusSmall)
                     .shadow(color: Color.black.opacity(0.2), radius: 5, x: 0, y: 5)
                     .buttonStyle(PlainButtonStyle())
                 }
-            }
+            )
             .toolbar {
                 ToolbarItem(placement: .principal) {
                     HStack {
@@ -49,19 +42,19 @@ struct ChuggEllerSannhetListView: View {
                     }
                 }
             }
-            
+
             ComposeArea()
         }
     }
-    
+
     func ListItem(data: (String, String, String, Color)) -> some View {
         HStack {
             Image(systemName: "folder.fill")
                 .foregroundStyle(.yellow)
-            
+
             VStack(alignment: .leading) {
                 Text("Chugg eller Sannhet \(data.1)")
-                
+
                 HStack {
                     Text(data.2 == "1" ? "30/06/2023" : "19/04/2023")
                         .font(.caption)
